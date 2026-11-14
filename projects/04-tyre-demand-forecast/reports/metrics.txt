@@ -1,0 +1,15 @@
+Tyre demand forecast — SYNTHETIC weekly series
+2019-01-07 to 2025-12-29, n=365
+Back-test: expanding window, horizon=8 weeks, step=4 weeks
+
+Back-test (mean over origins):
+  ets                     MAE=48.28  MAPE=4.72%
+  gradient_boosting       MAE=53.01  MAPE=5.16%
+  seasonal_naive          MAE=54.47  MAPE=5.26%
+
+2025 hold-out:
+  seasonal_naive          MAE=51.67  MAPE=4.83%
+  ets                     MAE=53.95  MAPE=5.21%
+  gradient_boosting       MAE=47.57  MAPE=4.47%
+
+Lowest back-test MAE: ets

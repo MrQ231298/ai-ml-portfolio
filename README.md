@@ -37,6 +37,7 @@ are there to show that distinction clearly.
 | 01 | [Enquiry classifier](projects/01-enquiry-classifier/) | B2B tyre / automotive-parts sales desk | [Streamlit app](projects/01-enquiry-classifier/app.py); [code walkthrough](projects/01-enquiry-classifier/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC data. |
 | 02 | [Irish rent predictor](projects/02-irish-rent-predictor/) | Irish residential rents (official averages) | [Streamlit app](projects/02-irish-rent-predictor/app.py); [code walkthrough](projects/02-irish-rent-predictor/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). REAL public data (RTB / CSO RIA02, CC BY 4.0). |
 | 03 | [Insurance lead scorer](projects/03-insurance-lead-scorer/) | Commercial insurance lead conversion | [Streamlit app](projects/03-insurance-lead-scorer/app.py); [code walkthrough](projects/03-insurance-lead-scorer/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC tabular data. |
+| 04 | [Tyre demand forecast](projects/04-tyre-demand-forecast/) | Weekly tyre sales (Irish seasonal pattern) | [Streamlit app](projects/04-tyre-demand-forecast/app.py); [code walkthrough](projects/04-tyre-demand-forecast/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC weekly series. |
 
 Each finished project should contain:
 
@@ -164,6 +165,42 @@ calibration plot in the project README).
 
 ---
 
+## How to run project 4
+
+SYNTHETIC weekly tyre sales, not a real depot extract. Walkthrough:
+[`projects/04-tyre-demand-forecast/CODE_WALKTHROUGH.md`](projects/04-tyre-demand-forecast/CODE_WALKTHROUGH.md).
+
+```bash
+cd projects/04-tyre-demand-forecast
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+python src/generate_synthetic_series.py
+python src/train.py
+streamlit run app.py
+```
+
+On the recorded run (14 November 2026, Europe/Dublin):
+
+Expanding-window back-test (51 origins, 8-week horizon) — the headline protocol:
+
+| Model | Mean MAE (units) | Mean MAPE (%) |
+| --- | ---: | ---: |
+| ETS (Holt–Winters) | 48.28 | 4.72 |
+| Gradient boosting (lags) | 53.01 | 5.16 |
+| Seasonal naive | 54.47 | 5.26 |
+
+A single 2025 hold-out ranks the models differently (gradient boosting
+MAE 47.57, seasonal naive 51.67, ETS 53.95). Both tables are reported;
+the back-test is treated as the primary comparison.
+
+![SYNTHETIC weekly tyre sales with 2025 hold-out forecasts](projects/04-tyre-demand-forecast/reports/forecast_plot.png)
+
+![Streamlit demo of the synthetic weekly tyre-demand forecast](projects/04-tyre-demand-forecast/reports/app_screenshot.png)
+
+---
+
 ## RPL evidence
 
 | File | Purpose |
@@ -199,6 +236,7 @@ ai-ml-portfolio/
   projects/01-enquiry-classifier/
   projects/02-irish-rent-predictor/
   projects/03-insurance-lead-scorer/
+  projects/04-tyre-demand-forecast/
 ```
 
 This repository is released under the [MIT License](LICENSE).

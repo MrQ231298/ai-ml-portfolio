@@ -147,6 +147,21 @@ files that exist. Do not back-fill metrics from memory.
 - **Reflection:** The headline lift is real but modest (gradient boosting ROC-AUC 0.6433, PR-AUC 0.3190 against a 0.2266 no-skill PR baseline; precision@50 = 0.38). Logistic regression was close, and actually better at precision@100. Class weights helped ranking and visibly *worsened* calibration — that is reported, not hidden. A first draft of the PR plot included the dummy classifier as a triangle up to precision=1, which would have been misleading; it was redrawn so the no-skill line is the prevalence. Slice analysis showed Dublin leads over-scored (mean predicted 0.37 vs actual 0.22, ROC-AUC 0.56), which is the fairness finding I would want an assessor to see.
 - **Assessor notes:**
 
+### 2026-11-14 — Project 4: weekly tyre demand forecast (SYNTHETIC)
+
+- **Time / duration:** evening session, 14 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built project 4, a weekly sales forecast on 365 invented weeks (2019–2025) with a planted trend, winter-tyre seasonality, a spring NCT-inspired bump, a summer lull, a short 2020 dip, and noise. Compared seasonal naive, ETS (Holt–Winters, period 52) and lag-based gradient boosting under an expanding-window back-test (8-week horizon, 4-week step, 51 origins) plus a single 2025 hold-out. The two protocols disagreed on the winner (ETS on the back-test, gradient boosting on the one-year hold-out); both are reported and the back-test is treated as the headline. Wrote the technical README, case study, walkthrough, and a Streamlit demo with a real screenshot.
+- **Artefacts:**
+  - `projects/04-tyre-demand-forecast/` (full project)
+  - `projects/04-tyre-demand-forecast/reports/metrics.json`
+  - `projects/04-tyre-demand-forecast/reports/forecast_plot.png`
+  - `projects/04-tyre-demand-forecast/reports/backtest_mae_mape.png`
+  - `projects/04-tyre-demand-forecast/reports/app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC
+- **Reflection:** The important result is not a spectacular MAPE (all three models sit around 5% on this tidy invented series) but the protocol effect: a single 2025 hold-out would have declared gradient boosting the winner (MAE 47.57 vs ETS 53.95), while the rolling back-test prefers ETS (48.28 vs 53.01 vs 54.47). Seasonal naive was close enough to be a serious baseline. ETS also raised convergence warnings on some origins, which is recorded as a limitation. The series is synthetic, so the 5% error is not a live-depot claim.
+- **Assessor notes:**
+
 ---
 
 *End of entries for 14 November 2026.*

@@ -110,4 +110,19 @@ Imbalance-aware evaluation; SHAP + permutation importance; ethics note.
 | L9-CO | Technical README, walkthrough, client case study, demo screenshot | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
 | T-DP / T-ML / T-EV / T-PY / T-DC | Synthetic table with a known process; LR + HGB + dummy; ROC/PR/P@k/calibration; commented scripts and two-audience docs | `src/`; `reports/`; `app.py`; `requirements.txt` | evidenced (emerging) |
 
+---
+
+## 6. Project 4 additions (04-tyre-demand-forecast)
+
+SYNTHETIC weekly tyre sales, 365 weeks (2019–2025). Expanding-window
+back-test plus a 2025 hold-out.
+
+| ID | How project 4 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Classical ETS vs lag-based gradient boosting vs seasonal naive; weekly seasonality of period 52; recursive multi-step forecasts | `projects/04-tyre-demand-forecast/README.md`; `src/train.py` | evidenced (emerging) |
+| L9-CE | Headline protocol is the back-test, not the prettier single hold-out; the two disagree and that is reported; seasonal naive kept as a serious baseline; ETS convergence warnings noted | `README.md` § Results and § Critical evaluation; `reports/metrics.json`; `reports/forecast_plot.png`; `reports/backtest_mae_mape.png` | evidenced (emerging) |
+| L9-RI | Expanding window, fixed horizon and step, 51 origins; MAE and MAPE; planted seasonal design documented in the generator | `src/generate_synthetic_series.py`; `reports/backtest_origins.csv` | evidenced (emerging) |
+| L9-CO | Technical README, walkthrough, client case study, demo screenshot | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
+| T-ML / T-EV / T-PY / T-DC | statsmodels ETS, sklearn HGB with lags, time-based evaluation, commented scripts, two-audience docs | `src/`; `reports/`; `app.py`; `requirements.txt` | evidenced (emerging) |
+
 Last updated: 14 November 2026 (Europe/Dublin).

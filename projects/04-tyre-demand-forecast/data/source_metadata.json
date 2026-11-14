@@ -1,0 +1,9 @@
+{
+  "data_source": "SYNTHETIC_EXAMPLE_DATA",
+  "n_weeks": 365,
+  "start": "2019-01-07",
+  "end": "2025-12-29",
+  "mean_units": 994.4301369863014,
+  "random_seed": 42,
+  "note": "Invented weekly unit sales for a portfolio demo. Not a real depot extract."
+}
