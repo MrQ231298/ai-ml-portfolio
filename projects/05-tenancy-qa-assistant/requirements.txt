@@ -1,0 +1,12 @@
+# Direct dependencies for the tenancy Q&A assistant.
+# Installed and verified on Python 3.13.5 (14 November 2026, Europe/Dublin).
+# sentence-transformers will also install torch and transformers.
+# The first run of src/chunk_and_index.py downloads all-MiniLM-L6-v2
+# (~90 MB) into the local Hugging Face cache. No paid API key is used.
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+streamlit==1.67.0
+sentence-transformers==6.3.0

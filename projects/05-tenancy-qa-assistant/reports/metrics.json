@@ -1,0 +1,33 @@
+{
+  "run_at_dublin": "2026-11-14 20:50 GMT",
+  "n_questions": 16,
+  "n_pages": 10,
+  "n_chunks": 148,
+  "preferred_backend": "minilm",
+  "minilm_model_name": "all-MiniLM-L6-v2",
+  "minilm_error": null,
+  "metrics": {
+    "minilm": {
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "n_questions": 16,
+      "n_answered": 16
+    },
+    "tfidf": {
+      "hit@1": 0.9375,
+      "hit@3": 0.9375,
+      "hit@5": 0.9375,
+      "mrr": 0.9375,
+      "n_questions": 16,
+      "n_answered": 15
+    }
+  },
+  "ks": [
+    1,
+    3,
+    5
+  ],
+  "note": "Page-level retrieval metrics on a hand-built set of questions. A hit means at least one gold source page appeared in the top-k passages. This is not a measure of legal correctness."
+}

@@ -1,0 +1,87 @@
+{
+  "fetched_at_dublin": "2026-11-14 20:48 GMT",
+  "n_pages": 10,
+  "pages": [
+    {
+      "page_id": "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations",
+      "url": "https://www.citizensinformation.ie/en/housing/renting-a-home/landlords-rights-and-responsibilities/landlords-rights-and-obligations/",
+      "title": "Landlords\u2019 rights and responsibilities",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 14639
+    },
+    {
+      "page_id": "en__housing__renting-a-home__landlords-rights-and-responsibilities__registering-a-tenancy",
+      "url": "https://www.citizensinformation.ie/en/housing/renting-a-home/landlords-rights-and-responsibilities/registering-a-tenancy/",
+      "title": "Registering a tenancy",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 13814
+    },
+    {
+      "page_id": "en__housing__renting-a-home__tenants-rights-and-responsibilities__if-your-landlord-wants-you-to-leave",
+      "url": "https://www.citizensinformation.ie/en/housing/renting-a-home/tenants-rights-and-responsibilities/if-your-landlord-wants-you-to-leave/",
+      "title": "If your landlord wants you to leave",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 20308
+    },
+    {
+      "page_id": "en__whats-new__changes-to-rental-laws-from-14-september-2026",
+      "url": "https://www.citizensinformation.ie/en/whats-new/changes-to-rental-laws-from-14-september-2026/",
+      "title": "Changes to rental laws from 14 September 2026",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 1769
+    },
+    {
+      "page_id": "renting__rights-responsibilities__landlord-rights-responsibilities",
+      "url": "https://rtb.ie/renting/rights-responsibilities/landlord-rights-responsibilities/",
+      "title": "Landlord rights and responsibilities - Residential Tenancies Board",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 4362
+    },
+    {
+      "page_id": "register-tenancies__register-a-tenancy__when-to-register",
+      "url": "https://rtb.ie/register-tenancies/register-a-tenancy/when-to-register/",
+      "title": "When to register - Residential Tenancies Board",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 4090
+    },
+    {
+      "page_id": "renting__rights-responsibilities__security-deposits",
+      "url": "https://rtb.ie/renting/rights-responsibilities/security-deposits/",
+      "title": "Security deposits - Residential Tenancies Board",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 3130
+    },
+    {
+      "page_id": "renting__ending-a-tenancy__notice-of-termination-guides",
+      "url": "https://rtb.ie/renting/ending-a-tenancy/notice-of-termination-guides/",
+      "title": "Notice of Termination guide - Residential Tenancies Board",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 13003
+    },
+    {
+      "page_id": "renting__how-a-landlord-can-end-a-tenancy",
+      "url": "https://rtb.ie/renting/how-a-landlord-can-end-a-tenancy/",
+      "title": "How a landlord can end a tenancy - Residential Tenancies Board",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 12075
+    },
+    {
+      "page_id": "renting__rights-responsibilities__tenant-rights-responsibilities",
+      "url": "https://rtb.ie/renting/rights-responsibilities/tenant-rights-responsibilities/",
+      "title": "Tenant rights and responsibilities - Residential Tenancies Board",
+      "fetched_at_dublin": "2026-11-14 20:48 GMT",
+      "http_status": 200,
+      "n_chars": 4556
+    }
+  ],
+  "note": "Public guidance pages from Citizens Information and the RTB, fetched for an educational retrieval demo. Copyright remains with the publishers. Always cite the source URL."
+}

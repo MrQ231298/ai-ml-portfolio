@@ -18,7 +18,9 @@ work and commercial insurance lead generation. Project 1 draws on that
 sales-desk context and uses **synthetic** enquiry text only — no real
 customer mail. Project 2 uses **real public official statistics** (RTB
 average rents hosted by the CSO, CC BY 4.0), not confidential tenancy
-microdata.
+microdata. Project 5 retrieves over a **snapshot of public Citizens
+Information and RTB guidance pages** (copyright remains with the
+publishers); it is a reading aid, not legal advice.
 
 This repository is a starting point, not a claim that a single baseline
 model already satisfies a Master's award. Later projects should deepen
@@ -38,6 +40,7 @@ are there to show that distinction clearly.
 | 02 | [Irish rent predictor](projects/02-irish-rent-predictor/) | Irish residential rents (official averages) | [Streamlit app](projects/02-irish-rent-predictor/app.py); [code walkthrough](projects/02-irish-rent-predictor/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). REAL public data (RTB / CSO RIA02, CC BY 4.0). |
 | 03 | [Insurance lead scorer](projects/03-insurance-lead-scorer/) | Commercial insurance lead conversion | [Streamlit app](projects/03-insurance-lead-scorer/app.py); [code walkthrough](projects/03-insurance-lead-scorer/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC tabular data. |
 | 04 | [Tyre demand forecast](projects/04-tyre-demand-forecast/) | Weekly tyre sales (Irish seasonal pattern) | [Streamlit app](projects/04-tyre-demand-forecast/app.py); [code walkthrough](projects/04-tyre-demand-forecast/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC weekly series. |
+| 05 | [Tenancy Q&A assistant](projects/05-tenancy-qa-assistant/) | Public Irish tenancy guidance (CI / RTB) | [Streamlit app](projects/05-tenancy-qa-assistant/app.py); [code walkthrough](projects/05-tenancy-qa-assistant/CODE_WALKTHROUGH.md) | Complete baseline (evaluated 14 Nov 2026). REAL public web snapshot. |
 
 Each finished project should contain:
 
@@ -201,6 +204,45 @@ the back-test is treated as the primary comparison.
 
 ---
 
+## How to run project 5
+
+A snapshot of **public** Citizens Information and RTB guidance
+(fetched 14 November 2026). This is not legal advice, and the stored
+page text remains the publishers' copyright. Walkthrough:
+[`projects/05-tenancy-qa-assistant/CODE_WALKTHROUGH.md`](projects/05-tenancy-qa-assistant/CODE_WALKTHROUGH.md).
+
+```bash
+cd projects/05-tenancy-qa-assistant
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+python src/fetch_pages.py          # optional; snapshot already in data/
+python src/chunk_and_index.py      # downloads all-MiniLM-L6-v2 on first run
+python src/evaluate.py
+streamlit run app.py
+```
+
+On the recorded run (14 November 2026, Europe/Dublin), 16 questions
+against 10 pages (148 passages) produced:
+
+| Backend | hit@1 | hit@3 | hit@5 | MRR |
+| --- | ---: | ---: | ---: | ---: |
+| MiniLM (headline) | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| TF-IDF baseline | 0.9375 | 0.9375 | 0.9375 | 0.9375 |
+
+These are page-level retrieval scores on a hand-built question set.
+They are optimistic and are not a measure of legal correctness — see
+the [project critical evaluation](projects/05-tenancy-qa-assistant/README.md#critical-evaluation).
+TF-IDF missed a rent-review question and retrieved a notice-of-termination
+page instead.
+
+![Streamlit demo showing cited passages for a security-deposit question](projects/05-tenancy-qa-assistant/reports/app_screenshot.png)
+
+![Page-level hit@k and MRR for MiniLM and TF-IDF](projects/05-tenancy-qa-assistant/reports/retrieval_metrics.png)
+
+---
+
 ## RPL evidence
 
 | File | Purpose |
@@ -219,9 +261,13 @@ Do not put live customer, tenant or claimant data in this repository.
 Project 1 and project 3 use files explicitly named and tagged as
 `SYNTHETIC` example data. Project 2 uses **public official averages**
 (RTB / CSO table RIA02, CC BY 4.0), not confidential tenancy microdata
-and not personal data of named tenants. A live product that moved
-beyond published aggregates would need a lawful basis, minimisation,
-and usually a DPIA — see the project critical evaluations.
+and not personal data of named tenants. Project 5 indexes a **snapshot
+of public guidance pages** (Citizens Information and the RTB); the
+text remains the publishers' copyright, and the demo is not legal
+advice and should not be used with other people's case papers. A live
+product that moved beyond published aggregates or official guidance
+would need a lawful basis, minimisation, and usually a DPIA — see the
+project critical evaluations.
 
 ---
 
@@ -237,6 +283,7 @@ ai-ml-portfolio/
   projects/02-irish-rent-predictor/
   projects/03-insurance-lead-scorer/
   projects/04-tyre-demand-forecast/
+  projects/05-tenancy-qa-assistant/
 ```
 
 This repository is released under the [MIT License](LICENSE).

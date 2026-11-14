@@ -162,6 +162,23 @@ files that exist. Do not back-fill metrics from memory.
 - **Reflection:** The important result is not a spectacular MAPE (all three models sit around 5% on this tidy invented series) but the protocol effect: a single 2025 hold-out would have declared gradient boosting the winner (MAE 47.57 vs ETS 53.95), while the rolling back-test prefers ETS (48.28 vs 53.01 vs 54.47). Seasonal naive was close enough to be a serious baseline. ETS also raised convergence warnings on some origins, which is recorded as a limitation. The series is synthetic, so the 5% error is not a live-depot claim.
 - **Assessor notes:**
 
+
+### 2026-11-14 — Project 5: tenancy Q&A over public CI / RTB guidance
+
+- **Time / duration:** evening session, 14 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built project 5, an extractive retrieval Q&A over a snapshot of 10 public Irish tenancy guidance pages (4 Citizens Information, 6 RTB), covering landlord obligations, registration, deposits, notice periods and the 14 September 2026 law changes. Each page was saved with its source URL and fetch time. Citizens Information returned HTTP 403 to a custom educational User-Agent and served the same public pages to a standard browser User-Agent; that is documented, and the committed snapshot uses the successful fetch. Pages were chunked into 148 passages and embedded with sentence-transformers `all-MiniLM-L6-v2` (installed cleanly; no paid API). A TF-IDF cosine baseline was built for comparison. Evaluated on 16 hand-written questions with expected source pages. Wrote the technical README (including a Level 9 critical evaluation and a prominent not-legal-advice / copyright note), a client case study, a code walkthrough, and a Streamlit demo with a real screenshot.
+- **Artefacts:**
+  - `projects/05-tenancy-qa-assistant/` (full project)
+  - `projects/05-tenancy-qa-assistant/data/manifest.json`
+  - `projects/05-tenancy-qa-assistant/eval/questions.json`
+  - `projects/05-tenancy-qa-assistant/reports/metrics.json`
+  - `projects/05-tenancy-qa-assistant/reports/retrieval_metrics.png`
+  - `projects/05-tenancy-qa-assistant/reports/app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** MiniLM recorded hit@1 / hit@3 / hit@5 / MRR of 1.0000 on the 16-question set; TF-IDF scored 0.9375 (it missed a rent-review notice question and retrieved a notice of termination page). Those perfect MiniLM figures were kept and then *qualified*: the questions were written after reading the pages, the corpus is only ten pages, gold labels are page-level, and a hit does not mean the passage settles a legal case. Rank-2 distractors (a deposit question also surfacing a registration-fee passage) and mid-sentence chunks are recorded as limits, not hidden. The ethics boundary — not legal advice, publishers' copyright, no case papers in the demo — is the other Level 9 piece of this project.
+- **Assessor notes:**
+
 ---
 
 *End of entries for 14 November 2026.*

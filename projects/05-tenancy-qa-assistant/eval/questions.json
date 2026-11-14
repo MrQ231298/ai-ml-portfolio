@@ -1,0 +1,142 @@
+{
+  "description": "Small retrieval evaluation set for the tenancy Q&A assistant. Each item is a natural-language question a landlord or tenant might type, with the page_id values that actually contain the answer in the 14 November 2026 snapshot. Judgement is at page level: a hit is when any expected page appears in the top-k retrieved passages. This is not a legal exam paper.",
+  "created_at_dublin": "2026-11-14",
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "How much can a landlord charge as a security deposit in Ireland?",
+      "expected_page_ids": [
+        "renting__rights-responsibilities__security-deposits",
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations"
+      ],
+      "note": "RTB: deposit cannot be more than one month's rent. CI also covers the two-month upfront cap (deposit + one month in advance)."
+    },
+    {
+      "id": "Q02",
+      "question": "Can a landlord keep my deposit for ordinary wear and tear, such as scuffed paint?",
+      "expected_page_ids": [
+        "renting__rights-responsibilities__security-deposits"
+      ],
+      "note": "Deductions are for damage above normal wear and tear."
+    },
+    {
+      "id": "Q03",
+      "question": "What reasons allow a landlord to deduct money from a tenant's security deposit?",
+      "expected_page_ids": [
+        "renting__rights-responsibilities__security-deposits",
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations"
+      ]
+    },
+    {
+      "id": "Q04",
+      "question": "Can a landlord hold on to a tenant's belongings if the tenant still owes money?",
+      "expected_page_ids": [
+        "renting__rights-responsibilities__security-deposits"
+      ]
+    },
+    {
+      "id": "Q05",
+      "question": "What is the annual RTB registration fee for a private rented tenancy?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__registering-a-tenancy"
+      ],
+      "note": "€40 a year if registered on time."
+    },
+    {
+      "id": "Q06",
+      "question": "How soon after a new tenancy starts must the landlord register it with the RTB, and how often after that?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__registering-a-tenancy",
+        "register-tenancies__register-a-tenancy__when-to-register"
+      ]
+    },
+    {
+      "id": "Q07",
+      "question": "Do I have to register with the RTB if I only rent a room in my own home to a lodger?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__registering-a-tenancy"
+      ]
+    },
+    {
+      "id": "Q08",
+      "question": "Can a tenant still use the RTB dispute resolution service if the landlord has not registered the tenancy?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__registering-a-tenancy"
+      ]
+    },
+    {
+      "id": "Q09",
+      "question": "What changed on 14 September 2026 about how a landlord may send a notice of termination?",
+      "expected_page_ids": [
+        "en__whats-new__changes-to-rental-laws-from-14-september-2026",
+        "en__housing__renting-a-home__tenants-rights-and-responsibilities__if-your-landlord-wants-you-to-leave"
+      ],
+      "note": "No longer by post; email, hand-deliver, or leave at the address."
+    },
+    {
+      "id": "Q10",
+      "question": "What fixed payment fines can the RTB issue since 14 September 2026 for registration or rent-increase breaches?",
+      "expected_page_ids": [
+        "en__whats-new__changes-to-rental-laws-from-14-september-2026",
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations",
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__registering-a-tenancy"
+      ]
+    },
+    {
+      "id": "Q11",
+      "question": "How many days' notice must a landlord give to end a tenancy that has lasted less than six months?",
+      "expected_page_ids": [
+        "renting__ending-a-tenancy__notice-of-termination-guides",
+        "en__housing__renting-a-home__tenants-rights-and-responsibilities__if-your-landlord-wants-you-to-leave"
+      ],
+      "note": "RTB table: 90 days (maximum 120 days)."
+    },
+    {
+      "id": "Q12",
+      "question": "What is the landlord's notice period if the tenant has lived in the property for about three years?",
+      "expected_page_ids": [
+        "renting__ending-a-tenancy__notice-of-termination-guides",
+        "en__housing__renting-a-home__tenants-rights-and-responsibilities__if-your-landlord-wants-you-to-leave"
+      ],
+      "note": "1 year to 7 years: 180 days on the RTB table."
+    },
+    {
+      "id": "Q13",
+      "question": "How long does a landlord have, after serving the tenant, to send a copy of a notice of termination to the RTB?",
+      "expected_page_ids": [
+        "en__whats-new__changes-to-rental-laws-from-14-september-2026",
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations",
+        "renting__ending-a-tenancy__notice-of-termination-guides",
+        "en__housing__renting-a-home__tenants-rights-and-responsibilities__if-your-landlord-wants-you-to-leave"
+      ],
+      "note": "7 days since 14 September 2026."
+    },
+    {
+      "id": "Q14",
+      "question": "Can a landlord end a tenancy in the first six months without giving a reason?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations",
+        "en__housing__renting-a-home__tenants-rights-and-responsibilities__if-your-landlord-wants-you-to-leave",
+        "renting__how-a-landlord-can-end-a-tenancy"
+      ]
+    },
+    {
+      "id": "Q15",
+      "question": "Do tenants in student-specific accommodation have security of tenure?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations",
+        "renting__rights-responsibilities__tenant-rights-responsibilities"
+      ]
+    },
+    {
+      "id": "Q16",
+      "question": "How much notice must a private landlord give a tenant before a rent review?",
+      "expected_page_ids": [
+        "en__housing__renting-a-home__landlords-rights-and-responsibilities__landlords-rights-and-obligations",
+        "renting__rights-responsibilities__tenant-rights-responsibilities",
+        "renting__rights-responsibilities__landlord-rights-responsibilities"
+      ],
+      "note": "At least 90 days' notice in the snapshot."
+    }
+  ]
+}

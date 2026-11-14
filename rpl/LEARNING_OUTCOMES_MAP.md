@@ -125,4 +125,20 @@ back-test plus a 2025 hold-out.
 | L9-CO | Technical README, walkthrough, client case study, demo screenshot | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
 | T-ML / T-EV / T-PY / T-DC | statsmodels ETS, sklearn HGB with lags, time-based evaluation, commented scripts, two-audience docs | `src/`; `reports/`; `app.py`; `requirements.txt` | evidenced (emerging) |
 
+
+## 7. Project 5 additions (05-tenancy-qa-assistant)
+
+REAL public web snapshot: 10 Citizens Information / RTB guidance
+pages, fetched 14 November 2026, 148 passages. Extractive retrieval
+with citations; MiniLM vs TF-IDF; not legal advice.
+
+| ID | How project 5 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Local embedding-based retrieval (all-MiniLM-L6-v2) with a TF-IDF baseline; extractive passages and provenance rather than a generative answer | `projects/05-tenancy-qa-assistant/README.md`; `src/chunk_and_index.py`; `src/retrieve.py` | evidenced (emerging) |
+| L9-CE | Perfect MiniLM hit@1 / MRR of 1.0000 reported *and* qualified (author-written questions, small closed corpus, page-level gold, distractor passages); TF-IDF miss on a rent-review vs termination confusion kept in the record | `README.md` § Results and § Critical evaluation; `reports/metrics.json`; `reports/eval_results.csv`; `reports/retrieval_metrics.png` | evidenced (emerging) |
+| L9-RI | Hand-picked official sources with URL + fetch stamp; documented 403/User-Agent issue; 16-question evaluation with pre-specified gold pages; no paid API | `src/fetch_pages.py`; `data/manifest.json`; `data/README.md`; `eval/questions.json`; `src/evaluate.py` | evidenced (emerging) |
+| L9-ET | Prominent not-legal-advice disclaimer; publishers' copyright respected; no tenant case files; warning not to paste personal documents | `README.md` § Ethics; `CASE_STUDY.md`; `app.py` disclaimer; `data/README.md` | evidenced (emerging) |
+| L9-CO | Technical README, walkthrough, client case study, demo screenshot with visible disclaimer and citations | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
+| T-DP / T-ML / T-EV / T-PY / T-DC / T-ET | Public-page snapshot and chunking; MiniLM + TF-IDF; hit@k and MRR; commented scripts; two-audience docs; ethics/copyright framing | `src/`; `data/`; `reports/`; `app.py`; `requirements.txt` | evidenced (emerging) |
+
 Last updated: 14 November 2026 (Europe/Dublin).
