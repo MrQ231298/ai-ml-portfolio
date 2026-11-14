@@ -1,0 +1,9 @@
+Insurance lead scorer — SYNTHETIC data, stratified 80/20 test set
+n_train=2560  n_test=640  test prevalence=22.7%
+Imbalance handling: class_weight='balanced'. Primary model: gradient_boosting
+
+dummy_prior             ROC-AUC=0.5000  PR-AUC=0.2266  P@25=0.240  P@50=0.260  P@100=0.250  P@top10%=0.250
+logistic_regression     ROC-AUC=0.6352  PR-AUC=0.3114  P@25=0.280  P@50=0.300  P@100=0.390  P@top10%=0.312
+gradient_boosting       ROC-AUC=0.6433  PR-AUC=0.3190  P@25=0.440  P@50=0.380  P@100=0.320  P@top10%=0.375
+
+Explainability method: shap

@@ -131,6 +131,22 @@ files that exist. Do not back-fill metrics from memory.
 - **Reflection:** Using real official statistics, with a CC BY credit, is a different kind of evidence from project 1's synthetic text. The more important Level 9 moment was that the naive persistence baseline (MAE €160.71, R² 0.8580) beat gradient boosting (€172.40) and log-linear regression (€198.42) on later years, and that almost all of that error was a downward bias as rents kept rising. An informal post-hoc check — growing the last figure by the median 2020–2023 year-on-year change of 4.63% — reduced MAE to €84.21, but that check was designed after seeing the residuals and is labelled as such. A first 300-tree random forest produced a 200 MB+ artefact, which is not usable on GitHub; it was replaced with compact histogram gradient boosting (496 KB) before the commit. Year had permutation importance of zero on 2024–2025 because trees cannot extrapolate past the last training year — a finding, not a plotting bug.
 - **Assessor notes:**
 
+### 2026-11-14 — Project 3: commercial insurance lead scorer (SYNTHETIC)
+
+- **Time / duration:** evening session, 14 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built project 3, a binary conversion classifier on 3,200 invented commercial insurance leads (22.6% converted; no real CRM data). Used a stratified 80/20 split, `class_weight="balanced"` on logistic regression and histogram gradient boosting, and a dummy-prior baseline. Reported ROC-AUC, PR-AUC, precision@k (25/50/100 and top 10%) and a calibration plot. SHAP 0.54.1 installed cleanly and was used for a mean-|SHAP| plot, alongside permutation importance and slice metrics by region, industry and source. Wrote the technical README (including a fairness/ethics section: not underwriting, no protected characteristics, GDPR warning, feedback loops, Dublin over-prediction), a client case study, a code walkthrough, and a Streamlit demo with a real screenshot.
+- **Artefacts:**
+  - `projects/03-insurance-lead-scorer/` (full project)
+  - `projects/03-insurance-lead-scorer/reports/metrics.json`
+  - `projects/03-insurance-lead-scorer/reports/pr_curve.png`
+  - `projects/03-insurance-lead-scorer/reports/calibration.png`
+  - `projects/03-insurance-lead-scorer/reports/explainability.png`
+  - `projects/03-insurance-lead-scorer/reports/app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** The headline lift is real but modest (gradient boosting ROC-AUC 0.6433, PR-AUC 0.3190 against a 0.2266 no-skill PR baseline; precision@50 = 0.38). Logistic regression was close, and actually better at precision@100. Class weights helped ranking and visibly *worsened* calibration — that is reported, not hidden. A first draft of the PR plot included the dummy classifier as a triangle up to precision=1, which would have been misleading; it was redrawn so the no-skill line is the prevalence. Slice analysis showed Dublin leads over-scored (mean predicted 0.37 vs actual 0.22, ROC-AUC 0.56), which is the fairness finding I would want an assessor to see.
+- **Assessor notes:**
+
 ---
 
 *End of entries for 14 November 2026.*

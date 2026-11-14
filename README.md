@@ -36,6 +36,7 @@ are there to show that distinction clearly.
 | --- | --- | --- | --- | --- |
 | 01 | [Enquiry classifier](projects/01-enquiry-classifier/) | B2B tyre / automotive-parts sales desk | [Streamlit app](projects/01-enquiry-classifier/app.py); [code walkthrough](projects/01-enquiry-classifier/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC data. |
 | 02 | [Irish rent predictor](projects/02-irish-rent-predictor/) | Irish residential rents (official averages) | [Streamlit app](projects/02-irish-rent-predictor/app.py); [code walkthrough](projects/02-irish-rent-predictor/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). REAL public data (RTB / CSO RIA02, CC BY 4.0). |
+| 03 | [Insurance lead scorer](projects/03-insurance-lead-scorer/) | Commercial insurance lead conversion | [Streamlit app](projects/03-insurance-lead-scorer/app.py); [code walkthrough](projects/03-insurance-lead-scorer/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC tabular data. |
 
 Each finished project should contain:
 
@@ -128,6 +129,41 @@ Predicted vs actual official averages on the 2024–2025 hold-out:
 
 ---
 
+## How to run project 3
+
+SYNTHETIC commercial insurance leads only — not a real CRM extract.
+Walkthrough: [`projects/03-insurance-lead-scorer/CODE_WALKTHROUGH.md`](projects/03-insurance-lead-scorer/CODE_WALKTHROUGH.md).
+
+```bash
+cd projects/03-insurance-lead-scorer
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+python src/generate_synthetic_leads.py
+python src/train.py
+streamlit run app.py
+```
+
+On the recorded run (14 November 2026, Europe/Dublin), a stratified
+80/20 test set (n = 640, prevalence 22.7%) produced:
+
+| Model | ROC-AUC | PR-AUC | Precision@50 |
+| --- | ---: | ---: | ---: |
+| Dummy (prior) | 0.5000 | 0.2266 | 0.26 |
+| Logistic regression | 0.6352 | 0.3114 | 0.30 |
+| Gradient boosting (headline) | 0.6433 | 0.3190 | 0.38 |
+
+These scores describe invented data. The models beat the dummy, the
+lift is modest, and predicted probabilities are somewhat high (see the
+calibration plot in the project README).
+
+![Streamlit demo showing a conversion score for a synthetic insurance lead](projects/03-insurance-lead-scorer/reports/app_screenshot.png)
+
+![Precision–recall curves for the insurance lead scorer](projects/03-insurance-lead-scorer/reports/pr_curve.png)
+
+---
+
 ## RPL evidence
 
 | File | Purpose |
@@ -143,7 +179,7 @@ column into the map rather than rewriting the projects.
 ## Data protection
 
 Do not put live customer, tenant or claimant data in this repository.
-Project 1 uses a file explicitly named and tagged as
+Project 1 and project 3 use files explicitly named and tagged as
 `SYNTHETIC` example data. Project 2 uses **public official averages**
 (RTB / CSO table RIA02, CC BY 4.0), not confidential tenancy microdata
 and not personal data of named tenants. A live product that moved
@@ -162,6 +198,7 @@ ai-ml-portfolio/
   rpl/RPL_EVIDENCE_LOG.md
   projects/01-enquiry-classifier/
   projects/02-irish-rent-predictor/
+  projects/03-insurance-lead-scorer/
 ```
 
 This repository is released under the [MIT License](LICENSE).

@@ -1,0 +1,326 @@
+{
+  "dataset": {
+    "file": "SYNTHETIC_commercial_insurance_leads.csv",
+    "data_source": "SYNTHETIC_EXAMPLE_DATA",
+    "n_total": 3200,
+    "n_train": 2560,
+    "n_test": 640,
+    "overall_conversion_rate": 0.2259,
+    "test_size": 0.2,
+    "random_state": 42,
+    "split": "stratified random 80/20",
+    "imbalance_handling": "class_weight='balanced' on LR and HGB"
+  },
+  "models": {
+    "dummy_prior": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2266,
+      "prevalence": 0.2266,
+      "n": 640,
+      "n_positives": 145,
+      "precision_at_k": {
+        "25": 0.24,
+        "50": 0.26,
+        "100": 0.25
+      },
+      "precision_at_top_10pct": 0.25,
+      "k_top_10pct": 64
+    },
+    "logistic_regression": {
+      "roc_auc": 0.6352,
+      "pr_auc": 0.3114,
+      "prevalence": 0.2266,
+      "n": 640,
+      "n_positives": 145,
+      "precision_at_k": {
+        "25": 0.28,
+        "50": 0.3,
+        "100": 0.39
+      },
+      "precision_at_top_10pct": 0.3125,
+      "k_top_10pct": 64
+    },
+    "gradient_boosting": {
+      "roc_auc": 0.6433,
+      "pr_auc": 0.319,
+      "prevalence": 0.2266,
+      "n": 640,
+      "n_positives": 145,
+      "precision_at_k": {
+        "25": 0.44,
+        "50": 0.38,
+        "100": 0.32
+      },
+      "precision_at_top_10pct": 0.375,
+      "k_top_10pct": 64
+    }
+  },
+  "primary_model": "gradient_boosting",
+  "explainability": {
+    "method": "shap",
+    "shap": {
+      "library_version": "0.54.1",
+      "n_rows_explained": 640,
+      "top_features": [
+        {
+          "feature": "source",
+          "mean_abs_shap": 0.6509100870451849
+        },
+        {
+          "feature": "response_time_hours",
+          "mean_abs_shap": 0.48255590466644327
+        },
+        {
+          "feature": "coverage_type",
+          "mean_abs_shap": 0.41949376883900014
+        },
+        {
+          "feature": "n_employees",
+          "mean_abs_shap": 0.4194056332189374
+        },
+        {
+          "feature": "industry",
+          "mean_abs_shap": 0.3152455451227258
+        },
+        {
+          "feature": "region",
+          "mean_abs_shap": 0.26426651709986915
+        },
+        {
+          "feature": "revenue_band",
+          "mean_abs_shap": 0.2202471122356286
+        },
+        {
+          "feature": "years_trading",
+          "mean_abs_shap": 0.16892722789777123
+        },
+        {
+          "feature": "has_claims_last_3y",
+          "mean_abs_shap": 0.05959380727530826
+        },
+        {
+          "feature": "n_locations",
+          "mean_abs_shap": 0.03903995958622036
+        }
+      ],
+      "plot": "shap_importance.png"
+    }
+  },
+  "permutation_importance_roc_auc": [
+    {
+      "feature": "source",
+      "importance_mean": 0.08893533031464072,
+      "importance_std": 0.012193600111014335
+    },
+    {
+      "feature": "n_employees",
+      "importance_mean": 0.05417299431092542,
+      "importance_std": 0.01189524696817348
+    },
+    {
+      "feature": "response_time_hours",
+      "importance_mean": 0.030853825612446355,
+      "importance_std": 0.012352965163203883
+    },
+    {
+      "feature": "coverage_type",
+      "importance_mean": 0.018968535934053232,
+      "importance_std": 0.011094947628365713
+    },
+    {
+      "feature": "has_claims_last_3y",
+      "importance_mean": 0.001948682224544355,
+      "importance_std": 0.0020862191467227935
+    },
+    {
+      "feature": "industry",
+      "importance_mean": 0.0010049924532683717,
+      "importance_std": 0.007463582792412477
+    },
+    {
+      "feature": "n_locations",
+      "importance_mean": 0.0009288285150354847,
+      "importance_std": 0.001790994782857727
+    },
+    {
+      "feature": "revenue_band",
+      "importance_mean": -0.002848717055613529,
+      "importance_std": 0.006397730492080597
+    },
+    {
+      "feature": "region",
+      "importance_mean": -0.0033168466271913683,
+      "importance_std": 0.008055972543476219
+    },
+    {
+      "feature": "years_trading",
+      "importance_mean": -0.007503076744455976,
+      "importance_std": 0.008603200403053967
+    }
+  ],
+  "slices": {
+    "region": {
+      "connacht": {
+        "n": 81,
+        "n_positives": 18,
+        "conversion_rate": 0.2222,
+        "mean_predicted": 0.3081,
+        "roc_auc": 0.6949
+      },
+      "dublin": {
+        "n": 213,
+        "n_positives": 47,
+        "conversion_rate": 0.2207,
+        "mean_predicted": 0.3733,
+        "roc_auc": 0.5582
+      },
+      "leinster_ex_dublin": {
+        "n": 138,
+        "n_positives": 26,
+        "conversion_rate": 0.1884,
+        "mean_predicted": 0.3366,
+        "roc_auc": 0.6264
+      },
+      "munster": {
+        "n": 151,
+        "n_positives": 34,
+        "conversion_rate": 0.2252,
+        "mean_predicted": 0.3178,
+        "roc_auc": 0.7386
+      },
+      "ulster_roi": {
+        "n": 57,
+        "n_positives": 20,
+        "conversion_rate": 0.3509,
+        "mean_predicted": 0.3148,
+        "roc_auc": 0.6459
+      }
+    },
+    "industry": {
+      "agriculture": {
+        "n": 53,
+        "n_positives": 14,
+        "conversion_rate": 0.2642,
+        "mean_predicted": 0.2847,
+        "roc_auc": 0.6685
+      },
+      "construction": {
+        "n": 92,
+        "n_positives": 22,
+        "conversion_rate": 0.2391,
+        "mean_predicted": 0.4294,
+        "roc_auc": 0.5779
+      },
+      "healthcare": {
+        "n": 38,
+        "n_positives": 6,
+        "conversion_rate": 0.1579,
+        "mean_predicted": 0.2838,
+        "roc_auc": 0.5729
+      },
+      "hospitality": {
+        "n": 59,
+        "n_positives": 16,
+        "conversion_rate": 0.2712,
+        "mean_predicted": 0.3251,
+        "roc_auc": 0.7863
+      },
+      "it_telecoms": {
+        "n": 67,
+        "n_positives": 13,
+        "conversion_rate": 0.194,
+        "mean_predicted": 0.3585,
+        "roc_auc": 0.6581
+      },
+      "manufacturing": {
+        "n": 58,
+        "n_positives": 8,
+        "conversion_rate": 0.1379,
+        "mean_predicted": 0.3165,
+        "roc_auc": 0.67
+      },
+      "other": {
+        "n": 44,
+        "n_positives": 15,
+        "conversion_rate": 0.3409,
+        "mean_predicted": 0.36,
+        "roc_auc": 0.6805
+      },
+      "professional_services": {
+        "n": 94,
+        "n_positives": 22,
+        "conversion_rate": 0.234,
+        "mean_predicted": 0.3051,
+        "roc_auc": 0.5631
+      },
+      "retail": {
+        "n": 81,
+        "n_positives": 23,
+        "conversion_rate": 0.284,
+        "mean_predicted": 0.3187,
+        "roc_auc": 0.6237
+      },
+      "transport_logistics": {
+        "n": 54,
+        "n_positives": 6,
+        "conversion_rate": 0.1111,
+        "mean_predicted": 0.3632,
+        "roc_auc": 0.8229
+      }
+    },
+    "source": {
+      "broker_referral": {
+        "n": 101,
+        "n_positives": 25,
+        "conversion_rate": 0.2475,
+        "mean_predicted": 0.4992,
+        "roc_auc": 0.4937
+      },
+      "cold_outbound": {
+        "n": 99,
+        "n_positives": 11,
+        "conversion_rate": 0.1111,
+        "mean_predicted": 0.1402,
+        "roc_auc": 0.5372
+      },
+      "comparison_site": {
+        "n": 106,
+        "n_positives": 19,
+        "conversion_rate": 0.1792,
+        "mean_predicted": 0.2629,
+        "roc_auc": 0.6007
+      },
+      "existing_client": {
+        "n": 60,
+        "n_positives": 32,
+        "conversion_rate": 0.5333,
+        "mean_predicted": 0.5194,
+        "roc_auc": 0.6451
+      },
+      "inbound_call": {
+        "n": 102,
+        "n_positives": 28,
+        "conversion_rate": 0.2745,
+        "mean_predicted": 0.4008,
+        "roc_auc": 0.5743
+      },
+      "web_form": {
+        "n": 172,
+        "n_positives": 30,
+        "conversion_rate": 0.1744,
+        "mean_predicted": 0.3062,
+        "roc_auc": 0.6732
+      }
+    }
+  },
+  "artefacts": {
+    "model_bundle": "models/lead_scorer.joblib",
+    "roc_curve_png": "reports/roc_curve.png",
+    "pr_curve_png": "reports/pr_curve.png",
+    "calibration_png": "reports/calibration.png",
+    "precision_at_k_png": "reports/precision_at_k.png",
+    "explainability_png": "reports/explainability.png",
+    "permutation_importance_png": "reports/permutation_importance.png"
+  },
+  "generated_at_dublin": "2026-11-14 20:39 GMT"
+}

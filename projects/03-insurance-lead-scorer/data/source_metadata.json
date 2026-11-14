@@ -1,0 +1,8 @@
+{
+  "data_source": "SYNTHETIC_EXAMPLE_DATA",
+  "n_rows": 3200,
+  "n_converted": 723,
+  "conversion_rate": 0.2259,
+  "random_seed": 42,
+  "note": "Invented commercial-insurance leads for a portfolio demo. Not extracted from any real CRM or insurer."
+}

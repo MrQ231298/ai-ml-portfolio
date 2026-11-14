@@ -94,4 +94,20 @@ RIA02, CC BY 4.0. Temporal hold-out 2008–2023 / 2024–2025.
 | T-EV | MAE, RMSE, R², mean bias, permutation importance, predicted-vs-actual and MAE-by-year plots | `reports/` | evidenced (emerging) |
 | T-PY / T-DC | Commented scripts, pinned requirements, two-audience docs | `requirements.txt`; `app.py`; docs as above | evidenced (emerging) |
 
+---
+
+## 5. Project 3 additions (03-insurance-lead-scorer)
+
+SYNTHETIC commercial insurance leads, 3,200 rows, 22.6% conversion.
+Imbalance-aware evaluation; SHAP + permutation importance; ethics note.
+
+| ID | How project 3 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Binary classification under class imbalance; ROC/PR, precision@k, calibration; sales-score vs underwriting distinction | `projects/03-insurance-lead-scorer/README.md`; `src/train.py` | evidenced (emerging) |
+| L9-CE | Modest lift reported honestly; calibration failure of class-weighted probabilities shown; P@k compared across models; synthetic-label limit stated | `README.md` § Results and § Critical evaluation; `reports/calibration.png`; `reports/metrics.json` | evidenced (emerging) |
+| L9-RI | Documented generative process; SHAP 0.54.1 used when it installed cleanly, with permutation importance as a companion; slice analysis by region / source | `src/generate_synthetic_leads.py`; `reports/explainability.png`; `reports/permutation_importance.png` | evidenced (emerging) |
+| L9-ET | No protected characteristics; explicit "not underwriting" boundary; GDPR warning for live prospect data; Dublin over-prediction discussed as an operational fairness issue | `README.md` § Fairness and ethics; `CASE_STUDY.md`; `app.py` disclaimer | evidenced (emerging) |
+| L9-CO | Technical README, walkthrough, client case study, demo screenshot | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
+| T-DP / T-ML / T-EV / T-PY / T-DC | Synthetic table with a known process; LR + HGB + dummy; ROC/PR/P@k/calibration; commented scripts and two-audience docs | `src/`; `reports/`; `app.py`; `requirements.txt` | evidenced (emerging) |
+
 Last updated: 14 November 2026 (Europe/Dublin).
