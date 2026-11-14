@@ -18,6 +18,10 @@ The model suggests how an incoming customer message should be routed:
 **Data status:** the training file is **SYNTHETIC example data only**. It does
 not contain real customer or company correspondence.
 
+New to the code? Start with the [code walkthrough](CODE_WALKTHROUGH.md). It
+explains each file, the run order (`generate` → `train` → `app`), and the
+key lines in plain English.
+
 ---
 
 ## Problem
@@ -149,16 +153,32 @@ the served model because the default estimator does not provide class
 probabilities; Logistic Regression does, which matters for a confidence
 threshold in a demo (and in any real "auto-route vs human review" design).
 
-Confusion matrices:
+Confusion matrices (relative image paths, so they render on GitHub):
 
-- Logistic Regression: [`reports/confusion_matrix_logistic_regression.png`](reports/confusion_matrix_logistic_regression.png)
-- LinearSVC: [`reports/confusion_matrix_linear_svc.png`](reports/confusion_matrix_linear_svc.png)
+Logistic Regression (the model served in the app):
+
+![Confusion matrix for TF-IDF + Logistic Regression on the held-out synthetic test set](reports/confusion_matrix_logistic_regression.png)
+
+LinearSVC (comparison model):
+
+![Confusion matrix for TF-IDF + LinearSVC on the held-out synthetic test set](reports/confusion_matrix_linear_svc.png)
+
+---
+
+## Demo
+
+The Streamlit app after predicting a synthetic quote-request message
+(captured 14 November 2026, Europe/Dublin). This is one example
+prediction, not a test-set score.
+
+![Streamlit demo predicting Quote request for a synthetic tyre-desk enquiry](reports/app_screenshot.png)
 
 ---
 
 ## How to run
 
-From this folder, with Python 3.11+ (developed on 3.13.5):
+From this folder, with Python 3.11+ (developed on 3.13.5). A slower,
+annotated tour of the same steps is in [CODE_WALKTHROUGH.md](CODE_WALKTHROUGH.md):
 
 ```bash
 python3 -m venv .venv
@@ -307,6 +327,7 @@ finished operations product.
   app.py                          Streamlit demo
   requirements.txt
   README.md                       this file (technical + critical evaluation)
+  CODE_WALKTHROUGH.md             beginner tour of the files and key code
   CASE_STUDY.md                   short client-facing write-up
   src/generate_synthetic_data.py
   src/train.py
@@ -317,4 +338,5 @@ finished operations product.
   reports/classification_reports.txt
   reports/confusion_matrix_logistic_regression.png
   reports/confusion_matrix_linear_svc.png
+  reports/app_screenshot.png
 ```

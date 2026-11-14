@@ -99,6 +99,21 @@ files that exist. Do not back-fill metrics from memory.
 - **Reflection:** The two-audience split (technical README + client case study + clickable demo) is the communication evidence; the critical evaluation is the part that stops the high accuracy number from being misleading. Next improvements that would actually move the RPL file toward Level 9 are methodological (cross-validation, a non-template test set, a rules baseline), not a more glamorous model.
 - **Assessor notes:**
 
+### 2026-11-14 — Code walkthrough, demo screenshot, MIT licence
+
+- **Time / duration:** evening session, 14 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Added a beginner-friendly `CODE_WALKTHROUGH.md` for project 1 (each file's purpose, the generate → train → app run order, annotated snippets, and local run instructions) and linked it from the project README and the top-level README. Captured a real screenshot of the running Streamlit app showing a **Quote request** prediction, saved at `projects/01-enquiry-classifier/reports/app_screenshot.png`, and embedded it with *relative* image paths so it renders on GitHub. Converted the confusion-matrix links in both READMEs from file links to relative Markdown images for the same reason. Added an MIT `LICENSE` (Copyright (c) 2026 Owen Quigley).
+- **Artefacts:**
+  - `projects/01-enquiry-classifier/CODE_WALKTHROUGH.md`
+  - `projects/01-enquiry-classifier/reports/app_screenshot.png`
+  - `projects/01-enquiry-classifier/README.md`
+  - `README.md`
+  - `LICENSE`
+- **Level 9 strands:** L9-CO, L9-AU
+- **Technical outcomes:** T-DC, T-PY
+- **Reflection:** The walkthrough is the specialist-to-beginner communication piece that the technical README was not trying to be. The screenshot is evidence that the demo actually runs, not just that an `app.py` file exists. Relative paths matter once the repo is on GitHub; absolute `/workspace/...` paths would break there. The screenshot was taken with headless Chrome via Playwright against a local Streamlit server and then the server was stopped. Playwright was not added to `requirements.txt` because it is only a documentation tool, not a project dependency.
+- **Assessor notes:**
+
 ---
 
 *End of entries for 14 November 2026.*

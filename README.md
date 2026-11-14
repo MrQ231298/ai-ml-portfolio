@@ -30,13 +30,14 @@ in project 1 is there to show that distinction clearly.
 
 | # | Project | Domain | What you can try | Status |
 | --- | --- | --- | --- | --- |
-| 01 | [Enquiry classifier](projects/01-enquiry-classifier/) | B2B tyre / automotive-parts sales desk | [Streamlit app](projects/01-enquiry-classifier/app.py): paste a message, see predicted class and confidence | Complete baseline (trained 14 Nov 2026). SYNTHETIC data. |
+| 01 | [Enquiry classifier](projects/01-enquiry-classifier/) | B2B tyre / automotive-parts sales desk | [Streamlit app](projects/01-enquiry-classifier/app.py); [code walkthrough](projects/01-enquiry-classifier/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC data. |
 | — | *Planned: landlord / rental or commercial insurance lead-gen case study* | Irish rental / insurance | — | Not started. Reserved so the portfolio can show a second domain. |
 
 Each finished project should contain:
 
 - a beginner-friendly `README.md` (problem, data, method, **actual**
   metrics, limitations)
+- a `CODE_WALKTHROUGH.md` that explains the files and key code in plain English
 - a short `CASE_STUDY.md` written for a potential client
 - runnable code, a requirements file, and saved artefacts from a real run
 
@@ -45,6 +46,9 @@ Each finished project should contain:
 ## How to run project 1
 
 You need Python 3.11 or newer (the recorded run used 3.13.5).
+
+A step-by-step tour of the files and the important lines of code is in
+[`projects/01-enquiry-classifier/CODE_WALKTHROUGH.md`](projects/01-enquiry-classifier/CODE_WALKTHROUGH.md).
 
 ```bash
 cd projects/01-enquiry-classifier
@@ -67,8 +71,16 @@ On the recorded run (14 November 2026, Europe/Dublin):
 
 These scores were produced by the training script on **synthetic**
 messages. They are intentionally discussed as optimistic in the project
-README. The Logistic Regression confusion matrix is at
-[`projects/01-enquiry-classifier/reports/confusion_matrix_logistic_regression.png`](projects/01-enquiry-classifier/reports/confusion_matrix_logistic_regression.png).
+README.
+
+The Streamlit demo after predicting a synthetic quote-request message
+(captured 14 November 2026, Europe/Dublin):
+
+![Streamlit demo predicting Quote request for a synthetic tyre-desk enquiry](projects/01-enquiry-classifier/reports/app_screenshot.png)
+
+Logistic Regression confusion matrix on the held-out synthetic test set:
+
+![Confusion matrix for TF-IDF + Logistic Regression on the held-out synthetic test set](projects/01-enquiry-classifier/reports/confusion_matrix_logistic_regression.png)
 
 ---
 
@@ -100,7 +112,11 @@ minimisation, and usually a DPIA — see the project critical evaluation.
 ```
 ai-ml-portfolio/
   README.md                          this file
+  LICENSE                            MIT, Copyright (c) 2026 Owen Quigley
   rpl/LEARNING_OUTCOMES_MAP.md
   rpl/RPL_EVIDENCE_LOG.md
   projects/01-enquiry-classifier/
 ```
+
+This repository is released under the [MIT License](LICENSE).
+Copyright (c) 2026 Owen Quigley.
