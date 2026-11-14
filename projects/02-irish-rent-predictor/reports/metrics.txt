@@ -1,0 +1,15 @@
+Irish rent predictor — temporal test years 2024–2025
+Source: RTB / CSO table RIA02 (CC BY 4.0)
+Train: 2008–2023 (20285 rows)  Test: 2024–2025 (1065 rows)
+
+persistence_baseline      MAE=160.71  RMSE=203.90  R2=0.8580  bias=-158.58  n=1065
+linear_regression         MAE=198.42  RMSE=247.19  R2=0.7913  bias=-167.26  n=1065
+gradient_boosting         MAE=172.40  RMSE=219.35  R2=0.8356  bias=-161.33  n=1065
+
+Permutation importance (MAE increase, Euro) — gradient boosting:
+  county              377.55 ± 12.10
+  n_bedrooms          246.45 ± 11.17
+  location            68.17 ± 2.70
+  property_type       23.77 ± 2.02
+  location_level      13.80 ± 1.00
+  year                0.00 ± 0.00

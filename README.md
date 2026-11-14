@@ -14,15 +14,19 @@ Beginner-friendly machine learning work that is meant to do two jobs at once:
 
 Background: sales administrator at a tyre distributor
 until November 2026, with further interests in Irish landlord / rental
-work and commercial insurance lead generation. The first project draws
-on that sales-desk context. It does **not** use real customer or company
-mail; all training text is synthetic.
+work and commercial insurance lead generation. Project 1 draws on that
+sales-desk context and uses **synthetic** enquiry text only — no real
+customer mail. Project 2 uses **real public official statistics** (RTB
+average rents hosted by the CSO, CC BY 4.0), not confidential tenancy
+microdata.
 
 This repository is a starting point, not a claim that a single baseline
 model already satisfies a Master's award. Later projects should deepen
 the research, evaluation and professional practice that Level 9 asks
-for. The [critical evaluation](projects/01-enquiry-classifier/README.md#critical-evaluation)
-in project 1 is there to show that distinction clearly.
+for. The critical evaluations in
+[project 1](projects/01-enquiry-classifier/README.md#critical-evaluation)
+and [project 2](projects/02-irish-rent-predictor/README.md#critical-evaluation)
+are there to show that distinction clearly.
 
 ---
 
@@ -31,7 +35,7 @@ in project 1 is there to show that distinction clearly.
 | # | Project | Domain | What you can try | Status |
 | --- | --- | --- | --- | --- |
 | 01 | [Enquiry classifier](projects/01-enquiry-classifier/) | B2B tyre / automotive-parts sales desk | [Streamlit app](projects/01-enquiry-classifier/app.py); [code walkthrough](projects/01-enquiry-classifier/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC data. |
-| — | *Planned: landlord / rental or commercial insurance lead-gen case study* | Irish rental / insurance | — | Not started. Reserved so the portfolio can show a second domain. |
+| 02 | [Irish rent predictor](projects/02-irish-rent-predictor/) | Irish residential rents (official averages) | [Streamlit app](projects/02-irish-rent-predictor/app.py); [code walkthrough](projects/02-irish-rent-predictor/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). REAL public data (RTB / CSO RIA02, CC BY 4.0). |
 
 Each finished project should contain:
 
@@ -84,6 +88,46 @@ Logistic Regression confusion matrix on the held-out synthetic test set:
 
 ---
 
+## How to run project 2
+
+Real official statistics: the RTB Average Monthly Rent Report (CSO
+PxStat table RIA02), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Please credit the RTB and the CSO if you reuse the figures. A walkthrough
+is in [`projects/02-irish-rent-predictor/CODE_WALKTHROUGH.md`](projects/02-irish-rent-predictor/CODE_WALKTHROUGH.md).
+
+```bash
+cd projects/02-irish-rent-predictor
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+python src/fetch_cso_ria02.py      # needs a network; or use the CSV already in data/
+python src/train.py
+streamlit run app.py
+```
+
+On the recorded run (14 November 2026, Europe/Dublin), a *temporal*
+hold-out (train 2008–2023, test 2024–2025, n = 1,065) produced:
+
+| Model | MAE (€) | RMSE (€) | R² | Mean bias (€) |
+| --- | ---: | ---: | ---: | ---: |
+| Persistence baseline (headline) | 160.71 | 203.90 | 0.8580 | −158.58 |
+| Log-linear regression | 198.42 | 247.19 | 0.7913 | −167.26 |
+| Gradient boosting | 172.40 | 219.35 | 0.8356 | −161.33 |
+
+The simple baseline was the most accurate of the three. That finding is
+discussed in the [project critical evaluation](projects/02-irish-rent-predictor/README.md#critical-evaluation).
+
+The Streamlit demo (Ranelagh, Dublin 6, two-bed apartment, 2025):
+
+![Streamlit demo estimating a published RTB average monthly rent](projects/02-irish-rent-predictor/reports/app_screenshot.png)
+
+Predicted vs actual official averages on the 2024–2025 hold-out:
+
+![Predicted vs actual RTB average monthly rent on the 2024–2025 hold-out](projects/02-irish-rent-predictor/reports/pred_vs_actual.png)
+
+---
+
 ## RPL evidence
 
 | File | Purpose |
@@ -100,10 +144,11 @@ column into the map rather than rewriting the projects.
 
 Do not put live customer, tenant or claimant data in this repository.
 Project 1 uses a file explicitly named and tagged as
-`SYNTHETIC` example data. That is a GDPR-aware design choice: a
-portfolio can demonstrate a full machine-learning workflow without
-processing personal data. A real deployment would need a lawful basis,
-minimisation, and usually a DPIA — see the project critical evaluation.
+`SYNTHETIC` example data. Project 2 uses **public official averages**
+(RTB / CSO table RIA02, CC BY 4.0), not confidential tenancy microdata
+and not personal data of named tenants. A live product that moved
+beyond published aggregates would need a lawful basis, minimisation,
+and usually a DPIA — see the project critical evaluations.
 
 ---
 
@@ -116,6 +161,7 @@ ai-ml-portfolio/
   rpl/LEARNING_OUTCOMES_MAP.md
   rpl/RPL_EVIDENCE_LOG.md
   projects/01-enquiry-classifier/
+  projects/02-irish-rent-predictor/
 ```
 
 This repository is released under the [MIT License](LICENSE).

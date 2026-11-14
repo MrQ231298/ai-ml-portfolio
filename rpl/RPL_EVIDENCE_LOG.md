@@ -114,6 +114,23 @@ files that exist. Do not back-fill metrics from memory.
 - **Reflection:** The walkthrough is the specialist-to-beginner communication piece that the technical README was not trying to be. The screenshot is evidence that the demo actually runs, not just that an `app.py` file exists. Relative paths matter once the repo is on GitHub; absolute `/workspace/...` paths would break there. The screenshot was taken with headless Chrome via Playwright against a local Streamlit server and then the server was stopped. Playwright was not added to `requirements.txt` because it is only a documentation tool, not a project dependency.
 - **Assessor notes:**
 
+### 2026-11-14 — Project 2: Irish rent predictor on official RTB / CSO data
+
+- **Time / duration:** evening session, 14 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built project 2, a regression model of *published* average monthly rents. Downloaded the real CSO PxStat cube **RIA02** (RTB Average Monthly Rent Report, CC BY 4.0), recorded the API URL, fetch time, cube update stamp and SHA-256, and filtered out aggregate bedroom/property-type bands and county-wide totals. Trained on 2008–2023 (20,285 rows) and tested on a **temporal** hold-out of 2024–2025 (1,065 rows). Compared a persistence baseline, a log-linear regression, and histogram gradient boosting. Reported MAE, RMSE, R², mean bias, and permutation importance. The persistence baseline had the lowest test MAE; that result was kept and used as the app headline rather than discarded. Wrote the technical README (including a Level 9 critical evaluation), a client case study, a code walkthrough, and a Streamlit demo with a real screenshot. Attribution to the RTB and CSO is in the data README, the app, and the case study.
+- **Artefacts:**
+  - `projects/02-irish-rent-predictor/` (full project)
+  - `projects/02-irish-rent-predictor/data/ria02_average_monthly_rent.csv`
+  - `projects/02-irish-rent-predictor/data/source_metadata.json`
+  - `projects/02-irish-rent-predictor/reports/metrics.json`
+  - `projects/02-irish-rent-predictor/reports/pred_vs_actual.png`
+  - `projects/02-irish-rent-predictor/reports/feature_importance.png`
+  - `projects/02-irish-rent-predictor/reports/app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** Using real official statistics, with a CC BY credit, is a different kind of evidence from project 1's synthetic text. The more important Level 9 moment was that the naive persistence baseline (MAE €160.71, R² 0.8580) beat gradient boosting (€172.40) and log-linear regression (€198.42) on later years, and that almost all of that error was a downward bias as rents kept rising. An informal post-hoc check — growing the last figure by the median 2020–2023 year-on-year change of 4.63% — reduced MAE to €84.21, but that check was designed after seeing the residuals and is labelled as such. A first 300-tree random forest produced a 200 MB+ artefact, which is not usable on GitHub; it was replaced with compact histogram gradient boosting (496 KB) before the commit. Year had permutation importance of zero on 2024–2025 because trees cannot extrapolate past the last training year — a finding, not a plotting bug.
+- **Assessor notes:**
+
 ---
 
 *End of entries for 14 November 2026.*

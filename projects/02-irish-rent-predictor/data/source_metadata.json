@@ -1,0 +1,28 @@
+{
+  "table_id": "RIA02",
+  "table_label": "RTB Average Monthly Rent Report",
+  "producer": "Residential Tenancies Board (RTB)",
+  "host": "Central Statistics Office (CSO)",
+  "api_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/RIA02/JSON-stat/2.0/en",
+  "landing_page": "https://data.gov.ie/dataset/ria02-rtb-average-monthly-rent-report",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Based on the RTB Average Monthly Rent Report (table RIA02), hosted by the Central Statistics Office and licensed under CC BY 4.0.",
+  "cube_updated": "2026-05-14T11:00:00.000Z",
+  "fetched_at_dublin": "2026-11-14 20:32 GMT",
+  "fetched_at_utc": "2026-11-14T20:32:14Z",
+  "raw_file": "ria02_raw.json",
+  "raw_sha256": "de538333bb4015056bf260b626718688a299562c8fd8aa13fba897dc3b35066c",
+  "raw_bytes": 1971953,
+  "n_cells_in_cube": 337176,
+  "n_non_null_in_cube": 113679,
+  "n_rows_after_filters": 21350,
+  "filters": {
+    "dropped_bedroom_aggregates": true,
+    "dropped_property_type_aggregates": true,
+    "dropped_county_totals": true
+  },
+  "year_min": 2008,
+  "year_max": 2025,
+  "n_locations": 378
+}

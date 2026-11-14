@@ -1,0 +1,128 @@
+{
+  "data": {
+    "source_table": "RIA02",
+    "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "api_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/RIA02/JSON-stat/2.0/en",
+    "n_rows": 21350,
+    "n_train": 20285,
+    "n_test": 1065,
+    "train_years": "2008-2023",
+    "test_years": [
+      2024,
+      2025
+    ],
+    "n_locations": 378,
+    "split": "temporal hold-out (not a random split)"
+  },
+  "models": {
+    "persistence_baseline": {
+      "mae": 160.71,
+      "rmse": 203.9,
+      "r2": 0.858,
+      "mean_bias": -158.58,
+      "n": 1065
+    },
+    "linear_regression": {
+      "mae": 198.42,
+      "rmse": 247.19,
+      "r2": 0.7913,
+      "mean_bias": -167.26,
+      "n": 1065
+    },
+    "gradient_boosting": {
+      "mae": 172.4,
+      "rmse": 219.35,
+      "r2": 0.8356,
+      "mean_bias": -161.33,
+      "n": 1065
+    }
+  },
+  "primary_model": "persistence_baseline",
+  "by_test_year": {
+    "2024": {
+      "persistence_baseline": {
+        "mae": 112.96,
+        "rmse": 145.24,
+        "r2": 0.9264,
+        "mean_bias": -109.48,
+        "n": 585
+      },
+      "linear_regression": {
+        "mae": 177.04,
+        "rmse": 220.87,
+        "r2": 0.8297,
+        "mean_bias": -147.69,
+        "n": 585
+      },
+      "gradient_boosting": {
+        "mae": 127.5,
+        "rmse": 168.0,
+        "r2": 0.9015,
+        "mean_bias": -110.98,
+        "n": 585
+      }
+    },
+    "2025": {
+      "persistence_baseline": {
+        "mae": 218.91,
+        "rmse": 257.94,
+        "r2": 0.7711,
+        "mean_bias": -218.42,
+        "n": 480
+      },
+      "linear_regression": {
+        "mae": 224.48,
+        "rmse": 275.89,
+        "r2": 0.7382,
+        "mean_bias": -191.1,
+        "n": 480
+      },
+      "gradient_boosting": {
+        "mae": 227.12,
+        "rmse": 268.99,
+        "r2": 0.7511,
+        "mean_bias": -222.7,
+        "n": 480
+      }
+    }
+  },
+  "permutation_importance_mae": [
+    {
+      "feature": "county",
+      "importance_mean": 377.5493671577605,
+      "importance_std": 12.0993566363445
+    },
+    {
+      "feature": "n_bedrooms",
+      "importance_mean": 246.4505914969082,
+      "importance_std": 11.174566314602883
+    },
+    {
+      "feature": "location",
+      "importance_mean": 68.17093445241713,
+      "importance_std": 2.70468378927806
+    },
+    {
+      "feature": "property_type",
+      "importance_mean": 23.76596713101907,
+      "importance_std": 2.020040200980417
+    },
+    {
+      "feature": "location_level",
+      "importance_mean": 13.799193541868421,
+      "importance_std": 1.0020122475953495
+    },
+    {
+      "feature": "year",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    }
+  ],
+  "artefacts": {
+    "model_bundle": "models/rent_predictor.joblib",
+    "pred_vs_actual_png": "reports/pred_vs_actual.png",
+    "feature_importance_png": "reports/feature_importance.png",
+    "mae_by_year_png": "reports/mae_by_year.png"
+  },
+  "generated_at_dublin": "2026-11-14 20:34 GMT"
+}

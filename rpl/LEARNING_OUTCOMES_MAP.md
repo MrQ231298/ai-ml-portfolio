@@ -17,11 +17,12 @@ rather than rewriting the projects.
 - `partial` — some evidence exists; a clear gap is noted.
 - `planned` — reserved for a later project or a revision of this one.
 
-**Honesty note.** Project 1 is a classical TF-IDF baseline, not work at
-the forefront of machine learning. Level 9 alignment here is mainly in
-*how the work is evaluated, documented, and ethically framed*, not in
-algorithmic novelty. That is deliberate and is called out in the
-project's critical evaluation.
+**Honesty note.** Project 1 is a classical TF-IDF baseline, and project 2
+is a standard tabular regression, not work at the forefront of machine
+learning. Level 9 alignment here is mainly in *how the work is
+evaluated, documented, and ethically framed* — including, in project 2,
+reporting that a persistence baseline beat the machine-learning models
+on a temporal hold-out.
 
 NFQ wording below is paraphrased from the public Grid of Level
 Indicators for Level 9 (knowledge; know-how and skill; competence) so
@@ -69,8 +70,28 @@ underneath the Level 9 strands above, so an assessor can map either way.
    `planned` and add a line to the evidence log when the work is done.
 3. Do not retrofit metrics or invent artefacts to fill a cell. Point at
    a file that exists, or mark the gap.
-4. A second domain project (landlord / rental or commercial insurance
-   lead generation) should add rows or a new project column, not
-   overwrite project 1.
+4. Further domain projects should add a section or rows, not overwrite
+   earlier evidence. Project 2 (official Irish rents) is summarised
+   below.
+
+---
+
+## 4. Project 2 additions (02-irish-rent-predictor)
+
+Real public data: RTB Average Monthly Rent Report, CSO PxStat table
+RIA02, CC BY 4.0. Temporal hold-out 2008–2023 / 2024–2025.
+
+| ID | How project 2 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Tabular regression on official averages; log-linear and gradient-boosting pipelines; target clearly defined as a *published average*, not a unit rent | `projects/02-irish-rent-predictor/README.md`; `src/train.py` | evidenced (emerging) |
+| L9-CE | Temporal hold-out; baseline included and *allowed to win* (persistence MAE €160.71 vs boosting €172.40 vs log-linear €198.42); bias analysis; year-importance of zero explained; post-hoc growth check labelled as informal | `README.md` § Results and § Critical evaluation; `reports/metrics.json`; `reports/pred_vs_actual.png`; `reports/mae_by_year.png` | evidenced (emerging) |
+| L9-RI | Public API fetch with licence, fetch stamp and SHA-256; filters documented; permutation importance; compact model chosen after a 200 MB random-forest artefact proved unusable | `src/fetch_cso_ria02.py`; `data/source_metadata.json`; `data/README.md`; `src/train.py` | evidenced (emerging) |
+| L9-AU | Independent landlord-domain brief; headline model chosen by test MAE, not by novelty | `README.md` § Next steps; `app.py` | evidenced (emerging) |
+| L9-ET | CC BY 4.0 attribution to RTB / CSO; no tenancy microdata; app and case study state this is not a valuation or advice | `data/README.md`; `CASE_STUDY.md`; `app.py` disclaimer | evidenced (emerging) |
+| L9-CO | Technical README, beginner walkthrough, client case study, working demo screenshot | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
+| T-DP | Download, tidy and filter a JSON-stat cube; derive county / location level; drop nested aggregates | `src/fetch_cso_ria02.py`; `data/ria02_average_monthly_rent.csv` | evidenced (emerging) |
+| T-ML | Persistence, log-linear regression, histogram gradient boosting; saved joblib bundle | `src/baseline.py`; `src/train.py`; `models/rent_predictor.joblib` | evidenced (emerging) |
+| T-EV | MAE, RMSE, R², mean bias, permutation importance, predicted-vs-actual and MAE-by-year plots | `reports/` | evidenced (emerging) |
+| T-PY / T-DC | Commented scripts, pinned requirements, two-audience docs | `requirements.txt`; `app.py`; docs as above | evidenced (emerging) |
 
 Last updated: 14 November 2026 (Europe/Dublin).
