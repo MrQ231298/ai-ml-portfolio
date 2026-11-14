@@ -1,0 +1,197 @@
+{
+  "dataset": {
+    "file": "SYNTHETIC_tyre_desk_enquiries.csv",
+    "data_source": "SYNTHETIC_EXAMPLE_DATA",
+    "n_total": 540,
+    "n_train": 432,
+    "n_test": 108,
+    "test_size": 0.2,
+    "random_state": 42,
+    "class_counts": {
+      "quote_request": 120,
+      "stock_availability": 110,
+      "order_status": 85,
+      "complaint_return": 80,
+      "account_billing": 80,
+      "other": 65
+    }
+  },
+  "models": {
+    "dummy_most_frequent": {
+      "accuracy": 0.2222,
+      "f1_macro": 0.0606,
+      "f1_weighted": 0.0808,
+      "classification_report": {
+        "quote_request": {
+          "precision": 0.2222222222222222,
+          "recall": 1.0,
+          "f1-score": 0.36363636363636365,
+          "support": 24.0
+        },
+        "stock_availability": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 22.0
+        },
+        "order_status": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 17.0
+        },
+        "complaint_return": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 16.0
+        },
+        "account_billing": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 16.0
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 13.0
+        },
+        "accuracy": 0.2222222222222222,
+        "macro avg": {
+          "precision": 0.037037037037037035,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.06060606060606061,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.04938271604938271,
+          "recall": 0.2222222222222222,
+          "f1-score": 0.0808080808080808,
+          "support": 108.0
+        }
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 0.963,
+      "f1_macro": 0.9607,
+      "f1_weighted": 0.9626,
+      "classification_report": {
+        "quote_request": {
+          "precision": 0.96,
+          "recall": 1.0,
+          "f1-score": 0.9795918367346939,
+          "support": 24.0
+        },
+        "stock_availability": {
+          "precision": 0.9565217391304348,
+          "recall": 1.0,
+          "f1-score": 0.9777777777777777,
+          "support": 22.0
+        },
+        "order_status": {
+          "precision": 0.9375,
+          "recall": 0.8823529411764706,
+          "f1-score": 0.9090909090909091,
+          "support": 17.0
+        },
+        "complaint_return": {
+          "precision": 0.9375,
+          "recall": 0.9375,
+          "f1-score": 0.9375,
+          "support": 16.0
+        },
+        "account_billing": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 16.0
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.96,
+          "support": 13.0
+        },
+        "accuracy": 0.9629629629629629,
+        "macro avg": {
+          "precision": 0.9652536231884058,
+          "recall": 0.9571549773755658,
+          "f1-score": 0.9606600872672302,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.9631572061191627,
+          "recall": 0.9629629629629629,
+          "f1-score": 0.962554265252678,
+          "support": 108.0
+        }
+      }
+    },
+    "linear_svc": {
+      "accuracy": 0.9815,
+      "f1_macro": 0.9798,
+      "f1_weighted": 0.9814,
+      "classification_report": {
+        "quote_request": {
+          "precision": 0.96,
+          "recall": 1.0,
+          "f1-score": 0.9795918367346939,
+          "support": 24.0
+        },
+        "stock_availability": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 22.0
+        },
+        "order_status": {
+          "precision": 0.9444444444444444,
+          "recall": 1.0,
+          "f1-score": 0.9714285714285714,
+          "support": 17.0
+        },
+        "complaint_return": {
+          "precision": 1.0,
+          "recall": 0.9375,
+          "f1-score": 0.967741935483871,
+          "support": 16.0
+        },
+        "account_billing": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 16.0
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.96,
+          "support": 13.0
+        },
+        "accuracy": 0.9814814814814815,
+        "macro avg": {
+          "precision": 0.9840740740740741,
+          "recall": 0.9767628205128206,
+          "f1-score": 0.9797937239411895,
+          "support": 108.0
+        },
+        "weighted avg": {
+          "precision": 0.9823662551440329,
+          "recall": 0.9814814814814815,
+          "f1-score": 0.9813737107746325,
+          "support": 108.0
+        }
+      }
+    }
+  },
+  "primary_model": "logistic_regression",
+  "artefacts": {
+    "model_bundle": "models/tfidf_logistic_regression.joblib",
+    "pipeline": "models/tfidf_logistic_regression_pipeline.joblib",
+    "confusion_matrix_png": "reports/confusion_matrix_logistic_regression.png",
+    "confusion_matrix_linear_svc_png": "reports/confusion_matrix_linear_svc.png"
+  },
+  "generated_at_utc": "2026-11-14T19:43:30Z"
+}

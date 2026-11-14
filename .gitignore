@@ -1,0 +1,26 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Streamlit / tooling
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+
+# Local notes (keep evidence docs tracked)
+*.log

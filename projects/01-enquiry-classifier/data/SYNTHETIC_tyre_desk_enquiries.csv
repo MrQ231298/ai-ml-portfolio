@@ -1,0 +1,1481 @@
+message_id,text,label,data_source
+SYN-0001,"Afternoon,
+Please check your system for 16 x 245/70R17.5 trailer tyres — customer is in the yard.
+Cheers,
+Padraig",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0002,"Afternoon,
+Happy Christmas — could you confirm your shutdown dates between Christmas and New Year?
+Thanks in advance,
+Orla",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0003,"One tyre in ORD-79945 has a manufacturing bulge. Photos attached in a separate mail. We want a credit or replacement.
+Regards,
+Fiona",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0004,"Hi team, The rims you supplied with PO-25886 had paint chips out of the box. Not acceptable — returning the lot. Thanks,, Kate",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0005,"Damaged pallet on ORD-93623: at least one 205/60R16 has a crushed bead. Photos ready.
+Cheers,
+Orla",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0006,"Good morning, Any Bridgestone 265/65R17 on the shelf, or is it a factory order? Regards, Brian",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0007,Has the back order on SO-31967 come in yet?,order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0008,"Hello,
+We were short-delivered on ORD-91863 — invoice says 40 but only 38 arrived. Please sort this.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0009,"Hi,
+What time does the last collection leave the depot on a Friday?
+Thanks in advance,
+Deirdre",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0010,"Hi,
+Has the missing line on ORD-32449 been added for the next delivery?",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0011,"Hello, We've had an early wear complaint on Triangle 255/35R19 fitted six weeks ago. What's the warranty process?",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0012,"Good morning, Please price 24 x 235/45R18 all-season and confirm if a volume break applies above 24. Cheers, Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0013,"Good morning, Do you run any training sessions on tyre labelling or load-index regs? Thanks in advance, Fergal",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0014,"Hi,
+Do you supply agricultural tyres at all, or only passenger and commercial?",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0015,"Afternoon,
+Request to return surplus stock: 24 x 235/45R18 unopened, purchased on SO-28827. Within your 14-day window.
+Thanks,,
+Conor",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0016,"Hi there, Has the back order on SO-64995 come in yet? Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0017,"Afternoon,
+Please put INV-2026-7248 on hold — the PO number is wrong. It should reference WEB-33332.
+Thanks,,
+Grainne",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0018,"Hello,
+Can you price a mixed order: 10 x 265/70R19.5 Sailun and 10 x 205/60R16 Kumho?
+Many thanks,
+Eoin",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0019,"HI TEAM, NEED A WRITTEN QUOTE FOR A FLEET CHANGEOVER: 8 X 315/80R22.5 TRAILER TYRES. CAN YOU ALSO PRICE A MID-RANGE OPTION? THANKS,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0020,"Afternoon, Requesting a quote for 10 steer tyres in 195/70R15C, preferably Goodyear. Account name Glenbrook Service Station. Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0021,"Hi there,
+Please note we'll be closed for two weeks from the 1st — no change to the Drogheda Fleet Care account, just a heads-up.
+Cheers",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0022,"AFTERNOON, PLEASE PUT A COPY OF INV-2026-8974 AND THE DELIVERY DOCKET IN ONE EMAIL FOR OUR RECORDS. KIND REGARDS, EIMEAR",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0023,"Do you supply agricultural tyres at all, or only passenger and commercial? Appreciate it, Ciara",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0024,"Still waiting on the credit for the damaged 185/65R15 we reported last week against ORD-74124. This is a reminder.
+Thanks,
+Brian",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0025,"Hi there,
+Are 315/80R22.5 all-weather tyres available for collection this afternoon?",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0026,"Can you apply the early-settlement discount to INV-2026-8911 if we pay this week?
+Thanks,",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0027,"Hello, Could you point me to your data protection / privacy notice? Our DPO asked for it. Thanks in advance",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0028,"Good morning,
+Can you confirm if Sailun 235/65R16C all-weather is in stock and how many you can release today?
+Thanks in advance",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0029,"Hi,
+Do you run any training sessions on tyre labelling or load-index regs?
+Cheers,
+Aoife",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0030,"Hi team, We have a customer waiting — please quote 20 275/40R20 Kumho highway and an economy alternative. Thanks, Grainne",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0031,We're Drogheda Fleet Care — any 245/40R18 heavy-duty van tyres on hand? Need 16. Appreciate it,stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0032,"Hi there,
+We need a copy of all invoices for October on ACC-6213 for our audit file.
+Regards,
+Una",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0033,"Hi, Do you have an environmental policy I can pass to our procurement team? Thanks",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0034,"Just checking PO-76151 didn't get held at the gate — we're Liffey Side Autos.
+Regards",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0035,"Good afternoon,
+We've been charged for disposal on tyres we never received. Also the 195/70R15C that did arrive have flat spots.
+Appreciate it",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0036,"Hi there,
+Quick status on ORD-50501 please — 24 295/80R22.5 for Blackwater Buses.
+Thanks in advance",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0037,"Hello,
+Delivery to Millfield Recovery was left in the rain with no wrapping. Casings are wet and dirty. We expect replacements.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0038,"Hi,
+Is there EV-specific tyre advice you offer to independent garages?
+Thanks in advance",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0039,"Afternoon,
+Can I book a sales rep visit for next week? Prefer Tuesday afternoon.
+Thanks,
+Kate",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0040,"Hello,
+Who is the credit controller for Ballymore Tyre Bay? I need to discuss a payment plan for INV-2026-2706.
+Thanks,",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0041,"Good morning,
+Is 195/70R15C Linglong a stocked line for you, or special order only?
+Kind regards,
+Kate",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0042,"Hi there,
+We're tendering a local authority van fleet — please quote 40 235/55R18 highway tyres, 12-month hold if possible.
+Thanks,,
+Declan",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0043,"PLEASE CHECK YOUR SYSTEM FOR 4 X 295/80R22.5 STEER TYRES — CUSTOMER IS IN THE YARD.
+CHEERS,
+CIARA",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0044,"Good afternoon,
+Order WEB-70616 shows packed but not shipped. Is there a problem?
+Regards,
+Aoife",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0045,"Hi there,
+Please update us on WEB-39567. If it's delayed we'll need to source elsewhere this once.
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0046,"Good morning,
+Please price 40 x 205/65R16C summer and confirm if a volume break applies above 40.
+Thanks,
+Fergal",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0047,"Request to return surplus stock: 4 x 235/65R16C unopened, purchased on WEB-30019. Within your 14-day window.
+Appreciate it,
+Deirdre",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0048,"Can I get a ballpark on 24 245/70R17.5 all-weather tyres and a firm figure tomorrow?
+Many thanks,
+Hugh",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0049,"Good afternoon, Do you have matching pairs in 235/65R16C? We need 8 and they have to be the same DOT date if possible. Many thanks, Iseult",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0050,"Hi there,
+We got part of PO-44413 but the remaining 24 tyres weren't on the pallet. When is the balance due?
+Many thanks,
+Grainne",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0051,"Good afternoon,
+We're tendering a local authority van fleet — please quote 10 225/50R17 all-weather tyres, 12-month hold if possible.
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0052,"Hi team,
+Need to know if 50 x 195/65R15 highway can go out on today's van to Ballymore Tyre Bay.
+Thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0053,"Good afternoon, Did WEB-32324 go on the Belfast run or the Dublin run today? Thanks, Aoife",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0054,"Good afternoon,
+Could you give me a time window for SO-17148 tomorrow?
+Thanks,
+Declan",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0055,"Good afternoon,
+Was order PO-96235 cancelled or is it still coming? Nothing on the portal.
+Thanks,
+Una",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0056,"Hi there,
+Quick stock check: 4 195/70R15C Falken. If not, what's the soonest ETA?
+Many thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0057,"Hello,
+Any update on ORD-47132? We were expecting delivery yesterday.
+Thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0058,"Afternoon,
+We're looking for a new tyre supplier for our workshop. Can someone call to talk through account setup?
+Kind regards,
+James",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0059,"Good afternoon,
+Order WEB-93735 — 8 x 235/55R18 — has it left the depot?
+Kind regards,
+Gerard",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0060,"Hi there,
+Please price 50 x 195/65R15 all-season and confirm if a volume break applies above 50.
+Many thanks,
+Una",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0061,"Hello, Could you give me a time window for SO-10538 tomorrow? Regards, Brian",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0062,"Hi there,
+Please raise a return for 16 unused 185/65R15 from SO-34687. Customer changed their mind, tyres still wrapped.
+Kind regards,
+Eimear",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0063,"Hello,
+Do you stock 195/70R15C TPMS-compatible all-season tyres? Quantity 40.
+Regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0064,"Good afternoon,
+Can you price a mixed order: 10 x 205/60R16 Linglong and 16 x 225/50R17 Falken?
+Thanks,
+Deirdre",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0065,"Hi team,
+Please collect the incorrect 175/65R14 tyres and credit WEB-47281. We've already bought the right size elsewhere to keep the job moving.
+Regards,
+Niall",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0066,"Good afternoon,
+Can you do a package price for 12 tyres size 225/50R17 plus 12 tubes if needed?
+Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0067,"Hello,
+The IBAN on your statement is different to the one we have on file. Please confirm bank details before we pay INV-2024-8233.
+Many thanks,
+Ciara",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0068,"Hi there,
+Hi, just chasing order WEB-34114. Your email said it would ship on Monday.
+Cheers,
+Niall",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0069,"Good morning,
+Can you break out the delivery charge on INV-2025-8345? Our bookkeeper needs it as a separate line.
+Appreciate it,
+Hugh",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0070,"Hello,
+Any chance you have 235/55R18 in a budget brand? Need 4 ASAP.
+Appreciate it,
+Conor",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0071,"Good morning, Quick status on WEB-33321 please — 20 185/65R15 for Portside Plant Hire. Thanks in advance, Padraig",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0072,"Hi team,
+We're a local GAA club looking for a sponsorship for junior tyres on the minibus — is that something you do?
+Cheers",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0073,"Good morning, Looking for commercial pricing on 385/65R22.5 drive tyres, quantity 8. When could you deliver? Regards, Iseult",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0074,"Hi team,
+Are you out of Toyo 165/70R14 again or have they come in since last week?
+Kind regards,
+Ciara",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0075,"Afternoon,
+Who do I send a remittance advice to for ACC-6721? Paying INV-2024-7476 today.
+Cheers",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0076,"Good morning,
+Where is the trade counter, and is there parking for a rigid?
+Kind regards,
+Eoin",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0077,"Good afternoon, Please quote 40 Kumho 385/65R22.5 for our all-round axle. Need them this week if possible. Cheers",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0078,"Good morning,
+Do you stock 165/70R14 TPMS-compatible summer tyres? Quantity 4.
+Regards,
+Padraig",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0079,"Good afternoon,
+Invoice INV-2026-5494 is missing our VAT number. Can you reissue it?",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0080,"Hi there,
+What's your best price on Linglong 195/65R15? We'd take 8 if the rate is sharp.
+Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0081,"HI,
+CAN I BOOK A SALES REP VISIT FOR NEXT WEEK? PREFER TUESDAY AFTERNOON.
+THANKS IN ADVANCE,
+ISEULT",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0082,"Hi there, Can you check stock on 205/55R16 for me? Looking for 24 steer tyres. Thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0083,"Good afternoon,
+Could you add me to the weekly stock-clearance mailing list?
+Cheers",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0084,"Hello,
+Need to know if 20 x 235/55R18 all-weather can go out on today's van to Kilbride Truck Services.
+Appreciate it",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0085,"Hi there,
+Quick status on PO-21820 please — 50 235/55R18 for Inishowen Van Centre.
+Thanks,,
+Eoin",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0086,"Good morning, Are you certified to dispose of waste tyres, and can we drop casings to you? Kind regards, Ciara",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0087,"Hi,
+Have you got run-flats in 195/65R15? Need a pair if not a full set of 40.
+Regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0088,"Hello, Can you tell me the Eircode for the depot? The sat nav is sending our driver to the wrong estate. Regards, Hugh",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0089,"Hi,
+Can you email a copy of the original credit application for ACC-2368? We're updating authorised signatories.
+Many thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0090,"Afternoon,
+Trade quote wanted: Hankook 315/80R22.5 x 12. Please show net and VAT.
+Thanks,,
+Liam",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0091,"Afternoon, Can you confirm whether you can deliver to a site with no forklift? Regards, James",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0092,"Hello,
+What's your best price on Yokohama 205/55R16? We'd take 10 if the rate is sharp.
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0093,"Hello,
+Requesting a quote for 6 steer tyres in 205/65R16C, preferably Bridgestone. Account name Tullow Farm Machinery.
+Cheers,
+Brian",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0094,"Hi team, Who do I send a remittance advice to for ACC-5038? Paying INV-2024-4874 today. Regards, Niall",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0095,Are you out of Falken 175/65R14 again or have they come in since last week? Regards,stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0096,"Hello,
+Hi, just chasing order PO-78632. Your email said it would ship on Monday.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0097,"Good morning,
+I asked for OEM-quality 205/60R16 and received a budget casing. That's not what we agreed. Collect and replace.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0098,"AFTERNOON,
+WHAT TIME DOES THE LAST COLLECTION LEAVE THE DEPOT ON A FRIDAY?
+CHEERS,
+CONOR",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0099,"Good morning,
+Is the Dunlop 295/80R22.5 in your warehouse or only at the other depot?
+Thanks,
+Aoife",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0100,"Hello,
+Do you have matching pairs in 225/50R17? We need 4 and they have to be the same DOT date if possible.
+Cheers",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0101,"Good morning,
+Just checking ORD-81741 didn't get held at the gate — we're Inishowen Van Centre.
+Thanks,
+Brian",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0102,"Good morning,
+Just checking PO-52395 didn't get held at the gate — we're Westgate Taxis.
+Thanks in advance",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0103,"Hi there,
+There's a price discrepancy on INV-2024-6397 versus the quote we accepted for PO-52587.
+Cheers",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0104,"Good afternoon,
+I asked for OEM-quality 255/35R19 and received a budget casing. That's not what we agreed. Collect and replace.
+Appreciate it,
+Orla",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0105,"Hi there,
+Quick status on ORD-51275 please — 10 385/65R22.5 for Ashfield Motors.
+Thanks,,
+Liam",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0106,"Hi,
+We've had an early wear complaint on Hankook 255/35R19 fitted six weeks ago. What's the warranty process?
+Cheers,
+Una",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0107,"Afternoon,
+We're Ballymore Tyre Bay — any 205/60R16 heavy-duty van tyres on hand? Need 12.
+Thanks,,
+Kate",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0108,"Hi team,
+Are 255/40R19 all-season tyres available for collection this afternoon?
+Many thanks,
+Liam",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0109,"Hi team, Need costs for replacing a full set, size 215/65R16C, brand Falken or similar, qty 8. Kind regards, Iseult",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0110,"Afternoon,
+We need pricing for a set of 235/65R16C — 6 tyres. Can you include fitting and disposal?
+Thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0111,"Good afternoon, There's a VAT query on INV-2024-9773. It looks like it's been charged at 23% on a line that should be zero-rated — can you check? Many thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0112,"Have you got 8 x 245/70R17.5 Bridgestone in stock today?
+Kind regards,
+Niall",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0113,"Good afternoon,
+Is the Linglong 205/55R16 in your warehouse or only at the other depot?
+Thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0114,"Good morning, We've been put on stop according to the sales desk. Account ACC-6851, North Quay Recoveries. There's a query on INV-2026-3293 we raised last week. Regards, Eimear",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0115,"Hi team,
+What documents do you need to open a trade account?
+Thanks,",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0116,"This is the third time a 245/70R17.5 order has arrived incomplete. We need a better process or we'll move suppliers.
+Appreciate it,
+Eimear",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0117,"Hello,
+Can you check stock on 275/40R20 for me? Looking for 40 drive tyres.
+Regards,
+Maeve",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0118,"Hi,
+When will SO-71455 be delivered? The original date was today.
+Thanks in advance,
+James",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0119,"Hi there,
+Trade quote wanted: Triangle 235/55R18 x 16. Please show net and VAT.
+Thanks in advance,
+Grainne",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0120,"Hello,
+Our PO against WEB-55693 still shows as processing. Has it been picked?
+Thanks in advance",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0121,"Hello,
+Can I book a sales rep visit for next week? Prefer Tuesday afternoon.
+Thanks in advance,
+Conor",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0122,"Hello,
+Looking for your trade rate on Triangle 275/40R20. We'll need 16 initially and maybe a top-up next month.
+Regards,
+Tara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0123,"Hi, Is INV-2024-8900 payable yet? The date looks earlier than our agreed 30 days. Cheers, Roisin",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0124,"Afternoon,
+Can someone call me about a sidewall crack on a new Michelin 425/65R22.5? I don't want to keep emailing.
+Regards",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0125,"Hi team,
+Can someone from marketing send high-res logos for a workshop display?
+Many thanks,
+Ciara",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0126,"Hello,
+Do you have 24 385/65R22.5 in black letters, not white? Continental preferred.
+Kind regards,
+James",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0127,"Have you received the container of 425/65R22.5 yet, or are we still waiting?
+Many thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0128,"HI,
+DO YOU STOCK 385/65R22.5 TPMS-COMPATIBLE SUMMER TYRES? QUANTITY 40.
+THANKS IN ADVANCE",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0129,"Good morning, Can someone check the rack for 235/55R18? Screen says 4 but I was told otherwise yesterday. Regards, Declan",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0130,"Hello,
+Can I get a ballpark on 20 205/60R16 all-season tyres and a firm figure tomorrow?
+Many thanks,
+Maeve",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0131,"Hi,
+Can I get a ballpark on 16 205/65R16C summer tyres and a firm figure tomorrow?
+Cheers",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0132,"Good morning,
+We're still waiting on PO-93472 from last week. This is the second chase.
+Thanks,,
+Aoife",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0133,"Good morning,
+Account ACC-4457 is still showing an old trading name. We now trade as Millfield Recovery. Please update invoices.
+Thanks,,
+Deirdre",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0134,"Hi team,
+Can someone call me about a sidewall crack on a new Linglong 275/40R20? I don't want to keep emailing.
+Thanks,,
+Declan",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0135,"Good afternoon, Have you 4 225/45R17 commercial tyres in stock for a morning collection? Appreciate it, Eoin",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0136,"Hi team, Can you tell me if ORD-78151 will arrive before lunch, or should we rebook the customer? Thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0137,"Hi there, Could you add me to the weekly stock-clearance mailing list? Kind regards, James",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0138,"Hi there,
+Order status please: SO-60279. Also, was the 185/65R15 substituted for anything?
+Appreciate it",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0139,"Are 205/55R16 winter tyres available for collection this afternoon?
+Thanks,
+Padraig",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0140,"Hi there,
+Are winter 245/40R18 still in stock or have they sold through?
+Thanks,",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0141,"Good morning,
+Do you have 12 205/60R16 in black letters, not white? Toyo preferred.
+Kind regards,
+Grainne",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0142,"Hello,
+Quick stock check: 10 245/70R17.5 Hankook. If not, what's the soonest ETA?
+Kind regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0143,"Afternoon, We have a customer waiting — please quote 4 175/65R14 Toyo all-weather and an economy alternative. Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0144,"Hello,
+We got part of WEB-51222 but the remaining 10 tyres weren't on the pallet. When is the balance due?
+Appreciate it",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0145,"Happy Christmas — could you confirm your shutdown dates between Christmas and New Year? Many thanks, Declan",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0146,"Have you received the container of 245/70R17.5 yet, or are we still waiting?
+Many thanks,
+Sean",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0147,"Good afternoon, Need costs for replacing a full set, size 255/40R19, brand Falken or similar, qty 2.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0148,"Hi,
+Any chance you have 235/45R18 in a budget brand? Need 10 ASAP.
+Appreciate it",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0149,"Good morning,
+Looking for commercial pricing on 315/80R22.5 steer tyres, quantity 4. When could you deliver?
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0150,Please quote supply only for 16 255/35R19 winter tyres and a separate line for delivery to Cedar Hill Garage.,quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0151,"Requesting a quote for 6 steer tyres in 275/40R20, preferably Bridgestone. Account name Liffey Side Autos. Appreciate it, Tara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0152,"Afternoon,
+Do you have 10 245/70R17.5 in black letters, not white? Linglong preferred.
+Thanks,,
+Grainne",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0153,"Good afternoon,
+Could you send a trade price for 50 235/55R18 tyres, Yokohama or equivalent? Delivery to Ballymore Tyre Bay.
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0154,"Hi team,
+Has WEB-24478 been dispatched yet? We need the 195/70R15C typres for a job in the morning.
+Many thanks,
+Brian",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0155,"Afternoon,
+Quick one: stock on 255/40R19 and 225/45R17? Might take both if you have them.
+Thanks in advance,
+Ciara",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0156,"Hi there, The payment for INV-2024-6878 went out on Friday. Can you confirm it's been allocated and lift the stop on the account?",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0157,"Afternoon,
+Please quote 4 Bridgestone 205/55R16 for our steer axle. Need them this week if possible.
+Kind regards,
+Kate",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0158,"Hello,
+Are you certified to dispose of waste tyres, and can we drop casings to you?
+Kind regards",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0159,"Can you hold 2 225/45R17 summer until tomorrow if they're in stock?
+Cheers,
+Grainne",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0160,"Hi there, Looking to see if you can supply 6 225/45R17 Michelin from stock before Friday.",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0161,"These Continental 195/70R15C are noisier than expected and the customer wants them off. Can we return them under your policy? Cheers, Grainne",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0162,"Hi there, Please collect the incorrect 255/35R19 tyres and credit WEB-16758. We've already bought the right size elsewhere to keep the job moving.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0163,"Hi there,
+What's the ETA on WEB-65965? The vehicle is up on the ramp.
+Thanks,,
+Brian",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0164,"Good morning, The customer is furious — second Dunlop 185/65R15 failure in a month. We need a technical view, not just a thanks-for-your-email. Kind regards, Ciara",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0165,"Hello,
+Please add our new PO prefix to ACC-2977 or invoices will be rejected by our system.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0166,"Hi there,
+Can you do a package price for 4 tyres size 245/40R18 plus 24 tubes if needed?
+Many thanks,
+Gerard",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0167,"Hi there, Please log a complaint: order WEB-78562 came with the wrong brand and nobody told us about a substitution. Appreciate it",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0168,"Hello,
+Are winter 235/55R18 still in stock or have they sold through?
+Cheers,
+Fiona",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0169,"Good afternoon,
+Are you out of Pirelli 265/70R19.5 again or have they come in since last week?",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0170,"Hello,
+Quote please: 16 pcs 165/70R14 Bridgestone. Trade rate, account ACC-8382.
+Many thanks,
+Niall",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0171,"Could you give me a time window for ORD-21097 tomorrow?
+Thanks in advance",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0172,"Good morning,
+When will WEB-49361 be delivered? The original date was today.
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0173,"Hello,
+Can you check stock on 265/65R17 for me? Looking for 6 drive tyres.
+Thanks,",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0174,"Good afternoon,
+The load index on the 205/65R16C you sent doesn't match the quote. We can't fit them. Collection please.
+Many thanks,
+Iseult",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0175,"Good morning, Please quote 12 Michelin 225/50R17 for our drive axle. Need them this week if possible. Thanks, Kate",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0176,"Hello,
+Invoice INV-2024-3843 is missing our VAT number. Can you reissue it?
+Thanks,,
+Deirdre",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0177,"Hi team,
+Our statement doesn't match. We're missing a credit note that was promised against INV-2024-6567.
+Many thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0178,"Hello,
+Could you resend the dispatch note for SO-78597? I can't see it in my inbox.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0179,"Good afternoon, Hi, would you quote 4 drive-axle 265/65R17 and 10 trailer 205/60R16 for Portside Plant Hire?",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0180,"Hello,
+Please update the billing address on ACC-2612 to our new accounts office. I'll confirm the Eircode on the call.
+Thanks,
+Aoife",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0181,"AFTERNOON,
+DO YOU HAVE A RECOMMENDED TYRE PRESSURE CHART YOU SHARE WITH TRADE ACCOUNTS?
+THANKS",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0182,"Hi,
+Do you hold 265/70R19.5 winter tyres at the moment? Need 24 if you have them.
+Cheers",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0183,"Hi,
+Is the Michelin 215/65R16C in your warehouse or only at the other depot?
+Regards,
+Ciara",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0184,"Good afternoon,
+Quick status on SO-73394 please — 40 295/80R22.5 for Cairn Hill Plant.
+Thanks in advance",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0185,"Quick stock check: 16 235/45R18 Linglong. If not, what's the soonest ETA?
+Thanks,
+Orla",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0186,"Good morning,
+Is 425/65R22.5 Pirelli a stocked line for you, or special order only?",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0187,"Hi there,
+Requesting a quote for 2 steer tyres in 235/45R18, preferably Triangle. Account name Inishowen Van Centre.
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0188,"Hi there, What's current availability like on 225/50R17? We might need 6 later this week. Thanks in advance, Roisin",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0189,"Hi there,
+Need a written quote for a fleet changeover: 4 x 225/50R17 all-round tyres. Can you also price a mid-range option?
+Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0190,"Hello, Our finance team rejected INV-2024-1994 because the account number ACC-8509 is wrong by one digit. Many thanks, Orla",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0191,"Hi, Please confirm whether ORD-90863 is still on this afternoon's run. Regards, Aoife",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0192,"Hello,
+We're a local GAA club looking for a sponsorship for junior tyres on the minibus — is that something you do?
+Cheers",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0193,"Good morning, Please add our new PO prefix to ACC-2576 or invoices will be rejected by our system. Appreciate it, Aoife",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0194,"Afternoon,
+Looking to see if you can supply 4 185/65R15 Michelin from stock before Friday.
+Thanks in advance,
+Maeve",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0195,"Hi,
+Please escalate — we still have no resolution on the faulty Dunlop tyres raised a fortnight ago.
+Thanks,,
+Fiona",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0196,"Good afternoon,
+We're waiting on a year-to-date statement for ACC-7204 before we close our books.
+Regards",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0197,"Hi team,
+Can you extend the credit terms on ACC-4229? We're a long-standing account (Millfield Recovery) and cash flow is tight this month.
+Thanks,,
+Eoin",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0198,"GOOD AFTERNOON,
+I WANT TO FORMALLY COMPLAIN ABOUT BEING SOLD A PART-WORN AS NEW. THE 295/80R22.5 HAD OLD LABELS UNDER THE NEW STICKER.
+MANY THANKS,
+LIAM",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0199,"We're tendering a local authority van fleet — please quote 6 245/70R17.5 all-weather tyres, 12-month hold if possible.
+Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0200,"Good afternoon,
+What's the ETA on WEB-43036? The vehicle is up on the ramp.
+Thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0201,"Hello,
+Need a written quote for a fleet changeover: 40 x 205/60R16 steer tyres. Can you also price a mid-range option?
+Kind regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0202,"Good afternoon,
+Can someone call me about a sidewall crack on a new Continental 225/50R17? I don't want to keep emailing.
+Appreciate it,
+Padraig",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0203,"Good morning,
+We've been put on stop according to the sales desk. Account ACC-3440, Tullow Farm Machinery. There's a query on INV-2024-8352 we raised last week.",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0204,"Hi team,
+Any chance of a price on 10 235/45R18? Also tell me the lead time and whether you have a matching steer option.
+Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0205,"Hi, would you quote 6 drive-axle 265/65R17 and 10 trailer 315/80R22.5 for Glenbrook Service Station?
+Many thanks,
+Padraig",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0206,"Afternoon,
+Can someone check the rack for 275/40R20? Screen says 24 but I was told otherwise yesterday.",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0207,"Quick stock check: 8 215/65R16C Continental. If not, what's the soonest ETA?
+Thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0208,"Afternoon,
+Can I get a ballpark on 8 265/65R17 highway tyres and a firm figure tomorrow?
+Thanks in advance,
+Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0209,"This is the third time a 235/55R18 order has arrived incomplete. We need a better process or we'll move suppliers. Appreciate it, Fiona",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0210,"Could you resend the dispatch note for ORD-35430? I can't see it in my inbox.
+Thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0211,"Hi there,
+Do you have a public price list or is everything on application?
+Cheers,
+Fergal",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0212,"Hello,
+Please quote supply only for 50 385/65R22.5 winter tyres and a separate line for delivery to Stonebridge Haulage.
+Regards,
+Conor",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0213,"Good afternoon, We need pricing for a set of 425/65R22.5 — 8 tyres. Can you include fitting and disposal? Many thanks, Iseult",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0214,"Good morning,
+Can you price a mixed order: 20 x 315/80R22.5 Maxxis and 12 x 235/65R16C Hankook?
+Appreciate it,
+Maeve",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0215,"Good afternoon, Can we return 20 185/65R15 all-weather tyres? They're the wrong season for what the customer booked. Many thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0216,"Hi there, Are you out of Goodyear 425/65R22.5 again or have they come in since last week? Appreciate it, Fiona",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0217,"Hello, Please add our new PO prefix to ACC-6305 or invoices will be rejected by our system. Kind regards, Ciara",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0218,"Good morning,
+Just checking whether Linglong 255/35R19 is available before I send a PO for 12.
+Thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0219,"Hi team,
+Please quote supply only for 40 205/55R16 mud-terrain tyres and a separate line for delivery to Cedar Hill Garage.
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0220,"Hi team,
+We have a customer waiting — please quote 50 175/65R14 Continental all-weather and an economy alternative.
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0221,"Hello,
+Can you do a package price for 6 tyres size 195/70R15C plus 10 tubes if needed?
+Appreciate it,
+Conor",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0222,"Hello,
+These Linglong 215/65R16C are noisier than expected and the customer wants them off. Can we return them under your policy?
+Regards,
+Tara",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0223,"Afternoon, Just checking SO-71349 didn't get held at the gate — we're Yellowline Logistics. Regards",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0224,"Good afternoon,
+Could you send a trade price for 2 235/55R18 tyres, Toyo or equivalent? Delivery to Millfield Recovery.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0225,"Could I have a same-day quote for 2 Maxxis 205/65R16C tyres? Collection from your yard is fine.
+Appreciate it,
+Sean",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0226,"Afternoon,
+Can you raise a credit for the overcharge on INV-2025-6908 and rebill the correct amount?
+Cheers,
+Niall",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0227,"GOOD AFTERNOON,
+PLEASE ADD OUR NEW PO PREFIX TO ACC-5430 OR INVOICES WILL BE REJECTED BY OUR SYSTEM.",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0228,"Good morning,
+Trade quote wanted: Goodyear 265/70R19.5 x 2. Please show net and VAT.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0229,"Hi team,
+Please cost up 50 255/40R19 tyres. We need a formal quote we can put on a PO.
+Thanks,,
+Deirdre",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0230,"Hello,
+Please issue a credit note for the returned tyres on ORD-83272 and show it against INV-2024-8461.
+Thanks in advance,
+Liam",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0231,"Hi,
+Has anyone looked at ORD-66585? I rang earlier and was told someone would call back.
+Thanks in advance,
+Niall",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0232,"What's your best price on Goodyear 205/55R16? We'd take 20 if the rate is sharp.
+Kind regards,
+Maeve",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0233,"Hi team,
+Damaged pallet on ORD-28910: at least one 205/60R16 has a crushed bead. Photos ready.
+Appreciate it,
+Eoin",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0234,"Hi,
+Please confirm whether WEB-18888 is still on this afternoon's run.
+Many thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0235,"Good afternoon,
+Do you stock 195/65R15 TPMS-compatible summer tyres? Quantity 4.
+Appreciate it,
+Gerard",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0236,"Hi team, Quick status on SO-39716 please — 40 245/70R17.5 for Cairn Hill Plant. Thanks in advance, Roisin",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0237,"Hi,
+Need to know if 2 x 385/65R22.5 all-season can go out on today's van to Ashfield Motors.
+Many thanks,
+Maeve",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0238,"Please put INV-2024-2474 on hold — the PO number is wrong. It should reference WEB-38986.
+Regards,
+Padraig",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0239,"Price check: 225/45R17 Triangle, quantity 40. If you can beat our current supplier we'll move the account.
+Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0240,"Good afternoon,
+There's a price discrepancy on INV-2026-3525 versus the quote we accepted for PO-66670.
+Many thanks,
+Declan",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0241,"Afternoon,
+Please put INV-2024-4428 on hold — the PO number is wrong. It should reference ORD-95162.",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0242,"Hello, Is INV-2024-6329 payable yet? The date looks earlier than our agreed 30 days. Regards, Kate",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0243,"Afternoon,
+Can you apply the early-settlement discount to INV-2024-1855 if we pay this week?
+Cheers",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0244,"HI THERE,
+STOCK ENQUIRY FOR DUNLEWEY GARAGE: 12 X 165/70R14 HIGHWAY. CAN YOU RESERVE THEM IF THEY'RE THERE?
+THANKS,,
+TARA",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0245,"Hi there,
+We got part of WEB-53399 but the remaining 4 tyres weren't on the pallet. When is the balance due?
+Many thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0246,"Hi there,
+Is the Bridgestone 195/65R15 in your warehouse or only at the other depot?
+Thanks in advance",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0247,"Afternoon,
+Can you confirm if Maxxis 235/55R18 mud-terrain is in stock and how many you can release today?
+Thanks in advance,
+Padraig",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0248,"Good afternoon, These Goodyear 195/65R15 are noisier than expected and the customer wants them off. Can we return them under your policy? Many thanks, Ciara",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0249,"Afternoon,
+We need a copy of all invoices for October on ACC-3741 for our audit file.
+Thanks,
+Padraig",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0250,"Hi there, Have you 8 385/65R22.5 commercial tyres in stock for a morning collection? Many thanks, Kate",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0251,"Afternoon,
+Can you resend INV-2024-1769? We didn't get the PDF and our accounts team is looking for it.
+Cheers,
+Tara",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0252,"Good afternoon,
+Quick one: stock on 295/80R22.5 and 215/55R17? Might take both if you have them.
+Regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0253,"Afternoon,
+Can you confirm the delivery address on SO-88018 is still Yellowline Logistics?
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0254,"Hi, Any chance of a price on 16 195/65R15? Also tell me the lead time and whether you have a matching steer option. Thanks,, Eoin",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0255,"Hi there,
+Please escalate — we still have no resolution on the faulty Sailun tyres raised a fortnight ago.
+Regards",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0256,"Hi team, Has the back order on WEB-47475 come in yet?",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0257,"Good afternoon,
+What are your opening hours on Saturday?
+Many thanks,
+Fergal",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0258,"Good morning,
+Where is our delivery for WEB-20215? Tracking hasn't moved all day.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0259,"Good afternoon,
+Are you out of Continental 255/40R19 again or have they come in since last week?
+Thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0260,"Afternoon,
+A direct debit failed for INV-2024-8802. What's the outstanding total so I can pay by transfer?",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0261,"Hello,
+Is there a loyalty or volume rebate scheme if we consolidate our spend with you?
+Appreciate it",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0262,"Good morning,
+Are 255/35R19 summer tyres available for collection this afternoon?
+Thanks in advance,
+Conor",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0263,"Hi there,
+Do you offer a mobile fitting service or is it supply only from the depot?",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0264,"Hi,
+Quote please: 8 pcs 235/55R18 Sailun. Trade rate, account ACC-8012.
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0265,"Hi,
+Order status please: PO-11554. Also, was the 425/65R22.5 substituted for anything?",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0266,"Good afternoon,
+What's the ETA on PO-90017? The vehicle is up on the ramp.
+Thanks,,
+Tara",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0267,"Afternoon, Do you have 8 165/70R14 in black letters, not white? Bridgestone preferred. Many thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0268,"Hello,
+Have you got 8 x 185/65R15 Dunlop in stock today?
+Regards,
+Conor",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0269,"Hello,
+Who do I send a remittance advice to for ACC-7994? Paying INV-2026-1849 today.",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0270,"Hi,
+Any chance of a price on 16 425/65R22.5? Also tell me the lead time and whether you have a matching steer option.
+Appreciate it,
+Liam",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0271,"Good morning,
+We're looking for a new tyre supplier for our workshop. Can someone call to talk through account setup?
+Thanks,",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0272,"Good morning, Just checking PO-67062 didn't get held at the gate — we're Tullow Farm Machinery. Many thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0273,"Hi,
+Any chance of a price on 40 205/65R16C? Also tell me the lead time and whether you have a matching steer option.
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0274,"Can you send pricing and availability together for 10 x 205/55R16 all-season Michelin?
+Appreciate it,
+Liam",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0275,"Good afternoon,
+Please quote supply only for 12 265/70R19.5 all-weather tyres and a separate line for delivery to Blackwater Buses.
+Cheers,
+Tara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0276,"Hi team,
+Are you out of Hankook 315/80R22.5 again or have they come in since last week?
+Regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0277,"Good morning,
+Can you send pricing and availability together for 16 x 205/65R16C all-season Toyo?
+Appreciate it,
+Niall",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0278,"Hi team,
+What are your opening hours on Saturday?
+Thanks,,
+Aoife",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0279,"Hi team,
+Can you raise a credit for the overcharge on INV-2026-6927 and rebill the correct amount?",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0280,"Afternoon,
+Just checking ORD-77987 didn't get held at the gate — we're Stonebridge Haulage.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0281,"Hi there,
+We've been charged for disposal on tyres we never received. Also the 425/65R22.5 that did arrive have flat spots.
+Regards",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0282,"Is 295/80R22.5 Maxxis a stocked line for you, or special order only?
+Cheers",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0283,"Any tracking for PO-75358? Need to plan workshop time around the 425/65R22.5 fitment.
+Cheers,
+Deirdre",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0284,"Hi there,
+Please update us on SO-21322. If it's delayed we'll need to source elsewhere this once.
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0285,"Good afternoon, Our PO against WEB-56580 still shows as processing. Has it been picked? Thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0286,"Hi there, Price check: 265/70R19.5 Sailun, quantity 12. If you can beat our current supplier we'll move the account. Cheers",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0287,"Afternoon, The balancing on the 295/80R22.5 set is off and we're getting vibration complaints. What will you do? Regards, Una",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0288,"Can you confirm the delivery address on ORD-90516 is still Tullow Farm Machinery?
+Appreciate it",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0289,"Good morning, What time does the last collection leave the depot on a Friday? Many thanks",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0290,"Good afternoon, Returning 2 tubes that don't fit the 185/65R15 tyres they were sold with. Please advise collection. Thanks in advance",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0291,"Hi,
+We have a customer waiting — please quote 20 315/80R22.5 Pirelli summer and an economy alternative.
+Cheers,
+Kate",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0292,"Hi,
+Can you raise a credit for the overcharge on INV-2025-2062 and rebill the correct amount?
+Appreciate it,
+Fergal",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0293,"Hi team,
+Can you check stock on 295/80R22.5 for me? Looking for 50 trailer tyres.
+Many thanks,
+Roisin",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0294,"Good morning,
+Can you price 2 x 245/70R17.5 Continental winter tyres, delivered to Harbour Road Motors please?",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0295,"Good afternoon,
+The IBAN on your statement is different to the one we have on file. Please confirm bank details before we pay INV-2026-6861.
+Regards,
+Aoife",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0296,"Good morning,
+Price check: 195/65R15 Maxxis, quantity 10. If you can beat our current supplier we'll move the account.
+Cheers",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0297,"Afternoon,
+Can you tell me if WEB-18678 will arrive before lunch, or should we rebook the customer?",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0298,"Hi team,
+Can you check stock on 185/65R15 for me? Looking for 8 all-round tyres.
+Thanks,",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0299,"Hi team,
+Can we return 6 205/65R16C all-season tyres? They're the wrong season for what the customer booked.
+Kind regards,
+Aoife",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0300,"Could you give me a time window for ORD-36812 tomorrow?
+Regards",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0301,"Please log a complaint: order PO-33641 came with the wrong brand and nobody told us about a substitution.
+Cheers,
+Deirdre",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0302,"Hi,
+Can you send pricing and availability together for 6 x 215/65R16C all-season Dunlop?
+Thanks,,
+Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0303,"Hi there,
+Delivery to Kilbride Truck Services was left in the rain with no wrapping. Casings are wet and dirty. We expect replacements.
+Thanks in advance",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0304,"Hi there,
+Can you check stock on 235/55R18 for me? Looking for 16 trailer tyres.
+Thanks,,
+Orla",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0305,"Order SO-71039 shows packed but not shipped. Is there a problem?
+Thanks,,
+Deirdre",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0306,"Good morning,
+Quote for 24 255/35R19 winter tyres before the weather turns. Delivery to Cedar Hill Garage midweek if you can.
+Appreciate it,
+Sean",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0307,"Good afternoon, Need costs for replacing a full set, size 425/65R22.5, brand Triangle or similar, qty 10. Appreciate it, Sean",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0308,"Good afternoon,
+Any chance of a price on 8 215/65R16C? Also tell me the lead time and whether you have a matching trailer option.
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0309,"Hello,
+Account ACC-8848 is still showing an old trading name. We now trade as Ardmore Panel Works. Please update invoices.
+Many thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0310,"Hi team, Trade quote wanted: Michelin 205/65R16C x 50. Please show net and VAT. Thanks in advance",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0311,"Hi,
+Could I have a same-day quote for 2 Maxxis 205/55R16 tyres? Collection from your yard is fine.
+Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0312,"Hello,
+The 215/65R16C tyres on SO-88878 arrived damaged. Two have scuffed sidewalls. We need a collection and replacements.
+Many thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0313,"Can someone check the rack for 195/70R15C? Screen says 50 but I was told otherwise yesterday.
+Many thanks,
+Eoin",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0314,"Hi there, Do you have matching pairs in 175/65R14? We need 20 and they have to be the same DOT date if possible. Thanks,, Orla",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0315,"Hi team,
+Fitment issue: 255/35R19 Yokohama is rubbing on the customer's arch. You recommended this size. What's the remedy?
+Thanks in advance,
+Una",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0316,"Hi there,
+Could I have a same-day quote for 8 Maxxis 175/65R14 tyres? Collection from your yard is fine.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0317,"Afternoon,
+Can I book a sales rep visit for next week? Prefer Tuesday afternoon.
+Kind regards",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0318,"I'd like to complain about the website search — this isn't an order issue, I just can't find part numbers.
+Kind regards,
+Grainne",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0319,"Hello,
+This is the third time a 205/55R16 order has arrived incomplete. We need a better process or we'll move suppliers.
+Appreciate it",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0320,"Hi there,
+We think we've been double charged for SO-25026. INV-2026-6199 and another invoice both seem to cover the same tyres.
+Kind regards,
+Iseult",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0321,"Hello, What would 50 225/45R17 Bridgestone come to on our trade account, supply only? Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0322,"Hi team,
+Is there a minimum order value for delivery to Westgate Taxis?
+Many thanks,
+James",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0323,"Afternoon,
+Would you be interested in advertising in our garage association newsletter?
+Many thanks,
+Fergal",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0324,When will ORD-34352 be delivered? The original date was today. Cheers,order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0325,"Hi there,
+We're still waiting on ORD-59634 from last week. This is the second chase.
+Regards,
+Deirdre",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0326,"Hi there, Can you extend the credit terms on ACC-6644? We're a long-standing account (Quay Street MOT) and cash flow is tight this month. Appreciate it",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0327,"Our statement doesn't match. We're missing a credit note that was promised against INV-2025-8417. Regards, Eoin",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0328,"Good afternoon,
+Was order SO-48382 cancelled or is it still coming? Nothing on the portal.
+Regards,
+Roisin",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0329,"Good morning,
+Can you confirm the delivery address on SO-13143 is still Portside Plant Hire?
+Thanks in advance,
+Kate",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0330,"Hi,
+Order SO-91650 — 4 x 195/70R15C — has it left the depot?",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0331,"Can we arrange a site visit? We'd like to see the warehouse before we move our account.
+Cheers,
+Sean",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0332,"Hi team, Looking for a quote on 2 255/35R19 all-weather tyres. Budget fitment, not looking for premium unless the difference is small. Regards, Tara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0333,"Have you got run-flats in 195/70R15C? Need a pair if not a full set of 24.
+Cheers",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0334,"Hi team,
+Looking for your trade rate on Triangle 205/65R16C. We'll need 8 initially and maybe a top-up next month.
+Cheers",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0335,"Hi, Our PO against WEB-43347 still shows as processing. Has it been picked? Thanks, Kate",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0336,"Good morning, Price check: 205/60R16 Falken, quantity 4. If you can beat our current supplier we'll move the account. Thanks in advance, Hugh",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0337,"Quick one: stock on 215/55R17 and 275/40R20? Might take both if you have them.
+Regards,
+Aoife",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0338,"Hi,
+Requesting a quote for 6 steer tyres in 225/50R17, preferably Dunlop. Account name Cedar Hill Garage.
+Thanks in advance",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0339,"Good morning,
+Looking for a quote on 20 205/55R16 summer tyres. Budget fitment, not looking for premium unless the difference is small.
+Thanks in advance",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0340,"Good afternoon,
+Please confirm whether PO-52647 is still on this afternoon's run.
+Thanks in advance,
+Declan",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0341,"Good afternoon,
+Any Continental 245/70R17.5 on the shelf, or is it a factory order?",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0342,"Hi there, Please collect the incorrect 195/70R15C tyres and credit SO-10702. We've already bought the right size elsewhere to keep the job moving.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0343,"Hi there,
+We were short-delivered on WEB-45349 — invoice says 2 but only 2 arrived. Please sort this.
+Thanks,",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0344,"Afternoon, Our finance team rejected INV-2026-4360 because the account number ACC-8271 is wrong by one digit. Cheers",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0345,"Hi,
+Have you received the container of 225/45R17 yet, or are we still waiting?
+Thanks,,
+Padraig",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0346,"Hi there,
+Can I get a ballpark on 40 225/45R17 mud-terrain tyres and a firm figure tomorrow?
+Thanks in advance,
+Brian",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0347,"Hi,
+Please raise a return for 24 unused 185/65R15 from WEB-71352. Customer changed their mind, tyres still wrapped.
+Thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0348,"We need pricing for a set of 275/40R20 — 12 tyres. Can you include fitting and disposal?
+Appreciate it,
+Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0349,"Hi team,
+Can we return 20 195/65R15 all-weather tyres? They're the wrong season for what the customer booked.
+Thanks,
+Deirdre",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0350,"Order SO-49953 shows packed but not shipped. Is there a problem?
+Many thanks,
+Hugh",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0351,"Good morning,
+Not happy: invoice paid, goods not as described, 265/70R19.5 instead of 275/40R20. Arrange a return today.
+Thanks,
+Iseult",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0352,"Hello,
+Do you have an environmental policy I can pass to our procurement team?",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0353,"Where is our delivery for SO-84468? Tracking hasn't moved all day.
+Thanks,,
+Fiona",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0354,"Hi,
+Account ACC-2166 is still showing an old trading name. We now trade as Kilbride Truck Services. Please update invoices.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0355,"Hello, Would you be interested in advertising in our garage association newsletter? Many thanks, Sean",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0356,"Hi team, Any tracking for PO-51012? Need to plan workshop time around the 235/65R16C fitment.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0357,"Hi there,
+Please log a complaint: order WEB-47767 came with the wrong brand and nobody told us about a substitution.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0358,"Hi,
+Can we return 4 275/40R20 winter tyres? They're the wrong season for what the customer booked.
+Thanks in advance,
+Deirdre",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0359,"Hi team,
+Please escalate — we still have no resolution on the faulty Triangle tyres raised a fortnight ago.
+Thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0360,"Hello,
+Looking for your trade rate on Maxxis 245/40R18. We'll need 40 initially and maybe a top-up next month.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0361,"Good afternoon,
+Could I have a same-day quote for 10 Triangle 235/45R18 tyres? Collection from your yard is fine.
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0362,"Hello,
+Could I have a same-day quote for 16 Maxxis 205/65R16C tyres? Collection from your yard is fine.
+Kind regards,
+Conor",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0363,"Good afternoon,
+Any chance of a price on 40 235/55R18? Also tell me the lead time and whether you have a matching drive option.
+Appreciate it,
+Hugh",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0364,"Hi there, Hi, can I get a price on 10 all-weather tyres in 205/65R16C? Prefer Linglong but open to alternatives. Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0365,"Good morning,
+Stock enquiry for Millfield Recovery: 50 x 425/65R22.5 summer. Can you reserve them if they're there?
+Regards,
+Conor",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0366,"Good afternoon, Happy Christmas — could you confirm your shutdown dates between Christmas and New Year? Thanks in advance, Una",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0367,"Hi there, Returning 8 tubes that don't fit the 185/65R15 tyres they were sold with. Please advise collection. Kind regards",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0368,"Good morning,
+Do you offer a mobile fitting service or is it supply only from the depot?
+Cheers,
+Kate",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0369,"Hi team,
+Do you accept cash at the trade counter or is it account and card only?
+Cheers,
+Gerard",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0370,"Hi,
+What's current availability like on 215/65R16C? We might need 16 later this week.
+Regards,
+Padraig",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0371,"Hi there,
+Please put INV-2026-8208 on hold — the PO number is wrong. It should reference ORD-17152.
+Thanks,
+Fergal",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0372,"HI TEAM,
+ANY TRACKING FOR PO-10025? NEED TO PLAN WORKSHOP TIME AROUND THE 175/65R14 FITMENT.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0373,"Afternoon,
+What would 10 265/65R17 Yokohama come to on our trade account, supply only?
+Many thanks",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0374,"AFTERNOON,
+OUR STATEMENT DOESN'T MATCH. WE'RE MISSING A CREDIT NOTE THAT WAS PROMISED AGAINST INV-2026-2071.
+REGARDS,
+NIALL",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0375,"Hi, We were short-delivered on ORD-31135 — invoice says 12 but only 10 arrived. Please sort this. Many thanks, Eoin",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0376,"Hi,
+We've been charged for disposal on tyres we never received. Also the 235/55R18 that did arrive have flat spots.
+Thanks,,
+Liam",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0377,"Hi team,
+Invoice INV-2026-5248 is missing our VAT number. Can you reissue it?
+Thanks,
+Aoife",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0378,"Afternoon,
+One tyre in ORD-70199 has a manufacturing bulge. Photos attached in a separate mail. We want a credit or replacement.
+Many thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0379,"Can I get a ballpark on 40 245/40R18 summer tyres and a firm figure tomorrow?
+Thanks,
+Roisin",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0380,"Hi there, Could you resend the dispatch note for WEB-32989? I can't see it in my inbox.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0381,"Is there EV-specific tyre advice you offer to independent garages?
+Regards,
+Kate",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0382,"Good morning, Quick stock check: 24 275/40R20 Kumho. If not, what's the soonest ETA? Cheers",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0383,"Hi team, Quick status on ORD-36066 please — 24 265/65R17 for Riverside Couriers. Thanks, Roisin",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0384,"Hi team, Have you received the container of 255/35R19 yet, or are we still waiting? Many thanks, Conor",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0385,"Hello, Availability please for Kumho 205/65R16C, qty 6, and an equivalent if you're short. Kind regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0386,What are your opening hours on Saturday?,other,SYNTHETIC_EXAMPLE_DATA
+SYN-0387,"Hello,
+Requesting a quote for 24 steer tyres in 255/40R19, preferably Kumho. Account name North Quay Recoveries.
+Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0388,"Hello, Can you hold 10 205/55R16 all-season until tomorrow if they're in stock? Appreciate it, Liam",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0389,"HI,
+HAVE YOU 16 265/70R19.5 COMMERCIAL TYRES IN STOCK FOR A MORNING COLLECTION?
+KIND REGARDS,
+GRAINNE",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0390,"We've been charged for disposal on tyres we never received. Also the 255/35R19 that did arrive have flat spots.
+Appreciate it,
+Fergal",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0391,"Hi there, Please log a complaint: order ORD-11882 came with the wrong brand and nobody told us about a substitution. Thanks,",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0392,"HI TEAM, LOOKING FOR A QUOTE ON 12 205/60R16 ALL-WEATHER TYRES. BUDGET FITMENT, NOT LOOKING FOR PREMIUM UNLESS THE DIFFERENCE IS SMALL. KIND REGARDS, CONOR",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0393,"Any chance you have 425/65R22.5 in a budget brand? Need 50 ASAP.
+Kind regards",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0394,"Hi there,
+Are you open over the bank holiday weekend, or should we order on Tuesday?
+Kind regards",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0395,Just checking whether Maxxis 235/65R16C is available before I send a PO for 10. Regards,stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0396,"Hi team,
+I want to formally complain about being sold a part-worn as new. The 225/45R17 had old labels under the new sticker.
+Thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0397,"Afternoon,
+Hi, just chasing order SO-33562. Your email said it would ship on Monday.
+Thanks in advance,
+Aoife",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0398,"Hello, Please quote supply only for 24 315/80R22.5 summer tyres and a separate line for delivery to Yellowline Logistics.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0399,"Afternoon,
+Do you supply agricultural tyres at all, or only passenger and commercial?
+Thanks in advance,
+Declan",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0400,"Good afternoon,
+Can you email a copy of the original credit application for ACC-2561? We're updating authorised signatories.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0401,"Hi,
+Please add our new PO prefix to ACC-3782 or invoices will be rejected by our system.
+Cheers,
+Aoife",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0402,"Hi there, Is the Kumho 235/55R18 in your warehouse or only at the other depot?",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0403,"Hi there, Can you raise a credit for the overcharge on INV-2024-5409 and rebill the correct amount? Kind regards, Orla",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0404,"Hi,
+Please price 16 x 185/65R15 all-season and confirm if a volume break applies above 16.
+Appreciate it,
+Liam",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0405,"We need pricing for a set of 225/45R17 — 10 tyres. Can you include fitting and disposal?
+Kind regards,
+Deirdre",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0406,"Hi team,
+The IBAN on your statement is different to the one we have on file. Please confirm bank details before we pay INV-2024-2908.
+Appreciate it,
+Grainne",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0407,"Hi there, Can you hold 10 185/65R15 highway until tomorrow if they're in stock? Many thanks, Fergal",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0408,"Hi there,
+What documents do you need to open a trade account?
+Thanks",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0409,"What's your best price on Toyo 255/40R19? We'd take 20 if the rate is sharp.
+Cheers,
+Brian",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0410,"AFTERNOON,
+CAN YOU RAISE A CREDIT FOR THE OVERCHARGE ON INV-2025-5398 AND REBILL THE CORRECT AMOUNT?
+REGARDS",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0411,"Can someone in accounts call me about ACC-6221? There's a balance we don't recognise.
+Appreciate it,
+Eimear",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0412,"Hello,
+We're tendering a local authority van fleet — please quote 50 205/55R16 all-season tyres, 12-month hold if possible.
+Thanks,
+Gerard",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0413,"Good afternoon,
+Did ORD-99327 go on the Belfast run or the Dublin run today?
+Thanks in advance",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0414,"Hi, Please raise a return for 4 unused 235/45R18 from ORD-40752. Customer changed their mind, tyres still wrapped. Many thanks, Kate",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0415,"Hi there, We're Yellowline Logistics — any 185/65R15 heavy-duty van tyres on hand? Need 50. Thanks, Kate",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0416,"Good afternoon,
+Trade quote wanted: Hankook 215/65R16C x 12. Please show net and VAT.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0417,"AFTERNOON,
+CAN SOMEONE CALL ME ABOUT A SIDEWALL CRACK ON A NEW CONTINENTAL 225/45R17? I DON'T WANT TO KEEP EMAILING.
+CHEERS,
+JAMES",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0418,"Hi team,
+Do you supply agricultural tyres at all, or only passenger and commercial?
+Thanks",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0419,"Hi there, We're tendering a local authority van fleet — please quote 12 205/60R16 highway tyres, 12-month hold if possible. Thanks,, Liam",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0420,"Afternoon,
+Not happy: invoice paid, goods not as described, 205/65R16C instead of 165/70R14. Arrange a return today.
+Kind regards,
+Gerard",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0421,"Afternoon,
+The IBAN on your statement is different to the one we have on file. Please confirm bank details before we pay INV-2024-8074.
+Appreciate it,
+Fiona",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0422,"Could you send a trade price for 4 235/65R16C tyres, Kumho or equivalent? Delivery to Liffey Side Autos.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0423,"Could you point me to your data protection / privacy notice? Our DPO asked for it.
+Appreciate it,
+Brian",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0424,"Good afternoon,
+How much for 40 205/60R16 all-round? We're Tullow Farm Machinery — existing account.
+Kind regards,
+Deirdre",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0425,"HELLO,
+DO YOU HAVE A PUBLIC PRICE LIST OR IS EVERYTHING ON APPLICATION?
+THANKS IN ADVANCE",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0426,"Just checking ORD-36712 didn't get held at the gate — we're Stonebridge Haulage.
+Many thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0427,"Hi,
+We need a copy of all invoices for October on ACC-4168 for our audit file.
+Cheers,
+Hugh",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0428,"Have you got run-flats in 195/65R15? Need a pair if not a full set of 50.
+Many thanks,
+Ciara",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0429,"Please quote supply only for 16 195/70R15C summer tyres and a separate line for delivery to Yellowline Logistics. Cheers, Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0430,"Hi team,
+Has the missing line on PO-26718 been added for the next delivery?
+Thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0431,"Requesting a quote for 8 steer tyres in 315/80R22.5, preferably Kumho. Account name Ballymore Tyre Bay. Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0432,"Good morning,
+We were short-delivered on SO-60446 — invoice says 2 but only 2 arrived. Please sort this.
+Thanks,",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0433,"Hello,
+Can you confirm the delivery address on ORD-83193 is still Cairn Hill Plant?
+Regards",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0434,"Good afternoon,
+Quick one: stock on 385/65R22.5 and 235/65R16C? Might take both if you have them.
+Thanks in advance",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0435,"Hi,
+Fitment issue: 255/40R19 Bridgestone is rubbing on the customer's arch. You recommended this size. What's the remedy?
+Many thanks,
+Deirdre",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0436,"GOOD AFTERNOON,
+PRICE CHECK: 235/55R18 SAILUN, QUANTITY 8. IF YOU CAN BEAT OUR CURRENT SUPPLIER WE'LL MOVE THE ACCOUNT.
+REGARDS,
+UNA",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0437,"Hello,
+We've been put on stop according to the sales desk. Account ACC-5327, Ashfield Motors. There's a query on INV-2026-1994 we raised last week.
+Kind regards",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0438,"Hi there, Could you give me a time window for PO-57223 tomorrow? Many thanks, Conor",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0439,"Hello,
+Can you resend INV-2025-6823? We didn't get the PDF and our accounts team is looking for it.
+Appreciate it,
+Fergal",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0440,"Hi team, This is the third time a 235/65R16C order has arrived incomplete. We need a better process or we'll move suppliers. Thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0441,"Afternoon, Are 205/55R16 all-weather tyres available for collection this afternoon? Thanks,, Una",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0442,"Can you send pricing and availability together for 10 x 175/65R14 all-season Dunlop?
+Thanks in advance,
+Fergal",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0443,"Good morning,
+Can I get a ballpark on 12 215/65R16C all-weather tyres and a firm figure tomorrow?
+Thanks in advance,
+Orla",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0444,"Hi team,
+Are you out of Toyo 225/50R17 again or have they come in since last week?
+Thanks in advance",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0445,"HI,
+THE IBAN ON YOUR STATEMENT IS DIFFERENT TO THE ONE WE HAVE ON FILE. PLEASE CONFIRM BANK DETAILS BEFORE WE PAY INV-2026-4772.
+THANKS IN ADVANCE,
+FERGAL",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0446,"Good morning, Can you email a copy of the original credit application for ACC-7902? We're updating authorised signatories. Thanks,, Liam",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0447,"Afternoon, Is there EV-specific tyre advice you offer to independent garages? Thanks in advance, Maeve",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0448,"Can I get a ballpark on 24 255/35R19 highway tyres and a firm figure tomorrow?
+Kind regards,
+Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0449,"Hi,
+There's a puncture in a brand-new 185/65R15 taken off the pallet. Definitely not us. Need a decision today.
+Many thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0450,"Good morning,
+Invoice INV-2026-7489 is missing our VAT number. Can you reissue it?
+Many thanks,
+Eimear",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0451,"Good morning,
+Just checking whether Kumho 235/55R18 is available before I send a PO for 40.
+Cheers,
+Sean",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0452,"Good afternoon,
+Do you accept cash at the trade counter or is it account and card only?
+Thanks in advance",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0453,"Hi team,
+Quick status on ORD-69682 please — 12 215/65R16C for Cairn Hill Plant.
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0454,"Good afternoon,
+Can you do a package price for 4 tyres size 295/80R22.5 plus 4 tubes if needed?",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0455,"Good morning,
+Please add our new PO prefix to ACC-2952 or invoices will be rejected by our system.
+Thanks,",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0456,"Hello,
+The payment for INV-2026-6499 went out on Friday. Can you confirm it's been allocated and lift the stop on the account?
+Appreciate it",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0457,"Good morning,
+I asked for OEM-quality 185/65R15 and received a budget casing. That's not what we agreed. Collect and replace.
+Thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0458,"Afternoon,
+Stock enquiry for Liffey Side Autos: 50 x 205/65R16C mud-terrain. Can you reserve them if they're there?
+Thanks,
+Aoife",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0459,"Hello,
+Is ORD-30079 ready for collection or are you sending it out?
+Cheers,
+Maeve",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0460,"AFTERNOON,
+PLEASE COLLECT THE INCORRECT 235/55R18 TYRES AND CREDIT PO-35486. WE'VE ALREADY BOUGHT THE RIGHT SIZE ELSEWHERE TO KEEP THE JOB MOVING.
+MANY THANKS",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0461,"Good afternoon,
+Stock enquiry for Oakleaf Body Shop: 12 x 205/60R16 summer. Can you reserve them if they're there?
+Thanks in advance,
+Orla",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0462,"Can you check stock on 205/65R16C for me? Looking for 16 steer tyres. Thanks, Niall",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0463,"Hi team,
+Can you email a copy of the original credit application for ACC-3198? We're updating authorised signatories.
+Cheers,
+Grainne",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0464,"Good morning,
+We're still waiting on ORD-24710 from last week. This is the second chase.
+Thanks,,
+Aoife",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0465,"Hi,
+Please price 6 x 195/70R15C summer and confirm if a volume break applies above 6.
+Kind regards,
+Eoin",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0466,"Good afternoon,
+Need a written quote for a fleet changeover: 24 x 205/60R16 trailer tyres. Can you also price a mid-range option?
+Kind regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0467,"Can someone from marketing send high-res logos for a workshop display?
+Kind regards,
+Eimear",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0468,"Good morning,
+Complaint: yesterday's delivery to Stonebridge Haulage was four hours late and the driver wouldn't help unload.
+Regards,
+Iseult",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0469,"Hi team,
+Can you raise a credit for the overcharge on INV-2024-4671 and rebill the correct amount?",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0470,"Afternoon,
+Are you out of Goodyear 205/60R16 again or have they come in since last week?
+Thanks,",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0471,"Afternoon,
+Have you received the container of 235/65R16C yet, or are we still waiting?
+Regards,
+Fiona",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0472,"Afternoon, The customer is furious — second Toyo 295/80R22.5 failure in a month. We need a technical view, not just a thanks-for-your-email. Regards, Padraig",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0473,"Good morning, Order status please: WEB-24141. Also, was the 235/45R18 substituted for anything? Thanks in advance, Eoin",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0474,"Hi,
+We're waiting on a year-to-date statement for ACC-7796 before we close our books.
+Thanks in advance,
+Padraig",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0475,"Afternoon,
+Looking for a quote on 8 205/55R16 all-weather tyres. Budget fitment, not looking for premium unless the difference is small.
+Appreciate it,
+Grainne",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0476,"Hi team,
+Where is the trade counter, and is there parking for a rigid?
+Thanks,",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0477,"Hi team,
+We need a copy of all invoices for October on ACC-2377 for our audit file.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0478,"We're waiting on a year-to-date statement for ACC-4830 before we close our books.
+Regards,
+Aoife",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0479,"Good afternoon,
+Trade quote wanted: Falken 245/40R18 x 16. Please show net and VAT.",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0480,"Hello,
+Could you point me to your data protection / privacy notice? Our DPO asked for it.
+Regards,
+Eoin",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0481,"HI TEAM, THE CUSTOMER IS FURIOUS — SECOND CONTINENTAL 215/55R17 FAILURE IN A MONTH. WE NEED A TECHNICAL VIEW, NOT JUST A THANKS-FOR-YOUR-EMAIL. APPRECIATE IT, ISEULT",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0482,"Good afternoon,
+Need costs for replacing a full set, size 265/70R19.5, brand Sailun or similar, qty 4.
+Thanks in advance,
+Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0483,"AFTERNOON, WE'RE ORGANISING A CHARITY RUN AND WONDERED IF YOU'D DONATE A RAFFLE PRIZE. REGARDS",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0484,"What are your opening hours on Saturday?
+Regards,
+Niall",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0485,"Good afternoon, The rims you supplied with WEB-76144 had paint chips out of the box. Not acceptable — returning the lot.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0486,"Do you supply agricultural tyres at all, or only passenger and commercial?
+Thanks,,
+Una",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0487,"Afternoon, Looking for commercial pricing on 245/70R17.5 all-round tyres, quantity 50. When could you deliver? Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0488,"Hello,
+The 225/50R17 tyres on PO-24160 arrived damaged. Two have scuffed sidewalls. We need a collection and replacements.
+Thanks",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0489,"Hi there,
+Can you email a copy of the original credit application for ACC-1503? We're updating authorised signatories.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0490,"Hi there,
+Can you price a mixed order: 8 x 385/65R22.5 Pirelli and 12 x 425/65R22.5 Toyo?
+Thanks in advance",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0491,"Good morning,
+Quick one: stock on 315/80R22.5 and 235/55R18? Might take both if you have them.
+Regards,
+Eoin",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0492,"Hi,
+Who is the credit controller for Kilbride Truck Services? I need to discuss a payment plan for INV-2026-8675.
+Appreciate it",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0493,"Good afternoon, Looking for a quote on 2 205/55R16 highway tyres. Budget fitment, not looking for premium unless the difference is small. Appreciate it, Ciara",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0494,"Please check your system for 4 x 185/65R15 drive tyres — customer is in the yard. Many thanks, Hugh",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0495,"Good morning,
+Complaint: yesterday's delivery to Tullow Farm Machinery was four hours late and the driver wouldn't help unload.
+Kind regards,
+Gerard",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0496,"Hi there,
+I'd like to complain about the website search — this isn't an order issue, I just can't find part numbers.
+Appreciate it,
+Maeve",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0497,"Hi,
+Has the back order on PO-41504 come in yet?
+Appreciate it,
+Grainne",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0498,"Hello,
+Please price 40 x 425/65R22.5 highway and confirm if a volume break applies above 40.
+Regards,
+Orla",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0499,"Hi,
+Can you email a copy of the original credit application for ACC-8256? We're updating authorised signatories.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0500,"Good morning,
+Are you the same company as the retail bay on the main road, or a different group?
+Thanks in advance,
+Niall",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0501,"Hello,
+Can you tell me if ORD-41760 will arrive before lunch, or should we rebook the customer?
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0502,"Hi team,
+Has the missing line on SO-21866 been added for the next delivery?
+Many thanks",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0503,"Hi, I asked for OEM-quality 215/65R16C and received a budget casing. That's not what we agreed. Collect and replace. Thanks in advance, Roisin",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0504,"Can someone in accounts call me about ACC-5485? There's a balance we don't recognise.
+Kind regards,
+Kate",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0505,"Hi there,
+Stock enquiry for Fairgreen Commercials: 12 x 275/40R20 highway. Can you reserve them if they're there?
+Many thanks",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0506,"Do you supply agricultural tyres at all, or only passenger and commercial?
+Cheers",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0507,"Hi team,
+Please collect the incorrect 225/50R17 tyres and credit PO-84130. We've already bought the right size elsewhere to keep the job moving.
+Kind regards,
+Brian",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0508,"Hi,
+Any update on ORD-88166? We were expecting delivery yesterday.
+Thanks,",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0509,"Hello,
+Stock enquiry for Ardmore Panel Works: 8 x 215/55R17 all-season. Can you reserve them if they're there?
+Appreciate it,
+Iseult",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0510,"AFTERNOON,
+QUICK STOCK CHECK: 24 265/65R17 TRIANGLE. IF NOT, WHAT'S THE SOONEST ETA?
+THANKS,
+FIONA",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0511,"We placed ORD-75004 two days ago and haven't had a confirmation. Can you look it up?
+Many thanks,
+Fiona",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0512,"We're tendering a local authority van fleet — please quote 4 175/65R14 winter tyres, 12-month hold if possible.
+Appreciate it",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0513,"Afternoon, Is 425/65R22.5 Continental a stocked line for you, or special order only? Thanks,, Eimear",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0514,"Good morning,
+Any tracking for PO-62535? Need to plan workshop time around the 255/40R19 fitment.",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0515,"HI THERE,
+DO YOU HOLD 195/65R15 MUD-TERRAIN TYRES AT THE MOMENT? NEED 4 IF YOU HAVE THEM.
+KIND REGARDS,
+UNA",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0516,"Hi,
+Please put INV-2024-6544 on hold — the PO number is wrong. It should reference WEB-69795.
+Regards",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0517,"Good afternoon,
+Happy Christmas — could you confirm your shutdown dates between Christmas and New Year?
+Appreciate it,
+Liam",other,SYNTHETIC_EXAMPLE_DATA
+SYN-0518,"GOOD MORNING,
+AVAILABILITY PLEASE FOR PIRELLI 385/65R22.5, QTY 2, AND AN EQUIVALENT IF YOU'RE SHORT.
+THANKS IN ADVANCE",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0519,"Hi team,
+Please confirm whether WEB-18050 is still on this afternoon's run.
+Kind regards",order_status,SYNTHETIC_EXAMPLE_DATA
+SYN-0520,"Hello,
+Can you confirm if Linglong 195/70R15C winter is in stock and how many you can release today?
+Thanks in advance,
+Conor",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0521,The load index on the 385/65R22.5 you sent doesn't match the quote. We can't fit them. Collection please. Cheers,complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0522,"Hi there,
+Please update the billing address on ACC-8663 to our new accounts office. I'll confirm the Eircode on the call.
+Thanks,,
+Roisin",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0523,"Hi team,
+Hi, would you quote 4 drive-axle 315/80R22.5 and 2 trailer 245/70R17.5 for Glenbrook Service Station?
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0524,"Hello,
+There's a VAT query on INV-2025-5073. It looks like it's been charged at 23% on a line that should be zero-rated — can you check?
+Thanks,
+Roisin",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0525,"Good morning, Can you send pricing and availability together for 8 x 205/60R16 highway Yokohama? Appreciate it, Maeve",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0526,"Hi, Have you received the container of 385/65R22.5 yet, or are we still waiting? Appreciate it",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0527,"Good afternoon, Do you have 16 205/55R16 in black letters, not white? Michelin preferred. Thanks,, Hugh",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0528,"Hello,
+Damaged pallet on WEB-31840: at least one 235/45R18 has a crushed bead. Photos ready.",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0529,"GOOD MORNING,
+THERE'S A PUNCTURE IN A BRAND-NEW 265/70R19.5 TAKEN OFF THE PALLET. DEFINITELY NOT US. NEED A DECISION TODAY.
+THANKS IN ADVANCE,
+UNA",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0530,"Afternoon,
+Can you extend the credit terms on ACC-3408? We're a long-standing account (Quay Street MOT) and cash flow is tight this month.
+Thanks",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0531,"HELLO,
+CAN YOU EMAIL A COPY OF THE ORIGINAL CREDIT APPLICATION FOR ACC-5780? WE'RE UPDATING AUTHORISED SIGNATORIES.
+CHEERS",account_billing,SYNTHETIC_EXAMPLE_DATA
+SYN-0532,"Hello,
+Just checking whether Bridgestone 185/65R15 is available before I send a PO for 12.",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0533,"Hello,
+Looking for your trade rate on Pirelli 195/70R15C. We'll need 16 initially and maybe a top-up next month.
+Regards",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0534,"HELLO, PLEASE ESCALATE — WE STILL HAVE NO RESOLUTION ON THE FAULTY MAXXIS TYRES RAISED A FORTNIGHT AGO. REGARDS, CONOR",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0535,"Afternoon,
+Looking for your trade rate on Linglong 385/65R22.5. We'll need 6 initially and maybe a top-up next month.
+Thanks,,
+Conor",quote_request,SYNTHETIC_EXAMPLE_DATA
+SYN-0536,"Can someone call me about a sidewall crack on a new Goodyear 195/65R15? I don't want to keep emailing.
+Thanks in advance,
+Grainne",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0537,"HI THERE,
+CAN SOMEONE CALL ME ABOUT A SIDEWALL CRACK ON A NEW TRIANGLE 205/55R16? I DON'T WANT TO KEEP EMAILING.
+APPRECIATE IT",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0538,"Afternoon,
+Are 225/50R17 highway tyres available for collection this afternoon?
+Thanks,,
+Brian",stock_availability,SYNTHETIC_EXAMPLE_DATA
+SYN-0539,"Afternoon,
+The balancing on the 215/55R17 set is off and we're getting vibration complaints. What will you do?
+Thanks,
+Liam",complaint_return,SYNTHETIC_EXAMPLE_DATA
+SYN-0540,"Hi,
+What would 10 255/35R19 Maxxis come to on our trade account, supply only?
+Thanks,",quote_request,SYNTHETIC_EXAMPLE_DATA
