@@ -182,3 +182,77 @@ files that exist. Do not back-fill metrics from memory.
 ---
 
 *End of entries for 14 November 2026.*
+
+---
+
+### 2026-11-15 — Project 6: document Q&A with hybrid retrieval, re-ranking and abstention (SYNTHETIC documents)
+
+- **Time / duration:** afternoon session, 15 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built a retrieval-augmented question-answering system over a SYNTHETIC eight-document pack for a fictional facilities company (Markdown, PDF and text). Implemented ingestion with heading detection (including a heuristic for PDFs), overlapping chunking, BM25 from scratch, TF-IDF, dense MiniLM retrieval, reciprocal-rank fusion and cross-encoder re-ranking; an extractive answer with citations; an abstention rule; and an optional OpenAI-compatible LLM hook (not evaluated). Wrote 44 paraphrased evaluation questions (36 answerable, 8 not in the documents) split into dev and test. A first version leaked test scores into the threshold candidate grid; this was caught and fixed so that the threshold is chosen from dev scores only.
+- **Artefacts:**
+  - `projects/06-document-qa-rag/` (full project)
+  - `projects/06-document-qa-rag/eval/questions.json`
+  - `projects/06-document-qa-rag/reports/metrics.json`, `answer_eval.csv`, `retrieval_ranks.csv`
+  - `projects/06-document-qa-rag/reports/retrieval_metrics.png`, `abstention_threshold.png`, `app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** Section-level hit@1 rose from 0.5556 (BM25) and 0.8611 (dense) to 0.9444 with cross-encoder re-ranking. Hybrid fusion on its own *reduced* hit@1 to 0.7778, contradicting common advice for this corpus and question style. On the test split, answer accuracy was 0.8889 but only 1 of 4 unanswerable questions was declined: a single score threshold tuned on four negative examples is not a reliable "I don't know" mechanism. The next step is answer verification and a larger, client-written question set.
+- **Assessor notes:**
+
+### 2026-11-15 — Project 7: calibrated, explainable churn model with a cost-based threshold (public IBM sample)
+
+- **Time / duration:** afternoon session, 15 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Downloaded the IBM Telco Customer Churn sample (Apache 2.0) with provenance and checksum, fixed the blank `TotalCharges` issue with an assertion-backed rule, and excluded gender and senior-citizen status from model inputs. Ran 5-fold stratified CV on the training set to compare a dummy, logistic regression and an 8-point gradient boosting grid; calibrated the chosen model (isotonic vs sigmoid, selected by out-of-fold Brier); chose a contact threshold that maximises an illustrative retention net benefit on out-of-fold predictions; explained the model with SHAP and permutation importance; audited test metrics by gender and senior-citizen status. Built a Streamlit app with per-customer SHAP reasons.
+- **Artefacts:**
+  - `projects/07-telco-churn-explainable/` (full project)
+  - `projects/07-telco-churn-explainable/reports/metrics.json`
+  - `projects/07-telco-churn-explainable/reports/calibration.png`, `cost_curve.png`, `shap_importance.png`, `permutation_importance.png`, `app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** Test ROC-AUC 0.8466 for the calibrated booster vs 0.8408 for logistic regression — a difference smaller than the CV standard deviation, so the more complex model is not clearly justified. Calibration made no measurable improvement because the booster was already well calibrated. The real value was the decision layer: the cost-optimal threshold (0.17) produced 60,051 vs 43,754 illustrative net benefit at 0.5. The fairness audit showed weaker ranking for senior citizens (ROC-AUC 0.79 vs 0.85) even though the attribute was excluded — a concrete example of proxy effects.
+- **Assessor notes:**
+
+### 2026-11-15 — Project 8: invoice field extraction, unseen-layout and OCR evaluation (SYNTHETIC invoices)
+
+- **Time / duration:** afternoon session, 15 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Generated 240 SYNTHETIC invoices in four layouts with ground truth (layout D held out entirely). Extracted text with `pdftotext -layout`, and from simulated scans (rotation, blur, noise) with RapidOCR after Tesseract could not be installed (apt mirror unreachable — documented). Wrote a rule-based extractor from layouts A–C only, a candidate-ranking ML extractor with layout-independent features (amount arithmetic, VAT ratios, date order, left-context words), and a hybrid. Evaluated per field on known and unseen layouts, digital and OCR, plus a 5-example adaptation experiment and an arithmetic self-check.
+- **Artefacts:**
+  - `projects/08-invoice-extraction/` (full project)
+  - `projects/08-invoice-extraction/data/SYNTHETIC_invoice_ground_truth.csv`
+  - `projects/08-invoice-extraction/reports/metrics.json`, `extracted_fields.csv`, `sample_output_unseen_D_hybrid.csv`
+  - `projects/08-invoice-extraction/reports/field_accuracy_hybrid.png`, `extractor_comparison.png`, `app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** Known layouts were easy (hybrid 0.9931 mean field accuracy on OCR). The held-out layout was the honest test: rules fell to 0.3750, the ML ranker reached 0.8750, but no invoice had all eight fields right because the invoice number was always confused with an order reference, and the arithmetic check could not detect it. Five labelled examples raised the ranker to 1.0000 on that layout's digital PDFs. Two generic fixes (a rule gap in layout A and a VAT-number regex for OCR) were prompted by test-set errors; that is disclosed in the README rather than hidden.
+- **Assessor notes:**
+
+### 2026-11-15 — Project 9: multi-series retail forecasting with a global model and bootstrap test (CSO data)
+
+- **Time / duration:** afternoon session, 15 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Fetched CSO Retail Sales Index tables RSM05 and RSM08 (CC BY 4.0). Discovered that a single splice ratio between the two base years distorted seasonality (ratio CV up to 36.8%) and replaced it with calendar-month-specific ratios, with diagnostics saved. Back-tested seven methods over 25 rolling origins × 13 sectors × 6 horizons (1,950 forecasts each): naive, seasonal naive, growth-adjusted seasonal naive, Holt–Winters, a level-based global gradient boosting model, a year-on-year global gradient boosting model excluding lockdown months, and an ensemble. Added empirical 80% intervals with out-of-sample coverage, an origin-block bootstrap against seasonal naive, and a Streamlit/Altair dashboard.
+- **Artefacts:**
+  - `projects/09-retail-sales-forecast/` (full project)
+  - `projects/09-retail-sales-forecast/data/source_metadata.json` (chain-link diagnostics)
+  - `projects/09-retail-sales-forecast/reports/metrics.json`, `round1_metrics.json`, `backtest_forecasts.csv`, `future_forecast.csv`
+  - `projects/09-retail-sales-forecast/reports/mase_by_horizon.png`, `forecast_examples.png`, `app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC
+- **Reflection:** In round 1, seasonal naive beat every model. The round-2 year-on-year ensemble reached MASE 0.5142 vs 0.5432 for seasonal naive (about 5% better), but the bootstrap 95% interval for the ratio (0.891–1.012) includes 1, and round 2 was designed after seeing round 1. I report the result as suggestive, not proven, and name a fresh-period re-test as the clean validation. Holt–Winters (MASE 0.9625) showed how badly a structural break (2020–21 lockdowns) can damage a classical model.
+- **Assessor notes:**
+
+### 2026-11-15 — Project 10: review sentiment classification and topic insights (public CC0 reviews)
+
+- **Time / duration:** afternoon session, 15 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Downloaded 23,486 public, anonymised clothing reviews (CC0) with checksum; derived three sentiment classes from stars (22,641 reviews with text). Compared a dummy, a CV-tuned TF-IDF (word + character n-gram) logistic regression and MiniLM embeddings + logistic regression on a held-out test set; produced a confusion matrix and misclassified examples. Built NMF topic models for k = 6–15, chose k by NPMI coherence implemented from scratch, measured seed stability, and generated an insights report linking topics to negativity, recommendations and departments. Built a Streamlit app.
+- **Artefacts:**
+  - `projects/10-review-sentiment-topics/` (full project)
+  - `projects/10-review-sentiment-topics/reports/sentiment_metrics.json`, `topic_metrics.json`, `topic_summary.csv`, `insights_report.md`
+  - `projects/10-review-sentiment-topics/reports/confusion_matrix.png`, `coherence_sweep.png`, `topics_negativity.png`, `app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC, T-ET
+- **Reflection:** TF-IDF + LR reached macro-F1 0.6679 and beat frozen MiniLM embeddings (0.6134): phrase-level cues matter more for sentiment than general sentence meaning. Negative vs positive is easy (ROC-AUC 0.9725); the neutral class (F1 0.4704) is limited partly by noisy star labels. Topic results are useful but fragile — coherence was still rising at the largest k tried and seed stability was 0.63 — so the report frames topics as a reading aid and uses association language, not causal claims.
+- **Assessor notes:**
+
+---
+
+*End of entries for 15 November 2026.*

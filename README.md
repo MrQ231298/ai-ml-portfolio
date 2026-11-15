@@ -1,6 +1,7 @@
 # AI / ML portfolio — Owen Quigley
 
-Beginner-friendly machine learning work that is meant to do two jobs at once:
+Machine learning work — beginner-friendly baselines (projects 1–5) and
+advanced prototypes (projects 6–10) — meant to do two jobs at once:
 
 1. **Client-ready demos and case studies** — small, working prototypes a
    non-specialist can try, with a plain-English write-up of the business
@@ -22,6 +23,15 @@ microdata. Project 5 retrieves over a **snapshot of public Citizens
 Information and RTB guidance pages** (copyright remains with the
 publishers); it is a reading aid, not legal advice.
 
+Projects 1–5 are deliberately beginner-level baselines. **Projects 6–10
+are the advanced set** (added 15 November 2026): retrieval-augmented
+generation with re-ranking and abstention, calibrated and explainable
+churn modelling with a cost-based decision threshold, invoice
+extraction tested on an unseen supplier layout and on OCR'd scans,
+multi-series forecasting with a global model and a bootstrap
+significance check, and sentiment plus topic modelling on 22,641 real
+reviews. Each one reports what did *not* work as well as what did.
+
 This repository is a starting point, not a claim that a single baseline
 model already satisfies a Master's award. Later projects should deepen
 the research, evaluation and professional practice that Level 9 asks
@@ -41,6 +51,11 @@ are there to show that distinction clearly.
 | 03 | [Insurance lead scorer](projects/03-insurance-lead-scorer/) | Commercial insurance lead conversion | [Streamlit app](projects/03-insurance-lead-scorer/app.py); [code walkthrough](projects/03-insurance-lead-scorer/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC tabular data. |
 | 04 | [Tyre demand forecast](projects/04-tyre-demand-forecast/) | Weekly tyre sales (Irish seasonal pattern) | [Streamlit app](projects/04-tyre-demand-forecast/app.py); [code walkthrough](projects/04-tyre-demand-forecast/CODE_WALKTHROUGH.md) | Complete baseline (trained 14 Nov 2026). SYNTHETIC weekly series. |
 | 05 | [Tenancy Q&A assistant](projects/05-tenancy-qa-assistant/) | Public Irish tenancy guidance (CI / RTB) | [Streamlit app](projects/05-tenancy-qa-assistant/app.py); [code walkthrough](projects/05-tenancy-qa-assistant/CODE_WALKTHROUGH.md) | Complete baseline (evaluated 14 Nov 2026). REAL public web snapshot. |
+| 06 | [Document Q&A (RAG)](projects/06-document-qa-rag/) | Company documents (HR, finance, IT, SLA) | [Streamlit app](projects/06-document-qa-rag/app.py); [code walkthrough](projects/06-document-qa-rag/CODE_WALKTHROUGH.md) | Advanced (evaluated 15 Nov 2026). SYNTHETIC document pack; local models, optional LLM hook. |
+| 07 | [Churn prediction with explainability](projects/07-telco-churn-explainable/) | Subscription / telecom customer retention | [Streamlit app](projects/07-telco-churn-explainable/app.py); [code walkthrough](projects/07-telco-churn-explainable/CODE_WALKTHROUGH.md) | Advanced (trained 15 Nov 2026). REAL public sample (IBM Telco, Apache 2.0). |
+| 08 | [Invoice data extraction](projects/08-invoice-extraction/) | Accounts payable / document automation | [Streamlit app](projects/08-invoice-extraction/app.py); [code walkthrough](projects/08-invoice-extraction/CODE_WALKTHROUGH.md) | Advanced (evaluated 15 Nov 2026). SYNTHETIC invoices, digital + simulated scans. |
+| 09 | [Retail sales forecasting dashboard](projects/09-retail-sales-forecast/) | Irish retail sales, 13 sectors | [Streamlit dashboard](projects/09-retail-sales-forecast/app.py); [code walkthrough](projects/09-retail-sales-forecast/CODE_WALKTHROUGH.md) | Advanced (back-tested 15 Nov 2026). REAL public data (CSO RSM05 + RSM08, CC BY 4.0). |
+| 10 | [Review sentiment & topics](projects/10-review-sentiment-topics/) | E-commerce customer reviews | [Streamlit app](projects/10-review-sentiment-topics/app.py); [insights report](projects/10-review-sentiment-topics/reports/insights_report.md) | Advanced (trained 15 Nov 2026). REAL public reviews (CC0). |
 
 Each finished project should contain:
 
@@ -243,12 +258,118 @@ page instead.
 
 ---
 
+## Advanced projects 6–10: how to run and headline results
+
+All five were run on 15 November 2026 (Europe/Dublin) on Python 3.13.5;
+every number below is copied from that project's `reports/*.json`. Each
+project folder has its own `requirements.txt`, `pytest` smoke tests,
+README (problem, approach, results, client value, critical evaluation),
+`CASE_STUDY.md` and `CODE_WALKTHROUGH.md`.
+
+### Project 6 — document Q&A (RAG)
+
+```bash
+cd projects/06-document-qa-rag
+pip install -r requirements.txt
+python src/evaluate.py && pytest -q && streamlit run app.py
+```
+
+SYNTHETIC 8-document pack (Markdown, PDF, text), 47 chunks, 44
+hand-written questions (36 answerable, 8 not in the documents).
+
+| Retriever (36 answerable questions) | hit@1 | MRR@20 |
+| --- | ---: | ---: |
+| BM25 | 0.5556 | 0.6458 |
+| Dense MiniLM | 0.8611 | 0.9259 |
+| Hybrid RRF | 0.7778 | 0.8264 |
+| **Hybrid + cross-encoder re-rank** | **0.9444** | **0.9653** |
+
+Test split (22 questions, threshold tuned on dev): answer accuracy on
+answerable questions 0.8889; only 1 of 4 unanswerable questions
+correctly declined — abstention is the documented weak point.
+
+![Document Q&A demo](projects/06-document-qa-rag/reports/app_screenshot.png)
+
+### Project 7 — churn prediction with explainability
+
+```bash
+cd projects/07-telco-churn-explainable
+pip install -r requirements.txt
+python src/train.py && pytest -q && streamlit run app.py
+```
+
+IBM Telco sample, 7,043 customers, held-out test n = 1,409.
+Calibrated gradient boosting: ROC-AUC **0.8466**, Brier 0.1357
+(logistic regression 0.8408 / 0.1386). Cost-optimal threshold 0.17
+(chosen on out-of-fold training predictions) gave an illustrative net
+benefit of **60,051** on the test set vs 43,754 at the default 0.5.
+
+![Churn demo](projects/07-telco-churn-explainable/reports/app_screenshot.png)
+
+### Project 8 — invoice data extraction
+
+```bash
+cd projects/08-invoice-extraction
+pip install -r requirements.txt   # plus poppler-utils
+python src/generate_invoices.py && python src/evaluate.py && pytest -q && streamlit run app.py
+```
+
+240 SYNTHETIC invoices, 4 layouts. Hybrid (rules + ML ranker) mean
+field accuracy: **0.9931** on OCR'd scans of known layouts; **0.8750**
+on an unseen layout (0% of invoices fully correct — the invoice number
+was always confused with the order reference); **1.0000** on that layout
+after labelling 5 examples (ML ranker, digital PDFs).
+
+![Invoice extraction demo](projects/08-invoice-extraction/reports/app_screenshot.png)
+
+### Project 9 — retail sales forecasting dashboard
+
+```bash
+cd projects/09-retail-sales-forecast
+pip install -r requirements.txt
+OMP_NUM_THREADS=2 python src/backtest.py && python src/compare_models.py && pytest -q && streamlit run app.py
+```
+
+13 CSO retail sectors, Jan 2015 – Sep 2026; 1,950 rolling-origin
+forecasts per model (horizons 1–6 months).
+
+| Model | MASE | sMAPE (%) |
+| --- | ---: | ---: |
+| **Ensemble (global GBM on YoY + growth-adjusted seasonal naive)** | **0.5142** | **3.67** |
+| Seasonal naive ("same month last year") | 0.5432 | 3.70 |
+| Holt–Winters ETS | 0.9625 | 8.27 |
+
+The ensemble is ~5% better on MASE, but the origin-block bootstrap 95%
+interval for the ratio (0.891–1.012) includes 1, and the new models were
+designed after a first round in which seasonal naive won — both
+disclosed.
+
+![Retail forecasting dashboard](projects/09-retail-sales-forecast/reports/app_screenshot.png)
+
+### Project 10 — review sentiment & topics
+
+```bash
+cd projects/10-review-sentiment-topics
+pip install -r requirements.txt
+python src/train_sentiment.py && python src/topics.py && pytest -q && streamlit run app.py
+```
+
+22,641 real clothing reviews; test n = 4,529. TF-IDF + logistic
+regression macro-F1 **0.6679** (MiniLM embeddings + LR 0.6134; dummy
+0.2901); negative-vs-positive ROC-AUC **0.9725**. NMF (k = 15 by NPMI
+coherence): the fabric/quality topic is 2.26× as likely to be a 1–2
+star review as the average.
+
+![Review sentiment and topics demo](projects/10-review-sentiment-topics/reports/app_screenshot.png)
+
+---
+
 ## RPL evidence
 
 | File | Purpose |
 | --- | --- |
 | [`rpl/LEARNING_OUTCOMES_MAP.md`](rpl/LEARNING_OUTCOMES_MAP.md) | Editable table: NFQ Level 9 descriptor → technical outcome → project → evidence file |
-| [`rpl/RPL_EVIDENCE_LOG.md`](rpl/RPL_EVIDENCE_LOG.md) | Dated activity log, with first entries for 14 November 2026 |
+| [`rpl/RPL_EVIDENCE_LOG.md`](rpl/RPL_EVIDENCE_LOG.md) | Dated activity log: projects 1–5 on 14 November 2026, projects 6–10 on 15 November 2026 |
 
 If a chosen programme publishes its own module outcomes, copy a new
 column into the map rather than rewriting the projects.
@@ -269,6 +390,13 @@ product that moved beyond published aggregates or official guidance
 would need a lawful basis, minimisation, and usually a DPIA — see the
 project critical evaluations.
 
+Projects 6 and 8 use **SYNTHETIC** documents and invoices for a
+fictional company and invented suppliers. Project 7 uses IBM's public
+Telco churn *sample* (Apache 2.0); gender and senior-citizen status are
+excluded from the model and used only for a fairness audit. Project 9
+uses **CSO official statistics** (CC BY 4.0). Project 10 uses a **CC0
+public dataset** of anonymised reviews; reviewer age is not used.
+
 ---
 
 ## Repository layout
@@ -284,6 +412,11 @@ ai-ml-portfolio/
   projects/03-insurance-lead-scorer/
   projects/04-tyre-demand-forecast/
   projects/05-tenancy-qa-assistant/
+  projects/06-document-qa-rag/
+  projects/07-telco-churn-explainable/
+  projects/08-invoice-extraction/
+  projects/09-retail-sales-forecast/
+  projects/10-review-sentiment-topics/
 ```
 
 This repository is released under the [MIT License](LICENSE).

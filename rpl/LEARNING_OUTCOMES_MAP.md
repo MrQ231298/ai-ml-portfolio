@@ -14,6 +14,9 @@ rather than rewriting the projects.
   artefact, but a Level 9 assessor would reasonably want it deepened
   (more literature, stronger validation, or a more authentic data
   setting).
+- `evidenced` — used from project 6 onward where the artefact rests on a
+  documented protocol (tuning separated from testing, baselines,
+  disclosed limitations). Still subject to a specific programme's review.
 - `partial` — some evidence exists; a clear gap is noted.
 - `planned` — reserved for a later project or a revision of this one.
 
@@ -141,4 +144,87 @@ with citations; MiniLM vs TF-IDF; not legal advice.
 | L9-CO | Technical README, walkthrough, client case study, demo screenshot with visible disclaimer and citations | `README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced (emerging) |
 | T-DP / T-ML / T-EV / T-PY / T-DC / T-ET | Public-page snapshot and chunking; MiniLM + TF-IDF; hit@k and MRR; commented scripts; two-audience docs; ethics/copyright framing | `src/`; `data/`; `reports/`; `app.py`; `requirements.txt` | evidenced (emerging) |
 
-Last updated: 14 November 2026 (Europe/Dublin).
+
+---
+
+## 8. Advanced set (projects 6–10, 15 November 2026)
+
+Projects 6–10 were built to move the evidence from *emerging* toward
+Master's-level practice: more than one method compared under a
+pre-defined protocol, explicit separation of tuning and test data,
+statistical or adaptation experiments, and disclosure where the protocol
+was imperfect. Status stays `evidenced (emerging)` where the data are
+synthetic or the evaluation set is small.
+
+### 8.1 Project 6 additions (06-document-qa-rag)
+
+SYNTHETIC eight-document pack, 47 chunks, 44 questions (dev/test).
+
+| ID | How project 6 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Retrieval-augmented generation architecture: lexical (BM25 implemented from the formula), dense bi-encoder, reciprocal-rank fusion, cross-encoder re-ranking, extractive answering, LLM hook | `projects/06-document-qa-rag/src/rag.py`; `README.md` § Approach | evidenced |
+| L9-CE | Hybrid fusion shown to *hurt* without re-ranking; abstention shown to be weak (1 of 4 unanswerable declined on test); threshold-protocol revision disclosed | `README.md` § Critical evaluation; `reports/metrics.json`; `reports/answer_eval.csv` | evidenced |
+| L9-RI | Pre-written question set with gold sections and key facts; dev/test split; threshold chosen on dev only; five retrievers on identical chunks | `eval/questions.json`; `src/evaluate.py`; `reports/retrieval_ranks.csv` | evidenced (emerging) |
+| L9-AU | Self-directed design choices (local models, no paid API, mixed formats) and self-detected protocol leak fixed | `rpl/RPL_EVIDENCE_LOG.md` 2026-11-15; `README.md` | evidenced (emerging) |
+| L9-ET | Synthetic company documents; local-only default; DPIA / processor note for hosted LLMs | `data/README.md`; `README.md` § Critical evaluation | evidenced (emerging) |
+| L9-CO | README, client case study, walkthrough, demo screenshot with citations | `README.md`; `CASE_STUDY.md`; `CODE_WALKTHROUGH.md`; `reports/app_screenshot.png` | evidenced |
+
+### 8.2 Project 7 additions (07-telco-churn-explainable)
+
+Public IBM Telco sample, 7,043 customers.
+
+| ID | How project 7 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Probability calibration (isotonic / Platt, Brier, ECE), cost-sensitive decision thresholds, SHAP vs permutation importance | `projects/07-telco-churn-explainable/src/train.py`; `README.md` | evidenced |
+| L9-CE | Boosting gain within CV noise; calibration gave no improvement; economics flagged as assumptions needing a randomised test; uplift modelling named as the correct target | `README.md` § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | All selection (grid, calibration method, threshold) on training-set CV / out-of-fold predictions; test used once | `src/train.py`; `reports/metrics.json` (`cv_5fold_train`, `oof_brier_calibration`) | evidenced |
+| L9-ET | Protected attributes excluded from inputs and used for a slice audit; proxy effect on senior citizens reported; GDPR Art. 22 / Equal Status Acts noted | `README.md` § Fairness audit; `src/churn_lib.py` (`AUDIT_COLS`) | evidenced |
+| L9-CO | Client case study framed around contact policy and money; app with per-customer reasons | `CASE_STUDY.md`; `app.py`; `reports/app_screenshot.png` | evidenced |
+
+### 8.3 Project 8 additions (08-invoice-extraction)
+
+240 SYNTHETIC invoices, four layouts (one held out), digital + OCR.
+
+| ID | How project 8 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Document AI pipeline: PDF text layout, OCR, rule-based vs learned candidate ranking with arithmetic / ratio features, human-in-the-loop check | `projects/08-invoice-extraction/src/extract_lib.py`; `README.md` | evidenced (emerging) |
+| L9-CE | Held-out layout result (0% fully-correct invoices) reported as the headline limitation; arithmetic check shown to miss ID errors; two test-prompted fixes disclosed | `README.md` § Results and § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Out-of-distribution test design (rules and training restricted to layouts A–C); few-shot adaptation experiment; per-field exact-match scoring with documented normalisation | `src/evaluate.py`; `data/README.md`; `reports/extracted_fields.csv` | evidenced |
+| L9-AU | Adapted when Tesseract could not be installed (RapidOCR) and documented the substitution | `requirements.txt`; `README.md` § Approach | evidenced (emerging) |
+| L9-ET | Synthetic suppliers and VAT numbers; GDPR note on sole-trader invoices; upload warning in app | `data/README.md`; `app.py`; `README.md` | evidenced (emerging) |
+| L9-CO | Case study for a finance audience; demo screenshot deliberately showing a failure | `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced |
+
+### 8.4 Project 9 additions (09-retail-sales-forecast)
+
+CSO Retail Sales Index, 13 sectors, Jan 2015 – Sep 2026.
+
+| ID | How project 9 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Global vs local forecasting models, direct multi-horizon strategy, YoY targets, structural-break handling, MASE, empirical intervals | `projects/09-retail-sales-forecast/src/forecast_lib.py`; `README.md` | evidenced |
+| L9-CE | Seasonal naive won round 1; round-2 gain (~5%) not significant (bootstrap CI includes 1) and designed after seeing round 1 — both disclosed; ETS failure explained | `README.md` § Critical evaluation; `reports/metrics.json` (`bootstrap_vs_seasonal_naive`, `round1_results_before_yoy_models`) | evidenced |
+| L9-RI | Rolling-origin back-test (1,950 forecasts per model); origin-block bootstrap; interval coverage checked on later origins; chain-link diagnostics | `src/backtest.py`; `src/compare_models.py`; `data/source_metadata.json` | evidenced |
+| L9-AU | Found and corrected a data-preparation problem (single splice ratio) without being told | `src/fetch_cso_retail.py` docstring; `data/README.md` | evidenced |
+| L9-CO | Interactive dashboard; client case study framed as "does it beat last year?" | `app.py`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced |
+
+### 8.5 Project 10 additions (10-review-sentiment-topics)
+
+22,641 public CC0 clothing reviews.
+
+| ID | How project 10 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Sparse vs dense text representations; NMF topic modelling; NPMI coherence and stability metrics | `projects/10-review-sentiment-topics/src/*.py`; `README.md` | evidenced |
+| L9-CE | Simpler TF-IDF model beat embeddings, explained; label noise in the neutral class; topic fragility (edge-of-grid k, 0.63 stability); association not causation | `README.md` § Critical evaluation; `reports/sentiment_metrics.json`; `reports/topic_metrics.json` | evidenced |
+| L9-RI | CV-tuned regularisation; held-out test; coherence-based model selection; seed-stability check; misclassification review | `src/train_sentiment.py`; `src/topics.py`; `reports/misclassified_examples.csv` | evidenced |
+| L9-ET | CC0 licence verified; reviewer age not used; personal-data caution for client text | `data/README.md`; `README.md` | evidenced (emerging) |
+| L9-CO | Auto-generated insights report for non-specialists; app; case study | `reports/insights_report.md`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced |
+
+| Technical outcome | Projects 6–10 evidence |
+| --- | --- |
+| T-DP | Mixed-format ingestion (6); data-quality assertion (7); synthetic generator with held-out layout (8); chain-linking two official tables (9); label derivation from ratings (10) |
+| T-ML | Retrieval + re-ranking (6); calibrated gradient boosting (7); candidate-ranking classifiers (8); global gradient boosting forecasters (9); text classifiers and NMF (10) |
+| T-EV | hit@k / MRR and abstention metrics (6); Brier / ECE / net benefit / fairness slices (7); per-field exact match on OOD and OCR (8); MASE / bootstrap / interval coverage (9); macro-F1 / AUC / NPMI / stability (10) |
+| T-PY | Five projects with shared library modules, pinned requirements and `pytest` smoke tests |
+| T-DC | README with critical evaluation, `CASE_STUDY.md`, `CODE_WALKTHROUGH.md` and screenshot for each |
+| T-ET | Fairness audit (7); synthetic data and upload warnings (6, 8); licence checks (7, 9, 10) |
+
+Last updated: 15 November 2026 (Europe/Dublin).
