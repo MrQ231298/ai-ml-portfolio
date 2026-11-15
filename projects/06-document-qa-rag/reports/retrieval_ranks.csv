@@ -1,0 +1,181 @@
+retriever,id,split,gold_rank,top1
+bm25,q01,dev,1.0,employee_handbook § Annual leave
+bm25,q02,test,1.0,employee_handbook § Annual leave
+bm25,q03,dev,2.0,customer_faq § How do I book a cleaning visit?
+bm25,q04,test,1.0,employee_handbook § Sick leave
+bm25,q05,dev,1.0,employee_handbook § Probation
+bm25,q06,test,4.0,expenses_policy § Mileage
+bm25,q07,dev,1.0,employee_handbook § Notice periods
+bm25,q08,test,18.0,health_and_safety_procedures § Working at height
+bm25,q09,dev,,health_and_safety_procedures § Working at height
+bm25,q10,test,5.0,customer_faq § How do I book a cleaning visit?
+bm25,q11,dev,1.0,expenses_policy § Mileage
+bm25,q12,test,,customer_faq § How quickly will I get a quote?
+bm25,q13,dev,1.0,expenses_policy § Accommodation
+bm25,q14,test,1.0,expenses_policy § Company cards
+bm25,q15,dev,1.0,it_security_policy § Passwords and sign-in
+bm25,q16,test,3.0,it_security_policy § Patching and backups
+bm25,q17,dev,,onboarding_guide § Your first day
+bm25,q18,test,,it_security_policy § Acceptable use
+bm25,q19,dev,3.0,data_retention_policy § Subject access requests
+bm25,q20,test,1.0,it_security_policy § Patching and backups
+bm25,q21,dev,2.0,customer_faq § How quickly will I get a quote?
+bm25,q22,test,5.0,customer_faq § How quickly will I get a quote?
+bm25,q23,dev,1.0,service_level_agreement § Service hours
+bm25,q24,test,1.0,service_level_agreement § Exclusions
+bm25,q25,dev,1.0,data_retention_policy § Retention periods
+bm25,q26,test,2.0,data_retention_policy § Data minimisation
+bm25,q27,dev,1.0,data_retention_policy § Personal data breaches
+bm25,q28,test,1.0,health_and_safety_procedures § Fire safety
+bm25,q29,dev,4.0,customer_faq § Can I cancel a visit?
+bm25,q30,test,1.0,health_and_safety_procedures § Lone working
+bm25,q31,dev,1.0,customer_faq § Which areas do you cover?
+bm25,q32,test,1.0,customer_faq § Can I cancel a visit?
+bm25,q33,dev,8.0,service_level_agreement § Service hours
+bm25,q34,test,,customer_faq § Which areas do you cover?
+bm25,q35,dev,1.0,onboarding_guide § Pay and pension
+bm25,q36,test,1.0,onboarding_guide § Your first day
+tfidf,q01,dev,1.0,employee_handbook § Annual leave
+tfidf,q02,test,2.0,employee_handbook § Notice periods
+tfidf,q03,dev,1.0,employee_handbook § Sick leave
+tfidf,q04,test,1.0,employee_handbook § Sick leave
+tfidf,q05,dev,1.0,employee_handbook § Probation
+tfidf,q06,test,3.0,expenses_policy § Mileage
+tfidf,q07,dev,1.0,employee_handbook § Notice periods
+tfidf,q08,test,18.0,health_and_safety_procedures § Working at height
+tfidf,q09,dev,,health_and_safety_procedures § Working at height
+tfidf,q10,test,4.0,it_security_policy § Passwords and sign-in
+tfidf,q11,dev,1.0,expenses_policy § Mileage
+tfidf,q12,test,,customer_faq § How quickly will I get a quote?
+tfidf,q13,dev,1.0,expenses_policy § Accommodation
+tfidf,q14,test,1.0,expenses_policy § Company cards
+tfidf,q15,dev,1.0,it_security_policy § Passwords and sign-in
+tfidf,q16,test,1.0,it_security_policy § Passwords and sign-in
+tfidf,q17,dev,,onboarding_guide § Your first day
+tfidf,q18,test,,it_security_policy § Acceptable use
+tfidf,q19,dev,2.0,data_retention_policy § Data minimisation
+tfidf,q20,test,1.0,it_security_policy § Patching and backups
+tfidf,q21,dev,3.0,customer_faq § How quickly will I get a quote?
+tfidf,q22,test,5.0,service_level_agreement § Response and resolution targets
+tfidf,q23,dev,1.0,service_level_agreement § Service hours
+tfidf,q24,test,1.0,service_level_agreement § Exclusions
+tfidf,q25,dev,1.0,data_retention_policy § Retention periods
+tfidf,q26,test,2.0,data_retention_policy § Data minimisation
+tfidf,q27,dev,1.0,data_retention_policy § Personal data breaches
+tfidf,q28,test,1.0,health_and_safety_procedures § Fire safety
+tfidf,q29,dev,,customer_faq § How do I book a cleaning visit?
+tfidf,q30,test,1.0,health_and_safety_procedures § Lone working
+tfidf,q31,dev,1.0,customer_faq § Which areas do you cover?
+tfidf,q32,test,1.0,customer_faq § Can I cancel a visit?
+tfidf,q33,dev,8.0,service_level_agreement § Service hours
+tfidf,q34,test,,customer_faq § Which areas do you cover?
+tfidf,q35,dev,1.0,onboarding_guide § Pay and pension
+tfidf,q36,test,1.0,onboarding_guide § Your first day
+dense,q01,dev,1.0,employee_handbook § Annual leave
+dense,q02,test,2.0,expenses_policy § Subsistence
+dense,q03,dev,1.0,employee_handbook § Sick leave
+dense,q04,test,1.0,employee_handbook § Sick leave
+dense,q05,dev,2.0,employee_handbook § Notice periods
+dense,q06,test,1.0,employee_handbook § Remote working
+dense,q07,dev,1.0,employee_handbook § Notice periods
+dense,q08,test,1.0,employee_handbook § Working hours
+dense,q09,dev,1.0,expenses_policy § Submitting claims
+dense,q10,test,1.0,expenses_policy § Approval limits
+dense,q11,dev,1.0,expenses_policy § Mileage
+dense,q12,test,1.0,expenses_policy § Subsistence
+dense,q13,dev,1.0,expenses_policy § Accommodation
+dense,q14,test,1.0,expenses_policy § Company cards
+dense,q15,dev,1.0,it_security_policy § Passwords and sign-in
+dense,q16,test,1.0,it_security_policy § Passwords and sign-in
+dense,q17,dev,1.0,it_security_policy § Devices
+dense,q18,test,3.0,data_retention_policy § Data minimisation
+dense,q19,dev,1.0,it_security_policy § Phishing and incidents
+dense,q20,test,1.0,it_security_policy § Patching and backups
+dense,q21,dev,1.0,service_level_agreement § Response and resolution targets
+dense,q22,test,1.0,service_level_agreement § Service credits
+dense,q23,dev,1.0,service_level_agreement § Service hours
+dense,q24,test,1.0,service_level_agreement § Exclusions
+dense,q25,dev,1.0,data_retention_policy § Retention periods
+dense,q26,test,1.0,data_retention_policy § Subject access requests
+dense,q27,dev,1.0,data_retention_policy § Personal data breaches
+dense,q28,test,1.0,health_and_safety_procedures § Fire safety
+dense,q29,dev,1.0,health_and_safety_procedures § Working at height
+dense,q30,test,1.0,health_and_safety_procedures § Lone working
+dense,q31,dev,1.0,customer_faq § Which areas do you cover?
+dense,q32,test,2.0,customer_faq § How do I book a cleaning visit?
+dense,q33,dev,1.0,customer_faq § Do you offer out-of-hours callouts?
+dense,q34,test,1.0,onboarding_guide § Pay and pension
+dense,q35,dev,1.0,onboarding_guide § Pay and pension
+dense,q36,test,2.0,expenses_policy § Accommodation
+hybrid,q01,dev,1.0,employee_handbook § Annual leave
+hybrid,q02,test,1.0,employee_handbook § Annual leave
+hybrid,q03,dev,1.0,employee_handbook § Sick leave
+hybrid,q04,test,1.0,employee_handbook § Sick leave
+hybrid,q05,dev,1.0,employee_handbook § Probation
+hybrid,q06,test,1.0,employee_handbook § Remote working
+hybrid,q07,dev,1.0,employee_handbook § Notice periods
+hybrid,q08,test,5.0,health_and_safety_procedures § Working at height
+hybrid,q09,dev,8.0,expenses_policy § Subsistence
+hybrid,q10,test,1.0,expenses_policy § Approval limits
+hybrid,q11,dev,1.0,expenses_policy § Mileage
+hybrid,q12,test,9.0,onboarding_guide § Your first day
+hybrid,q13,dev,1.0,expenses_policy § Accommodation
+hybrid,q14,test,1.0,expenses_policy § Company cards
+hybrid,q15,dev,1.0,it_security_policy § Passwords and sign-in
+hybrid,q16,test,1.0,it_security_policy § Passwords and sign-in
+hybrid,q17,dev,8.0,onboarding_guide § Your first day
+hybrid,q18,test,9.0,it_security_policy § Acceptable use
+hybrid,q19,dev,1.0,it_security_policy § Phishing and incidents
+hybrid,q20,test,1.0,it_security_policy § Patching and backups
+hybrid,q21,dev,1.0,service_level_agreement § Response and resolution targets
+hybrid,q22,test,2.0,service_level_agreement § Service hours
+hybrid,q23,dev,1.0,service_level_agreement § Service hours
+hybrid,q24,test,1.0,service_level_agreement § Exclusions
+hybrid,q25,dev,1.0,data_retention_policy § Retention periods
+hybrid,q26,test,1.0,data_retention_policy § Subject access requests
+hybrid,q27,dev,1.0,data_retention_policy § Personal data breaches
+hybrid,q28,test,1.0,health_and_safety_procedures § Fire safety
+hybrid,q29,dev,1.0,health_and_safety_procedures § Working at height
+hybrid,q30,test,1.0,health_and_safety_procedures § Lone working
+hybrid,q31,dev,1.0,customer_faq § Which areas do you cover?
+hybrid,q32,test,1.0,customer_faq § Can I cancel a visit?
+hybrid,q33,dev,2.0,service_level_agreement § Service hours
+hybrid,q34,test,13.0,customer_faq § What are your payment terms?
+hybrid,q35,dev,1.0,onboarding_guide § Pay and pension
+hybrid,q36,test,1.0,onboarding_guide § Your first day
+hybrid_rerank,q01,dev,1.0,employee_handbook § Annual leave
+hybrid_rerank,q02,test,1.0,employee_handbook § Annual leave
+hybrid_rerank,q03,dev,1.0,employee_handbook § Sick leave
+hybrid_rerank,q04,test,1.0,employee_handbook § Sick leave
+hybrid_rerank,q05,dev,1.0,employee_handbook § Probation
+hybrid_rerank,q06,test,1.0,employee_handbook § Remote working
+hybrid_rerank,q07,dev,1.0,employee_handbook § Notice periods
+hybrid_rerank,q08,test,1.0,employee_handbook § Working hours
+hybrid_rerank,q09,dev,1.0,expenses_policy § Submitting claims
+hybrid_rerank,q10,test,1.0,expenses_policy § Approval limits
+hybrid_rerank,q11,dev,1.0,expenses_policy § Mileage
+hybrid_rerank,q12,test,2.0,expenses_policy § Mileage
+hybrid_rerank,q13,dev,1.0,expenses_policy § Accommodation
+hybrid_rerank,q14,test,1.0,expenses_policy § Company cards
+hybrid_rerank,q15,dev,1.0,it_security_policy § Passwords and sign-in
+hybrid_rerank,q16,test,1.0,it_security_policy § Passwords and sign-in
+hybrid_rerank,q17,dev,1.0,it_security_policy § Devices
+hybrid_rerank,q18,test,4.0,data_retention_policy § Subject access requests
+hybrid_rerank,q19,dev,1.0,it_security_policy § Phishing and incidents
+hybrid_rerank,q20,test,1.0,it_security_policy § Patching and backups
+hybrid_rerank,q21,dev,1.0,service_level_agreement § Response and resolution targets
+hybrid_rerank,q22,test,1.0,service_level_agreement § Service credits
+hybrid_rerank,q23,dev,1.0,service_level_agreement § Service hours
+hybrid_rerank,q24,test,1.0,service_level_agreement § Exclusions
+hybrid_rerank,q25,dev,1.0,data_retention_policy § Retention periods
+hybrid_rerank,q26,test,1.0,data_retention_policy § Subject access requests
+hybrid_rerank,q27,dev,1.0,data_retention_policy § Personal data breaches
+hybrid_rerank,q28,test,1.0,health_and_safety_procedures § Fire safety
+hybrid_rerank,q29,dev,1.0,health_and_safety_procedures § Working at height
+hybrid_rerank,q30,test,1.0,health_and_safety_procedures § Lone working
+hybrid_rerank,q31,dev,1.0,customer_faq § Which areas do you cover?
+hybrid_rerank,q32,test,1.0,customer_faq § Can I cancel a visit?
+hybrid_rerank,q33,dev,1.0,customer_faq § Do you offer out-of-hours callouts?
+hybrid_rerank,q34,test,1.0,onboarding_guide § Pay and pension
+hybrid_rerank,q35,dev,1.0,onboarding_guide § Pay and pension
+hybrid_rerank,q36,test,1.0,onboarding_guide § Your first day

@@ -1,0 +1,20 @@
+<!-- SYNTHETIC EXAMPLE DOCUMENT - Brightwater Facilities Ltd is fictional. -->
+# Health and Safety Procedures
+
+## Accident reporting
+Every accident or near miss must be reported on the accident report form within 24 hours, even if nobody was hurt. Serious injuries are also reported to the Health and Safety Authority by the Safety Officer.
+
+## Fire safety
+On hearing the fire alarm at the Galway office, leave by the nearest exit and go to the assembly point at car park B. Do not use the lifts. Fire wardens carry out a roll call at the assembly point. Fire drills are held twice a year.
+
+## Personal protective equipment
+On client sites, high-visibility vests and safety boots must be worn at all times. Gloves and eye protection are required when using cleaning chemicals. PPE is supplied free of charge and replaced when worn.
+
+## Working at height
+Any work at a height above 2 metres requires a working-at-height permit signed by a supervisor before work starts. Ladders must be inspected before each use.
+
+## Lone working
+Staff working alone on a site must check in through the SafeShift app every 2 hours. If a check-in is missed, the supervisor phones the worker; if there is no answer within 15 minutes the escalation procedure starts.
+
+## Training
+Manual handling training must be refreshed every 3 years. First aid certificates are renewed every 2 years.
