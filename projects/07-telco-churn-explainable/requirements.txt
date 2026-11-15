@@ -1,0 +1,11 @@
+# Direct dependencies for the churn project.
+# Installed and verified on Python 3.13.5 (15 November 2026, Europe/Dublin).
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+streamlit==1.67.0
+shap==0.54.1
+requests==2.34.2
+pytest==9.2.0

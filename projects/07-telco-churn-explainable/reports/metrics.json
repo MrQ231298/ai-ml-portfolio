@@ -1,0 +1,419 @@
+{
+  "run_at_europe_dublin": "2026-11-15T16:21:03+00:00",
+  "dataset": {
+    "rows": 7043,
+    "churn_rate": 0.2654,
+    "train": 5634,
+    "test": 1409,
+    "test_churners": 374
+  },
+  "features_used": [
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "excluded_for_fairness_audit": [
+    "gender",
+    "SeniorCitizen"
+  ],
+  "cv_5fold_train": {
+    "dummy_prior": {
+      "roc_auc": {
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "pr_auc": {
+        "mean": 0.2654,
+        "std": 0.0001
+      },
+      "brier": {
+        "mean": 0.1949,
+        "std": 0.0
+      },
+      "log_loss": {
+        "mean": 0.5786,
+        "std": 0.0001
+      }
+    },
+    "logistic_regression": {
+      "roc_auc": {
+        "mean": 0.8463,
+        "std": 0.0129
+      },
+      "pr_auc": {
+        "mean": 0.6617,
+        "std": 0.0199
+      },
+      "brier": {
+        "mean": 0.135,
+        "std": 0.0052
+      },
+      "log_loss": {
+        "mean": 0.4166,
+        "std": 0.0128
+      }
+    },
+    "hist_gradient_boosting_best": {
+      "roc_auc": {
+        "mean": 0.8476,
+        "std": 0.0105
+      },
+      "pr_auc": {
+        "mean": 0.6678,
+        "std": 0.0195
+      },
+      "brier": {
+        "mean": 0.1343,
+        "std": 0.0045
+      },
+      "log_loss": {
+        "mean": 0.4137,
+        "std": 0.0107
+      }
+    }
+  },
+  "hgb_grid": [
+    {
+      "params": {
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 8,
+        "min_samples_leaf": 20
+      },
+      "roc_auc": {
+        "mean": 0.8471,
+        "std": 0.011
+      },
+      "pr_auc": {
+        "mean": 0.6644,
+        "std": 0.0232
+      },
+      "brier": {
+        "mean": 0.1347,
+        "std": 0.0048
+      },
+      "log_loss": {
+        "mean": 0.4146,
+        "std": 0.0116
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 8,
+        "min_samples_leaf": 80
+      },
+      "roc_auc": {
+        "mean": 0.8476,
+        "std": 0.0105
+      },
+      "pr_auc": {
+        "mean": 0.6678,
+        "std": 0.0195
+      },
+      "brier": {
+        "mean": 0.1343,
+        "std": 0.0045
+      },
+      "log_loss": {
+        "mean": 0.4137,
+        "std": 0.0107
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20
+      },
+      "roc_auc": {
+        "mean": 0.8415,
+        "std": 0.0086
+      },
+      "pr_auc": {
+        "mean": 0.6548,
+        "std": 0.0214
+      },
+      "brier": {
+        "mean": 0.137,
+        "std": 0.004
+      },
+      "log_loss": {
+        "mean": 0.4209,
+        "std": 0.0096
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.03,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 80
+      },
+      "roc_auc": {
+        "mean": 0.8436,
+        "std": 0.0111
+      },
+      "pr_auc": {
+        "mean": 0.6636,
+        "std": 0.0173
+      },
+      "brier": {
+        "mean": 0.1356,
+        "std": 0.0043
+      },
+      "log_loss": {
+        "mean": 0.4179,
+        "std": 0.0105
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 8,
+        "min_samples_leaf": 20
+      },
+      "roc_auc": {
+        "mean": 0.8467,
+        "std": 0.0117
+      },
+      "pr_auc": {
+        "mean": 0.6655,
+        "std": 0.0243
+      },
+      "brier": {
+        "mean": 0.1346,
+        "std": 0.0053
+      },
+      "log_loss": {
+        "mean": 0.4146,
+        "std": 0.0132
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 8,
+        "min_samples_leaf": 80
+      },
+      "roc_auc": {
+        "mean": 0.8463,
+        "std": 0.0106
+      },
+      "pr_auc": {
+        "mean": 0.6665,
+        "std": 0.0173
+      },
+      "brier": {
+        "mean": 0.1346,
+        "std": 0.0046
+      },
+      "log_loss": {
+        "mean": 0.415,
+        "std": 0.0116
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20
+      },
+      "roc_auc": {
+        "mean": 0.8377,
+        "std": 0.0085
+      },
+      "pr_auc": {
+        "mean": 0.6496,
+        "std": 0.0201
+      },
+      "brier": {
+        "mean": 0.1383,
+        "std": 0.0041
+      },
+      "log_loss": {
+        "mean": 0.4247,
+        "std": 0.0098
+      }
+    },
+    {
+      "params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 80
+      },
+      "roc_auc": {
+        "mean": 0.8423,
+        "std": 0.0103
+      },
+      "pr_auc": {
+        "mean": 0.6588,
+        "std": 0.0148
+      },
+      "brier": {
+        "mean": 0.1364,
+        "std": 0.0046
+      },
+      "log_loss": {
+        "mean": 0.4196,
+        "std": 0.0113
+      }
+    }
+  ],
+  "hgb_best_params": {
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 8,
+    "min_samples_leaf": 80
+  },
+  "test": {
+    "dummy_prior": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654,
+      "brier": 0.195,
+      "log_loss": 0.5787,
+      "ece": 0.0001
+    },
+    "logistic_regression": {
+      "roc_auc": 0.8408,
+      "pr_auc": 0.6315,
+      "brier": 0.1386,
+      "log_loss": 0.4215,
+      "ece": 0.0272
+    },
+    "hgb_uncalibrated": {
+      "roc_auc": 0.8462,
+      "pr_auc": 0.6635,
+      "brier": 0.1352,
+      "log_loss": 0.4154,
+      "ece": 0.0166
+    },
+    "hgb_isotonic": {
+      "roc_auc": 0.8466,
+      "pr_auc": 0.6592,
+      "brier": 0.1357,
+      "log_loss": 0.4207,
+      "ece": 0.022
+    },
+    "hgb_sigmoid": {
+      "roc_auc": 0.8479,
+      "pr_auc": 0.6625,
+      "brier": 0.1348,
+      "log_loss": 0.4134,
+      "ece": 0.024
+    }
+  },
+  "oof_brier_calibration": {
+    "isotonic": 0.1339,
+    "sigmoid": 0.1339
+  },
+  "deployed_calibration": "isotonic",
+  "cost_assumptions": {
+    "offer_cost": 40.0,
+    "save_rate": 0.3,
+    "value_months": 12
+  },
+  "cost_optimal_threshold": 0.17,
+  "policies_test": {
+    "contact_nobody": {
+      "contacted": 0,
+      "contact_rate": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "net_benefit": 0.0
+    },
+    "contact_everybody": {
+      "contacted": 1409,
+      "contact_rate": 1.0,
+      "precision": 0.2654,
+      "recall": 1.0,
+      "net_benefit": 41613.64
+    },
+    "threshold_0.50": {
+      "contacted": 307,
+      "contact_rate": 0.2179,
+      "precision": 0.6547,
+      "recall": 0.5374,
+      "net_benefit": 43754.18
+    },
+    "cost_optimal_threshold_0.17": {
+      "contacted": 733,
+      "contact_rate": 0.5202,
+      "precision": 0.4543,
+      "recall": 0.8904,
+      "net_benefit": 60050.54
+    }
+  },
+  "explainability": {
+    "method": "shap.TreeExplainer 0.54.1",
+    "top10_mean_abs_shap": {
+      "Contract_Month-to-month": 0.6875,
+      "tenure": 0.3176,
+      "OnlineSecurity_No": 0.25,
+      "Contract_Two year": 0.2315,
+      "MonthlyCharges": 0.2003,
+      "TechSupport_No": 0.1972,
+      "InternetService_Fiber optic": 0.1789,
+      "PaymentMethod_Electronic check": 0.1644,
+      "PaperlessBilling_No": 0.1009,
+      "TotalCharges": 0.0717
+    }
+  },
+  "permutation_importance_top10": {
+    "Contract": 0.1059,
+    "tenure": 0.0442,
+    "OnlineSecurity": 0.0097,
+    "InternetService": 0.0096,
+    "MonthlyCharges": 0.0074,
+    "TotalCharges": 0.0052,
+    "TechSupport": 0.0048,
+    "PaymentMethod": 0.0039,
+    "PaperlessBilling": 0.0025,
+    "MultipleLines": 0.0019
+  },
+  "fairness_slices_test": {
+    "gender=Female": {
+      "n": 687,
+      "churn_rate": 0.2809,
+      "mean_predicted": 0.2667,
+      "roc_auc": 0.8445,
+      "contact_rate": 0.5211,
+      "recall": 0.886
+    },
+    "gender=Male": {
+      "n": 722,
+      "churn_rate": 0.2507,
+      "mean_predicted": 0.2654,
+      "roc_auc": 0.8496,
+      "contact_rate": 0.5194,
+      "recall": 0.895
+    },
+    "SeniorCitizen=No": {
+      "n": 1187,
+      "churn_rate": 0.2325,
+      "mean_predicted": 0.2411,
+      "roc_auc": 0.8487,
+      "contact_rate": 0.4735,
+      "recall": 0.8623
+    },
+    "SeniorCitizen=Yes": {
+      "n": 222,
+      "churn_rate": 0.4414,
+      "mean_predicted": 0.3994,
+      "roc_auc": 0.7858,
+      "contact_rate": 0.7703,
+      "recall": 0.9694
+    }
+  }
+}
