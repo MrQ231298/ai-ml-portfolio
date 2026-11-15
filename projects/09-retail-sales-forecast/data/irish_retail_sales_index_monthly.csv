@@ -1,0 +1,1834 @@
+series,date,value
+Motor trades,2015-01-01,134.65
+Motor trades,2015-02-01,107.76
+Motor trades,2015-03-01,127.58
+Motor trades,2015-04-01,70.06
+Motor trades,2015-05-01,70.96
+Motor trades,2015-06-01,59.49
+Motor trades,2015-07-01,119.03
+Motor trades,2015-08-01,69.56
+Motor trades,2015-09-01,70.81
+Motor trades,2015-10-01,54.33
+Motor trades,2015-11-01,58.75
+Motor trades,2015-12-01,36.33
+Motor trades,2016-01-01,165.56
+Motor trades,2016-02-01,134.87
+Motor trades,2016-03-01,121.42
+Motor trades,2016-04-01,84.55
+Motor trades,2016-05-01,80.31
+Motor trades,2016-06-01,62.06
+Motor trades,2016-07-01,142.28
+Motor trades,2016-08-01,76.84
+Motor trades,2016-09-01,71.06
+Motor trades,2016-10-01,55.61
+Motor trades,2016-11-01,61.35
+Motor trades,2016-12-01,36.96
+Motor trades,2017-01-01,171.52
+Motor trades,2017-02-01,129.02
+Motor trades,2017-03-01,125.35
+Motor trades,2017-04-01,73.89
+Motor trades,2017-05-01,78.99
+Motor trades,2017-06-01,59.82
+Motor trades,2017-07-01,136.7
+Motor trades,2017-08-01,76.77
+Motor trades,2017-09-01,68.65
+Motor trades,2017-10-01,53.48
+Motor trades,2017-11-01,61.82
+Motor trades,2017-12-01,35.91
+Motor trades,2018-01-01,167.47
+Motor trades,2018-02-01,125.02
+Motor trades,2018-03-01,112.93
+Motor trades,2018-04-01,82.54
+Motor trades,2018-05-01,83.47
+Motor trades,2018-06-01,69.03
+Motor trades,2018-07-01,149.21
+Motor trades,2018-08-01,76.09
+Motor trades,2018-09-01,73.21
+Motor trades,2018-10-01,60.64
+Motor trades,2018-11-01,68.2
+Motor trades,2018-12-01,36.33
+Motor trades,2019-01-01,154.04
+Motor trades,2019-02-01,129.31
+Motor trades,2019-03-01,118.92
+Motor trades,2019-04-01,79.22
+Motor trades,2019-05-01,81.23
+Motor trades,2019-06-01,67.03
+Motor trades,2019-07-01,126.55
+Motor trades,2019-08-01,74.72
+Motor trades,2019-09-01,76.28
+Motor trades,2019-10-01,63.97
+Motor trades,2019-11-01,70.45
+Motor trades,2019-12-01,40.63
+Motor trades,2020-01-01,166.94
+Motor trades,2020-02-01,128.05
+Motor trades,2020-03-01,83.45
+Motor trades,2020-04-01,15.29
+Motor trades,2020-05-01,40.93
+Motor trades,2020-06-01,70.52
+Motor trades,2020-07-01,145.07
+Motor trades,2020-08-01,86.25
+Motor trades,2020-09-01,93.11
+Motor trades,2020-10-01,67.12
+Motor trades,2020-11-01,65.37
+Motor trades,2020-12-01,49.03
+Motor trades,2021-01-01,129.3
+Motor trades,2021-02-01,137.4
+Motor trades,2021-03-01,114.6
+Motor trades,2021-04-01,101.6
+Motor trades,2021-05-01,104.1
+Motor trades,2021-06-01,80.1
+Motor trades,2021-07-01,155.2
+Motor trades,2021-08-01,102.3
+Motor trades,2021-09-01,91.2
+Motor trades,2021-10-01,77.8
+Motor trades,2021-11-01,83.7
+Motor trades,2021-12-01,41.1
+Motor trades,2022-01-01,159.6
+Motor trades,2022-02-01,133.1
+Motor trades,2022-03-01,116.9
+Motor trades,2022-04-01,106.8
+Motor trades,2022-05-01,98.5
+Motor trades,2022-06-01,80.2
+Motor trades,2022-07-01,149.6
+Motor trades,2022-08-01,105.6
+Motor trades,2022-09-01,101.9
+Motor trades,2022-10-01,81.9
+Motor trades,2022-11-01,79.8
+Motor trades,2022-12-01,49.8
+Motor trades,2023-01-01,189.0
+Motor trades,2023-02-01,152.3
+Motor trades,2023-03-01,153.9
+Motor trades,2023-04-01,133.8
+Motor trades,2023-05-01,121.3
+Motor trades,2023-06-01,101.0
+Motor trades,2023-07-01,177.1
+Motor trades,2023-08-01,125.3
+Motor trades,2023-09-01,109.9
+Motor trades,2023-10-01,83.9
+Motor trades,2023-11-01,92.6
+Motor trades,2023-12-01,54.3
+Motor trades,2024-01-01,219.4
+Motor trades,2024-02-01,164.5
+Motor trades,2024-03-01,161.2
+Motor trades,2024-04-01,142.5
+Motor trades,2024-05-01,119.4
+Motor trades,2024-06-01,103.1
+Motor trades,2024-07-01,185.7
+Motor trades,2024-08-01,120.7
+Motor trades,2024-09-01,106.4
+Motor trades,2024-10-01,83.2
+Motor trades,2024-11-01,82.2
+Motor trades,2024-12-01,53.3
+Motor trades,2025-01-01,225.6
+Motor trades,2025-02-01,169.1
+Motor trades,2025-03-01,167.3
+Motor trades,2025-04-01,141.4
+Motor trades,2025-05-01,121.5
+Motor trades,2025-06-01,105.8
+Motor trades,2025-07-01,202.1
+Motor trades,2025-08-01,132.9
+Motor trades,2025-09-01,115.2
+Motor trades,2025-10-01,84.4
+Motor trades,2025-11-01,89.9
+Motor trades,2025-12-01,56.3
+Motor trades,2026-01-01,242.2
+Motor trades,2026-02-01,175.9
+Motor trades,2026-03-01,167.3
+Motor trades,2026-04-01,138.0
+Motor trades,2026-05-01,123.8
+Motor trades,2026-06-01,108.0
+Motor trades,2026-07-01,216.3
+Motor trades,2026-08-01,144.6
+Motor trades,2026-09-01,121.3
+Supermarkets / non-specialised food,2015-01-01,71.18
+Supermarkets / non-specialised food,2015-02-01,74.88
+Supermarkets / non-specialised food,2015-03-01,78.01
+Supermarkets / non-specialised food,2015-04-01,74.42
+Supermarkets / non-specialised food,2015-05-01,77.81
+Supermarkets / non-specialised food,2015-06-01,76.19
+Supermarkets / non-specialised food,2015-07-01,77.33
+Supermarkets / non-specialised food,2015-08-01,76.84
+Supermarkets / non-specialised food,2015-09-01,73.45
+Supermarkets / non-specialised food,2015-10-01,80.01
+Supermarkets / non-specialised food,2015-11-01,81.24
+Supermarkets / non-specialised food,2015-12-01,90.91
+Supermarkets / non-specialised food,2016-01-01,74.26
+Supermarkets / non-specialised food,2016-02-01,81.91
+Supermarkets / non-specialised food,2016-03-01,81.34
+Supermarkets / non-specialised food,2016-04-01,75.59
+Supermarkets / non-specialised food,2016-05-01,80.09
+Supermarkets / non-specialised food,2016-06-01,78.29
+Supermarkets / non-specialised food,2016-07-01,79.57
+Supermarkets / non-specialised food,2016-08-01,78.42
+Supermarkets / non-specialised food,2016-09-01,74.9
+Supermarkets / non-specialised food,2016-10-01,80.56
+Supermarkets / non-specialised food,2016-11-01,80.55
+Supermarkets / non-specialised food,2016-12-01,91.36
+Supermarkets / non-specialised food,2017-01-01,74.58
+Supermarkets / non-specialised food,2017-02-01,83.22
+Supermarkets / non-specialised food,2017-03-01,81.26
+Supermarkets / non-specialised food,2017-04-01,79.33
+Supermarkets / non-specialised food,2017-05-01,83.07
+Supermarkets / non-specialised food,2017-06-01,81.56
+Supermarkets / non-specialised food,2017-07-01,81.12
+Supermarkets / non-specialised food,2017-08-01,80.55
+Supermarkets / non-specialised food,2017-09-01,78.66
+Supermarkets / non-specialised food,2017-10-01,83.93
+Supermarkets / non-specialised food,2017-11-01,85.2
+Supermarkets / non-specialised food,2017-12-01,95.24
+Supermarkets / non-specialised food,2018-01-01,77.11
+Supermarkets / non-specialised food,2018-02-01,88.21
+Supermarkets / non-specialised food,2018-03-01,86.29
+Supermarkets / non-specialised food,2018-04-01,78.82
+Supermarkets / non-specialised food,2018-05-01,86.06
+Supermarkets / non-specialised food,2018-06-01,86.61
+Supermarkets / non-specialised food,2018-07-01,84.07
+Supermarkets / non-specialised food,2018-08-01,83.15
+Supermarkets / non-specialised food,2018-09-01,82.03
+Supermarkets / non-specialised food,2018-10-01,87.85
+Supermarkets / non-specialised food,2018-11-01,88.7
+Supermarkets / non-specialised food,2018-12-01,99.79
+Supermarkets / non-specialised food,2019-01-01,79.96
+Supermarkets / non-specialised food,2019-02-01,91.97
+Supermarkets / non-specialised food,2019-03-01,88.81
+Supermarkets / non-specialised food,2019-04-01,84.99
+Supermarkets / non-specialised food,2019-05-01,88.1
+Supermarkets / non-specialised food,2019-06-01,85.84
+Supermarkets / non-specialised food,2019-07-01,88.72
+Supermarkets / non-specialised food,2019-08-01,86.77
+Supermarkets / non-specialised food,2019-09-01,85.55
+Supermarkets / non-specialised food,2019-10-01,90.43
+Supermarkets / non-specialised food,2019-11-01,91.97
+Supermarkets / non-specialised food,2019-12-01,102.68
+Supermarkets / non-specialised food,2020-01-01,84.24
+Supermarkets / non-specialised food,2020-02-01,92.95
+Supermarkets / non-specialised food,2020-03-01,103.67
+Supermarkets / non-specialised food,2020-04-01,98.34
+Supermarkets / non-specialised food,2020-05-01,102.47
+Supermarkets / non-specialised food,2020-06-01,97.65
+Supermarkets / non-specialised food,2020-07-01,96.16
+Supermarkets / non-specialised food,2020-08-01,94.1
+Supermarkets / non-specialised food,2020-09-01,93.29
+Supermarkets / non-specialised food,2020-10-01,103.68
+Supermarkets / non-specialised food,2020-11-01,100.96
+Supermarkets / non-specialised food,2020-12-01,114.07
+Supermarkets / non-specialised food,2021-01-01,93.1
+Supermarkets / non-specialised food,2021-02-01,102.3
+Supermarkets / non-specialised food,2021-03-01,102.7
+Supermarkets / non-specialised food,2021-04-01,102.4
+Supermarkets / non-specialised food,2021-05-01,101.2
+Supermarkets / non-specialised food,2021-06-01,95.6
+Supermarkets / non-specialised food,2021-07-01,100.8
+Supermarkets / non-specialised food,2021-08-01,93.7
+Supermarkets / non-specialised food,2021-09-01,93.2
+Supermarkets / non-specialised food,2021-10-01,98.1
+Supermarkets / non-specialised food,2021-11-01,100.5
+Supermarkets / non-specialised food,2021-12-01,114.7
+Supermarkets / non-specialised food,2022-01-01,88.6
+Supermarkets / non-specialised food,2022-02-01,95.5
+Supermarkets / non-specialised food,2022-03-01,98.4
+Supermarkets / non-specialised food,2022-04-01,99.8
+Supermarkets / non-specialised food,2022-05-01,99.5
+Supermarkets / non-specialised food,2022-06-01,97.4
+Supermarkets / non-specialised food,2022-07-01,101.1
+Supermarkets / non-specialised food,2022-08-01,101.0
+Supermarkets / non-specialised food,2022-09-01,96.9
+Supermarkets / non-specialised food,2022-10-01,104.3
+Supermarkets / non-specialised food,2022-11-01,110.1
+Supermarkets / non-specialised food,2022-12-01,126.9
+Supermarkets / non-specialised food,2023-01-01,95.3
+Supermarkets / non-specialised food,2023-02-01,106.3
+Supermarkets / non-specialised food,2023-03-01,108.5
+Supermarkets / non-specialised food,2023-04-01,108.6
+Supermarkets / non-specialised food,2023-05-01,110.9
+Supermarkets / non-specialised food,2023-06-01,108.9
+Supermarkets / non-specialised food,2023-07-01,104.7
+Supermarkets / non-specialised food,2023-08-01,107.0
+Supermarkets / non-specialised food,2023-09-01,104.6
+Supermarkets / non-specialised food,2023-10-01,111.8
+Supermarkets / non-specialised food,2023-11-01,117.3
+Supermarkets / non-specialised food,2023-12-01,135.1
+Supermarkets / non-specialised food,2024-01-01,99.8
+Supermarkets / non-specialised food,2024-02-01,110.9
+Supermarkets / non-specialised food,2024-03-01,115.4
+Supermarkets / non-specialised food,2024-04-01,110.5
+Supermarkets / non-specialised food,2024-05-01,114.6
+Supermarkets / non-specialised food,2024-06-01,107.8
+Supermarkets / non-specialised food,2024-07-01,106.8
+Supermarkets / non-specialised food,2024-08-01,106.9
+Supermarkets / non-specialised food,2024-09-01,103.3
+Supermarkets / non-specialised food,2024-10-01,110.1
+Supermarkets / non-specialised food,2024-11-01,120.6
+Supermarkets / non-specialised food,2024-12-01,140.2
+Supermarkets / non-specialised food,2025-01-01,101.8
+Supermarkets / non-specialised food,2025-02-01,114.3
+Supermarkets / non-specialised food,2025-03-01,119.0
+Supermarkets / non-specialised food,2025-04-01,118.1
+Supermarkets / non-specialised food,2025-05-01,119.2
+Supermarkets / non-specialised food,2025-06-01,114.5
+Supermarkets / non-specialised food,2025-07-01,113.1
+Supermarkets / non-specialised food,2025-08-01,113.8
+Supermarkets / non-specialised food,2025-09-01,108.6
+Supermarkets / non-specialised food,2025-10-01,115.8
+Supermarkets / non-specialised food,2025-11-01,126.0
+Supermarkets / non-specialised food,2025-12-01,146.0
+Supermarkets / non-specialised food,2026-01-01,105.1
+Supermarkets / non-specialised food,2026-02-01,118.2
+Supermarkets / non-specialised food,2026-03-01,124.8
+Supermarkets / non-specialised food,2026-04-01,117.7
+Supermarkets / non-specialised food,2026-05-01,121.1
+Supermarkets / non-specialised food,2026-06-01,118.5
+Supermarkets / non-specialised food,2026-07-01,118.8
+Supermarkets / non-specialised food,2026-08-01,116.4
+Supermarkets / non-specialised food,2026-09-01,112.5
+Department stores,2015-01-01,111.55
+Department stores,2015-02-01,138.25
+Department stores,2015-03-01,115.15
+Department stores,2015-04-01,249.17
+Department stores,2015-05-01,148.73
+Department stores,2015-06-01,132.27
+Department stores,2015-07-01,115.54
+Department stores,2015-08-01,110.3
+Department stores,2015-09-01,122.0
+Department stores,2015-10-01,118.32
+Department stores,2015-11-01,135.93
+Department stores,2015-12-01,217.21
+Department stores,2016-01-01,109.73
+Department stores,2016-02-01,137.13
+Department stores,2016-03-01,117.89
+Department stores,2016-04-01,228.99
+Department stores,2016-05-01,141.15
+Department stores,2016-06-01,122.73
+Department stores,2016-07-01,106.2
+Department stores,2016-08-01,105.89
+Department stores,2016-09-01,114.1
+Department stores,2016-10-01,113.35
+Department stores,2016-11-01,136.37
+Department stores,2016-12-01,209.96
+Department stores,2017-01-01,107.5
+Department stores,2017-02-01,139.19
+Department stores,2017-03-01,113.01
+Department stores,2017-04-01,239.08
+Department stores,2017-05-01,141.67
+Department stores,2017-06-01,124.2
+Department stores,2017-07-01,110.68
+Department stores,2017-08-01,106.26
+Department stores,2017-09-01,115.21
+Department stores,2017-10-01,112.08
+Department stores,2017-11-01,145.1
+Department stores,2017-12-01,215.12
+Department stores,2018-01-01,105.97
+Department stores,2018-02-01,141.82
+Department stores,2018-03-01,114.23
+Department stores,2018-04-01,231.51
+Department stores,2018-05-01,145.29
+Department stores,2018-06-01,129.85
+Department stores,2018-07-01,117.84
+Department stores,2018-08-01,112.13
+Department stores,2018-09-01,114.38
+Department stores,2018-10-01,115.14
+Department stores,2018-11-01,146.09
+Department stores,2018-12-01,204.47
+Department stores,2019-01-01,100.81
+Department stores,2019-02-01,137.5
+Department stores,2019-03-01,113.17
+Department stores,2019-04-01,243.28
+Department stores,2019-05-01,139.78
+Department stores,2019-06-01,117.75
+Department stores,2019-07-01,106.58
+Department stores,2019-08-01,101.85
+Department stores,2019-09-01,106.49
+Department stores,2019-10-01,106.85
+Department stores,2019-11-01,133.72
+Department stores,2019-12-01,202.05
+Department stores,2020-01-01,96.9
+Department stores,2020-02-01,132.06
+Department stores,2020-03-01,79.15
+Department stores,2020-04-01,51.29
+Department stores,2020-05-01,61.8
+Department stores,2020-06-01,95.17
+Department stores,2020-07-01,89.05
+Department stores,2020-08-01,93.77
+Department stores,2020-09-01,107.18
+Department stores,2020-10-01,98.18
+Department stores,2020-11-01,84.58
+Department stores,2020-12-01,175.26
+Department stores,2021-01-01,51.1
+Department stores,2021-02-01,68.3
+Department stores,2021-03-01,65.6
+Department stores,2021-04-01,61.7
+Department stores,2021-05-01,94.8
+Department stores,2021-06-01,125.6
+Department stores,2021-07-01,99.6
+Department stores,2021-08-01,108.4
+Department stores,2021-09-01,103.7
+Department stores,2021-10-01,99.6
+Department stores,2021-11-01,119.5
+Department stores,2021-12-01,182.8
+Department stores,2022-01-01,97.1
+Department stores,2022-02-01,108.8
+Department stores,2022-03-01,113.5
+Department stores,2022-04-01,177.2
+Department stores,2022-05-01,120.0
+Department stores,2022-06-01,128.9
+Department stores,2022-07-01,107.1
+Department stores,2022-08-01,114.4
+Department stores,2022-09-01,112.7
+Department stores,2022-10-01,107.7
+Department stores,2022-11-01,131.0
+Department stores,2022-12-01,200.9
+Department stores,2023-01-01,92.8
+Department stores,2023-02-01,115.1
+Department stores,2023-03-01,117.0
+Department stores,2023-04-01,194.2
+Department stores,2023-05-01,123.2
+Department stores,2023-06-01,128.0
+Department stores,2023-07-01,97.0
+Department stores,2023-08-01,117.6
+Department stores,2023-09-01,104.8
+Department stores,2023-10-01,98.1
+Department stores,2023-11-01,113.4
+Department stores,2023-12-01,188.5
+Department stores,2024-01-01,83.5
+Department stores,2024-02-01,98.6
+Department stores,2024-03-01,108.1
+Department stores,2024-04-01,176.6
+Department stores,2024-05-01,117.2
+Department stores,2024-06-01,118.7
+Department stores,2024-07-01,97.5
+Department stores,2024-08-01,115.8
+Department stores,2024-09-01,108.3
+Department stores,2024-10-01,100.1
+Department stores,2024-11-01,120.6
+Department stores,2024-12-01,195.9
+Department stores,2025-01-01,77.7
+Department stores,2025-02-01,101.9
+Department stores,2025-03-01,109.0
+Department stores,2025-04-01,178.0
+Department stores,2025-05-01,111.7
+Department stores,2025-06-01,120.9
+Department stores,2025-07-01,93.5
+Department stores,2025-08-01,105.2
+Department stores,2025-09-01,109.5
+Department stores,2025-10-01,102.3
+Department stores,2025-11-01,120.8
+Department stores,2025-12-01,201.3
+Department stores,2026-01-01,81.4
+Department stores,2026-02-01,102.0
+Department stores,2026-03-01,114.0
+Department stores,2026-04-01,177.0
+Department stores,2026-05-01,114.6
+Department stores,2026-06-01,123.8
+Department stores,2026-07-01,96.0
+Department stores,2026-08-01,114.5
+Department stores,2026-09-01,115.2
+Automotive fuel,2015-01-01,73.95
+Automotive fuel,2015-02-01,85.28
+Automotive fuel,2015-03-01,91.47
+Automotive fuel,2015-04-01,95.85
+Automotive fuel,2015-05-01,101.5
+Automotive fuel,2015-06-01,106.69
+Automotive fuel,2015-07-01,99.33
+Automotive fuel,2015-08-01,97.27
+Automotive fuel,2015-09-01,97.82
+Automotive fuel,2015-10-01,94.8
+Automotive fuel,2015-11-01,93.85
+Automotive fuel,2015-12-01,97.93
+Automotive fuel,2016-01-01,74.56
+Automotive fuel,2016-02-01,82.29
+Automotive fuel,2016-03-01,80.32
+Automotive fuel,2016-04-01,86.35
+Automotive fuel,2016-05-01,97.58
+Automotive fuel,2016-06-01,99.02
+Automotive fuel,2016-07-01,92.11
+Automotive fuel,2016-08-01,94.73
+Automotive fuel,2016-09-01,93.78
+Automotive fuel,2016-10-01,95.77
+Automotive fuel,2016-11-01,98.89
+Automotive fuel,2016-12-01,97.93
+Automotive fuel,2017-01-01,86.72
+Automotive fuel,2017-02-01,94.26
+Automotive fuel,2017-03-01,93.29
+Automotive fuel,2017-04-01,96.59
+Automotive fuel,2017-05-01,104.84
+Automotive fuel,2017-06-01,102.95
+Automotive fuel,2017-07-01,98.26
+Automotive fuel,2017-08-01,95.51
+Automotive fuel,2017-09-01,95.12
+Automotive fuel,2017-10-01,100.63
+Automotive fuel,2017-11-01,102.71
+Automotive fuel,2017-12-01,100.87
+Automotive fuel,2018-01-01,88.62
+Automotive fuel,2018-02-01,97.07
+Automotive fuel,2018-03-01,87.54
+Automotive fuel,2018-04-01,101.48
+Automotive fuel,2018-05-01,111.43
+Automotive fuel,2018-06-01,110.24
+Automotive fuel,2018-07-01,110.36
+Automotive fuel,2018-08-01,103.14
+Automotive fuel,2018-09-01,108.78
+Automotive fuel,2018-10-01,113.08
+Automotive fuel,2018-11-01,108.12
+Automotive fuel,2018-12-01,108.43
+Automotive fuel,2019-01-01,91.21
+Automotive fuel,2019-02-01,98.22
+Automotive fuel,2019-03-01,97.86
+Automotive fuel,2019-04-01,106.83
+Automotive fuel,2019-05-01,113.43
+Automotive fuel,2019-06-01,110.72
+Automotive fuel,2019-07-01,109.87
+Automotive fuel,2019-08-01,99.81
+Automotive fuel,2019-09-01,110.32
+Automotive fuel,2019-10-01,108.51
+Automotive fuel,2019-11-01,104.02
+Automotive fuel,2019-12-01,109.9
+Automotive fuel,2020-01-01,93.71
+Automotive fuel,2020-02-01,99.01
+Automotive fuel,2020-03-01,83.88
+Automotive fuel,2020-04-01,51.29
+Automotive fuel,2020-05-01,66.45
+Automotive fuel,2020-06-01,85.03
+Automotive fuel,2020-07-01,95.33
+Automotive fuel,2020-08-01,91.6
+Automotive fuel,2020-09-01,95.7
+Automotive fuel,2020-10-01,81.48
+Automotive fuel,2020-11-01,83.49
+Automotive fuel,2020-12-01,97.19
+Automotive fuel,2021-01-01,63.0
+Automotive fuel,2021-02-01,72.7
+Automotive fuel,2021-03-01,83.4
+Automotive fuel,2021-04-01,90.7
+Automotive fuel,2021-05-01,100.2
+Automotive fuel,2021-06-01,110.0
+Automotive fuel,2021-07-01,109.0
+Automotive fuel,2021-08-01,110.9
+Automotive fuel,2021-09-01,112.2
+Automotive fuel,2021-10-01,114.1
+Automotive fuel,2021-11-01,115.5
+Automotive fuel,2021-12-01,113.6
+Automotive fuel,2022-01-01,98.2
+Automotive fuel,2022-02-01,109.8
+Automotive fuel,2022-03-01,116.8
+Automotive fuel,2022-04-01,123.8
+Automotive fuel,2022-05-01,127.1
+Automotive fuel,2022-06-01,139.8
+Automotive fuel,2022-07-01,134.7
+Automotive fuel,2022-08-01,129.0
+Automotive fuel,2022-09-01,134.5
+Automotive fuel,2022-10-01,135.3
+Automotive fuel,2022-11-01,135.3
+Automotive fuel,2022-12-01,123.6
+Automotive fuel,2023-01-01,107.5
+Automotive fuel,2023-02-01,116.3
+Automotive fuel,2023-03-01,113.7
+Automotive fuel,2023-04-01,119.2
+Automotive fuel,2023-05-01,118.9
+Automotive fuel,2023-06-01,118.6
+Automotive fuel,2023-07-01,117.4
+Automotive fuel,2023-08-01,125.6
+Automotive fuel,2023-09-01,132.9
+Automotive fuel,2023-10-01,134.8
+Automotive fuel,2023-11-01,132.6
+Automotive fuel,2023-12-01,131.5
+Automotive fuel,2024-01-01,108.8
+Automotive fuel,2024-02-01,119.3
+Automotive fuel,2024-03-01,121.7
+Automotive fuel,2024-04-01,124.0
+Automotive fuel,2024-05-01,130.0
+Automotive fuel,2024-06-01,128.6
+Automotive fuel,2024-07-01,123.8
+Automotive fuel,2024-08-01,126.6
+Automotive fuel,2024-09-01,127.3
+Automotive fuel,2024-10-01,127.6
+Automotive fuel,2024-11-01,129.6
+Automotive fuel,2024-12-01,128.6
+Automotive fuel,2025-01-01,107.5
+Automotive fuel,2025-02-01,121.9
+Automotive fuel,2025-03-01,120.1
+Automotive fuel,2025-04-01,123.3
+Automotive fuel,2025-05-01,127.3
+Automotive fuel,2025-06-01,123.6
+Automotive fuel,2025-07-01,125.4
+Automotive fuel,2025-08-01,125.4
+Automotive fuel,2025-09-01,125.2
+Automotive fuel,2025-10-01,132.1
+Automotive fuel,2025-11-01,135.0
+Automotive fuel,2025-12-01,129.2
+Automotive fuel,2026-01-01,111.6
+Automotive fuel,2026-02-01,120.6
+Automotive fuel,2026-03-01,132.8
+Automotive fuel,2026-04-01,136.5
+Automotive fuel,2026-05-01,135.7
+Automotive fuel,2026-06-01,130.1
+Automotive fuel,2026-07-01,135.1
+Automotive fuel,2026-08-01,132.1
+Automotive fuel,2026-09-01,139.2
+Specialised food & drink,2015-01-01,112.97
+Specialised food & drink,2015-02-01,77.66
+Specialised food & drink,2015-03-01,77.49
+Specialised food & drink,2015-04-01,81.66
+Specialised food & drink,2015-05-01,85.19
+Specialised food & drink,2015-06-01,85.13
+Specialised food & drink,2015-07-01,93.12
+Specialised food & drink,2015-08-01,86.73
+Specialised food & drink,2015-09-01,78.64
+Specialised food & drink,2015-10-01,70.2
+Specialised food & drink,2015-11-01,83.91
+Specialised food & drink,2015-12-01,95.85
+Specialised food & drink,2016-01-01,112.42
+Specialised food & drink,2016-02-01,77.66
+Specialised food & drink,2016-03-01,79.99
+Specialised food & drink,2016-04-01,79.93
+Specialised food & drink,2016-05-01,88.34
+Specialised food & drink,2016-06-01,89.2
+Specialised food & drink,2016-07-01,93.3
+Specialised food & drink,2016-08-01,88.41
+Specialised food & drink,2016-09-01,78.64
+Specialised food & drink,2016-10-01,70.06
+Specialised food & drink,2016-11-01,86.31
+Specialised food & drink,2016-12-01,89.52
+Specialised food & drink,2017-01-01,116.8
+Specialised food & drink,2017-02-01,76.51
+Specialised food & drink,2017-03-01,77.66
+Specialised food & drink,2017-04-01,79.07
+Specialised food & drink,2017-05-01,87.53
+Specialised food & drink,2017-06-01,85.13
+Specialised food & drink,2017-07-01,92.19
+Specialised food & drink,2017-08-01,87.35
+Specialised food & drink,2017-09-01,78.64
+Specialised food & drink,2017-10-01,69.3
+Specialised food & drink,2017-11-01,84.9
+Specialised food & drink,2017-12-01,88.29
+Specialised food & drink,2018-01-01,117.35
+Specialised food & drink,2018-02-01,73.67
+Specialised food & drink,2018-03-01,73.25
+Specialised food & drink,2018-04-01,80.97
+Specialised food & drink,2018-05-01,86.09
+Specialised food & drink,2018-06-01,81.05
+Specialised food & drink,2018-07-01,92.0
+Specialised food & drink,2018-08-01,89.92
+Specialised food & drink,2018-09-01,83.98
+Specialised food & drink,2018-10-01,72.62
+Specialised food & drink,2018-11-01,82.0
+Specialised food & drink,2018-12-01,90.94
+Specialised food & drink,2019-01-01,118.04
+Specialised food & drink,2019-02-01,76.24
+Specialised food & drink,2019-03-01,73.5
+Specialised food & drink,2019-04-01,83.31
+Specialised food & drink,2019-05-01,84.56
+Specialised food & drink,2019-06-01,81.76
+Specialised food & drink,2019-07-01,92.28
+Specialised food & drink,2019-08-01,90.71
+Specialised food & drink,2019-09-01,84.48
+Specialised food & drink,2019-10-01,73.04
+Specialised food & drink,2019-11-01,80.34
+Specialised food & drink,2019-12-01,95.98
+Specialised food & drink,2020-01-01,117.35
+Specialised food & drink,2020-02-01,73.76
+Specialised food & drink,2020-03-01,85.31
+Specialised food & drink,2020-04-01,95.33
+Specialised food & drink,2020-05-01,94.72
+Specialised food & drink,2020-06-01,96.12
+Specialised food & drink,2020-07-01,104.91
+Specialised food & drink,2020-08-01,99.92
+Specialised food & drink,2020-09-01,95.82
+Specialised food & drink,2020-10-01,88.46
+Specialised food & drink,2020-11-01,97.59
+Specialised food & drink,2020-12-01,109.34
+Specialised food & drink,2021-01-01,134.8
+Specialised food & drink,2021-02-01,87.2
+Specialised food & drink,2021-03-01,84.5
+Specialised food & drink,2021-04-01,100.4
+Specialised food & drink,2021-05-01,97.1
+Specialised food & drink,2021-06-01,102.4
+Specialised food & drink,2021-07-01,104.5
+Specialised food & drink,2021-08-01,102.5
+Specialised food & drink,2021-09-01,97.1
+Specialised food & drink,2021-10-01,83.3
+Specialised food & drink,2021-11-01,95.1
+Specialised food & drink,2021-12-01,112.0
+Specialised food & drink,2022-01-01,124.4
+Specialised food & drink,2022-02-01,86.2
+Specialised food & drink,2022-03-01,77.1
+Specialised food & drink,2022-04-01,93.1
+Specialised food & drink,2022-05-01,87.6
+Specialised food & drink,2022-06-01,90.6
+Specialised food & drink,2022-07-01,98.6
+Specialised food & drink,2022-08-01,101.0
+Specialised food & drink,2022-09-01,90.8
+Specialised food & drink,2022-10-01,83.8
+Specialised food & drink,2022-11-01,99.3
+Specialised food & drink,2022-12-01,108.1
+Specialised food & drink,2023-01-01,132.4
+Specialised food & drink,2023-02-01,91.6
+Specialised food & drink,2023-03-01,79.5
+Specialised food & drink,2023-04-01,99.2
+Specialised food & drink,2023-05-01,95.3
+Specialised food & drink,2023-06-01,96.6
+Specialised food & drink,2023-07-01,101.9
+Specialised food & drink,2023-08-01,104.2
+Specialised food & drink,2023-09-01,98.6
+Specialised food & drink,2023-10-01,88.5
+Specialised food & drink,2023-11-01,98.1
+Specialised food & drink,2023-12-01,107.5
+Specialised food & drink,2024-01-01,134.9
+Specialised food & drink,2024-02-01,92.5
+Specialised food & drink,2024-03-01,77.2
+Specialised food & drink,2024-04-01,96.0
+Specialised food & drink,2024-05-01,95.8
+Specialised food & drink,2024-06-01,97.4
+Specialised food & drink,2024-07-01,103.0
+Specialised food & drink,2024-08-01,103.6
+Specialised food & drink,2024-09-01,98.9
+Specialised food & drink,2024-10-01,92.2
+Specialised food & drink,2024-11-01,104.3
+Specialised food & drink,2024-12-01,114.2
+Specialised food & drink,2025-01-01,137.6
+Specialised food & drink,2025-02-01,95.6
+Specialised food & drink,2025-03-01,82.3
+Specialised food & drink,2025-04-01,104.2
+Specialised food & drink,2025-05-01,96.1
+Specialised food & drink,2025-06-01,94.8
+Specialised food & drink,2025-07-01,103.0
+Specialised food & drink,2025-08-01,100.8
+Specialised food & drink,2025-09-01,96.7
+Specialised food & drink,2025-10-01,92.3
+Specialised food & drink,2025-11-01,99.6
+Specialised food & drink,2025-12-01,115.0
+Specialised food & drink,2026-01-01,137.4
+Specialised food & drink,2026-02-01,96.7
+Specialised food & drink,2026-03-01,82.9
+Specialised food & drink,2026-04-01,107.5
+Specialised food & drink,2026-05-01,96.4
+Specialised food & drink,2026-06-01,96.6
+Specialised food & drink,2026-07-01,106.9
+Specialised food & drink,2026-08-01,105.6
+Specialised food & drink,2026-09-01,97.7
+Electrical goods,2015-01-01,74.83
+Electrical goods,2015-02-01,74.43
+Electrical goods,2015-03-01,70.16
+Electrical goods,2015-04-01,70.89
+Electrical goods,2015-05-01,65.28
+Electrical goods,2015-06-01,72.99
+Electrical goods,2015-07-01,59.51
+Electrical goods,2015-08-01,69.45
+Electrical goods,2015-09-01,68.54
+Electrical goods,2015-10-01,70.48
+Electrical goods,2015-11-01,83.68
+Electrical goods,2015-12-01,122.88
+Electrical goods,2016-01-01,78.08
+Electrical goods,2016-02-01,77.04
+Electrical goods,2016-03-01,69.54
+Electrical goods,2016-04-01,75.17
+Electrical goods,2016-05-01,64.07
+Electrical goods,2016-06-01,75.57
+Electrical goods,2016-07-01,58.82
+Electrical goods,2016-08-01,68.68
+Electrical goods,2016-09-01,70.43
+Electrical goods,2016-10-01,71.31
+Electrical goods,2016-11-01,87.59
+Electrical goods,2016-12-01,116.99
+Electrical goods,2017-01-01,79.83
+Electrical goods,2017-02-01,76.17
+Electrical goods,2017-03-01,70.94
+Electrical goods,2017-04-01,75.26
+Electrical goods,2017-05-01,67.69
+Electrical goods,2017-06-01,76.9
+Electrical goods,2017-07-01,59.72
+Electrical goods,2017-08-01,69.52
+Electrical goods,2017-09-01,71.78
+Electrical goods,2017-10-01,70.86
+Electrical goods,2017-11-01,98.72
+Electrical goods,2017-12-01,120.62
+Electrical goods,2018-01-01,83.09
+Electrical goods,2018-02-01,75.88
+Electrical goods,2018-03-01,71.55
+Electrical goods,2018-04-01,71.69
+Electrical goods,2018-05-01,64.75
+Electrical goods,2018-06-01,78.98
+Electrical goods,2018-07-01,65.55
+Electrical goods,2018-08-01,69.38
+Electrical goods,2018-09-01,79.07
+Electrical goods,2018-10-01,79.42
+Electrical goods,2018-11-01,105.87
+Electrical goods,2018-12-01,129.85
+Electrical goods,2019-01-01,87.34
+Electrical goods,2019-02-01,81.1
+Electrical goods,2019-03-01,78.37
+Electrical goods,2019-04-01,79.98
+Electrical goods,2019-05-01,70.03
+Electrical goods,2019-06-01,84.88
+Electrical goods,2019-07-01,67.43
+Electrical goods,2019-08-01,75.66
+Electrical goods,2019-09-01,82.24
+Electrical goods,2019-10-01,83.1
+Electrical goods,2019-11-01,96.93
+Electrical goods,2019-12-01,147.64
+Electrical goods,2020-01-01,94.76
+Electrical goods,2020-02-01,87.28
+Electrical goods,2020-03-01,90.25
+Electrical goods,2020-04-01,48.36
+Electrical goods,2020-05-01,56.01
+Electrical goods,2020-06-01,90.2
+Electrical goods,2020-07-01,80.2
+Electrical goods,2020-08-01,89.29
+Electrical goods,2020-09-01,99.51
+Electrical goods,2020-10-01,106.32
+Electrical goods,2020-11-01,120.25
+Electrical goods,2020-12-01,147.98
+Electrical goods,2021-01-01,103.7
+Electrical goods,2021-02-01,106.6
+Electrical goods,2021-03-01,95.3
+Electrical goods,2021-04-01,83.2
+Electrical goods,2021-05-01,77.8
+Electrical goods,2021-06-01,80.8
+Electrical goods,2021-07-01,75.0
+Electrical goods,2021-08-01,89.0
+Electrical goods,2021-09-01,99.7
+Electrical goods,2021-10-01,94.4
+Electrical goods,2021-11-01,149.4
+Electrical goods,2021-12-01,140.9
+Electrical goods,2022-01-01,102.3
+Electrical goods,2022-02-01,99.8
+Electrical goods,2022-03-01,86.2
+Electrical goods,2022-04-01,82.6
+Electrical goods,2022-05-01,86.0
+Electrical goods,2022-06-01,81.0
+Electrical goods,2022-07-01,73.0
+Electrical goods,2022-08-01,89.4
+Electrical goods,2022-09-01,101.5
+Electrical goods,2022-10-01,98.1
+Electrical goods,2022-11-01,153.5
+Electrical goods,2022-12-01,152.9
+Electrical goods,2023-01-01,105.5
+Electrical goods,2023-02-01,98.6
+Electrical goods,2023-03-01,89.3
+Electrical goods,2023-04-01,80.2
+Electrical goods,2023-05-01,88.7
+Electrical goods,2023-06-01,77.2
+Electrical goods,2023-07-01,73.7
+Electrical goods,2023-08-01,94.4
+Electrical goods,2023-09-01,106.4
+Electrical goods,2023-10-01,109.9
+Electrical goods,2023-11-01,144.7
+Electrical goods,2023-12-01,154.9
+Electrical goods,2024-01-01,112.8
+Electrical goods,2024-02-01,111.9
+Electrical goods,2024-03-01,91.8
+Electrical goods,2024-04-01,82.7
+Electrical goods,2024-05-01,84.2
+Electrical goods,2024-06-01,84.5
+Electrical goods,2024-07-01,68.3
+Electrical goods,2024-08-01,87.2
+Electrical goods,2024-09-01,109.4
+Electrical goods,2024-10-01,104.9
+Electrical goods,2024-11-01,144.3
+Electrical goods,2024-12-01,157.8
+Electrical goods,2025-01-01,101.7
+Electrical goods,2025-02-01,105.1
+Electrical goods,2025-03-01,90.3
+Electrical goods,2025-04-01,79.9
+Electrical goods,2025-05-01,80.5
+Electrical goods,2025-06-01,86.8
+Electrical goods,2025-07-01,69.0
+Electrical goods,2025-08-01,88.8
+Electrical goods,2025-09-01,113.3
+Electrical goods,2025-10-01,107.4
+Electrical goods,2025-11-01,144.3
+Electrical goods,2025-12-01,165.0
+Electrical goods,2026-01-01,103.0
+Electrical goods,2026-02-01,103.9
+Electrical goods,2026-03-01,98.3
+Electrical goods,2026-04-01,82.8
+Electrical goods,2026-05-01,82.3
+Electrical goods,2026-06-01,89.7
+Electrical goods,2026-07-01,73.4
+Electrical goods,2026-08-01,91.4
+Electrical goods,2026-09-01,117.2
+"Hardware, paints & glass",2015-01-01,56.42
+"Hardware, paints & glass",2015-02-01,55.78
+"Hardware, paints & glass",2015-03-01,64.0
+"Hardware, paints & glass",2015-04-01,89.2
+"Hardware, paints & glass",2015-05-01,70.37
+"Hardware, paints & glass",2015-06-01,69.57
+"Hardware, paints & glass",2015-07-01,69.62
+"Hardware, paints & glass",2015-08-01,64.68
+"Hardware, paints & glass",2015-09-01,55.75
+"Hardware, paints & glass",2015-10-01,60.05
+"Hardware, paints & glass",2015-11-01,64.32
+"Hardware, paints & glass",2015-12-01,75.03
+"Hardware, paints & glass",2016-01-01,59.4
+"Hardware, paints & glass",2016-02-01,58.34
+"Hardware, paints & glass",2016-03-01,69.94
+"Hardware, paints & glass",2016-04-01,87.51
+"Hardware, paints & glass",2016-05-01,81.91
+"Hardware, paints & glass",2016-06-01,69.51
+"Hardware, paints & glass",2016-07-01,70.91
+"Hardware, paints & glass",2016-08-01,68.52
+"Hardware, paints & glass",2016-09-01,55.4
+"Hardware, paints & glass",2016-10-01,62.19
+"Hardware, paints & glass",2016-11-01,69.6
+"Hardware, paints & glass",2016-12-01,72.89
+"Hardware, paints & glass",2017-01-01,61.03
+"Hardware, paints & glass",2017-02-01,62.34
+"Hardware, paints & glass",2017-03-01,72.0
+"Hardware, paints & glass",2017-04-01,91.27
+"Hardware, paints & glass",2017-05-01,85.76
+"Hardware, paints & glass",2017-06-01,72.88
+"Hardware, paints & glass",2017-07-01,75.3
+"Hardware, paints & glass",2017-08-01,72.36
+"Hardware, paints & glass",2017-09-01,59.36
+"Hardware, paints & glass",2017-10-01,65.6
+"Hardware, paints & glass",2017-11-01,73.12
+"Hardware, paints & glass",2017-12-01,79.95
+"Hardware, paints & glass",2018-01-01,67.19
+"Hardware, paints & glass",2018-02-01,69.62
+"Hardware, paints & glass",2018-03-01,67.11
+"Hardware, paints & glass",2018-04-01,97.88
+"Hardware, paints & glass",2018-05-01,95.75
+"Hardware, paints & glass",2018-06-01,84.5
+"Hardware, paints & glass",2018-07-01,80.6
+"Hardware, paints & glass",2018-08-01,75.5
+"Hardware, paints & glass",2018-09-01,66.76
+"Hardware, paints & glass",2018-10-01,72.1
+"Hardware, paints & glass",2018-11-01,73.58
+"Hardware, paints & glass",2018-12-01,82.02
+"Hardware, paints & glass",2019-01-01,70.38
+"Hardware, paints & glass",2019-02-01,73.76
+"Hardware, paints & glass",2019-03-01,80.0
+"Hardware, paints & glass",2019-04-01,104.79
+"Hardware, paints & glass",2019-05-01,96.37
+"Hardware, paints & glass",2019-06-01,84.75
+"Hardware, paints & glass",2019-07-01,87.96
+"Hardware, paints & glass",2019-08-01,77.16
+"Hardware, paints & glass",2019-09-01,68.33
+"Hardware, paints & glass",2019-10-01,74.19
+"Hardware, paints & glass",2019-11-01,78.66
+"Hardware, paints & glass",2019-12-01,89.31
+"Hardware, paints & glass",2020-01-01,70.31
+"Hardware, paints & glass",2020-02-01,71.26
+"Hardware, paints & glass",2020-03-01,88.92
+"Hardware, paints & glass",2020-04-01,52.17
+"Hardware, paints & glass",2020-05-01,95.07
+"Hardware, paints & glass",2020-06-01,110.48
+"Hardware, paints & glass",2020-07-01,102.17
+"Hardware, paints & glass",2020-08-01,95.39
+"Hardware, paints & glass",2020-09-01,91.58
+"Hardware, paints & glass",2020-10-01,96.6
+"Hardware, paints & glass",2020-11-01,95.54
+"Hardware, paints & glass",2020-12-01,106.3
+"Hardware, paints & glass",2021-01-01,69.0
+"Hardware, paints & glass",2021-02-01,89.0
+"Hardware, paints & glass",2021-03-01,119.1
+"Hardware, paints & glass",2021-04-01,138.6
+"Hardware, paints & glass",2021-05-01,117.0
+"Hardware, paints & glass",2021-06-01,108.6
+"Hardware, paints & glass",2021-07-01,94.8
+"Hardware, paints & glass",2021-08-01,90.9
+"Hardware, paints & glass",2021-09-01,86.5
+"Hardware, paints & glass",2021-10-01,80.7
+"Hardware, paints & glass",2021-11-01,96.4
+"Hardware, paints & glass",2021-12-01,104.7
+"Hardware, paints & glass",2022-01-01,77.1
+"Hardware, paints & glass",2022-02-01,83.8
+"Hardware, paints & glass",2022-03-01,108.3
+"Hardware, paints & glass",2022-04-01,113.9
+"Hardware, paints & glass",2022-05-01,125.5
+"Hardware, paints & glass",2022-06-01,111.1
+"Hardware, paints & glass",2022-07-01,96.1
+"Hardware, paints & glass",2022-08-01,93.3
+"Hardware, paints & glass",2022-09-01,93.4
+"Hardware, paints & glass",2022-10-01,82.3
+"Hardware, paints & glass",2022-11-01,101.3
+"Hardware, paints & glass",2022-12-01,103.4
+"Hardware, paints & glass",2023-01-01,81.0
+"Hardware, paints & glass",2023-02-01,93.0
+"Hardware, paints & glass",2023-03-01,99.2
+"Hardware, paints & glass",2023-04-01,120.1
+"Hardware, paints & glass",2023-05-01,135.2
+"Hardware, paints & glass",2023-06-01,120.6
+"Hardware, paints & glass",2023-07-01,94.8
+"Hardware, paints & glass",2023-08-01,95.0
+"Hardware, paints & glass",2023-09-01,94.6
+"Hardware, paints & glass",2023-10-01,84.0
+"Hardware, paints & glass",2023-11-01,99.8
+"Hardware, paints & glass",2023-12-01,108.0
+"Hardware, paints & glass",2024-01-01,76.6
+"Hardware, paints & glass",2024-02-01,92.0
+"Hardware, paints & glass",2024-03-01,101.8
+"Hardware, paints & glass",2024-04-01,119.8
+"Hardware, paints & glass",2024-05-01,129.3
+"Hardware, paints & glass",2024-06-01,126.7
+"Hardware, paints & glass",2024-07-01,106.1
+"Hardware, paints & glass",2024-08-01,95.5
+"Hardware, paints & glass",2024-09-01,98.0
+"Hardware, paints & glass",2024-10-01,87.6
+"Hardware, paints & glass",2024-11-01,102.9
+"Hardware, paints & glass",2024-12-01,110.1
+"Hardware, paints & glass",2025-01-01,75.1
+"Hardware, paints & glass",2025-02-01,90.0
+"Hardware, paints & glass",2025-03-01,108.9
+"Hardware, paints & glass",2025-04-01,129.2
+"Hardware, paints & glass",2025-05-01,134.4
+"Hardware, paints & glass",2025-06-01,120.2
+"Hardware, paints & glass",2025-07-01,111.6
+"Hardware, paints & glass",2025-08-01,102.4
+"Hardware, paints & glass",2025-09-01,105.9
+"Hardware, paints & glass",2025-10-01,87.7
+"Hardware, paints & glass",2025-11-01,103.7
+"Hardware, paints & glass",2025-12-01,106.4
+"Hardware, paints & glass",2026-01-01,78.0
+"Hardware, paints & glass",2026-02-01,92.8
+"Hardware, paints & glass",2026-03-01,110.3
+"Hardware, paints & glass",2026-04-01,130.0
+"Hardware, paints & glass",2026-05-01,138.8
+"Hardware, paints & glass",2026-06-01,129.1
+"Hardware, paints & glass",2026-07-01,119.0
+"Hardware, paints & glass",2026-08-01,105.3
+"Hardware, paints & glass",2026-09-01,102.7
+Furniture & lighting,2015-01-01,63.12
+Furniture & lighting,2015-02-01,69.09
+Furniture & lighting,2015-03-01,77.57
+Furniture & lighting,2015-04-01,53.49
+Furniture & lighting,2015-05-01,80.82
+Furniture & lighting,2015-06-01,66.06
+Furniture & lighting,2015-07-01,81.29
+Furniture & lighting,2015-08-01,77.86
+Furniture & lighting,2015-09-01,76.29
+Furniture & lighting,2015-10-01,67.39
+Furniture & lighting,2015-11-01,91.5
+Furniture & lighting,2015-12-01,96.25
+Furniture & lighting,2016-01-01,71.24
+Furniture & lighting,2016-02-01,75.35
+Furniture & lighting,2016-03-01,81.56
+Furniture & lighting,2016-04-01,58.39
+Furniture & lighting,2016-05-01,87.56
+Furniture & lighting,2016-06-01,71.6
+Furniture & lighting,2016-07-01,84.94
+Furniture & lighting,2016-08-01,82.94
+Furniture & lighting,2016-09-01,80.0
+Furniture & lighting,2016-10-01,69.7
+Furniture & lighting,2016-11-01,101.35
+Furniture & lighting,2016-12-01,97.95
+Furniture & lighting,2017-01-01,79.65
+Furniture & lighting,2017-02-01,84.01
+Furniture & lighting,2017-03-01,85.64
+Furniture & lighting,2017-04-01,65.07
+Furniture & lighting,2017-05-01,96.34
+Furniture & lighting,2017-06-01,81.13
+Furniture & lighting,2017-07-01,92.14
+Furniture & lighting,2017-08-01,88.71
+Furniture & lighting,2017-09-01,87.05
+Furniture & lighting,2017-10-01,76.62
+Furniture & lighting,2017-11-01,107.64
+Furniture & lighting,2017-12-01,111.18
+Furniture & lighting,2018-01-01,87.77
+Furniture & lighting,2018-02-01,88.68
+Furniture & lighting,2018-03-01,81.83
+Furniture & lighting,2018-04-01,71.28
+Furniture & lighting,2018-05-01,102.66
+Furniture & lighting,2018-06-01,81.81
+Furniture & lighting,2018-07-01,94.12
+Furniture & lighting,2018-08-01,93.41
+Furniture & lighting,2018-09-01,89.97
+Furniture & lighting,2018-10-01,85.19
+Furniture & lighting,2018-11-01,117.57
+Furniture & lighting,2018-12-01,113.38
+Furniture & lighting,2019-01-01,92.04
+Furniture & lighting,2019-02-01,99.39
+Furniture & lighting,2019-03-01,102.25
+Furniture & lighting,2019-04-01,69.03
+Furniture & lighting,2019-05-01,107.15
+Furniture & lighting,2019-06-01,94.99
+Furniture & lighting,2019-07-01,97.15
+Furniture & lighting,2019-08-01,96.21
+Furniture & lighting,2019-09-01,95.88
+Furniture & lighting,2019-10-01,85.26
+Furniture & lighting,2019-11-01,122.09
+Furniture & lighting,2019-12-01,119.89
+Furniture & lighting,2020-01-01,94.08
+Furniture & lighting,2020-02-01,103.38
+Furniture & lighting,2020-03-01,81.74
+Furniture & lighting,2020-04-01,9.26
+Furniture & lighting,2020-05-01,33.72
+Furniture & lighting,2020-06-01,102.03
+Furniture & lighting,2020-07-01,114.57
+Furniture & lighting,2020-08-01,113.57
+Furniture & lighting,2020-09-01,117.04
+Furniture & lighting,2020-10-01,98.89
+Furniture & lighting,2020-11-01,86.82
+Furniture & lighting,2020-12-01,137.94
+Furniture & lighting,2021-01-01,61.9
+Furniture & lighting,2021-02-01,77.0
+Furniture & lighting,2021-03-01,82.6
+Furniture & lighting,2021-04-01,70.7
+Furniture & lighting,2021-05-01,93.8
+Furniture & lighting,2021-06-01,108.6
+Furniture & lighting,2021-07-01,107.2
+Furniture & lighting,2021-08-01,112.2
+Furniture & lighting,2021-09-01,119.1
+Furniture & lighting,2021-10-01,105.4
+Furniture & lighting,2021-11-01,128.9
+Furniture & lighting,2021-12-01,124.1
+Furniture & lighting,2022-01-01,109.2
+Furniture & lighting,2022-02-01,114.9
+Furniture & lighting,2022-03-01,123.1
+Furniture & lighting,2022-04-01,82.8
+Furniture & lighting,2022-05-01,97.5
+Furniture & lighting,2022-06-01,105.9
+Furniture & lighting,2022-07-01,107.2
+Furniture & lighting,2022-08-01,106.3
+Furniture & lighting,2022-09-01,120.3
+Furniture & lighting,2022-10-01,102.6
+Furniture & lighting,2022-11-01,128.9
+Furniture & lighting,2022-12-01,123.6
+Furniture & lighting,2023-01-01,124.4
+Furniture & lighting,2023-02-01,120.6
+Furniture & lighting,2023-03-01,126.4
+Furniture & lighting,2023-04-01,87.5
+Furniture & lighting,2023-05-01,104.8
+Furniture & lighting,2023-06-01,109.9
+Furniture & lighting,2023-07-01,116.8
+Furniture & lighting,2023-08-01,120.9
+Furniture & lighting,2023-09-01,133.5
+Furniture & lighting,2023-10-01,108.4
+Furniture & lighting,2023-11-01,135.3
+Furniture & lighting,2023-12-01,130.1
+Furniture & lighting,2024-01-01,118.7
+Furniture & lighting,2024-02-01,126.7
+Furniture & lighting,2024-03-01,123.4
+Furniture & lighting,2024-04-01,85.6
+Furniture & lighting,2024-05-01,103.1
+Furniture & lighting,2024-06-01,104.9
+Furniture & lighting,2024-07-01,116.7
+Furniture & lighting,2024-08-01,123.3
+Furniture & lighting,2024-09-01,140.8
+Furniture & lighting,2024-10-01,115.2
+Furniture & lighting,2024-11-01,141.4
+Furniture & lighting,2024-12-01,132.1
+Furniture & lighting,2025-01-01,122.4
+Furniture & lighting,2025-02-01,127.2
+Furniture & lighting,2025-03-01,126.2
+Furniture & lighting,2025-04-01,92.5
+Furniture & lighting,2025-05-01,112.5
+Furniture & lighting,2025-06-01,118.4
+Furniture & lighting,2025-07-01,122.6
+Furniture & lighting,2025-08-01,120.1
+Furniture & lighting,2025-09-01,137.2
+Furniture & lighting,2025-10-01,112.1
+Furniture & lighting,2025-11-01,130.3
+Furniture & lighting,2025-12-01,126.9
+Furniture & lighting,2026-01-01,118.9
+Furniture & lighting,2026-02-01,119.1
+Furniture & lighting,2026-03-01,118.5
+Furniture & lighting,2026-04-01,82.3
+Furniture & lighting,2026-05-01,108.9
+Furniture & lighting,2026-06-01,111.6
+Furniture & lighting,2026-07-01,115.7
+Furniture & lighting,2026-08-01,126.5
+Furniture & lighting,2026-09-01,145.3
+"Clothing, footwear & textiles",2015-01-01,62.49
+"Clothing, footwear & textiles",2015-02-01,63.29
+"Clothing, footwear & textiles",2015-03-01,64.57
+"Clothing, footwear & textiles",2015-04-01,63.09
+"Clothing, footwear & textiles",2015-05-01,108.16
+"Clothing, footwear & textiles",2015-06-01,130.58
+"Clothing, footwear & textiles",2015-07-01,106.6
+"Clothing, footwear & textiles",2015-08-01,109.44
+"Clothing, footwear & textiles",2015-09-01,102.34
+"Clothing, footwear & textiles",2015-10-01,113.22
+"Clothing, footwear & textiles",2015-11-01,110.34
+"Clothing, footwear & textiles",2015-12-01,177.81
+"Clothing, footwear & textiles",2016-01-01,67.65
+"Clothing, footwear & textiles",2016-02-01,69.25
+"Clothing, footwear & textiles",2016-03-01,70.1
+"Clothing, footwear & textiles",2016-04-01,61.16
+"Clothing, footwear & textiles",2016-05-01,120.46
+"Clothing, footwear & textiles",2016-06-01,139.45
+"Clothing, footwear & textiles",2016-07-01,109.21
+"Clothing, footwear & textiles",2016-08-01,109.76
+"Clothing, footwear & textiles",2016-09-01,103.0
+"Clothing, footwear & textiles",2016-10-01,112.3
+"Clothing, footwear & textiles",2016-11-01,116.1
+"Clothing, footwear & textiles",2016-12-01,182.08
+"Clothing, footwear & textiles",2017-01-01,68.77
+"Clothing, footwear & textiles",2017-02-01,71.79
+"Clothing, footwear & textiles",2017-03-01,68.9
+"Clothing, footwear & textiles",2017-04-01,65.21
+"Clothing, footwear & textiles",2017-05-01,123.3
+"Clothing, footwear & textiles",2017-06-01,140.62
+"Clothing, footwear & textiles",2017-07-01,115.17
+"Clothing, footwear & textiles",2017-08-01,114.64
+"Clothing, footwear & textiles",2017-09-01,101.25
+"Clothing, footwear & textiles",2017-10-01,111.5
+"Clothing, footwear & textiles",2017-11-01,120.44
+"Clothing, footwear & textiles",2017-12-01,185.1
+"Clothing, footwear & textiles",2018-01-01,71.18
+"Clothing, footwear & textiles",2018-02-01,71.88
+"Clothing, footwear & textiles",2018-03-01,66.81
+"Clothing, footwear & textiles",2018-04-01,63.29
+"Clothing, footwear & textiles",2018-05-01,127.2
+"Clothing, footwear & textiles",2018-06-01,142.44
+"Clothing, footwear & textiles",2018-07-01,113.81
+"Clothing, footwear & textiles",2018-08-01,112.15
+"Clothing, footwear & textiles",2018-09-01,107.92
+"Clothing, footwear & textiles",2018-10-01,114.93
+"Clothing, footwear & textiles",2018-11-01,121.55
+"Clothing, footwear & textiles",2018-12-01,182.08
+"Clothing, footwear & textiles",2019-01-01,70.84
+"Clothing, footwear & textiles",2019-02-01,76.44
+"Clothing, footwear & textiles",2019-03-01,73.63
+"Clothing, footwear & textiles",2019-04-01,68.58
+"Clothing, footwear & textiles",2019-05-01,124.95
+"Clothing, footwear & textiles",2019-06-01,139.18
+"Clothing, footwear & textiles",2019-07-01,113.39
+"Clothing, footwear & textiles",2019-08-01,113.81
+"Clothing, footwear & textiles",2019-09-01,104.86
+"Clothing, footwear & textiles",2019-10-01,116.99
+"Clothing, footwear & textiles",2019-11-01,124.27
+"Clothing, footwear & textiles",2019-12-01,187.07
+"Clothing, footwear & textiles",2020-01-01,70.23
+"Clothing, footwear & textiles",2020-02-01,71.62
+"Clothing, footwear & textiles",2020-03-01,38.34
+"Clothing, footwear & textiles",2020-04-01,12.15
+"Clothing, footwear & textiles",2020-05-01,25.53
+"Clothing, footwear & textiles",2020-06-01,109.21
+"Clothing, footwear & textiles",2020-07-01,115.27
+"Clothing, footwear & textiles",2020-08-01,106.84
+"Clothing, footwear & textiles",2020-09-01,102.34
+"Clothing, footwear & textiles",2020-10-01,97.67
+"Clothing, footwear & textiles",2020-11-01,48.96
+"Clothing, footwear & textiles",2020-12-01,193.63
+"Clothing, footwear & textiles",2021-01-01,20.9
+"Clothing, footwear & textiles",2021-02-01,21.6
+"Clothing, footwear & textiles",2021-03-01,21.5
+"Clothing, footwear & textiles",2021-04-01,22.9
+"Clothing, footwear & textiles",2021-05-01,132.1
+"Clothing, footwear & textiles",2021-06-01,148.2
+"Clothing, footwear & textiles",2021-07-01,116.8
+"Clothing, footwear & textiles",2021-08-01,121.1
+"Clothing, footwear & textiles",2021-09-01,114.3
+"Clothing, footwear & textiles",2021-10-01,122.9
+"Clothing, footwear & textiles",2021-11-01,151.0
+"Clothing, footwear & textiles",2021-12-01,188.5
+"Clothing, footwear & textiles",2022-01-01,93.4
+"Clothing, footwear & textiles",2022-02-01,100.9
+"Clothing, footwear & textiles",2022-03-01,88.5
+"Clothing, footwear & textiles",2022-04-01,107.0
+"Clothing, footwear & textiles",2022-05-01,148.4
+"Clothing, footwear & textiles",2022-06-01,155.0
+"Clothing, footwear & textiles",2022-07-01,124.4
+"Clothing, footwear & textiles",2022-08-01,126.0
+"Clothing, footwear & textiles",2022-09-01,112.2
+"Clothing, footwear & textiles",2022-10-01,131.3
+"Clothing, footwear & textiles",2022-11-01,171.9
+"Clothing, footwear & textiles",2022-12-01,214.0
+"Clothing, footwear & textiles",2023-01-01,107.0
+"Clothing, footwear & textiles",2023-02-01,114.3
+"Clothing, footwear & textiles",2023-03-01,95.1
+"Clothing, footwear & textiles",2023-04-01,109.4
+"Clothing, footwear & textiles",2023-05-01,155.7
+"Clothing, footwear & textiles",2023-06-01,160.2
+"Clothing, footwear & textiles",2023-07-01,129.1
+"Clothing, footwear & textiles",2023-08-01,133.6
+"Clothing, footwear & textiles",2023-09-01,116.7
+"Clothing, footwear & textiles",2023-10-01,127.1
+"Clothing, footwear & textiles",2023-11-01,169.1
+"Clothing, footwear & textiles",2023-12-01,212.4
+"Clothing, footwear & textiles",2024-01-01,113.5
+"Clothing, footwear & textiles",2024-02-01,118.4
+"Clothing, footwear & textiles",2024-03-01,94.1
+"Clothing, footwear & textiles",2024-04-01,105.6
+"Clothing, footwear & textiles",2024-05-01,153.3
+"Clothing, footwear & textiles",2024-06-01,143.1
+"Clothing, footwear & textiles",2024-07-01,125.8
+"Clothing, footwear & textiles",2024-08-01,128.9
+"Clothing, footwear & textiles",2024-09-01,118.9
+"Clothing, footwear & textiles",2024-10-01,132.2
+"Clothing, footwear & textiles",2024-11-01,163.3
+"Clothing, footwear & textiles",2024-12-01,216.7
+"Clothing, footwear & textiles",2025-01-01,107.2
+"Clothing, footwear & textiles",2025-02-01,119.5
+"Clothing, footwear & textiles",2025-03-01,95.0
+"Clothing, footwear & textiles",2025-04-01,111.8
+"Clothing, footwear & textiles",2025-05-01,155.7
+"Clothing, footwear & textiles",2025-06-01,143.6
+"Clothing, footwear & textiles",2025-07-01,126.8
+"Clothing, footwear & textiles",2025-08-01,127.8
+"Clothing, footwear & textiles",2025-09-01,123.4
+"Clothing, footwear & textiles",2025-10-01,131.1
+"Clothing, footwear & textiles",2025-11-01,160.3
+"Clothing, footwear & textiles",2025-12-01,221.8
+"Clothing, footwear & textiles",2026-01-01,116.5
+"Clothing, footwear & textiles",2026-02-01,123.1
+"Clothing, footwear & textiles",2026-03-01,99.3
+"Clothing, footwear & textiles",2026-04-01,107.6
+"Clothing, footwear & textiles",2026-05-01,152.2
+"Clothing, footwear & textiles",2026-06-01,155.0
+"Clothing, footwear & textiles",2026-07-01,133.8
+"Clothing, footwear & textiles",2026-08-01,136.3
+"Clothing, footwear & textiles",2026-09-01,119.8
+"Books, news & stationery",2015-01-01,144.49
+"Books, news & stationery",2015-02-01,155.86
+"Books, news & stationery",2015-03-01,152.19
+"Books, news & stationery",2015-04-01,118.44
+"Books, news & stationery",2015-05-01,159.66
+"Books, news & stationery",2015-06-01,85.21
+"Books, news & stationery",2015-07-01,128.82
+"Books, news & stationery",2015-08-01,145.92
+"Books, news & stationery",2015-09-01,112.81
+"Books, news & stationery",2015-10-01,95.39
+"Books, news & stationery",2015-11-01,136.95
+"Books, news & stationery",2015-12-01,220.98
+"Books, news & stationery",2016-01-01,145.87
+"Books, news & stationery",2016-02-01,142.0
+"Books, news & stationery",2016-03-01,150.57
+"Books, news & stationery",2016-04-01,122.75
+"Books, news & stationery",2016-05-01,181.36
+"Books, news & stationery",2016-06-01,86.6
+"Books, news & stationery",2016-07-01,127.48
+"Books, news & stationery",2016-08-01,148.58
+"Books, news & stationery",2016-09-01,105.92
+"Books, news & stationery",2016-10-01,94.65
+"Books, news & stationery",2016-11-01,132.46
+"Books, news & stationery",2016-12-01,211.63
+"Books, news & stationery",2017-01-01,142.91
+"Books, news & stationery",2017-02-01,140.67
+"Books, news & stationery",2017-03-01,145.08
+"Books, news & stationery",2017-04-01,112.59
+"Books, news & stationery",2017-05-01,176.77
+"Books, news & stationery",2017-06-01,87.38
+"Books, news & stationery",2017-07-01,129.91
+"Books, news & stationery",2017-08-01,150.28
+"Books, news & stationery",2017-09-01,109.51
+"Books, news & stationery",2017-10-01,96.03
+"Books, news & stationery",2017-11-01,127.69
+"Books, news & stationery",2017-12-01,223.84
+"Books, news & stationery",2018-01-01,148.44
+"Books, news & stationery",2018-02-01,142.38
+"Books, news & stationery",2018-03-01,151.58
+"Books, news & stationery",2018-04-01,120.6
+"Books, news & stationery",2018-05-01,192.43
+"Books, news & stationery",2018-06-01,90.61
+"Books, news & stationery",2018-07-01,145.33
+"Books, news & stationery",2018-08-01,155.01
+"Books, news & stationery",2018-09-01,111.54
+"Books, news & stationery",2018-10-01,102.9
+"Books, news & stationery",2018-11-01,142.12
+"Books, news & stationery",2018-12-01,222.93
+"Books, news & stationery",2019-01-01,159.71
+"Books, news & stationery",2019-02-01,151.3
+"Books, news & stationery",2019-03-01,156.25
+"Books, news & stationery",2019-04-01,134.46
+"Books, news & stationery",2019-05-01,203.91
+"Books, news & stationery",2019-06-01,93.83
+"Books, news & stationery",2019-07-01,135.62
+"Books, news & stationery",2019-08-01,155.01
+"Books, news & stationery",2019-09-01,114.45
+"Books, news & stationery",2019-10-01,107.55
+"Books, news & stationery",2019-11-01,140.08
+"Books, news & stationery",2019-12-01,225.01
+"Books, news & stationery",2020-01-01,152.59
+"Books, news & stationery",2020-02-01,151.49
+"Books, news & stationery",2020-03-01,111.35
+"Books, news & stationery",2020-04-01,34.65
+"Books, news & stationery",2020-05-01,34.65
+"Books, news & stationery",2020-06-01,56.8
+"Books, news & stationery",2020-07-01,96.04
+"Books, news & stationery",2020-08-01,132.83
+"Books, news & stationery",2020-09-01,95.83
+"Books, news & stationery",2020-10-01,88.62
+"Books, news & stationery",2020-11-01,108.77
+"Books, news & stationery",2020-12-01,203.06
+"Books, news & stationery",2021-01-01,54.8
+"Books, news & stationery",2021-02-01,61.8
+"Books, news & stationery",2021-03-01,66.8
+"Books, news & stationery",2021-04-01,64.3
+"Books, news & stationery",2021-05-01,69.1
+"Books, news & stationery",2021-06-01,76.9
+"Books, news & stationery",2021-07-01,84.7
+"Books, news & stationery",2021-08-01,136.4
+"Books, news & stationery",2021-09-01,106.9
+"Books, news & stationery",2021-10-01,104.7
+"Books, news & stationery",2021-11-01,133.8
+"Books, news & stationery",2021-12-01,221.7
+"Books, news & stationery",2022-01-01,143.3
+"Books, news & stationery",2022-02-01,138.6
+"Books, news & stationery",2022-03-01,135.6
+"Books, news & stationery",2022-04-01,114.3
+"Books, news & stationery",2022-05-01,142.4
+"Books, news & stationery",2022-06-01,78.4
+"Books, news & stationery",2022-07-01,96.9
+"Books, news & stationery",2022-08-01,130.6
+"Books, news & stationery",2022-09-01,113.0
+"Books, news & stationery",2022-10-01,103.9
+"Books, news & stationery",2022-11-01,142.6
+"Books, news & stationery",2022-12-01,231.4
+"Books, news & stationery",2023-01-01,162.6
+"Books, news & stationery",2023-02-01,145.6
+"Books, news & stationery",2023-03-01,132.7
+"Books, news & stationery",2023-04-01,130.2
+"Books, news & stationery",2023-05-01,150.8
+"Books, news & stationery",2023-06-01,82.6
+"Books, news & stationery",2023-07-01,101.8
+"Books, news & stationery",2023-08-01,136.2
+"Books, news & stationery",2023-09-01,104.9
+"Books, news & stationery",2023-10-01,102.1
+"Books, news & stationery",2023-11-01,135.8
+"Books, news & stationery",2023-12-01,222.5
+"Books, news & stationery",2024-01-01,159.6
+"Books, news & stationery",2024-02-01,148.5
+"Books, news & stationery",2024-03-01,151.2
+"Books, news & stationery",2024-04-01,122.8
+"Books, news & stationery",2024-05-01,166.5
+"Books, news & stationery",2024-06-01,84.0
+"Books, news & stationery",2024-07-01,95.3
+"Books, news & stationery",2024-08-01,130.9
+"Books, news & stationery",2024-09-01,113.1
+"Books, news & stationery",2024-10-01,104.6
+"Books, news & stationery",2024-11-01,135.5
+"Books, news & stationery",2024-12-01,223.7
+"Books, news & stationery",2025-01-01,156.2
+"Books, news & stationery",2025-02-01,148.3
+"Books, news & stationery",2025-03-01,154.1
+"Books, news & stationery",2025-04-01,133.5
+"Books, news & stationery",2025-05-01,170.6
+"Books, news & stationery",2025-06-01,91.7
+"Books, news & stationery",2025-07-01,96.9
+"Books, news & stationery",2025-08-01,132.0
+"Books, news & stationery",2025-09-01,114.1
+"Books, news & stationery",2025-10-01,113.2
+"Books, news & stationery",2025-11-01,142.6
+"Books, news & stationery",2025-12-01,199.6
+"Books, news & stationery",2026-01-01,163.1
+"Books, news & stationery",2026-02-01,158.0
+"Books, news & stationery",2026-03-01,143.2
+"Books, news & stationery",2026-04-01,140.4
+"Books, news & stationery",2026-05-01,181.5
+"Books, news & stationery",2026-06-01,94.2
+"Books, news & stationery",2026-07-01,100.8
+"Books, news & stationery",2026-08-01,143.5
+"Books, news & stationery",2026-09-01,112.6
+Other retail,2015-01-01,74.47
+Other retail,2015-02-01,86.06
+Other retail,2015-03-01,78.55
+Other retail,2015-04-01,75.1
+Other retail,2015-05-01,80.1
+Other retail,2015-06-01,102.84
+Other retail,2015-07-01,106.06
+Other retail,2015-08-01,76.44
+Other retail,2015-09-01,89.77
+Other retail,2015-10-01,125.12
+Other retail,2015-11-01,170.92
+Other retail,2015-12-01,204.0
+Other retail,2016-01-01,69.94
+Other retail,2016-02-01,81.65
+Other retail,2016-03-01,79.07
+Other retail,2016-04-01,74.9
+Other retail,2016-05-01,80.71
+Other retail,2016-06-01,103.64
+Other retail,2016-07-01,101.39
+Other retail,2016-08-01,78.95
+Other retail,2016-09-01,87.48
+Other retail,2016-10-01,128.78
+Other retail,2016-11-01,185.46
+Other retail,2016-12-01,202.97
+Other retail,2017-01-01,76.59
+Other retail,2017-02-01,84.36
+Other retail,2017-03-01,84.36
+Other retail,2017-04-01,78.13
+Other retail,2017-05-01,88.56
+Other retail,2017-06-01,106.04
+Other retail,2017-07-01,107.53
+Other retail,2017-08-01,83.24
+Other retail,2017-09-01,92.76
+Other retail,2017-10-01,129.43
+Other retail,2017-11-01,205.05
+Other retail,2017-12-01,199.13
+Other retail,2018-01-01,79.21
+Other retail,2018-02-01,81.77
+Other retail,2018-03-01,74.51
+Other retail,2018-04-01,78.23
+Other retail,2018-05-01,86.65
+Other retail,2018-06-01,108.58
+Other retail,2018-07-01,98.98
+Other retail,2018-08-01,89.74
+Other retail,2018-09-01,99.55
+Other retail,2018-10-01,117.16
+Other retail,2018-11-01,176.66
+Other retail,2018-12-01,191.27
+Other retail,2019-01-01,82.13
+Other retail,2019-02-01,85.61
+Other retail,2019-03-01,79.18
+Other retail,2019-04-01,81.05
+Other retail,2019-05-01,89.77
+Other retail,2019-06-01,110.44
+Other retail,2019-07-01,95.11
+Other retail,2019-08-01,88.58
+Other retail,2019-09-01,100.44
+Other retail,2019-10-01,112.06
+Other retail,2019-11-01,166.11
+Other retail,2019-12-01,193.4
+Other retail,2020-01-01,81.63
+Other retail,2020-02-01,80.75
+Other retail,2020-03-01,71.19
+Other retail,2020-04-01,43.65
+Other retail,2020-05-01,80.71
+Other retail,2020-06-01,121.91
+Other retail,2020-07-01,99.52
+Other retail,2020-08-01,93.61
+Other retail,2020-09-01,105.73
+Other retail,2020-10-01,125.12
+Other retail,2020-11-01,143.47
+Other retail,2020-12-01,193.15
+Other retail,2021-01-01,54.6
+Other retail,2021-02-01,65.5
+Other retail,2021-03-01,67.4
+Other retail,2021-04-01,68.2
+Other retail,2021-05-01,78.9
+Other retail,2021-06-01,110.0
+Other retail,2021-07-01,82.7
+Other retail,2021-08-01,85.7
+Other retail,2021-09-01,103.4
+Other retail,2021-10-01,121.7
+Other retail,2021-11-01,160.8
+Other retail,2021-12-01,184.7
+Other retail,2022-01-01,84.9
+Other retail,2022-02-01,99.6
+Other retail,2022-03-01,109.4
+Other retail,2022-04-01,88.7
+Other retail,2022-05-01,105.9
+Other retail,2022-06-01,145.7
+Other retail,2022-07-01,104.5
+Other retail,2022-08-01,109.1
+Other retail,2022-09-01,122.9
+Other retail,2022-10-01,117.9
+Other retail,2022-11-01,158.0
+Other retail,2022-12-01,212.9
+Other retail,2023-01-01,101.1
+Other retail,2023-02-01,113.0
+Other retail,2023-03-01,109.4
+Other retail,2023-04-01,91.2
+Other retail,2023-05-01,112.3
+Other retail,2023-06-01,145.5
+Other retail,2023-07-01,106.2
+Other retail,2023-08-01,114.2
+Other retail,2023-09-01,122.1
+Other retail,2023-10-01,111.8
+Other retail,2023-11-01,175.4
+Other retail,2023-12-01,223.1
+Other retail,2024-01-01,99.1
+Other retail,2024-02-01,108.6
+Other retail,2024-03-01,109.9
+Other retail,2024-04-01,95.1
+Other retail,2024-05-01,110.4
+Other retail,2024-06-01,144.4
+Other retail,2024-07-01,108.2
+Other retail,2024-08-01,110.2
+Other retail,2024-09-01,121.0
+Other retail,2024-10-01,113.3
+Other retail,2024-11-01,172.4
+Other retail,2024-12-01,223.3
+Other retail,2025-01-01,95.5
+Other retail,2025-02-01,110.7
+Other retail,2025-03-01,108.0
+Other retail,2025-04-01,89.0
+Other retail,2025-05-01,111.3
+Other retail,2025-06-01,154.6
+Other retail,2025-07-01,109.6
+Other retail,2025-08-01,114.4
+Other retail,2025-09-01,125.0
+Other retail,2025-10-01,114.2
+Other retail,2025-11-01,175.3
+Other retail,2025-12-01,218.6
+Other retail,2026-01-01,97.0
+Other retail,2026-02-01,111.2
+Other retail,2026-03-01,115.4
+Other retail,2026-04-01,94.0
+Other retail,2026-05-01,119.3
+Other retail,2026-06-01,157.1
+Other retail,2026-07-01,114.8
+Other retail,2026-08-01,119.6
+Other retail,2026-09-01,133.7
+"Pharma, medical & cosmetics",2015-01-01,69.92
+"Pharma, medical & cosmetics",2015-02-01,78.03
+"Pharma, medical & cosmetics",2015-03-01,68.09
+"Pharma, medical & cosmetics",2015-04-01,64.13
+"Pharma, medical & cosmetics",2015-05-01,71.71
+"Pharma, medical & cosmetics",2015-06-01,83.48
+"Pharma, medical & cosmetics",2015-07-01,78.38
+"Pharma, medical & cosmetics",2015-08-01,74.32
+"Pharma, medical & cosmetics",2015-09-01,67.15
+"Pharma, medical & cosmetics",2015-10-01,69.63
+"Pharma, medical & cosmetics",2015-11-01,91.48
+"Pharma, medical & cosmetics",2015-12-01,150.26
+"Pharma, medical & cosmetics",2016-01-01,73.73
+"Pharma, medical & cosmetics",2016-02-01,80.9
+"Pharma, medical & cosmetics",2016-03-01,70.08
+"Pharma, medical & cosmetics",2016-04-01,65.88
+"Pharma, medical & cosmetics",2016-05-01,76.28
+"Pharma, medical & cosmetics",2016-06-01,86.39
+"Pharma, medical & cosmetics",2016-07-01,79.2
+"Pharma, medical & cosmetics",2016-08-01,76.45
+"Pharma, medical & cosmetics",2016-09-01,68.0
+"Pharma, medical & cosmetics",2016-10-01,71.15
+"Pharma, medical & cosmetics",2016-11-01,92.79
+"Pharma, medical & cosmetics",2016-12-01,150.91
+"Pharma, medical & cosmetics",2017-01-01,77.63
+"Pharma, medical & cosmetics",2017-02-01,80.38
+"Pharma, medical & cosmetics",2017-03-01,71.07
+"Pharma, medical & cosmetics",2017-04-01,65.95
+"Pharma, medical & cosmetics",2017-05-01,79.52
+"Pharma, medical & cosmetics",2017-06-01,87.07
+"Pharma, medical & cosmetics",2017-07-01,80.26
+"Pharma, medical & cosmetics",2017-08-01,77.9
+"Pharma, medical & cosmetics",2017-09-01,68.79
+"Pharma, medical & cosmetics",2017-10-01,80.11
+"Pharma, medical & cosmetics",2017-11-01,95.42
+"Pharma, medical & cosmetics",2017-12-01,152.3
+"Pharma, medical & cosmetics",2018-01-01,78.54
+"Pharma, medical & cosmetics",2018-02-01,79.34
+"Pharma, medical & cosmetics",2018-03-01,69.01
+"Pharma, medical & cosmetics",2018-04-01,67.63
+"Pharma, medical & cosmetics",2018-05-01,79.28
+"Pharma, medical & cosmetics",2018-06-01,88.7
+"Pharma, medical & cosmetics",2018-07-01,83.12
+"Pharma, medical & cosmetics",2018-08-01,78.88
+"Pharma, medical & cosmetics",2018-09-01,70.07
+"Pharma, medical & cosmetics",2018-10-01,83.38
+"Pharma, medical & cosmetics",2018-11-01,95.16
+"Pharma, medical & cosmetics",2018-12-01,157.94
+"Pharma, medical & cosmetics",2019-01-01,79.78
+"Pharma, medical & cosmetics",2019-02-01,83.42
+"Pharma, medical & cosmetics",2019-03-01,72.22
+"Pharma, medical & cosmetics",2019-04-01,73.58
+"Pharma, medical & cosmetics",2019-05-01,81.65
+"Pharma, medical & cosmetics",2019-06-01,89.29
+"Pharma, medical & cosmetics",2019-07-01,86.89
+"Pharma, medical & cosmetics",2019-08-01,80.03
+"Pharma, medical & cosmetics",2019-09-01,72.5
+"Pharma, medical & cosmetics",2019-10-01,86.11
+"Pharma, medical & cosmetics",2019-11-01,97.27
+"Pharma, medical & cosmetics",2019-12-01,163.4
+"Pharma, medical & cosmetics",2020-01-01,80.03
+"Pharma, medical & cosmetics",2020-02-01,84.12
+"Pharma, medical & cosmetics",2020-03-01,81.86
+"Pharma, medical & cosmetics",2020-04-01,63.07
+"Pharma, medical & cosmetics",2020-05-01,73.68
+"Pharma, medical & cosmetics",2020-06-01,91.43
+"Pharma, medical & cosmetics",2020-07-01,89.26
+"Pharma, medical & cosmetics",2020-08-01,85.35
+"Pharma, medical & cosmetics",2020-09-01,83.84
+"Pharma, medical & cosmetics",2020-10-01,96.51
+"Pharma, medical & cosmetics",2020-11-01,112.09
+"Pharma, medical & cosmetics",2020-12-01,172.66
+"Pharma, medical & cosmetics",2021-01-01,71.2
+"Pharma, medical & cosmetics",2021-02-01,81.0
+"Pharma, medical & cosmetics",2021-03-01,78.0
+"Pharma, medical & cosmetics",2021-04-01,69.0
+"Pharma, medical & cosmetics",2021-05-01,81.8
+"Pharma, medical & cosmetics",2021-06-01,106.2
+"Pharma, medical & cosmetics",2021-07-01,94.5
+"Pharma, medical & cosmetics",2021-08-01,91.6
+"Pharma, medical & cosmetics",2021-09-01,90.3
+"Pharma, medical & cosmetics",2021-10-01,103.4
+"Pharma, medical & cosmetics",2021-11-01,127.5
+"Pharma, medical & cosmetics",2021-12-01,189.4
+"Pharma, medical & cosmetics",2022-01-01,82.5
+"Pharma, medical & cosmetics",2022-02-01,88.0
+"Pharma, medical & cosmetics",2022-03-01,84.8
+"Pharma, medical & cosmetics",2022-04-01,75.6
+"Pharma, medical & cosmetics",2022-05-01,90.1
+"Pharma, medical & cosmetics",2022-06-01,112.7
+"Pharma, medical & cosmetics",2022-07-01,100.5
+"Pharma, medical & cosmetics",2022-08-01,95.1
+"Pharma, medical & cosmetics",2022-09-01,90.4
+"Pharma, medical & cosmetics",2022-10-01,105.7
+"Pharma, medical & cosmetics",2022-11-01,127.9
+"Pharma, medical & cosmetics",2022-12-01,192.0
+"Pharma, medical & cosmetics",2023-01-01,88.3
+"Pharma, medical & cosmetics",2023-02-01,92.8
+"Pharma, medical & cosmetics",2023-03-01,90.9
+"Pharma, medical & cosmetics",2023-04-01,89.6
+"Pharma, medical & cosmetics",2023-05-01,97.7
+"Pharma, medical & cosmetics",2023-06-01,119.9
+"Pharma, medical & cosmetics",2023-07-01,102.3
+"Pharma, medical & cosmetics",2023-08-01,106.9
+"Pharma, medical & cosmetics",2023-09-01,96.3
+"Pharma, medical & cosmetics",2023-10-01,107.9
+"Pharma, medical & cosmetics",2023-11-01,132.8
+"Pharma, medical & cosmetics",2023-12-01,201.4
+"Pharma, medical & cosmetics",2024-01-01,88.5
+"Pharma, medical & cosmetics",2024-02-01,93.8
+"Pharma, medical & cosmetics",2024-03-01,92.5
+"Pharma, medical & cosmetics",2024-04-01,87.7
+"Pharma, medical & cosmetics",2024-05-01,98.8
+"Pharma, medical & cosmetics",2024-06-01,122.6
+"Pharma, medical & cosmetics",2024-07-01,106.0
+"Pharma, medical & cosmetics",2024-08-01,108.7
+"Pharma, medical & cosmetics",2024-09-01,97.6
+"Pharma, medical & cosmetics",2024-10-01,108.4
+"Pharma, medical & cosmetics",2024-11-01,132.6
+"Pharma, medical & cosmetics",2024-12-01,197.0
+"Pharma, medical & cosmetics",2025-01-01,88.2
+"Pharma, medical & cosmetics",2025-02-01,98.4
+"Pharma, medical & cosmetics",2025-03-01,95.9
+"Pharma, medical & cosmetics",2025-04-01,92.1
+"Pharma, medical & cosmetics",2025-05-01,105.7
+"Pharma, medical & cosmetics",2025-06-01,123.4
+"Pharma, medical & cosmetics",2025-07-01,109.8
+"Pharma, medical & cosmetics",2025-08-01,112.6
+"Pharma, medical & cosmetics",2025-09-01,101.2
+"Pharma, medical & cosmetics",2025-10-01,113.7
+"Pharma, medical & cosmetics",2025-11-01,141.1
+"Pharma, medical & cosmetics",2025-12-01,200.6
+"Pharma, medical & cosmetics",2026-01-01,97.1
+"Pharma, medical & cosmetics",2026-02-01,102.2
+"Pharma, medical & cosmetics",2026-03-01,99.0
+"Pharma, medical & cosmetics",2026-04-01,103.4
+"Pharma, medical & cosmetics",2026-05-01,111.8
+"Pharma, medical & cosmetics",2026-06-01,129.4
+"Pharma, medical & cosmetics",2026-07-01,122.0
+"Pharma, medical & cosmetics",2026-08-01,118.6
+"Pharma, medical & cosmetics",2026-09-01,105.9
+Bars,2015-01-01,164.8
+Bars,2015-02-01,255.24
+Bars,2015-03-01,371.76
+Bars,2015-04-01,219.12
+Bars,2015-05-01,358.47
+Bars,2015-06-01,126.75
+Bars,2015-07-01,193.15
+Bars,2015-08-01,188.41
+Bars,2015-09-01,179.77
+Bars,2015-10-01,179.07
+Bars,2015-11-01,232.64
+Bars,2015-12-01,290.94
+Bars,2016-01-01,177.81
+Bars,2016-02-01,266.85
+Bars,2016-03-01,381.18
+Bars,2016-04-01,223.09
+Bars,2016-05-01,371.88
+Bars,2016-06-01,137.72
+Bars,2016-07-01,201.76
+Bars,2016-08-01,185.98
+Bars,2016-09-01,188.21
+Bars,2016-10-01,186.15
+Bars,2016-11-01,241.17
+Bars,2016-12-01,298.61
+Bars,2017-01-01,187.11
+Bars,2017-02-01,282.55
+Bars,2017-03-01,399.61
+Bars,2017-04-01,250.35
+Bars,2017-05-01,376.82
+Bars,2017-06-01,140.98
+Bars,2017-07-01,210.71
+Bars,2017-08-01,202.54
+Bars,2017-09-01,200.69
+Bars,2017-10-01,189.35
+Bars,2017-11-01,252.93
+Bars,2017-12-01,312.77
+Bars,2018-01-01,179.91
+Bars,2018-02-01,283.81
+Bars,2018-03-01,411.48
+Bars,2018-04-01,256.06
+Bars,2018-05-01,389.17
+Bars,2018-06-01,143.99
+Bars,2018-07-01,209.83
+Bars,2018-08-01,206.28
+Bars,2018-09-01,206.08
+Bars,2018-10-01,181.94
+Bars,2018-11-01,256.16
+Bars,2018-12-01,310.91
+Bars,2019-01-01,176.88
+Bars,2019-02-01,286.63
+Bars,2019-03-01,413.12
+Bars,2019-04-01,242.92
+Bars,2019-05-01,385.64
+Bars,2019-06-01,145.03
+Bars,2019-07-01,195.79
+Bars,2019-08-01,204.33
+Bars,2019-09-01,203.72
+Bars,2019-10-01,179.41
+Bars,2019-11-01,253.16
+Bars,2019-12-01,309.75
+Bars,2020-01-01,172.0
+Bars,2020-02-01,278.16
+Bars,2020-03-01,174.83
+Bars,2020-04-01,19.58
+Bars,2020-05-01,32.81
+Bars,2020-06-01,27.02
+Bars,2020-07-01,102.2
+Bars,2020-08-01,124.58
+Bars,2020-09-01,104.22
+Bars,2020-10-01,45.48
+Bars,2020-11-01,20.29
+Bars,2020-12-01,117.96
+Bars,2021-01-01,27.4
+Bars,2021-02-01,26.1
+Bars,2021-03-01,32.3
+Bars,2021-04-01,32.9
+Bars,2021-05-01,33.3
+Bars,2021-06-01,72.1
+Bars,2021-07-01,106.6
+Bars,2021-08-01,154.3
+Bars,2021-09-01,168.4
+Bars,2021-10-01,180.7
+Bars,2021-11-01,188.0
+Bars,2021-12-01,167.8
+Bars,2022-01-01,83.5
+Bars,2022-02-01,219.4
+Bars,2022-03-01,277.2
+Bars,2022-04-01,190.8
+Bars,2022-05-01,289.6
+Bars,2022-06-01,120.7
+Bars,2022-07-01,164.2
+Bars,2022-08-01,200.9
+Bars,2022-09-01,188.1
+Bars,2022-10-01,202.0
+Bars,2022-11-01,234.4
+Bars,2022-12-01,279.2
+Bars,2023-01-01,118.3
+Bars,2023-02-01,262.1
+Bars,2023-03-01,301.0
+Bars,2023-04-01,199.6
+Bars,2023-05-01,311.6
+Bars,2023-06-01,131.4
+Bars,2023-07-01,170.5
+Bars,2023-08-01,199.3
+Bars,2023-09-01,201.1
+Bars,2023-10-01,217.0
+Bars,2023-11-01,237.0
+Bars,2023-12-01,306.2
+Bars,2024-01-01,115.6
+Bars,2024-02-01,270.1
+Bars,2024-03-01,325.6
+Bars,2024-04-01,186.9
+Bars,2024-05-01,344.4
+Bars,2024-06-01,138.1
+Bars,2024-07-01,153.1
+Bars,2024-08-01,193.1
+Bars,2024-09-01,195.6
+Bars,2024-10-01,203.9
+Bars,2024-11-01,235.0
+Bars,2024-12-01,312.2
+Bars,2025-01-01,114.7
+Bars,2025-02-01,266.9
+Bars,2025-03-01,292.2
+Bars,2025-04-01,193.9
+Bars,2025-05-01,335.9
+Bars,2025-06-01,134.5
+Bars,2025-07-01,164.0
+Bars,2025-08-01,206.4
+Bars,2025-09-01,204.1
+Bars,2025-10-01,206.3
+Bars,2025-11-01,247.0
+Bars,2025-12-01,321.2
+Bars,2026-01-01,121.1
+Bars,2026-02-01,287.8
+Bars,2026-03-01,303.1
+Bars,2026-04-01,195.8
+Bars,2026-05-01,347.1
+Bars,2026-06-01,137.8
+Bars,2026-07-01,175.1
+Bars,2026-08-01,213.9
+Bars,2026-09-01,213.7
