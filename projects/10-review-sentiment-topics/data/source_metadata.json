@@ -1,0 +1,10 @@
+{
+  "dataset": "Women's E-Commerce Clothing Reviews",
+  "original": "https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews",
+  "licence": "CC0: Public Domain (as stated on the Kaggle dataset page)",
+  "mirror_used": "https://raw.githubusercontent.com/hanzhang0420/Women-Clothing-E-commerce/master/Womens%20Clothing%20E-Commerce%20Reviews.csv",
+  "fetched_europe_dublin": "2026-11-15T16:40:42+00:00",
+  "sha256": "bd93cc515747ad1f87b8bc863c9e40da758509e6db6506a96d06976e61e36ee0",
+  "bytes": 8483448,
+  "note": "Retailer name already replaced with 'retailer' in the source; reviewer identities are not included."
+}

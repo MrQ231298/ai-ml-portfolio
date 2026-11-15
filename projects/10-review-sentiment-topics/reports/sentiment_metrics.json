@@ -1,0 +1,159 @@
+{
+  "run_at_europe_dublin": "2026-11-15T16:44:41+00:00",
+  "data": {
+    "reviews": 22641,
+    "train": 18112,
+    "test": 4529,
+    "label_share": {
+      "positive": 0.7706,
+      "neutral": 0.1247,
+      "negative": 0.1047
+    },
+    "label_rule": "1-2 stars negative, 3 neutral, 4-5 positive"
+  },
+  "tfidf_cv": {
+    "best_C": 0.5,
+    "cv_macro_f1": 0.6613
+  },
+  "test": {
+    "dummy": {
+      "accuracy": 0.7706,
+      "macro_f1": 0.2901,
+      "per_class_f1": {
+        "negative": 0.0,
+        "neutral": 0.0,
+        "positive": 0.8704
+      }
+    },
+    "tfidf_logreg": {
+      "accuracy": 0.8231,
+      "macro_f1": 0.6679,
+      "per_class_f1": {
+        "negative": 0.6078,
+        "neutral": 0.4704,
+        "positive": 0.9255
+      }
+    },
+    "minilm_logreg": {
+      "accuracy": 0.771,
+      "macro_f1": 0.6134,
+      "per_class_f1": {
+        "negative": 0.5453,
+        "neutral": 0.4041,
+        "positive": 0.8909
+      }
+    }
+  },
+  "best_model": "tfidf_logreg",
+  "binary_neg_vs_pos_roc_auc_best": 0.9725,
+  "confusion_matrix_best": {
+    "labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "matrix": [
+      [
+        313,
+        143,
+        18
+      ],
+      [
+        158,
+        310,
+        97
+      ],
+      [
+        85,
+        300,
+        3105
+      ]
+    ]
+  },
+  "error_pairs_best": [
+    {
+      "label": "negative",
+      "pred": "neutral",
+      "n": 143
+    },
+    {
+      "label": "negative",
+      "pred": "positive",
+      "n": 18
+    },
+    {
+      "label": "neutral",
+      "pred": "negative",
+      "n": 158
+    },
+    {
+      "label": "neutral",
+      "pred": "positive",
+      "n": 97
+    },
+    {
+      "label": "positive",
+      "pred": "negative",
+      "n": 85
+    },
+    {
+      "label": "positive",
+      "pred": "neutral",
+      "n": 300
+    }
+  ],
+  "tfidf_top_words": {
+    "negative": [
+      "not",
+      "wanted to",
+      "poor",
+      "awful",
+      "too small",
+      "cheap",
+      "at all",
+      "to love",
+      "going back",
+      "was",
+      "not recommend",
+      "wanted",
+      "huge",
+      "unflattering",
+      "way"
+    ],
+    "neutral": [
+      "not for",
+      "however the",
+      "to love",
+      "like the",
+      "returning it",
+      "color and",
+      "however",
+      "ok",
+      "not flattering",
+      "cute but",
+      "it just",
+      "but",
+      "but not",
+      "of this",
+      "is cute"
+    ],
+    "positive": [
+      "love",
+      "not too",
+      "great",
+      "perfect",
+      "love this",
+      "comfortable",
+      "fun",
+      "bit",
+      "fits",
+      "soft",
+      "flattering",
+      "very flattering",
+      "comfy",
+      "love it",
+      "little"
+    ]
+  },
+  "classification_report_best": "              precision    recall  f1-score   support\n\n    negative     0.5629    0.6603    0.6078       474\n     neutral     0.4117    0.5487    0.4704       565\n    positive     0.9643    0.8897    0.9255      3490\n\n    accuracy                         0.8231      4529\n   macro avg     0.6463    0.6996    0.6679      4529\nweighted avg     0.8533    0.8231    0.8355      4529\n"
+}

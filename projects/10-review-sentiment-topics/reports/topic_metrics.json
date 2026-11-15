@@ -1,0 +1,219 @@
+{
+  "run_at_europe_dublin": "2026-11-15T16:45:16+00:00",
+  "vocab_size": 5398,
+  "k_sweep": {
+    "6": {
+      "mean_npmi": 0.1102,
+      "reconstruction_err": 147.45
+    },
+    "8": {
+      "mean_npmi": 0.1134,
+      "reconstruction_err": 147.01
+    },
+    "10": {
+      "mean_npmi": 0.1074,
+      "reconstruction_err": 146.6
+    },
+    "12": {
+      "mean_npmi": 0.1136,
+      "reconstruction_err": 146.2
+    },
+    "15": {
+      "mean_npmi": 0.1194,
+      "reconstruction_err": 145.61
+    }
+  },
+  "k_best": 15,
+  "seed_stability_mean_jaccard": 0.6318,
+  "topics": [
+    {
+      "topic": 0,
+      "top_terms": "fabric, look, nice, good, cut, material, quality, pretty",
+      "reviews": 1516,
+      "share": 0.067,
+      "mean_rating": 3.494,
+      "negative_share": 0.2361,
+      "negative_lift": 2.256,
+      "recommend_rate": 0.5983,
+      "top_departments": "Tops 50%; Dresses 32%",
+      "npmi": 0.047
+    },
+    {
+      "topic": 9,
+      "top_terms": "store, tried, online, saw, sale, try, price, didn",
+      "reviews": 2455,
+      "share": 0.1084,
+      "mean_rating": 3.929,
+      "negative_share": 0.178,
+      "negative_lift": 1.701,
+      "recommend_rate": 0.7202,
+      "top_departments": "Tops 43%; Dresses 35%",
+      "npmi": 0.1582
+    },
+    {
+      "topic": 3,
+      "top_terms": "small, large, medium, runs, usually, big, size, size small",
+      "reviews": 1936,
+      "share": 0.0855,
+      "mean_rating": 3.933,
+      "negative_share": 0.1286,
+      "negative_lift": 1.229,
+      "recommend_rate": 0.7758,
+      "top_departments": "Tops 49%; Dresses 27%",
+      "npmi": 0.1666
+    },
+    {
+      "topic": 4,
+      "top_terms": "sweater, warm, sleeves, soft, coat, cozy, itchy, long",
+      "reviews": 1272,
+      "share": 0.0562,
+      "mean_rating": 4.113,
+      "negative_share": 0.1281,
+      "negative_lift": 1.224,
+      "recommend_rate": 0.7893,
+      "top_departments": "Tops 86%; Dresses 6%",
+      "npmi": 0.165
+    },
+    {
+      "topic": 11,
+      "top_terms": "fit, fit perfectly, perfectly, size fit, waist, fit great, great fit, flattering",
+      "reviews": 1191,
+      "share": 0.0526,
+      "mean_rating": 4.008,
+      "negative_share": 0.1226,
+      "negative_lift": 1.171,
+      "recommend_rate": 0.7632,
+      "top_departments": "Dresses 33%; Tops 31%",
+      "npmi": 0.1185
+    },
+    {
+      "topic": 6,
+      "top_terms": "cute, super, super cute, comfy, little, super soft, super comfy, cute comfortable",
+      "reviews": 1368,
+      "share": 0.0604,
+      "mean_rating": 4.029,
+      "negative_share": 0.1162,
+      "negative_lift": 1.11,
+      "recommend_rate": 0.7931,
+      "top_departments": "Tops 50%; Dresses 23%",
+      "npmi": -0.033
+    },
+    {
+      "topic": 8,
+      "top_terms": "petite, length, xs, long, short, regular, sleeves, xxs",
+      "reviews": 1726,
+      "share": 0.0762,
+      "mean_rating": 4.034,
+      "negative_share": 0.1054,
+      "negative_lift": 1.007,
+      "recommend_rate": 0.7972,
+      "top_departments": "Tops 40%; Dresses 37%",
+      "npmi": 0.157
+    },
+    {
+      "topic": 14,
+      "top_terms": "color, beautiful, blue, green, pink, red, color beautiful, beautiful color",
+      "reviews": 1711,
+      "share": 0.0756,
+      "mean_rating": 4.186,
+      "negative_share": 0.0976,
+      "negative_lift": 0.932,
+      "recommend_rate": 0.8212,
+      "top_departments": "Tops 50%; Dresses 28%",
+      "npmi": 0.1143
+    },
+    {
+      "topic": 10,
+      "top_terms": "skirt, waist, hips, pencil, skirts, pencil skirt, beautiful skirt, work",
+      "reviews": 1060,
+      "share": 0.0468,
+      "mean_rating": 4.21,
+      "negative_share": 0.0953,
+      "negative_lift": 0.91,
+      "recommend_rate": 0.834,
+      "top_departments": "Bottoms 59%; Dresses 23%",
+      "npmi": 0.124
+    },
+    {
+      "topic": 7,
+      "top_terms": "jeans, pants, pair, skinny, skinny jeans, black, leggings, look",
+      "reviews": 1382,
+      "share": 0.061,
+      "mean_rating": 4.423,
+      "negative_share": 0.0774,
+      "negative_lift": 0.74,
+      "recommend_rate": 0.8893,
+      "top_departments": "Bottoms 52%; Tops 38%",
+      "npmi": 0.1753
+    },
+    {
+      "topic": 2,
+      "top_terms": "size, true, true size, fits true, fit true, runs true, size size, usual",
+      "reviews": 1628,
+      "share": 0.0719,
+      "mean_rating": 4.371,
+      "negative_share": 0.0651,
+      "negative_lift": 0.622,
+      "recommend_rate": 0.879,
+      "top_departments": "Tops 41%; Dresses 30%",
+      "npmi": 0.1565
+    },
+    {
+      "topic": 1,
+      "top_terms": "great, looks, looks great, great quality, quality, great fit, fit great, fits great",
+      "reviews": 1228,
+      "share": 0.0542,
+      "mean_rating": 4.419,
+      "negative_share": 0.0627,
+      "negative_lift": 0.599,
+      "recommend_rate": 0.8868,
+      "top_departments": "Tops 49%; Dresses 24%",
+      "npmi": 0.091
+    },
+    {
+      "topic": 13,
+      "top_terms": "comfortable, soft, soft comfortable, flattering, compliments, material, material soft, super",
+      "reviews": 1548,
+      "share": 0.0684,
+      "mean_rating": 4.603,
+      "negative_share": 0.0323,
+      "negative_lift": 0.309,
+      "recommend_rate": 0.9348,
+      "top_departments": "Tops 41%; Dresses 27%",
+      "npmi": 0.1064
+    },
+    {
+      "topic": 12,
+      "top_terms": "fits, perfectly, fits perfectly, fits great, size fits, small fits, fits true, xs fits",
+      "reviews": 1192,
+      "share": 0.0526,
+      "mean_rating": 4.638,
+      "negative_share": 0.031,
+      "negative_lift": 0.297,
+      "recommend_rate": 0.9488,
+      "top_departments": "Tops 43%; Dresses 37%",
+      "npmi": 0.1197
+    },
+    {
+      "topic": 5,
+      "top_terms": "perfect, summer, fall, spring, length, fit perfect, perfect summer, light",
+      "reviews": 1428,
+      "share": 0.0631,
+      "mean_rating": 4.725,
+      "negative_share": 0.0217,
+      "negative_lift": 0.207,
+      "recommend_rate": 0.9615,
+      "top_departments": "Tops 37%; Dresses 33%",
+      "npmi": 0.1247
+    }
+  ],
+  "overall_negative_share": 0.1047,
+  "department_negative_share": {
+    "Trend": 0.178,
+    "Dresses": 0.1108,
+    "Tops": 0.1091,
+    "Jackets": 0.1078,
+    "Intimate": 0.0889,
+    "Bottoms": 0.0866
+  }
+}
