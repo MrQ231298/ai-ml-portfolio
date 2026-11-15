@@ -1,0 +1,13 @@
+Documentnumber:2025/77019   Kerry Way Logistics Limited
+Dated:October24,2025   Waterford/VATnumberIE5660976SH
+Pay by:December 8, 2025   Tel.0219737342
+Suppliedto:BarrowGAAClubOrderref:ORD-69818
+Goods/services   No.   Each   Value
+Hi-vis vests   264.93   2,384.37
+Toner cartridge   254.79   509.58
+Network switch   18   425.22   7,653.96
+Laptop stand   10   270.15   2,701.50
+Total excl. VAT   13,249.41
+VAT amount   3,047.36
+Balancetopay   EUR 16,296.77
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio;notarealcompanyortransaction.

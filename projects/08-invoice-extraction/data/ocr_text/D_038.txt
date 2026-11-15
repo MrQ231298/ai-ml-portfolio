@@ -1,0 +1,11 @@
+Documentnumber:2025/07585   Errigal LogisticsLimited
+Dated:May11,2025   Carlow/VATnumberIE3927410R
+Payby:June1,2025   Tel.017692510
+Suppliedto:CorribStoresOrderref:ORD-64009
+Goods/services   No.   Each   Value
+Hi-vis vests   223.37   1,563.59
+Labour (hours)   427.39   2,991.73
+Total excl. VAT   4,555.32
+VAT amount   614.97
+Balanceto pay   EUR5,170.29
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio;nota realcompany ortransaction.

@@ -1,0 +1,15 @@
+MOHERHARDWAREDAC
+Limerick,Ireland   Ref:BS-52384
+TaxID:IE8747102SA
+Tel021223089   Issued:2026-01-29
+Due:2026-02-19
+Account:AC471815
+Description   Units   Rate   Total
+Toner cartridge   64.83   324.15
+Sandwichplatter   328.36   2,298.52
+Laptop stand   13   15.34   199.42
+A4paper (box)   210.28   630.84
+Goods total   3,452.93
+Tax23%   794.17
+Grand Total   4,247.10
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notareal companyortransaction,

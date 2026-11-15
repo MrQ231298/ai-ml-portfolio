@@ -1,0 +1,15 @@
+Burren Logistics Ltd
+MainStreet,Navan/VATReg:IE6222286C
+Tax Invoice
+Invoice #:796296   Date:10 Jul2026
+Customer:BurrenClinic   Paymentdue:09Aug2026
+POnumber:4547010   Phone:0612216153
+Item   Qty   Price   Linetotal
+Labour (hours)   13   15.84   205.92
+A4 paper (box)   19   67.85   1,289.15
+Labour (hours)   13   320.68   4,168.84
+Consultancy(hours)   349.93   2,099.58
+USB-Cdock   87.18   958.98
+USB-Cdock   33.43   133.72
+Netamount8,856.19   VAT(23%)2,036.92   AmountpayableEUR10,893.11
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notarealcompanyortransaction.

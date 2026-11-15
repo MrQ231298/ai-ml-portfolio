@@ -1,0 +1,11 @@
+Documentnumber:2025/34413   GalteeLogistics DAC
+Dated:August22,2025   Sligo/VATnumberIE4406255EH
+Payby:October6,2025   Tel.0714733368
+Suppliedto:MourneGarageOrderref:ORD-78059
+Goods /services   No.   Each   Value
+Labour (hours)   11   217.66   2,394.26
+Shelving unit   13   178.75   2,323.75
+Total excl.VAT   4,718.01
+VATamount   1,085.14
+Balanceto pay   EUR5,803.15
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolionotarealcompanyortransaction

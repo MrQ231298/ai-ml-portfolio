@@ -1,0 +1,15 @@
+Documentnumber:2025/36249   GalteePackagingTeoranta
+Dated: January 13,2025   Galway/VATnumberIE1046912S
+Payby:February27.2025   Tel.0619779938
+Suppliedto:SuirClinicOrderref:ORD-48793
+Goods/services   No.   Each   Value
+Toner cartridge   185.99   1,673.91
+Networkswitch   16   245.41   3,926.56
+Network switch   222.92   891.68
+Networkswitch   225.62   902.48
+Toner cartridge   17   270.39   4,596.63
+Shelving unit   20   212.93   4,258.60
+Total excl.VAT   16,249.86
+VAT amount   3,737.47
+Balanceto pay   EUR19,987.33
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction

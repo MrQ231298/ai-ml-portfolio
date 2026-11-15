@@ -1,0 +1,10 @@
+Documentnumber:2026/26613   Moher Logistics Limited
+Dated: June 18, 2026   Galway/VATnumberIE6268531LA
+Pay by: July 2, 2026   Tel. 01 2309493
+Suppliedto:LiffeyHotel Orderref:ORD-19456
+Goods/services   No.   Each   Value
+Cleaning service (visit)   20   400.95   8,019.00
+Total excl. VAT   8,019.00
+VAT amount   1,844.37
+Balancetopay   EUR 9,863.37
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio;notarealcompanyortransaction.

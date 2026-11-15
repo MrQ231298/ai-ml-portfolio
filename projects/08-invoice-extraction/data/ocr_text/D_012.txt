@@ -1,0 +1,18 @@
+BurrenLogisticsDAC
+Documentnumber:2025/26761
+Dated:August 29,2025   Letterkenny/VATnumberIE9102829L
+Payby:September19,2025   Tel.0616051438
+Suppliedto:KerryWayGarageOrderref:ORD-39169
+Goods/services   No.   Each   Value
+323.43   2,910.87
+Toner cartridge
+Consultancy (hours)   13   44.11   573.43
+Laptopstand   71.39   71.39
+Pallet wrap   12   40.64   487.68
+USB-Cdock   19   145.29   2,760.51
+18   389.70   7,014.60
+Brochureprint run
+Total excl. VAT   13,818.48
+VATamount   1,865.49
+Balanceto pay   EUR15,683.97
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporfolio;notarealcompanyortransaction.

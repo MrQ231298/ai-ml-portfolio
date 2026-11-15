@@ -1,0 +1,16 @@
+Documentnumber:2025/09058   Mourne Engineering DAC
+Tralee/VATnumberIE3612738C
+Dated:April 4,2025   Tel.019210257
+Pay by: April 25, 2025
+Suppliedto:KerryWayStoresOrderref:ORD-23091
+Goods/services   No.   Each   Value
+316.63   316.63
+Brake pads (set)
+Network switch   13   48.13   625.69
+Pallet wrap   242.67   728.01
+12   152.73   1,832.76
+Palletwrap
+Total excl. VAT   3,503.09
+VAT amount   805.71
+Balancetopay   EUR4,308.80
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolio;notarealcompanyortransaction.

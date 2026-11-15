@@ -1,0 +1,13 @@
+BurrenFacilitiesTeoranta   INVOICE
+Unit4,BusinessPark,Tralee
+VATNo:IE5862590JH   InvoiceNo:INV-2026-6526
+InvoiceDate:21/01/2026
+DueDate:20/02/2026
+Bill to:MoherHotel
+CustomerRef:CR-61139Tel:016691757
+Description   Qty   Unit   Amount
+Shelving unit   11   3.78   41.58
+Subtotal:   41.58
+VAT @ 23%:   9.56
+Total Due:   51.14
+SYNTHETIC EXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

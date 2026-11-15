@@ -1,0 +1,10 @@
+Documentnumber:2025/65796   Galtee Packaging Ltd
+Dated:May2,2025   Tralee/VATnumberIE3626372TH
+Pay by:June16.2025   Tel.021202813
+Suppliedto:LiffeyGAAClubOrderref:ORD-54952
+Goods/services   No.   Each   Value
+Networkswitch   19   201.47   3,827.93
+Total excl. VAT   3,827.93
+VAT amount   880.42
+Balanceto pay   EUR4,708.35
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notarealcompanyortransaction

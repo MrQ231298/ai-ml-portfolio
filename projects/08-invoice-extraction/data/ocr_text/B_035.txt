@@ -1,0 +1,15 @@
+BoyneSuppliesLtd
+MainStreet,Tralee/VATReg:IE1537227TH
+Tax Invoice
+Invoice#:201083   Date:20Apr2025
+Customer:Suir Hotel   Paymentdue:19Jun2025
+POnumber:4596720   Phone:0214852259
+Item   Qty   Price   Line total
+Consultancy (hours)   13   407.62   5,299.06
+Labour (hours)   16   192.07   3,073.12
+Brochure print run   448.05   2,688.30
+Delivery charge   19   283.04   5,377.76
+Cleaning service (visit)   76.15   609.20
+A4 paper (box)   13   43.08   560.04
+Net amount 17,607.48   VAT (13.5%)2,377.01   AmountpayableEUR19,984.49
+SYNTHETICEXAMPLEINVOICE-invented foran MLportfolio;nota real companyortransaction.

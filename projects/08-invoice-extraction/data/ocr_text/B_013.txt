@@ -1,0 +1,11 @@
+BoyneLogistics Limited
+Main Street,Galway/VATReg:IE8783623T
+TaxInvoice
+Invoice#:019546   Date:26Sep2026
+Customer:MoherHotel   Paymentdue:17Oct2026
+POnumber:4555966   Phone:0917552646
+Item   Qty   Price   Linetotal
+Sandwichplatter   142.43   569.72
+USB-Cdock   11.69   11.69
+Net amount 581.41   VAT (23%) 133.72   AmountpayableEUR715.13
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporfolio:notarealcompanyortransaction.

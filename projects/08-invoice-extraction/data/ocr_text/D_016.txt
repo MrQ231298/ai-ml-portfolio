@@ -1,0 +1,14 @@
+Documentnumber:2026/47607   Slaney Catering Ltd
+Dated:August17,2026   Athlone/VATnumberIE1258190H
+Payby:October16.2026   Tel.0616801559
+Suppliedto:SuirGAAClubOrderref:ORD-65362
+Goods/services   No.   Each   Value
+Consultancy (hours)   134.33   1,074.64
+Brochure print run   107.30   858.40
+Toner cartridge   19   397.28   7,548.32
+Sandwichplatter   258.52   517.04
+Cleaning service (visit)   43.23   864.60
+Total excl.VAT   10,863.00
+VATamount   2,498.49
+Balance to pay   EUR13,361.49
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notarealcompanyortransaction.

@@ -1,0 +1,291 @@
+{
+  "run_at_europe_dublin": "2026-11-15T16:36:56+00:00",
+  "data": {
+    "invoices": 240,
+    "layouts": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "train_docs": 126,
+    "dev_test_docs": 54,
+    "unseen_D_docs": 60,
+    "status": "SYNTHETIC_EXAMPLE_DATA"
+  },
+  "ocr_engine": "RapidOCR (rapidocr_onnxruntime 1.2.3) on 150 dpi renders with rotation, blur and noise",
+  "results": {
+    "dev_test/digital/rules": {
+      "n_docs": 54,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 1.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 1.0,
+      "all_fields_correct_rate": 1.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 1.0
+    },
+    "dev_test/digital/ml": {
+      "n_docs": 54,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 1.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 1.0,
+      "all_fields_correct_rate": 1.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 1.0
+    },
+    "dev_test/digital/hybrid": {
+      "n_docs": 54,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 1.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 1.0,
+      "all_fields_correct_rate": 1.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 1.0
+    },
+    "dev_test/ocr/rules": {
+      "n_docs": 54,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.963,
+        "invoice_number": 0.9815,
+        "invoice_date": 0.9444,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 0.8704,
+        "total_amount": 0.9815
+      },
+      "mean_field_accuracy": 0.9676,
+      "all_fields_correct_rate": 0.7593,
+      "arithmetic_check_pass_rate": 0.8519,
+      "all_correct_given_check_pass": 0.8913
+    },
+    "dev_test/ocr/ml": {
+      "n_docs": 54,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.963,
+        "invoice_number": 0.9815,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 0.9815
+      },
+      "mean_field_accuracy": 0.9907,
+      "all_fields_correct_rate": 0.9259,
+      "arithmetic_check_pass_rate": 0.9815,
+      "all_correct_given_check_pass": 0.9434
+    },
+    "dev_test/ocr/hybrid": {
+      "n_docs": 54,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.963,
+        "invoice_number": 1.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 0.9815
+      },
+      "mean_field_accuracy": 0.9931,
+      "all_fields_correct_rate": 0.9444,
+      "arithmetic_check_pass_rate": 0.9815,
+      "all_correct_given_check_pass": 0.9623
+    },
+    "unseen_D/digital/rules": {
+      "n_docs": 60,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 0.0,
+        "invoice_date": 0.0,
+        "due_date": 0.0,
+        "net_amount": 0.0,
+        "vat_amount": 0.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 0.375,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 0.0,
+      "all_correct_given_check_pass": null
+    },
+    "unseen_D/digital/ml": {
+      "n_docs": 60,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 0.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 0.875,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 0.0
+    },
+    "unseen_D/digital/hybrid": {
+      "n_docs": 60,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 0.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 0.875,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 0.0
+    },
+    "unseen_D/ocr/rules": {
+      "n_docs": 60,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.95,
+        "invoice_number": 0.0,
+        "invoice_date": 0.0,
+        "due_date": 0.0,
+        "net_amount": 0.0,
+        "vat_amount": 0.0,
+        "total_amount": 0.95
+      },
+      "mean_field_accuracy": 0.3625,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 0.0,
+      "all_correct_given_check_pass": null
+    },
+    "unseen_D/ocr/ml": {
+      "n_docs": 60,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.95,
+        "invoice_number": 0.0,
+        "invoice_date": 0.8833,
+        "due_date": 0.8667,
+        "net_amount": 0.9833,
+        "vat_amount": 1.0,
+        "total_amount": 0.95
+      },
+      "mean_field_accuracy": 0.8292,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 0.9333,
+      "all_correct_given_check_pass": 0.0
+    },
+    "unseen_D/ocr/hybrid": {
+      "n_docs": 60,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.95,
+        "invoice_number": 0.0,
+        "invoice_date": 0.8833,
+        "due_date": 0.8667,
+        "net_amount": 0.9833,
+        "vat_amount": 1.0,
+        "total_amount": 0.95
+      },
+      "mean_field_accuracy": 0.8292,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 0.9333,
+      "all_correct_given_check_pass": 0.0
+    },
+    "unseen_D_rest55/digital/ml_before_adaptation": {
+      "n_docs": 55,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 0.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 0.875,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 0.0
+    },
+    "unseen_D_rest55/digital/ml_after_5_examples": {
+      "n_docs": 55,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 1.0,
+        "invoice_number": 1.0,
+        "invoice_date": 1.0,
+        "due_date": 1.0,
+        "net_amount": 1.0,
+        "vat_amount": 1.0,
+        "total_amount": 1.0
+      },
+      "mean_field_accuracy": 1.0,
+      "all_fields_correct_rate": 1.0,
+      "arithmetic_check_pass_rate": 1.0,
+      "all_correct_given_check_pass": 1.0
+    },
+    "unseen_D_rest55/ocr/ml_before_adaptation": {
+      "n_docs": 55,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.9636,
+        "invoice_number": 0.0,
+        "invoice_date": 0.8909,
+        "due_date": 0.8727,
+        "net_amount": 0.9818,
+        "vat_amount": 1.0,
+        "total_amount": 0.9455
+      },
+      "mean_field_accuracy": 0.8318,
+      "all_fields_correct_rate": 0.0,
+      "arithmetic_check_pass_rate": 0.9273,
+      "all_correct_given_check_pass": 0.0
+    },
+    "unseen_D_rest55/ocr/ml_after_5_examples": {
+      "n_docs": 55,
+      "field_accuracy": {
+        "vendor_name": 1.0,
+        "vendor_vat_number": 0.9636,
+        "invoice_number": 1.0,
+        "invoice_date": 0.8909,
+        "due_date": 0.8727,
+        "net_amount": 0.9818,
+        "vat_amount": 1.0,
+        "total_amount": 0.9455
+      },
+      "mean_field_accuracy": 0.9568,
+      "all_fields_correct_rate": 0.7091,
+      "arithmetic_check_pass_rate": 0.9273,
+      "all_correct_given_check_pass": 0.7647
+    }
+  }
+}

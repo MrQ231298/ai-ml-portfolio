@@ -1,0 +1,15 @@
+Documentnumber:2026/95857   Galtee Catering DAC
+Dated:January16,2026   Galway/VATnumberIE8487284BH
+Payby:March17,2026   Tel.0748674209
+Suppliedto:NephinClinicOrderref:ORD-30862
+Goods/ services   No.   Each   Value
+Hi-vis vests   15   286.05   4,290.75
+Toner cartridge   13   51.02   663.26
+Brochure print run   10   234.93   2,349.30
+USB-Cdock   15   342.76   5,141.40
+Brochure print run   14   298.54   4,179.56
+Consultancy (hours)   14   285.84   4,001.76
+Total excl. VAT   20,626.03
+VATamount   2,784.51
+Balancetopay   EUR23,410.54
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolio,notarealcompanyortransaction

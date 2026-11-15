@@ -1,0 +1,13 @@
+Documentnumber:2025/16357   Nephin Cleaning Co.Ltd
+Dated:January28,2025   Navan/VATnumberIE3684950KA
+Payby:February11,2025   Tel.0749737392
+Suppliedto:AtlanticHotelOrderref:ORD-64093
+Goods/ services   No.   Each   Value
+Network switch   20   240.51   4,810.20
+Hi-vis vests   169.19   1,015.14
+USB-Cdock   18   62.63   1,127.34
+Delivery charge   12   117.02   1,404.24
+Total exclVAT   8,356.92
+VATamount   1,922.09
+Balancetopay   EUR10,279.01
+SYNTHETICEXAMPLEINVOICEinventedforanMLportfolio;hotarealcompanyortransaction.

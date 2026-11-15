@@ -1,0 +1,15 @@
+Documentnumber:2025/94326   BarrowITServicesTeoranta
+Dated:March30,2025   Waterford/VATnumberIE4120906S
+Payby:April 29.2025   Tel.0613405742
+Suppliedto:MourneStoresOrderref:ORD-27188
+Goods/services   No.   Each   Value
+Shelving unit   372.24   2,605.68
+Brake pads (set)   14   295.60   4,138.40
+Labour (hours)   286.95   2,582.55
+A4paper (box)   124.94   124.94
+A4paper (box)   11   164.19   1,806.09
+Sandwichplatter   14   433.01   6,062.14
+Total excl.VAT   17,319.80
+VATamount   3,983.55
+Balancetopay   EUR21303.35
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction

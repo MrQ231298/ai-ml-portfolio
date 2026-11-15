@@ -1,0 +1,10 @@
+Documentnumber:2025/13488   CorribIT ServicesLtd
+Dated:June2,2025   Waterford/VATnumberIE7315743J
+Pay by: July 17,2025   Tel.0747404246
+Suppliedto:LiffeyHotelOrderref:ORD-68839
+Goods/services   No.   Each   Value
+Palletwrap   19   188.21   3,575.99
+Total excl.VAT   3,575.99
+VAT amount   482.76
+Balancetopay   EUR 4,058.75
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notareal companyortransaction

@@ -1,0 +1,14 @@
+ATLANTICLOGISTICSLTD
+Galway,Ireland
+Ref: KB-48267
+TaxID:IE3025885CA
+Tel 0743751120   Issued:2026-05-16
+Due:2026-07-15
+Account: AC724211
+Description   Units   Rate   Total
+Delivery charge   41.91   335.28
+A4 paper (box)   378.96   1,894.80
+Goods total   2,230.08
+Tax 13.5%   301.06
+Grand Total   2,531.14
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction

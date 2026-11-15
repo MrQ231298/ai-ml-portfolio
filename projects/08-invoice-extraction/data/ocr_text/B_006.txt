@@ -1,0 +1,10 @@
+Suir Catering Limited
+MainStreet,Limerick/VATReg:IE7667209DA
+Tax Invoice
+Invoice#:994216   Date:23Jan2026
+Customer:KerryWay Stores   Payment due:06 Feb 2026
+POnumber:4583987   Phone:014414994
+Item   Qty   Price   Linetotal
+Hi-visvests   18.56   37.12
+Netamount37.12   VAT (13.5%)5.01   AmountpayableEUR42.13
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction

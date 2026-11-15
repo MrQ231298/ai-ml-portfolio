@@ -1,0 +1,12 @@
+NephinCateringTeoranta
+MainStreet,Waterford/VATReg:IE3711159LA
+Tax Invoice
+Invoice#:093728   Date:12Mar2026
+Customer:ShannonStores   Payment due: 11Apr 2026
+POnumber:4585920   Phone:074 7700881
+Item   Qty   Price   Linetotal
+Brochure print run   16   99.82   1,597.12
+USB-Cdock   216.38   1,298.28
+Delivery charge   429.56   3,866.04
+Net amount 6,761.44   VAT (23%) 1,555.13   AmountpayableEUR8,316.57
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction.

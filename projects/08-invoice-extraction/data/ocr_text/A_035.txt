@@ -1,0 +1,16 @@
+BurrenCleaningCo.Ltd   INVOICE
+Unit4,BusinessPark,Sligo
+VATNo:1E8284067FH   InvoiceNo:INV-2026-3231
+invoiceDate:31/10/2026
+DueDate:21/11/2026
+Bill to:Burren Hotel
+CustomerRef:CR-63243Tel:011618137
+Description   Qty   Unit   Amount
+Pallet wrap   186.18   1,675.62
+A4paper (box)   10   189.78   1,897.80
+USB-Cdock   10   336.17   3,361.70
+A4paper(box)   12   188.09   2,257.08
+Subtotal:   9,192.20
+VAT @23%:   2,114.21
+Total Due:   11,306.41
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporttolio:notarealcompanyortransaction.

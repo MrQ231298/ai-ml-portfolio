@@ -1,0 +1,12 @@
+BurrenFleetPartsLtd
+MainStreet,Carlow/VATReg:IE6480671N
+Tax Invoice
+Invoice#:823730   Date:26Jan2025
+Customer:NephinClinic   Paymentdue:12Mar2025
+POnumber:4540176   Phone:0916076829
+Qty   Price   Line total
+Item
+Brakepads (set)   10   167.45   1,674.50
+USB-C dock   17   381.04   6,477.68
+Net amount 8,152.18   VAT (23%) 1,875.00   Amountpayable EUR10,027.18
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notarealcompanyortransaction.

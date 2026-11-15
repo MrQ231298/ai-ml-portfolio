@@ -1,0 +1,11 @@
+Documentnumber:2025/61641   MourneITServices Teoranta
+Dated:March3,2025   Waterford/VATnumber1E8878033SH
+Payby:April17.2025   Tel.074 6268314
+Suppliedto:ErrigalClinicOrderref:ORD-87251
+Goods/services   No.   Each   Value
+Sandwichplatter   15   217.95   3,269.25
+Delivery charge   415.68   2,909.76
+Total excl.VAT   6,179.01
+VAT amount   1,421.17
+Balance to pay   EUR7,600.18
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporfolio,nota realcompanyortransaction.

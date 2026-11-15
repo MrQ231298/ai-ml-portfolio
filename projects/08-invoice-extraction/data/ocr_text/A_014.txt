@@ -1,0 +1,15 @@
+KerryWayFleet PartsLimited   INVOICE
+Unit4,BusinessPark,Navan
+VATNo:IE1257465AA   InvoiceNo:INV-2025-4433
+InvoiceDate:23/04/2025
+Due Date:14/05/2025
+Billto:LiffeyStores
+CustomerRef:CR-34832Tel:0749345070
+Description   Qty   Unit   Amount
+USB-Cdock   83.97   167.94
+Sandwichplatter   10   284.02   2,840.20
+Sandwichplatter   132.61   928.27
+Subtotal:   3,936.41
+VAT@23%:   905.37
+Total Due:   4,841.78
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;nota real companyortransaction

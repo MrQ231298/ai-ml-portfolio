@@ -1,0 +1,17 @@
+Atlantic OfficeSolutionsLimited   INVOICE
+Unit 4, Business Park, Carlow
+VATNo:IE9592643GA   InvoiceNo:INV-2025-1039
+InvoiceDate:25/05/2025
+DueDate:09/07/2025
+Bill to: Boyne GAA Club
+CustomerRef:CR-76605Tel:0617689103
+Description   Qty   Unit   Amount
+Hi-vis vests   251.74   1,006.96
+Cleaning service (visit)   240.23   4,083.91
+A4 paper (box)   397.80   1,591.20
+A4 paper (box)   88.51   708.08
+Sandwichplatter   229.95   919.80
+Subtotal:   8,309.95
+VAT @ 23%:   1,911.29
+Total Due:   10,221.24
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio;notarealcompanyortransaction.

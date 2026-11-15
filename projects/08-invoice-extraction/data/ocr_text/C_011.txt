@@ -1,0 +1,16 @@
+SUIRHARDWARELIMITED
+Navan,Ireland   Ref:KM-53402
+TaxID:IE5468516KH   lssued:2025-06-16
+Tel0616405937
+Due:2025-07-31
+Account:AC162585
+Description   Units   Rate   Total
+Delivery charge   3.16   3.16
+Cleaning service (visit)   425.42   1,701.68
+Pallet wrap   19   364.80   6,931.20
+Sandwichplatter   12   305.28   3,663.36
+Delivery charge   17   300.75   5,112.75
+Goods total   17,412.15
+Tax 23%   4,004.79
+Grand Total   21,416.94
+SYNTHETIC EXAMPLEINVOICE-inventedtoranMLporttolionotarealcompanyortransaction

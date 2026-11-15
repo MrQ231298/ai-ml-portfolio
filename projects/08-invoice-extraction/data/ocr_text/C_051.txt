@@ -1,0 +1,13 @@
+KERRYWAYFLEETPARTSLIMITED
+Waterford,lreland   Ref:EM-46177
+TaxID:IE8050975GA   Issued:2026-06-08
+Tel0917956592
+Due:2026-07-23
+Account:AC911400
+Description   Units   Rate   Total
+Delivery charge   18   98.38   1,770.84
+Networkswitch   15   362.12   5,431.80
+Goodstotal   7,202.64
+Tax23%   1,656.61
+Grand Total   8,859.25
+SYNTHETICEXAMPLEINVOICEinventedforanMLporttolionotareal companyortransaction.

@@ -1,0 +1,14 @@
+BoyneCateringLimited
+MainStreet,Waterford/VATReg:IE3910303FH
+Tax Invoice
+Invoice#:024515   Date:15Feb2025
+Customer:LiffeyClinic   Paymentdue:08Mar2025
+POnumber:4548102   Phone:0713229836
+Item   Qty   Price   Linetotal
+USB-Cdock   143.71   862.26
+Brochure print run   15   138.74   2,081.10
+Cleaning service (visit)   432.13   3,889.17
+Network switch   111.59   334.77
+Palletwrap   19   101.97   1,937.43
+Net amount 9,104.73   VAT (13.5%)1,229.14   AmountpayableEUR10,333.87
+SYNTHETICEXAMPLEINVOICEinventedforanMLportfolio,notarealcompanyortransaction

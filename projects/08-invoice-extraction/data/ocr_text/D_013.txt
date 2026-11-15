@@ -1,0 +1,11 @@
+Document number:2026/71112   KerryWaySuppliesDAC
+Dated:March17,2026   Athlone/VATnumberIE7294394WH
+Pay by:May 16,2026   Tel.0616844902
+Suppliedto:FoyleClinicOrderref:ORD-52031
+Goods/services   No.   Each   Value
+Pallet wrap   240.73   481.46
+Labour (hours)   347.21   1,388.84
+Total excl. VAT   1,870.30
+VAT amount   252.49
+Balance to pay   EUR 2,122.79
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio;notarealcompany ortransaction.

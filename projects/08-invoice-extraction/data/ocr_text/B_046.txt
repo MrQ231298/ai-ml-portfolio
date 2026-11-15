@@ -1,0 +1,14 @@
+Suir Packaging Teoranta
+Main Street,Letterkenny1VATReg:IE6188400WA
+Tax Invoice
+Invoice#:778081   Date:27Feb2025
+Customer:BurrenClinic   Paymentdue:13Apr2025
+POnumber:4557363   Phone:0719483497
+Item   Qty   Price   Line total
+A4paper (box)   11   73.04   803.44
+Sandwichplatter   97.09   485.45
+Hi-vis vests   162.96   488.88
+Brakepads(set)   14   156.82   2,195.48
+Delivery charge   19   390.05   7,410.95
+Netamount 11,384.20   VAT (23%) 2,618.37   AmountpayableEUR14,002.57
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction.

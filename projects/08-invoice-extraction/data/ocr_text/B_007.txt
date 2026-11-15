@@ -1,0 +1,15 @@
+ErrigalITServicesLimited
+MainStreet, Sligo/VATReg:IE8897461LH
+Tax Invoice
+Invoice #:621196   Date:15Jan2026
+Customer:Foyle Garage   Paymentdue:05Feb2026
+POnumber:4559149   Phone:0616643921
+Item   Qty   Price   Line total
+Pallet wrap   79.94   639.52
+Sandwichplatter   12   29.50   354.00
+A4 paper (box)   377.24   377.24
+Labour (hours)   354.51   3,190.59
+Delivery charge   16   27.93   446.88
+Consultancy (hours)   340.46   3,745.06
+Net amount 8,753.29   VAT (23%) 2,013.26   AmountpayableEUR10,766.55
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;nota realcompanyortransaction.

@@ -1,0 +1,13 @@
+Documentnumber:2026/85765   Corrib Catering Limited
+Dated:May26,2026   Letterkenny/VATnumberIE8181280H
+Payby:June25,2026   Tel. 01 1422367
+Suppliedto:NephinStoresOrderref:ORD-62824
+Goods/services   No.   Each   Value
+Toner cartridge   18   185.97   3,347.46
+Delivery charge   330.19   660.38
+Network switch   311.03   2,177.21
+Laptop stand   413.82   2,069.10
+Total excl. VAT   8,254.15
+VAT amount   1,898.45
+Balanceto pay   EUR10,152.60
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio,nota realcompanyortransaction.

@@ -1,0 +1,13 @@
+CORRIBCATERINGLTD
+Limerick,Jreland
+Ref:ES-49710
+TaxID:IE8820753FH
+Tel 0718705854   Issued:2026-01-10
+Due:2026-02-24
+Account:AC657497
+Description   Units   Rate   Total
+Shelving unit   12   263.50   3,162.00
+Goodstotal   3,162.00
+Tax 13.5%   426.87
+Grand Total   3,588.87
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolionotarealcompanyortransaction

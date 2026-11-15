@@ -1,0 +1,13 @@
+Documentnumber:2026/32793   Corrib Supplies Limited
+Dated: April 21, 2026   Navan/VATnumberIE5354778B
+Pay by: June 20, 2026   Tel.0215165702
+Suppliedto:SlaneyHotel Orderref:ORD-79855
+Goods/services   No.   Each   Value
+Hi-vis vests   328.93   986.79
+Delivery charge   85.83   1,716.60
+Laptop stand   291.35   1,165.40
+Delivery charge   17   119.34   2,028.78
+Total excl. VAT   5,897.57
+VAT amount   1,356.44
+Balanceto pay   EUR 7,254.01
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio;notarealcompanyortransaction.

@@ -1,0 +1,10 @@
+Documentnumber:2025/48133   Suir Catering DAC
+Dated:September27,2025   Navan/VATnumberIE6742520DA
+Payby:October27.2025   Tel.021 7267441
+Suppliedto:BarrowClinicOrderret:ORD-68481
+Goods/services   No.   Each   Value
+Sandwichplatter   10   129.02   1,290.20
+Total excl. VAT   1,290.20
+VATamount   296.75
+Balancetopay   EUR1,586.95
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

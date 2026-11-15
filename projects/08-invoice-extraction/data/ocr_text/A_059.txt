@@ -1,0 +1,15 @@
+ErrigalSuppliesDAC   INVOICE
+Unit4,BusinessPark,Tralee
+VATNo:IE9760290B   InvoiceNo:INV-2025-9279
+InvoiceDate:14/04/2025
+DueDate:28/04/2025
+Bill to:Burren Stores
+CustomerRef:CR-63038Tel:0719752290
+Description   Qty   Unit   Amount
+Sandwichplatter   354.58   1,772.90
+Deliverycharge   388.52   3,496.68
+A4paper(box)   14   18.31   256.34
+Subtotal:   5,525.92
+VAT@13.5%   746.00
+Total Due:   6,271.92
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolionotarealcompanyortransaction

@@ -1,0 +1,14 @@
+BoyneCatering Ltd
+Main Street, Limerick/VAT Reg:IE2885140TH
+Tax Invoice
+Invoice #:156121   Date:08 Feb 2025
+Customer:MoherGarage   Paymentdue:01Mar2025
+POnumber:4538198   Phone:0711397340
+Item   Qty   Price   Linetotal
+Network switch   20   106.54   2,130.80
+A4 paper (box)   328.64   1,314.56
+Toner cartridge   31.86   350.46
+Delivery charge   430.85   1,723.40
+Delivery charge   17   194.53   3,307.01
+Net amount 8,826.23   VAT (23%) 2,030.03   AmountpayableEUR10,856.26
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio:notarealcompany ortransaction.

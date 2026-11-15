@@ -1,0 +1,10 @@
+Documentnumber:2025/16443   Galtee Packaging Limited
+Dated:November20,2025   Tralee/VATnumberIE3850883KA
+Payby:January4,2026   Tel.017404087
+Suppliedto:SlaneyHotelOrderref:ORD-98257
+Goods/services   No.   Each   Value
+Laptop stand   10   116.50   1,165.00
+Total excl. VAT   1,165.00
+VATamount   267.95
+Balancetopay   EUR1,432.95
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolio,notarealcompanyortransaction

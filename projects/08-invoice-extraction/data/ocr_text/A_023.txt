@@ -1,0 +1,17 @@
+MoherFacilitiesLimited   INVOICE
+Unit4,BusinessPark,Carlow
+VATNO:1E5011878MH   InvoiceNo:INV-2025-1487
+InvoiceDate:05/11/2025
+DueDate:20/12/2025
+Billto:Slaney Stores
+CustomerRef:CR-12632Tel:0743491377
+Description   Qty   Unit   Amount
+Brake pads (set)   13   56.52   734.76
+Sandwichplatter   36.60   219.60
+Cleaning service (visit)   16   249.02   3,984.32
+Cleaning service (visit)   448.42   4,932.62
+Consultancy (hours)   14   65.40   915.60
+Subtotal:   10,786.90
+VAT @ 23%:   2,480.99
+Total Due:   13,267.89
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolio;notarealcompanyortransaction.

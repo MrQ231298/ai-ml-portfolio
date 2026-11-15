@@ -1,0 +1,14 @@
+Documentnumber:2026/27475   LiffeyCateringDAC
+Dated:January13,2026   Limerick/VATnumberIE4319513HH
+Payby:February27,2026   Tel.0741682963
+Suppliedto:WicklowClinicOrderref:ORD-93310
+Goods/ services   No.   Each   Value
+A4 paper (box)   12   227.07   2,724.84
+Labour (hours)   20   339.84   6,796.80
+Delivery charge   12   182.34   2,188.08
+USB-Cdock   12   224.82   2,697.84
+Shelving unit   13   72.87   947.31
+Total excl.VAT   15,354.87
+VAT amount   3,531.62
+Balance to pay   EUR18,886.49
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio,nota real companyortransaction

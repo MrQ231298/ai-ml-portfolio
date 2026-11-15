@@ -1,0 +1,19 @@
+INVOICE
+BarrowCateringLimited
+Unit4,BusinessPark,Letterkenny
+VATNo:IE6263809LA   InvoiceNo:INV-2025-0643
+InvoiceDate:07/09/2025
+DueDate:21/09/2025
+Billto:WicklowHotel
+CustomerRef:CR-86008Tel:0618432820
+Description   Qty   Unit   Amount
+USB-Cdock   10   237.76   2,377.60
+11   329.06   3,619.66
+Pallet wrap
+Toner cartridge   20   441.14   8,822.80
+Shelving unit   17   189.90   3,228.30
+Cleaning service (visit)   11   70.94   780.34
+Subtotal:   18,828.70
+VAT @ 13.5%:   2,541.87
+Total Due:   21,370.57
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,nolarealcompanyortransaction

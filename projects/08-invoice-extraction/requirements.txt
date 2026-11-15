@@ -1,0 +1,18 @@
+# Direct dependencies for the invoice extraction project.
+# Installed and verified on Python 3.13.5 (15 November 2026, Europe/Dublin).
+# System tools: poppler-utils (pdftotext, pdftoppm) must be installed.
+# OCR uses RapidOCR (PP-OCR models bundled, ONNX Runtime) because Tesseract
+# could not be installed on the build machine (apt mirror unreachable).
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+streamlit==1.67.0
+reportlab==5.1.0
+pypdf==7.1.0
+pdf2image==1.17.0
+pillow==13.0.0
+rapidocr_onnxruntime==1.2.3
+onnxruntime==1.32.0
+pytest==9.2.0

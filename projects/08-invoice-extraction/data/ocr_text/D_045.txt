@@ -1,0 +1,11 @@
+Documentnumber:2025/54866   LiffeySuppliesDAC
+Dated:December15,2025   Athlone/VATnumberIE5734417KA
+Payby:January5,2026   Tel.013692842
+Suppliedto:WicklowClinicOrderref:ORD-47016
+Goods/services   No.   Each   Value
+Labour (hours)   19   355.54   6,755.26
+Sandwichplatter   12   353.62   4,243.44
+Total excl. VAT   10,998.70
+VAT amount   2,529.70
+Balance to pay   EUR13,528.40
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction

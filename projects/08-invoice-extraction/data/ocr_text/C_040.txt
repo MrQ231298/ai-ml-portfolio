@@ -1,0 +1,17 @@
+SLANEYOFFICESOLUTIONSDAC
+Limerick,lreland   Ref:KH-28489
+TaxID:IE1859836EA
+Issued:2025-12-10
+Tel0716563156
+Due:2025-12-24
+Account:AC340557
+Description   Units   Rate   Total
+Networkswitch   12   146.11   1,753.32
+Hi-visvests   16   394.02   6,304.32
+Pallet wrap   417.47   834.94
+Toner cartridge   121.70   730.20
+Palletwrap   20   26.39   527.80
+Goods total   10,150.58
+Tax 23%   2,334.63
+Grand Total   12,485.21
+SYNTHETICEXAMPLEINVOICE-inventedforan MLporfolio,nota realcompanyortransaction.

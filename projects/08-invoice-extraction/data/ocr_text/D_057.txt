@@ -1,0 +1,11 @@
+Documentnumber:2025/89741   Kerry Way Logistics DAC
+Dated: August 18, 2025   Navan/VATnumberIE2311615P
+Pay by:October 17,2025
+Tel.074827396
+Suppliedto:MoherClinicOrderref:ORD-70671
+Goods/services   No.   Each   Value
+Toner cartridge   11   431.40   4,745.40
+Total excl. VAT   4,745.40
+VAT amount   1,091.44
+Balanceto pay   EUR 5,836.84
+SYNTHETIC EXAMPLEINVOICE-inventedforanMLporfolio;nota realcompanyortransaction

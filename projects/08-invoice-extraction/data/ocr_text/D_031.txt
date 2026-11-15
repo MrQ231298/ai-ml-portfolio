@@ -1,0 +1,14 @@
+Documentnumber:2026/11629   Moher Catering Ltd
+Dated: July 29, 2026
+Pay by:August 12, 2026   Carlow/VATnumberIE1265140A
+Tel.074 3832129
+Suppliedto:SlaneyGAAClubOrderref:ORD-21866
+Goods/ services   No.   Each   Value
+Cleaning service (visit)   18.13   54.39
+Cleaning service (visit)   10   410.18   4,101.80
+Shelving unit   48.74   146.22
+Sandwich platter   184.07   736.28
+Total excl. VAT   5,038.69
+VATamount   1,158.90
+Balanceto pay   EUR6,197.59
+SYNTHETICEXAMPLEINVOICE-IinventedforanMLporfolio:notarealcompanyDrtransaction.

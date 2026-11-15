@@ -1,0 +1,17 @@
+ERRIGALLOGISTICSLTD
+Galway,Ireland   Ref:EG-25509
+TaxID:IE8348287FA
+Tel0914869865   Issued:2025-11-18
+Due:2026-01-02
+Account:AC458336
+Description   Units   Rate   Total
+Sandwichplatter   11   167.11   1,838.21
+Delivery charge   434.64   1,738.56
+Brake pads (set)   240.32   1,682.24
+USB-Cdock   18   112.50   2,025.00
+Sandwichplatter   14   419.33   5,870.62
+Consultancy (hours)   292.56   877.68
+Goods total   14,032.31
+Tax23%   3,227.43
+Grand Total   17,259.74
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

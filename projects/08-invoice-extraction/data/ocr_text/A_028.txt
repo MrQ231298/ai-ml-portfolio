@@ -1,0 +1,16 @@
+Shannon Catering Ltd   INVOICE
+Unit4,BusinessPark,Tralee
+VATNo:IE6564960R   InvoiceNo:INV-2026-0523
+InvoiceDate:03/09/2026
+DueDate:24/09/2026
+Billto:LiffeyGAAClub
+CustomerRef:CR-20255Tel:01148162
+Description   Qty   Unit   Amount
+Delivery charge   320.31   640.62
+Labour (hours)   13   203.99   2,651.87
+Tonercartridge   11   330.53   3,635.83
+Deliverycharge   150.17   901.02
+Subtotal:   7,829.34
+VAT @13.5%:   1,056.96
+Total Due:   8,886.30
+SYNTHETICEXAMPLEINVOICEinventedforanMLportfolio;notarealcompanyortransaction

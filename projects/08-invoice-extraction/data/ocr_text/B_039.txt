@@ -1,0 +1,11 @@
+ShannonPrintWorksLtd
+MainStreet,Carlow/VATReg:IE7156942LA
+Tax Invoice
+Invoice#:591305   Date:16Jan2025
+Customer:KerryWayClinic   Paymentdue:17Mar2025
+POnumber:4526085   Phone:091295404
+Item   Qty   Price   Line total
+Labour (hours)   15   137.07   2,056.05
+USB-Cdock   193.41   967.05
+Net amount 3,023.10   VAT (23%) 695.31   AmountpayableEUR3,718.41
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfofio:notareal companyortransaction

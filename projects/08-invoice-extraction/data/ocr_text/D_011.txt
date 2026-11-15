@@ -1,0 +1,14 @@
+Documentnumber:2026/07047   Moher Catering Ltd
+Dated: May 23,2026   Navan/VATnumberIE4707712JH
+Pay by:July 22,2026
+Tel.0216252545
+Suppliedto:ErrigalHotel Orderref:ORD-67380
+Goods/services   No.   Each   Value
+Brochure print run   10   31.37   313.70
+Toner cartridge   16   59.73   955.68
+Brake pads (set)   16   198.49   3,175.84
+Brochure print run   314.77   314.77
+Total excl.VAT   4,759.99
+VAT amount   1,094.80
+Balanceto pay   EUR5,854.79
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporfolio,notarealcompanyortransaction.

@@ -1,0 +1,12 @@
+Errigal Logistics Ltd
+MainStreet,Carlow/VATReg:IE5817869RA
+TaxInvoice
+Invoice#:303311   Date:01Sep2026
+Customer:NephinStores   Paymentdue:31Oct2026
+POnumber:4595243   Phone:0919666020
+Item   Qty   Price   Linetotal
+Sandwichplatter   211.49   634.47
+Sandwichplatter   199.67   998.35
+USB-Cdock   398.68   1,993.40
+Netamount3,626.22   VAT(13.5%)489.54   AmountpayableEUR4,115.76
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportolio;notarealcompanyortransaction

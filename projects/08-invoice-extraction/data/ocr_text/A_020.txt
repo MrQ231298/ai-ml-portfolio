@@ -1,0 +1,14 @@
+KerryWayITServicesTeoranta   INVOICE
+Unit4,BusinessPark,Navan
+VATNo:IE7126846HH   Invoice No:INV-2026-9886
+InvoiceDate:01/02/2026
+DueDate:22/02/2026
+Bill to:Galtee Clinic
+CustomerRef:CR-13255Tel:0716711574
+Description   Qty   Unit   Amount
+Delivery charge   262.92   788.76
+Hi-vis vests   17   120.03   2,040.51
+Subtotal:   2,829.27
+VAT @ 23%:   650.73
+Total Due:   3,480.00
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolionotareal companyortransaction

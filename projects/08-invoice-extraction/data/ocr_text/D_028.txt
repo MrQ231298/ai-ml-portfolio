@@ -1,0 +1,13 @@
+SlaneyITServicesLimited
+Documentnumber:2026/82844
+Sligo/VATnumberIE3647600GH
+Dated:July25,2026   Tel.0215136947
+Payby:September23,2026
+Suppliedto:GalteeHotelOrderref:ORD-36814
+Goods/services   'ON   Each   Value
+309.19   927.57
+USB-Cdock
+Total excl.VAT   927.57
+VAT amount   125.22
+Balancetopay   EUR1,052.79
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporttolionotarealcompanyortransaction.

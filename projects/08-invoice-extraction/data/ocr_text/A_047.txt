@@ -1,0 +1,14 @@
+BarrowOfficeSolutionsDAC   INVOICE
+Unit4,BusinessPark,Limerick
+VATNo:IE3665821K   InvoiceNo:INV-2025-3024
+InvoiceDate:02/01/2025
+DueDate:03/03/2025
+Bill to:WickiowGAA Club
+CustomerRef:CR-75315Tel:0913984387
+Description   Qty   Unit   Amount
+A4paper (box)   10   343.69   3,436.90
+Toner cartridge   158.47   158.47
+Subtotal:   3,595.37
+VAT@13.5%:   485.37
+Total Due:   4,080.74
+SYNTHETIC EXAMPLEINVOICE-inventedforanMLportfolionotarealcompanyortransaction

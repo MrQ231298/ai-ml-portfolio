@@ -1,0 +1,14 @@
+FoyleITServicesTeoranta   INVOICE
+Unit 4, Business Park, Sligo
+VATNo:IE9760705M
+InvoiceNo:INV-2026-2533
+InvoiceDate:17/08/2026
+Bill to:Liffey Garage   DueDate:07/09/2026
+CustomerRef:CR-34808Tel:0215604186
+Description   Qty   Unit   Amount
+USB-Cdock   11   209.52   2,304.72
+Pallet wrap   229.94   1,839.52
+Subtotal:   4,144.24
+VAT @ 23%:   953.18
+Total Due:   5,097.42
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

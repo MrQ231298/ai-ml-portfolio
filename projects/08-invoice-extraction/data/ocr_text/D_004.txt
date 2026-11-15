@@ -1,0 +1,13 @@
+Documentnumber:2025/63008   LiffeyPrint WorksDAC
+Dated:April25,2025   Letterkenny/VATnumberIE4318348WA
+Payby:May16,2025   Tel.0913034064
+Suppliedto:BarrowGarageOrderref:ORD-34958
+Goods/services   No.   Each   Value
+Hi-vis vests   19   129.33   2,457.27
+Delivery charge   13   261.25   3,396.25
+Hi-visvests   11   347.39   3,821.29
+Pallet wrap   207.86   1,455.02
+Total excl.VAT   11,129.83
+VATamount   1,502.53
+Balance to pay   EUR12,632.36
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction

@@ -1,0 +1,11 @@
+Documentnumber:2025/88451   NephinFleetPartsLimited
+Dated: January 14,2025   Carlow/VATnumberIE7445013NA
+Pay by: March 15, 2025   Tel. 01 1228794
+Supplied to:Burren StoresOrderref:ORD-45442
+Goods / services   No.   Each   Value
+Consultancy (hours)   408.05   2,448.30
+Toner cartridge   97.12   388.48
+Total excl. VAT   2,836.78
+VAT amount   652.46
+Balance to pay   EUR 3,489.24
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction.

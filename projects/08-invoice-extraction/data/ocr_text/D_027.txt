@@ -1,0 +1,10 @@
+Documentnumber:2025/67126   Wicklow SuppliesLimited
+Dated:August 3,2025   Tralee/VATnumberIE8393632PA
+Payby:September2,2025   Tel.0748085764
+Suppliedto:SlaneyHotel.Orderref:ORD-63256
+Goods/services   No.   Each   Value
+Network switch   11   341.34   3,754.74
+Total excl. VAT   3,754.74
+VAT amount   506.89
+Balance to pay   EUR4,261.63
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio:notareal companyortransaction

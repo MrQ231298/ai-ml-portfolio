@@ -1,0 +1,15 @@
+Documentnumber:2025/82401   BoyneFacilitiesDAC
+Dated:January13,2025   Tralee/VATnumberIE9139659W
+Pay by:February27.2025   Tel.0712690092
+Suppliedto:ErrigalGarageOrderref:ORD-55314
+Goods/services   No.   Each   Value
+Toner cartridge   13   354.50   4,608.50
+Consultancy (hours)   183.21   1,465.68
+Cleaning service (visit)   268.32   268.32
+Sandwichplatter   14   263.15   3,684.10
+Pallet wrap   113.04   339.12
+Hi-vis vests   436.63   3,056.41
+Total excl.VAT   13,422.13
+VAT amount   3,087.09
+Balancetopay   EUR16,509.22
+SYNTHETICEXAMPLEINVOICE-InventedforanMLporttolio:notarealcompanyortransaction.

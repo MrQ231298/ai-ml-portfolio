@@ -1,0 +1,12 @@
+Documentnumber:2026/03770   LiffeyPrintWorksLimited
+Dated:March 4,2026   Navan/VATnumberIE7319058HH
+Payby:March18,2026   Tel.0916835850
+Suppliedto:SlaneyGAAClubOrderref:ORD-81536
+Goods/services   No.   Each   Value
+Delivery charge   182.71   1,461.68
+Cleaning service (visit)   300.16   2,101.12
+Consultancy (hours)   12   184.44   2,213.28
+Total excl. VAT   5,776.08
+VAT amount   1,328.50
+Balancetopay   EUR7,104.58
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolionotareal companyortransaction.

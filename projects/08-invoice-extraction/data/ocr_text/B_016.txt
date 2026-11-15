@@ -1,0 +1,10 @@
+BurrenFacilities DAC
+MainStreet,Limerick/VATReg:IE2686180J
+TaxInvoice
+Invoice #:659767   Date:10Apr 2026
+Customer:BarrowClinic   Payment due: 24 Apr 2026
+POnumber:4541018   Phone:074329298
+Item   Qty   Price   Line total
+Brochure print run   389.93   779.86
+Net amount 779.86   VAT (23%) 179.37   AmountpayableEUR959.23
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio,notarealcompanyortransaction.

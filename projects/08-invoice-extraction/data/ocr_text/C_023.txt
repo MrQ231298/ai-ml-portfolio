@@ -1,0 +1,13 @@
+SHANNONITSERVICESLTD
+Carlow, Ireland   Ref:AH-23607
+TaxID:IE2620263F   Issued:2026-02-16
+Tel0742831621
+Due:2026-03-09
+Account:AC438976
+Description   Units   Rate   Total
+Brake pads (set)   418.87   837.74
+Palletwrap   19   413.92   7,864.48
+Goodstotal   8,702.22
+Tax 23%   2,001.51
+Grand Total   10,703.73
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;nota realcompanyortransaction

@@ -1,0 +1,15 @@
+Documentnumber:2026/39338   BarrowCleaningCo.Limited
+Dated:August10,2026   Watertord/VATnumberIE8742753HH
+Pay by: August 31, 2026   Tel.0217038430
+Suppliedto:LiffeyStoresOrderref:ORD-25000
+Goods/services   No.   Each   Value
+Cleaning service (visit)   12   169.13   2,029.56
+Delivery charge   441.47   1,324.41
+Sandwichplatter   10   71.56   715.60
+Brochureprint run   29.78   119.12
+Consultancy (hours)   91.25   182.50
+Laptop stand   117.28   351.84
+Total excl. VAT   4,723.03
+VAT amount   1,086.30
+Balance to pay   EUR5,809.33
+SYNTHETICEXAMPLEINVOICE-invented foran MLportfolio;nota realcompany ortransaction.

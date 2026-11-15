@@ -1,0 +1,14 @@
+ShannonITServicesLimited
+Documentnumber:2025/27001
+Galway/VATnumberIE5782569WH
+Dated:December1,2025
+Tel.0743183894
+Pay by: January 15, 2026
+Suppliedto:LiffeyClinicOrderref:ORD-54953
+Goods/services   No.   Each   Value
+133.58   1,202.22
+Labour (hours)
+Total excl. VAT   1,202.22
+VAT amount   276.51
+Balanceto pay   EUR 1,478.73
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;nota real companyortransaction

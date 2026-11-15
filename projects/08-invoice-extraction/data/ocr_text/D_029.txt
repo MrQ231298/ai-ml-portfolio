@@ -1,0 +1,14 @@
+Documentnumber:2026/92381   BarrowSuppliesDAC
+Dated:March29,2026   Letterkenny/VAT numberIE4014594NA
+Pay by:April 28, 2026   Tel.0747061422
+Suppliedto:WicklowStoresOrderref:ORD-70814
+Goods / services   No.   Each   Value
+Toner cartridge   20   106.48   2,129.60
+Toner cartridge   24.69   123.45
+Pallet wrap   10   22.25   222.50
+Labour (hours)   358.59   3,585.90
+Labour (hours)   54.66   327.96
+Total excl. VAT   6,389.41
+VAT amount   1,469.56
+Balance to pay   EUR7,858.97
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio;notarealcompany ortransaction.

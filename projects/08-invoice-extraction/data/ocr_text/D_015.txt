@@ -1,0 +1,15 @@
+Documentnumber:2025/02654   BarrowFacilitiesLimited
+Dated:November18,2025   Waterford/VATnumberIE7575904N
+Payby:December9,2025   Tel.071285863
+Suppliedto:BurrenHotelOrderret:ORD-52082
+Goods/services   No.   Each   Value
+Hi-vis vests   321.62   1,929.72
+Brake pads (set)   30.12   271.08
+Laptop stand   151.18   1,209.44
+Network switch   401.16   2,406.96
+Shelving unit   14   88.96   1,245.44
+Toner cartridge   12   230.63   2,767.56
+Totalexcl.VAT   9,830.20
+VAT amount   2,260.95
+Balancetopay   EUR12091.15
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction

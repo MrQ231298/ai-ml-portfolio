@@ -1,0 +1,18 @@
+Kerry WayLogistics Ltd   INVOICE
+Unit 4,Business Park,Waterford
+VATNo:IE5264120TH   InvoiceNo:INV-2026-2602
+InvoiceDate:01/06/2026
+Due Date:16/07/2026
+Bill to:Shannon Garage
+CustomerRef:CR-90722Tel:0214510187
+Description   Qty   Unit   Amount
+Tonercartridge   14.56   72.80
+Laptopstand   20   330.24   6,604.80
+USB-Cdock   89.59   358.36
+Shelving unit   16   131.68   2,106.88
+Labour (hours)   309.70   1,858.20
+Hi-vis vests   32.29   258.32
+Subtotal:   11,259.36
+VAT @ 23%:   2,589.65
+Total Due:   13849.01
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction.

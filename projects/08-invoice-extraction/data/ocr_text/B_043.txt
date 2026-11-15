@@ -1,0 +1,15 @@
+Liffey Catering DAC
+MainStreet,Tralee/VATReg:IE5083943HH
+Tax Invoice
+Invoice #: 927587   Date:11Oct2026
+Customer:FoyleStores   Paymentdue:10Dec2026
+POnumber:4510947   Phone:0212375327
+Item   Qty   Price   Linetotal
+Pallet wrap   165.22   660.88
+Delivery charge   393.15   3,145.20
+Shelving unit   138.89   416.67
+Sandwichplatter   11   333.57   3,669.27
+Sandwichplatter   159.64   1,277.12
+Labour (hours)   13   152.49   1,982.37
+Net amount 11,151.51   VAT (23%) 2,564.85   AmountpayableEUR13,716.36
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction.

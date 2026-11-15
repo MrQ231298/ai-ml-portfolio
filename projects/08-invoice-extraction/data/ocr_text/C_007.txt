@@ -1,0 +1,17 @@
+SUIRLOGISTICSLTD
+Carlow,ireland   Ref:FR-28398
+TaxID:IE4325254HA   Issued:2025-08-09
+Tel 061 1222194
+Due:2025-10-08
+Account:AC139561
+Description   Units   Rate   Total
+Hi-vis vests   367.15   2,202.90
+Cleaning service (visit)   365.32   1,095.96
+A4 paper (box)   19   414.62   7,877.78
+Network switch   11   423.32   4,656.52
+Shelving unit   14   17.41   243.74
+Sandwich platter   69.18   553.44
+Goods total   16,630.34
+Tax 23%   3,824.98
+Grand Total   20,455.32
+SYNTHETICEXAMPLEINVOICE-invented foranMLportfolio;nota realcompanyortransaction.

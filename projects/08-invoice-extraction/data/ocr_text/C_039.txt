@@ -1,0 +1,20 @@
+NEPHINLOGISTICSTEORANTA
+Limerick, Ireland   Ref:RA-32703
+TaxID:IE5176193A   Issued:2026-07-18
+Tel0213028220   Due:2026-08-08
+Account:AC120255
+Description   Units   Rate   Total
+318.09   2,544.72
+Shelving unit
+Laptop stand   168.04   1,176.28
+10   292.98   2,929.80
+Delivery charge
+271.70   815.10
+Laptop stand
+USB-C dock   19   23.40   444.60
+269.20   269.20
+Network switch
+Goods total   8,179.70
+Tax 23%   1,881.33
+Grand Total   10,061.03
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;notarealcompanyortransaction.

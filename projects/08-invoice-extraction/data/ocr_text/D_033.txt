@@ -1,0 +1,13 @@
+Documentnumber:2025/33710   Moher Cleaning Co.Ltd
+Dated:April 7,2025   Sligo/VATnumberIE4422520EA
+Payby:June6,2025   Tel.0912247454
+Suppliedto:NephinClinicOrderref:ORD-43731
+Goods/services   No.   Each   Value
+Toner cartridge   11   105.31   1,158.41
+Sandwichplatter   11   230.43   2,534.73
+Hi-vis vests   10   324.62   3,246.20
+USB-Cdock   187.27   1,498.16
+Total excl.VAT   8,437.50
+VATamount   1,940.62
+Balance to pay   EUR10,378.12
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction

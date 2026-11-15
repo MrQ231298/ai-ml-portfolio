@@ -1,0 +1,14 @@
+Documentnumber:2025/45947   KerryWayHardwareLtd
+Dated:December18,2025   CarlowVATnumberIE9360550MA
+Pay by:February1,2026   Tel.013326702
+Suppliedto:WicklowGarageOrderref:ORD-65735
+Goods/services   No.   Each   Value
+Cleaning service (visit)   254.11   2,286.99
+Delivery charge   16   150.32   2,405.12
+Brochure print run   398.84   3,190.72
+Consultancy (hours)   108.28   433.12
+Labour (hours)   18.02   144.16
+Total excl.VAT   8,460.11
+VATamount   1,945.83
+Balancetopay   EUR10,405.94
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporfolio,notarealcompanyortransaction.

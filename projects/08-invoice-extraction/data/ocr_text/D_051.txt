@@ -1,0 +1,12 @@
+Documentnumber:2026/98605   FoyleFleetPartsDAC
+Dated:October10,2026   Carlow1VATnumberIE1499692WA
+Payby:November9,2026   Tel.0715385400
+Suppliedto:SlaneyStoresOrderref:ORD-95029
+Goods/services   No.   Each   Value
+Labour (hours)   16   106.84   1,709.44
+Labour (hours)   136.50   1,092.00
+Cleaning service (visit)   12   253.79   3,045.48
+Total excl.VAT   5,846.92
+VAT amount   1,344.79
+Balancetopay   EUR7,191.71
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction

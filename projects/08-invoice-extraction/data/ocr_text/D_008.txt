@@ -1,0 +1,11 @@
+Documentnumber:2025/06416   BoyneFacilities Limited
+Dated:August31,2025   Waterford/VATnumberIE8593801T
+Payby:September14,2025   Tel.013135246
+Suppliedto:CorribClinicOrderref:ORD-20769
+Goods/services   No.   Each   Value
+Toner cartridge   12   110.94   1,331.28
+Networkswitch   16   266.27   4,260.32
+Total excl.VAT   5,591.60
+VAT amount   1,286.07
+Balanceto pay   EUR6,877.67
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

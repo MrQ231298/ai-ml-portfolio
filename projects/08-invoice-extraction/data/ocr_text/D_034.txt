@@ -1,0 +1,12 @@
+Documentnumber:2025/97051   SlaneyFacilitiesDAC
+Dated:June28,2025   Sligo/VATnumberIE5794459NA
+Pay by:July 12,2025   Tel.0746807873
+Suppliedto:KerryWayClinicOrderref:ORD-61186
+Goods/services   No.   Each   Value
+Brakepads (set)   85.45   341.80
+A4paper (box)   17   310.24   5,274.08
+Networkswitch   431.25   3,018.75
+Total excl. VAT   8,634.63
+VAT amount   1,165.68
+Balanceto pay   EUR9,800.31
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notarealcompanyortransaction

@@ -1,0 +1,11 @@
+Documentnumber:2026/88104   Boyne Engineering Limited
+Dated:April24.2026   Waterford/VATnumberIE5588073W
+Payby:May15,2026   Tel.0911780413
+Suppliedto:AtlanticHotelOrderret:ORD-40232
+Goods/ services   No.   Each   Value
+USB-Cdock   15   425.77   6,386.55
+Delivery charge   12   342.30   4,107.60
+Total excl.VAT   10,494.15
+VATamount   1,416.71
+Balance to pay   EUR11,910.86
+SYNTHETICEXAMPLEINVOICE-inventedforan MLportfolio:notareal companyortransactian.

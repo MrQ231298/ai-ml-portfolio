@@ -1,0 +1,14 @@
+BARROWITSERVICESTEORANTA
+Waterford,Ireland   Ref:DA-64056
+TaxID:IE1351073L   Issued:2025-05-18
+Tel0746085932
+Due:2025-06-17
+Account:AC907841
+Description   Units   Rate   Total
+Networkswitch   12   15.67   188.04
+Delivery charge   75.47   301.88
+Laptopstand   16   343.76   5,500.16
+Goods total   5,990.08
+Tax23%   1,377.72
+Grand Total   7,367.80
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

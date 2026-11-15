@@ -1,0 +1,14 @@
+Documentnumber:2025/13682   Moher Hardware Ltd
+Dated:October5,2025   Carlow/VATnumberIE9361744BH
+Pay by:October 26,2025
+Tel. 091 2382240
+Supplied to:GalteeGarageOrderref:ORD-29031
+Goods / services   No.   Each   Value
+Consultancy (hours)   333.68   2,335.76
+USB-C dock   68.48   547.84
+Cleaning service (visit)   19   123.53   2,347.07
+USB-Cdock   14   164.75   2,306.50
+Total excl. VAT   7,537.17
+VAT amount   1,733.55
+Balancetopay   EUR 9,270.72
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

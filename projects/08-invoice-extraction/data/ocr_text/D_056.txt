@@ -1,0 +1,15 @@
+Documentnumber:2025/61635   ShannonFleetPartsTeoranta
+Dated:February12,2025   Athlone/VATnumberIE2325446SH
+Pay by:February 26,2025   Tel.0713576162
+Suppliedto:SlaneyGAAClubOrderref:ORD-74007
+Goods/services   No.   Each   Value
+12   55.62   667.44
+Delivery charge
+239.13   4,065.21
+Deliverycharge
+234.05   936.20
+Deliverycharge
+Total excl. VAT   5,668.85
+VAT amount   765.29
+Balancetopay   EUR 6,434.14
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,nota real companyortransaction.

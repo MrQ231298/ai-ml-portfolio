@@ -1,0 +1,10 @@
+Wicklow Hardware DAC
+MainStreet,Galway1VATReg:IE4845489T
+TaxInvoice
+Invoice#:166972   Date:02Feb2025
+Customer SlaneyGarage   Paymentdue:16Feb2025
+POnumber:4538352   Phone:0615624273
+Item   Qty   Price   Linetotal
+Brake pads (set)   280.33   1,681.98
+Netamount 1,681.98   VAT (13.5%) 227.07   AmountpayableEUR1,909.05
+SYNTHETICEXAMPLEINVOICE-inventedtoranMLportolio;nota realcompanyortransaction

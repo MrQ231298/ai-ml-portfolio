@@ -1,0 +1,16 @@
+BoyneFacilitiesDAC   INVOICE
+Unit 4, Business Park,Sligo
+VATNo:IE8224252M   InvoiceNo:INV-2026-7754
+InvoiceDate:06/11/2026
+DueDate:06/12/2026
+Bill to: Corrib Clinic
+CustomerRef:CR-76867Tel:0718561455
+Description   Qty   Unit   Amount
+A4 paper (box)   17   198.94   3,381.98
+Cleaning service (visit)   279.64   279.64
+Shelving unit   15   108.16   1,622.40
+Cleaning service (visit)   20   351.65   7,033.00
+Subtotal:   12,317.02
+VAT @ 23%:   2,832.91
+Total Due:   15,149.93
+SYNTHETIC EXAMPLEINVOICE-inventedforan ML porfolio;nota real companyortransaction.

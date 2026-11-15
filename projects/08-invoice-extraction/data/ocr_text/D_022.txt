@@ -1,0 +1,15 @@
+Documentnumber:2025/59761   ErrigalFleetPartsTeoranta
+Dated:October13.2025   Tralee/VATnumberIE4300191HH
+Payby:November12,2025   Tel.0618664582
+Suppliedto:ShannonGarageOrderref:ORD-50057
+Goods/services   No.   Each   Value
+Cleaning service (visit)   391.92   1,175.76
+Pallet wrap   20   358.72   7,174.40
+Shelving unit   18   417.14   7,508.52
+Consultancy (hours)   330.28   660.56
+USB-Cdock   10   43.89   438.90
+Brochureprintrun   18   219.35   3,948.30
+Total excl.VAT   20,906.44
+VATamount   4,808.48
+Balancetopay   EUR25,714.92
+SYNTHETICEXAMPLEINVOICEinventedforanMLporttolio,notarealcompanyortransaction

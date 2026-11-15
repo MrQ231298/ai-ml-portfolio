@@ -1,0 +1,14 @@
+SLANEYPRINTWORKSLTD
+Galway, Ireland   Ref:NK-39082
+TaxID:IE6339190SA
+Tel 071 6335587   Issued:2026-06-03
+Due:2026-08-02
+Account:AC917632
+Description   Units   Rate   Total
+Shelving unit   16   239.58   3,833.28
+Toner cartridge   50.48   151.44
+Cleaning service (visit)   20   176.00   3,520.00
+Goodstotal   7,504.72
+Tax 23%   1,726.09
+Grand Total   9,230.81
+SYNTHETICEXAMPLEINVOICE-inventedforanMLporttolio;notarealcompanyortransaction.

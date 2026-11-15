@@ -1,0 +1,15 @@
+Documentnumber:2025/20288   Foyle SuppliesLtd
+Dated:September4,2025   Tralee/VATnumberIE3407899W
+Payby:September18,2025   Tel.0614941927
+Suppliedto:AtlanticStoresOrderref:ORD-36994
+Goods/services   No.   Each   Value
+Laptopstand   18   422.54   7,605.72
+Pallet wrap   12   396.05   4,752.60
+Palletwrap   15   215.46   3,231.90
+Shelving unit   20   167.70   3,354.00
+Brakepads (set)   380.56   2,283.36
+Delivery charge   79.12   474.72
+Total excl. VAT   21,702.30
+VAT amount   4,991.53
+Balance to pay   EUR26693.83
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio,notarealcompanyortransaction.

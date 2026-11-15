@@ -1,0 +1,13 @@
+Documentnumber:2025/42784   Foyle Hardware DAC
+Dated:December21,2025   Limerick/VATnumberIE6528312C
+Payby:January 11,2026   Tel.0712344709
+Suppliedto:FoyleGAAClubOrderref:ORD-15298
+Goods/services   No.   Each   Value
+Shelving unit   380.36   2,282.16
+A4paper (box)   10   421.17   4,211.70
+Cleaning service (visit)   17   124.01   2,108.17
+Delivery charge   421.56   843.12
+Total excl.VAT   9,445.15
+VATamount   2,172.38
+Balance to pay   EUR11,617.53
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio:notarealcompanyortransaction.

@@ -1,0 +1,13 @@
+NephinFacilities Limited
+MainStreet,Sligo/VATReg:IE4583329JH
+TaxInvoice
+Invoice #:215584   Date:10 Sep 2025
+Customer:MoherHotel   Payment due:24 Sep 2025
+POnumber:4587741   Phone:0711729197
+Item   Qty   Price   Line total
+Hi-vis vests   12   390.27   4,683.24
+Delivery charge   15   354.94   5,324.10
+Hi-vis vests   11   269.95   2,969.45
+A4 paper (box)   235.20   2,116.80
+Net amount 15,093.59   VAT (23%) 3,471.53   AmountpayableEUR18,565.12
+SYNTHETICEXAMPLEINVOICE-inventedforanMLportfolio;nota realcompanyortransaction.
