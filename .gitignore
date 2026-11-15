@@ -24,3 +24,6 @@ Thumbs.db
 
 # Local notes (keep evidence docs tracked)
 *.log
+
+# Local freelance / Upwork drafts (do not publish to GitHub)
+freelance/
