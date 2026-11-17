@@ -1,0 +1,78 @@
+{
+  "name": "pl_medallion_online_retail",
+  "properties": {
+    "description": "NOT DEPLOYED. ADF / Fabric Data Pipeline equivalent of src/run_pipeline.py: list landing files, copy new ones to bronze, then run the silver and gold notebooks and the DQ notebook. Mirrors the local control table with a watermark lookup.",
+    "parameters": {
+      "landingFolder": { "type": "string", "defaultValue": "online_retail_ii" },
+      "runDate": { "type": "string", "defaultValue": "@utcNow()" }
+    },
+    "activities": [
+      {
+        "name": "ListLandingFiles",
+        "type": "GetMetadata",
+        "typeProperties": {
+          "dataset": { "referenceName": "ds_landing_folder", "type": "DatasetReference",
+                       "parameters": { "folder": "@pipeline().parameters.landingFolder" } },
+          "fieldList": ["childItems", "lastModified"]
+        }
+      },
+      {
+        "name": "LookupIngestedFiles",
+        "type": "Lookup",
+        "typeProperties": {
+          "source": { "type": "DeltaLakeSource", "query": "SELECT file_name, sha256 FROM ingested_files" },
+          "dataset": { "referenceName": "ds_control_ingested_files", "type": "DatasetReference" },
+          "firstRowOnly": false
+        }
+      },
+      {
+        "name": "ForEachNewFile",
+        "type": "ForEach",
+        "dependsOn": [
+          { "activity": "ListLandingFiles", "dependencyConditions": ["Succeeded"] },
+          { "activity": "LookupIngestedFiles", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "items": "@activity('ListLandingFiles').output.childItems",
+          "isSequential": false,
+          "batchCount": 4,
+          "activities": [
+            {
+              "name": "CopyToBronze",
+              "type": "Copy",
+              "typeProperties": {
+                "source": { "type": "DelimitedTextSource" },
+                "sink": { "type": "LakehouseTableSink", "tableActionOption": "Append" },
+                "translator": { "type": "TabularTranslator", "typeConversion": false },
+                "additionalColumns": [
+                  { "name": "_source_file", "value": "@item().name" },
+                  { "name": "_batch_id", "value": "@pipeline().RunId" }
+                ]
+              },
+              "inputs": [ { "referenceName": "ds_landing_file", "type": "DatasetReference", "parameters": { "file": "@item().name" } } ],
+              "outputs": [ { "referenceName": "ds_bronze_table", "type": "DatasetReference" } ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "SilverTransform",
+        "type": "TridentNotebook",
+        "dependsOn": [ { "activity": "ForEachNewFile", "dependencyConditions": ["Succeeded"] } ],
+        "typeProperties": { "notebookId": "<02_silver_transform notebook id>", "parameters": { "batch_id": { "value": "@pipeline().RunId", "type": "string" } } }
+      },
+      {
+        "name": "GoldModel",
+        "type": "TridentNotebook",
+        "dependsOn": [ { "activity": "SilverTransform", "dependencyConditions": ["Succeeded"] } ],
+        "typeProperties": { "notebookId": "<03_gold_model notebook id>" }
+      },
+      {
+        "name": "DataQuality",
+        "type": "TridentNotebook",
+        "dependsOn": [ { "activity": "GoldModel", "dependencyConditions": ["Succeeded"] } ],
+        "typeProperties": { "notebookId": "<04_data_quality notebook id>" }
+      }
+    ]
+  }
+}

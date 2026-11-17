@@ -1,0 +1,194 @@
+{
+  "source": {
+    "name": "online_retail_ii",
+    "url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+    "sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+    "licence": "CC BY 4.0",
+    "citation": "Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D"
+  },
+  "run_locally_not_on_azure": true,
+  "rows": {
+    "bronze": 1067371,
+    "silver": 1033036,
+    "exact_duplicates_removed": 34335,
+    "untypeable_rows_dropped": 0,
+    "gold": {
+      "dim_product": 4739,
+      "dim_customer": 5875,
+      "dim_date": 761,
+      "fact_sales": 1021255,
+      "agg_monthly_country": 582,
+      "agg_product_monthly": 66202
+    }
+  },
+  "silver_line_types": {
+    "sale": 1003340,
+    "cancellation": 17915,
+    "non_product": 5804,
+    "stock_adjustment": 3392,
+    "zero_price": 2579,
+    "bad_debt_adjustment": 6
+  },
+  "guest_line_share_silver": 0.22763098285054925,
+  "timings_full_run_s": {
+    "bronze_s": 2.36,
+    "silver_s": 1.37,
+    "gold_s": 1.17,
+    "dq_s": 0.47,
+    "total_s": 5.36
+  },
+  "throughput_rows_per_s_end_to_end": 199018,
+  "dq_full_run": [
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "bronze",
+      "check": "bronze_rows_match_control",
+      "severity": "error",
+      "passed": true,
+      "observed": 1067371.0,
+      "rule": "== control rows (1067371)"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "silver",
+      "check": "silver_line_key_unique",
+      "severity": "error",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "== 0"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "silver",
+      "check": "silver_no_null_core_fields",
+      "severity": "error",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "== 0"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "silver",
+      "check": "silver_guest_share",
+      "severity": "warn",
+      "passed": true,
+      "observed": 0.22763098285054925,
+      "rule": "<= 0.3"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "silver",
+      "check": "silver_zero_price_share",
+      "severity": "warn",
+      "passed": true,
+      "observed": 0.002496524806492707,
+      "rule": "<= 0.01"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "silver",
+      "check": "silver_line_types_known",
+      "severity": "error",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "== 0"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "gold",
+      "check": "gold_fact_products_in_dim",
+      "severity": "error",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "== 0"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "gold",
+      "check": "gold_fact_customers_in_dim",
+      "severity": "warn",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "== 0"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "gold",
+      "check": "gold_agg_reconciles_to_fact",
+      "severity": "error",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "< 0.005"
+    },
+    {
+      "run_id": "20261117T135953573463",
+      "layer": "gold",
+      "check": "gold_sales_positive",
+      "severity": "error",
+      "passed": true,
+      "observed": 0.0,
+      "rule": "== 0"
+    }
+  ],
+  "incremental": {
+    "steps": [
+      {
+        "until": "2010-05",
+        "files_ingested": 6,
+        "months_rebuilt": 6,
+        "failed_checks": 0
+      },
+      {
+        "until": "2010-12",
+        "files_ingested": 7,
+        "months_rebuilt": 7,
+        "failed_checks": 0
+      },
+      {
+        "until": "2011-12",
+        "files_ingested": 12,
+        "months_rebuilt": 12,
+        "failed_checks": 0
+      }
+    ],
+    "identical_to_full_run": true,
+    "tables_compared": 7,
+    "differing": []
+  },
+  "replay": {
+    "files_ingested": 0,
+    "files_skipped": 25,
+    "identical_after_replay": true
+  },
+  "correction": {
+    "files_replaced": 1,
+    "months_rebuilt": 1,
+    "silver_rows_before": 1033036,
+    "silver_rows_after": 1033026,
+    "silver_row_change": -10,
+    "gold_months_changed": [
+      "2011-03"
+    ],
+    "silver_version_before": 2,
+    "silver_version_after": 3,
+    "time_travel_read_ok": true
+  },
+  "business": {
+    "net_sales_gbp_total": 18927480.47,
+    "gross_sales_gbp_total": 19643976.0,
+    "cancellations_gbp_total": -716495.53,
+    "uk_share_of_net_sales": 0.8542598881889112,
+    "top_countries_net_sales_gbp": {
+      "United Kingdom": 16168987.35,
+      "EIRE": 603116.61,
+      "Netherlands": 546095.43,
+      "Germany": 374573.51,
+      "France": 293431.2,
+      "Australia": 166282.15
+    },
+    "products": 4739,
+    "products_with_multiple_descriptions": 600,
+    "customers": 5875,
+    "customers_in_more_than_one_country": 12
+  }
+}

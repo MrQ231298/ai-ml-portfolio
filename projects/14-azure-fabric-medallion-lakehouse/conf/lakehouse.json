@@ -1,0 +1,29 @@
+{
+  "_comment": "Single config read by the local runner (src/) and mirrored by infra/main.parameters.json and the Fabric notebook stubs. Paths are local; the 'azure' block shows the equivalent OneLake / ADLS Gen2 locations.",
+  "source": {
+    "name": "online_retail_ii",
+    "url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+    "sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+    "licence": "CC BY 4.0",
+    "citation": "Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D"
+  },
+  "paths": {
+    "landing": "landing/online_retail_ii",
+    "bronze": "lake/bronze/online_retail_ii_raw",
+    "silver": "lake/silver/sales_line",
+    "gold": "lake/gold",
+    "control": "lake/_control/ingested_files",
+    "dq": "lake/_dq/results"
+  },
+  "azure": {
+    "landing": "abfss://landing@<storageaccount>.dfs.core.windows.net/online_retail_ii/",
+    "bronze": "abfss://<workspace>@onelake.dfs.fabric.microsoft.com/<lakehouse>.Lakehouse/Tables/bronze_online_retail_ii_raw",
+    "silver": "abfss://<workspace>@onelake.dfs.fabric.microsoft.com/<lakehouse>.Lakehouse/Tables/silver_sales_line",
+    "gold": "abfss://<workspace>@onelake.dfs.fabric.microsoft.com/<lakehouse>.Lakehouse/Tables/gold_*"
+  },
+  "non_product_stock_codes": ["POST", "DOT", "M", "D", "C2", "BANK CHARGES", "AMAZONFEE", "CRUK", "PADS", "ADJUST", "ADJUST2", "S", "B", "TEST001", "TEST002", "SP1002", "gift_0001_10", "gift_0001_20", "gift_0001_30", "gift_0001_40", "gift_0001_50"],
+  "dq": {
+    "max_unknown_customer_share_silver": 0.30,
+    "max_non_positive_price_share_silver": 0.01
+  }
+}

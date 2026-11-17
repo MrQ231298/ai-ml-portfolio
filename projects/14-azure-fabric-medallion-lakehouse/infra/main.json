@@ -1,0 +1,232 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.49.2.45890",
+      "templateHash": "11939209680607685387"
+    }
+  },
+  "parameters": {
+    "prefix": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 11,
+      "metadata": {
+        "description": "Short prefix for resource names, e.g. \"oqretail\"."
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Azure region."
+      }
+    },
+    "environment": {
+      "type": "string",
+      "defaultValue": "dev",
+      "allowedValues": [
+        "dev",
+        "test",
+        "prod"
+      ]
+    },
+    "deployFabricCapacity": {
+      "type": "bool",
+      "defaultValue": false,
+      "metadata": {
+        "description": "Deploy a Fabric capacity (billed while running). Leave false to use a trial or existing capacity."
+      }
+    },
+    "fabricAdminUpn": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Entra ID user principal name of the Fabric capacity administrator."
+      }
+    }
+  },
+  "variables": {
+    "tags": {
+      "project": "medallion-lakehouse-portfolio",
+      "environment": "[parameters('environment')]",
+      "dataClassification": "public-dataset"
+    },
+    "storageName": "[toLower(format('{0}{1}adls', parameters('prefix'), parameters('environment')))]",
+    "containers": [
+      "landing",
+      "bronze",
+      "silver",
+      "gold"
+    ],
+    "blobDataContributor": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', 'ba92f5b4-2d11-453d-a403-e96b0029c9fe')]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "apiVersion": "2023-09-01",
+      "name": "[format('{0}-{1}-logs', parameters('prefix'), parameters('environment'))]",
+      "location": "[parameters('location')]",
+      "tags": "[variables('tags')]",
+      "properties": {
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "retentionInDays": 30
+      }
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2023-05-01",
+      "name": "[variables('storageName')]",
+      "location": "[parameters('location')]",
+      "tags": "[variables('tags')]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "properties": {
+        "isHnsEnabled": true,
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": false,
+        "supportsHttpsTrafficOnly": true,
+        "accessTier": "Hot"
+      }
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts/blobServices",
+      "apiVersion": "2023-05-01",
+      "name": "[format('{0}/{1}', variables('storageName'), 'default')]",
+      "properties": {
+        "deleteRetentionPolicy": {
+          "enabled": true,
+          "days": 7
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]"
+      ]
+    },
+    {
+      "copy": {
+        "name": "zones",
+        "count": "[length(variables('containers'))]"
+      },
+      "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+      "apiVersion": "2023-05-01",
+      "name": "[format('{0}/{1}/{2}', variables('storageName'), 'default', variables('containers')[copyIndex()])]",
+      "properties": {
+        "publicAccess": "None"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('storageName'), 'default')]"
+      ]
+    },
+    {
+      "type": "Microsoft.DataFactory/factories",
+      "apiVersion": "2018-06-01",
+      "name": "[format('{0}-{1}-adf', parameters('prefix'), parameters('environment'))]",
+      "location": "[parameters('location')]",
+      "tags": "[variables('tags')]",
+      "identity": {
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "publicNetworkAccess": "Enabled"
+      }
+    },
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "apiVersion": "2022-04-01",
+      "scope": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]",
+      "name": "[guid(resourceId('Microsoft.Storage/storageAccounts', variables('storageName')), resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment'))), variables('blobDataContributor'))]",
+      "properties": {
+        "roleDefinitionId": "[variables('blobDataContributor')]",
+        "principalId": "[reference(resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment'))), '2018-06-01', 'full').identity.principalId]",
+        "principalType": "ServicePrincipal"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment')))]",
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]"
+      ]
+    },
+    {
+      "type": "Microsoft.DataFactory/factories/linkedservices",
+      "apiVersion": "2018-06-01",
+      "name": "[format('{0}/{1}', format('{0}-{1}-adf', parameters('prefix'), parameters('environment')), 'ls_adls_lake')]",
+      "properties": {
+        "type": "AzureBlobFS",
+        "typeProperties": {
+          "url": "[reference(resourceId('Microsoft.Storage/storageAccounts', variables('storageName')), '2023-05-01').primaryEndpoints.dfs]"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment')))]",
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageName'))]"
+      ]
+    },
+    {
+      "type": "Microsoft.Insights/diagnosticSettings",
+      "apiVersion": "2021-05-01-preview",
+      "scope": "[resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment')))]",
+      "name": "to-log-analytics",
+      "properties": {
+        "workspaceId": "[resourceId('Microsoft.OperationalInsights/workspaces', format('{0}-{1}-logs', parameters('prefix'), parameters('environment')))]",
+        "logs": [
+          {
+            "category": "PipelineRuns",
+            "enabled": true
+          },
+          {
+            "category": "ActivityRuns",
+            "enabled": true
+          }
+        ]
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment')))]",
+        "[resourceId('Microsoft.OperationalInsights/workspaces', format('{0}-{1}-logs', parameters('prefix'), parameters('environment')))]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployFabricCapacity')]",
+      "type": "Microsoft.Fabric/capacities",
+      "apiVersion": "2023-11-01",
+      "name": "[toLower(format('{0}{1}fabric', parameters('prefix'), parameters('environment')))]",
+      "location": "[parameters('location')]",
+      "tags": "[variables('tags')]",
+      "sku": {
+        "name": "F2",
+        "tier": "Fabric"
+      },
+      "properties": {
+        "administration": {
+          "members": [
+            "[parameters('fabricAdminUpn')]"
+          ]
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "storageAccountName": {
+      "type": "string",
+      "value": "[variables('storageName')]"
+    },
+    "dfsEndpoint": {
+      "type": "string",
+      "value": "[reference(resourceId('Microsoft.Storage/storageAccounts', variables('storageName')), '2023-05-01').primaryEndpoints.dfs]"
+    },
+    "dataFactoryName": {
+      "type": "string",
+      "value": "[format('{0}-{1}-adf', parameters('prefix'), parameters('environment'))]"
+    },
+    "dataFactoryPrincipalId": {
+      "type": "string",
+      "value": "[reference(resourceId('Microsoft.DataFactory/factories', format('{0}-{1}-adf', parameters('prefix'), parameters('environment'))), '2018-06-01', 'full').identity.principalId]"
+    }
+  }
+}
