@@ -1,0 +1,3 @@
+data/events.parquet
+data/sink*.db*
+downloads/

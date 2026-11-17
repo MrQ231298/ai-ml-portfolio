@@ -1,0 +1,12 @@
+{
+  "messages": 169920,
+  "delivered": 169920,
+  "seconds": 1.66,
+  "msgs_per_s": 102198.3,
+  "rate_target": 0,
+  "per_partition": {
+    "1": 343,
+    "2": 1289,
+    "3": 168288
+  }
+}

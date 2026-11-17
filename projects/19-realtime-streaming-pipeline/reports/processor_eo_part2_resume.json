@@ -1,0 +1,40 @@
+{
+  "mode": "exactly_once",
+  "tag": "eo_part2_resume",
+  "messages_this_run": 113920,
+  "active_seconds": 1.55,
+  "msgs_per_s": 73685.8,
+  "consume_latency_ms": {
+    "p50": 49562.368869781494,
+    "p95": 49776.8030166626,
+    "p99": 49901.5634059906
+  },
+  "durable_latency_ms": {
+    "p50": 49597.604513168335,
+    "p95": 49799.58510398865,
+    "p99": 50814.4690990448
+  },
+  "counters": {
+    "0": {
+      "messages": 0,
+      "duplicates": 0,
+      "late": 0
+    },
+    "1": {
+      "messages": 343,
+      "duplicates": 2,
+      "late": 4
+    },
+    "2": {
+      "messages": 1289,
+      "duplicates": 11,
+      "late": 18
+    },
+    "3": {
+      "messages": 168288,
+      "duplicates": 1680,
+      "late": 2532
+    }
+  },
+  "checkpoint_every": 5000
+}

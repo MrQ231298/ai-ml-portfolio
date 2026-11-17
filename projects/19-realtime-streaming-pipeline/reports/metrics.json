@@ -1,0 +1,185 @@
+{
+  "producer_max_rate": {
+    "messages": 169920,
+    "delivered": 169920,
+    "seconds": 1.66,
+    "msgs_per_s": 102198.3,
+    "rate_target": 0,
+    "per_partition": {
+      "1": 343,
+      "2": 1289,
+      "3": 168288
+    }
+  },
+  "eo_crash_exit_code": 3,
+  "eo_crash_stdout": "simulated crash after 60000 messages (uncommitted: 4000)",
+  "exactly_once_vs_truth": {
+    "topic_messages": 169920,
+    "expected_windows": 2246,
+    "sink_windows": 2246,
+    "windows_exact_match": 2246,
+    "windows_mismatched": 0,
+    "windows_missing_in_sink": 0,
+    "windows_extra_in_sink": 0,
+    "expected_trips": 165673,
+    "sink_trips": 165673,
+    "trip_count_error": 0,
+    "expected_revenue": 4778022.44,
+    "sink_revenue": 4778022.44,
+    "expected_late_events": 2554,
+    "sink_late_events": 2554,
+    "late_sets_equal": true,
+    "duplicates_in_topic": 1693
+  },
+  "naive_vs_truth": {
+    "topic_messages": 169920,
+    "expected_windows": 2246,
+    "sink_windows": 2246,
+    "windows_exact_match": 1259,
+    "windows_mismatched": 987,
+    "windows_missing_in_sink": 0,
+    "windows_extra_in_sink": 0,
+    "expected_trips": 165673,
+    "sink_trips": 221297,
+    "trip_count_error": 55624,
+    "expected_revenue": 4778022.44,
+    "sink_revenue": 6332883.18,
+    "expected_late_events": 2554,
+    "sink_late_events": 0,
+    "late_sets_equal": null,
+    "duplicates_in_topic": 1693
+  },
+  "processor_eo_part2_resume": {
+    "mode": "exactly_once",
+    "tag": "eo_part2_resume",
+    "messages_this_run": 113920,
+    "active_seconds": 1.55,
+    "msgs_per_s": 73685.8,
+    "consume_latency_ms": {
+      "p50": 49562.368869781494,
+      "p95": 49776.8030166626,
+      "p99": 49901.5634059906
+    },
+    "durable_latency_ms": {
+      "p50": 49597.604513168335,
+      "p95": 49799.58510398865,
+      "p99": 50814.4690990448
+    },
+    "counters": {
+      "0": {
+        "messages": 0,
+        "duplicates": 0,
+        "late": 0
+      },
+      "1": {
+        "messages": 343,
+        "duplicates": 2,
+        "late": 4
+      },
+      "2": {
+        "messages": 1289,
+        "duplicates": 11,
+        "late": 18
+      },
+      "3": {
+        "messages": 168288,
+        "duplicates": 1680,
+        "late": 2532
+      }
+    },
+    "checkpoint_every": 5000
+  },
+  "processor_naive_part2_resume": {
+    "mode": "naive",
+    "tag": "naive_part2_resume",
+    "messages_this_run": 169920,
+    "active_seconds": 1.82,
+    "msgs_per_s": 93444.3,
+    "consume_latency_ms": {
+      "p50": 105020.89071273804,
+      "p95": 105075.41227340698,
+      "p99": 105085.23416519165
+    },
+    "durable_latency_ms": {
+      "p50": 105050.0259399414,
+      "p95": 105108.82425308228,
+      "p99": 106033.33282470703
+    },
+    "counters": {
+      "0": {
+        "messages": 0,
+        "duplicates": 0,
+        "late": 0
+      },
+      "1": {
+        "messages": 343,
+        "duplicates": 0,
+        "late": 4
+      },
+      "2": {
+        "messages": 1289,
+        "duplicates": 0,
+        "late": 18
+      },
+      "3": {
+        "messages": 168288,
+        "duplicates": 0,
+        "late": 2552
+      }
+    },
+    "checkpoint_every": 5000
+  },
+  "processor_paced_2000": {
+    "mode": "exactly_once",
+    "tag": "paced_2000",
+    "messages_this_run": 60000,
+    "active_seconds": 29.94,
+    "msgs_per_s": 2004.2,
+    "consume_latency_ms": {
+      "p50": 56.81133270263672,
+      "p95": 102.80585289001465,
+      "p99": 108.46638679504395
+    },
+    "durable_latency_ms": {
+      "p50": 528.2673835754395,
+      "p95": 995.6378936767578,
+      "p99": 1036.2892150878906
+    },
+    "counters": {
+      "0": {
+        "messages": 0,
+        "duplicates": 0,
+        "late": 0
+      },
+      "1": {
+        "messages": 89,
+        "duplicates": 0,
+        "late": 2
+      },
+      "2": {
+        "messages": 390,
+        "duplicates": 2,
+        "late": 2
+      },
+      "3": {
+        "messages": 59521,
+        "duplicates": 591,
+        "late": 869
+      }
+    },
+    "checkpoint_every": 5000
+  },
+  "producer_paced": {
+    "messages": 60000,
+    "delivered": 60000,
+    "seconds": 30.0,
+    "msgs_per_s": 1999.8,
+    "rate_target": 2000.0,
+    "per_partition": {
+      "1": 89,
+      "2": 390,
+      "3": 59521
+    }
+  },
+  "broker": "Apache Kafka 4.4.0 (KRaft, single node, 4 partitions, replication 1), Temurin JRE 21, heap 768 MB"
+}

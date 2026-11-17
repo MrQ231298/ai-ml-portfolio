@@ -1,0 +1,40 @@
+{
+  "mode": "exactly_once",
+  "tag": "paced_2000",
+  "messages_this_run": 60000,
+  "active_seconds": 29.94,
+  "msgs_per_s": 2004.2,
+  "consume_latency_ms": {
+    "p50": 56.81133270263672,
+    "p95": 102.80585289001465,
+    "p99": 108.46638679504395
+  },
+  "durable_latency_ms": {
+    "p50": 528.2673835754395,
+    "p95": 995.6378936767578,
+    "p99": 1036.2892150878906
+  },
+  "counters": {
+    "0": {
+      "messages": 0,
+      "duplicates": 0,
+      "late": 0
+    },
+    "1": {
+      "messages": 89,
+      "duplicates": 0,
+      "late": 2
+    },
+    "2": {
+      "messages": 390,
+      "duplicates": 2,
+      "late": 2
+    },
+    "3": {
+      "messages": 59521,
+      "duplicates": 591,
+      "late": 869
+    }
+  },
+  "checkpoint_every": 5000
+}

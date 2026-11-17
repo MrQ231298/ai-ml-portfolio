@@ -1,0 +1,40 @@
+{
+  "mode": "naive",
+  "tag": "naive_part2_resume",
+  "messages_this_run": 169920,
+  "active_seconds": 1.82,
+  "msgs_per_s": 93444.3,
+  "consume_latency_ms": {
+    "p50": 105020.89071273804,
+    "p95": 105075.41227340698,
+    "p99": 105085.23416519165
+  },
+  "durable_latency_ms": {
+    "p50": 105050.0259399414,
+    "p95": 105108.82425308228,
+    "p99": 106033.33282470703
+  },
+  "counters": {
+    "0": {
+      "messages": 0,
+      "duplicates": 0,
+      "late": 0
+    },
+    "1": {
+      "messages": 343,
+      "duplicates": 0,
+      "late": 4
+    },
+    "2": {
+      "messages": 1289,
+      "duplicates": 0,
+      "late": 18
+    },
+    "3": {
+      "messages": 168288,
+      "duplicates": 0,
+      "late": 2552
+    }
+  },
+  "checkpoint_every": 5000
+}
