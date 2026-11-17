@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: int_trips_flagged
+    description: "All staged rows with the first failed data-quality rule in dq_reason (NULL = valid)."
+    columns:
+      - name: dq_reason
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["duplicate_record", "pickup_outside_file_month", "duration_out_of_range", "distance_out_of_range",
+                         "negative_amount", "implausible_total", "zero_passengers"]
+  - name: int_trips_enriched
+    description: "Valid trips joined to zones and payment types."

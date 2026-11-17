@@ -1,0 +1,16 @@
+{
+  "month": "2024-02",
+  "statuses": {
+    "test": {
+      "pass": 23
+    },
+    "model": {
+      "success": 10
+    },
+    "exposure": {
+      "no-op": 1
+    }
+  },
+  "failed": [],
+  "dbt_elapsed_s": 5.21
+}

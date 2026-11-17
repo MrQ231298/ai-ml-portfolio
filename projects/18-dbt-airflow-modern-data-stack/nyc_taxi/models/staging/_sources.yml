@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: raw
+    description: "Raw layer loaded by ingest/load_month.py (one row per TLC record, untouched, plus load metadata)."
+    tables:
+      - name: yellow_trips
+        loaded_at_field: _loaded_at
+        columns:
+          - name: source_month
+            data_tests: [not_null]
+          - name: tpep_pickup_datetime
+            data_tests: [not_null]

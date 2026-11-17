@@ -1,0 +1,33 @@
+name: nyc_taxi
+version: "1.0.0"
+config-version: 2
+profile: nyc_taxi
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+analysis-paths: ["analyses"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages", "logs"]
+
+vars:
+  month: null   # 'YYYY-MM'; set by Airflow for incremental monthly runs
+
+models:
+  nyc_taxi:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: view
+      +schema: intermediate
+    marts:
+      +materialized: table
+      +schema: marts
+
+seeds:
+  nyc_taxi:
+    +schema: reference
+    taxi_zones:
+      +column_types: {LocationID: integer, Borough: varchar, Zone: varchar, service_zone: varchar}

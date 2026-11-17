@@ -1,0 +1,14 @@
+{
+  "2024-01": {
+    "bytes": 49961641,
+    "first_downloaded": "2026-11-17T23:29:30+00:00",
+    "sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
+  },
+  "2024-02": {
+    "bytes": 50349284,
+    "first_downloaded": "2026-11-17T23:29:53+00:00",
+    "sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+    "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet"
+  }
+}

@@ -1,0 +1,12 @@
+version: 2
+seeds:
+  - name: taxi_zones
+    description: "TLC taxi zone lookup (263 zones plus 'Unknown' / 'Outside of NYC' codes), downloaded from the TLC site."
+    columns:
+      - name: LocationID
+        data_tests: [unique, not_null]
+  - name: payment_types
+    description: "Payment type codes from the TLC yellow-taxi data dictionary (March 2025 revision)."
+    columns:
+      - name: payment_type
+        data_tests: [unique, not_null]

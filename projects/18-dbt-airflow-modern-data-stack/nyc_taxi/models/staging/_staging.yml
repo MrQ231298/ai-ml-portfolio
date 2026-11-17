@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: stg_yellow_trips
+    description: "Typed, renamed raw trips with a surrogate key. Exact duplicate records share a trip_key."
+    columns:
+      - name: trip_key
+        description: "md5 of the fields that identify a trip"
+        data_tests: [not_null]
+      - name: pickup_at
+        data_tests: [not_null]
+  - name: stg_taxi_zones
+    columns:
+      - name: location_id
+        data_tests: [unique, not_null]
+      - name: borough
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["Bronx", "Brooklyn", "EWR", "Manhattan", "Queens", "Staten Island", "Unknown", "N/A"]
+  - name: stg_payment_types
+    columns:
+      - name: payment_type
+        data_tests: [unique, not_null]

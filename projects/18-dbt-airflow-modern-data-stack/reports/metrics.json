@@ -1,0 +1,227 @@
+{
+  "accounting": {
+    "raw_rows": {
+      "2024-01": 2964624,
+      "2024-02": 3007526
+    },
+    "outcomes": {
+      "2024-01": {
+        "valid": {
+          "rows": 2837527,
+          "pct": 95.713
+        },
+        "distance_out_of_range": {
+          "rows": 59622,
+          "pct": 2.011
+        },
+        "negative_amount": {
+          "rows": 34138,
+          "pct": 1.152
+        },
+        "zero_passengers": {
+          "rows": 30677,
+          "pct": 1.035
+        },
+        "duration_out_of_range": {
+          "rows": 2642,
+          "pct": 0.089
+        },
+        "pickup_outside_file_month": {
+          "rows": 18,
+          "pct": 0.001
+        }
+      },
+      "2024-02": {
+        "valid": {
+          "rows": 2867087,
+          "pct": 95.33
+        },
+        "distance_out_of_range": {
+          "rows": 67492,
+          "pct": 2.244
+        },
+        "negative_amount": {
+          "rows": 37451,
+          "pct": 1.245
+        },
+        "zero_passengers": {
+          "rows": 32941,
+          "pct": 1.095
+        },
+        "duration_out_of_range": {
+          "rows": 2539,
+          "pct": 0.084
+        },
+        "pickup_outside_file_month": {
+          "rows": 15,
+          "pct": 0.0
+        },
+        "duplicate_record": {
+          "rows": 1,
+          "pct": 0.0
+        }
+      }
+    },
+    "mart_rows": {
+      "fct_trips": 5704614,
+      "dim_zones": 265,
+      "agg_daily_borough": 455,
+      "agg_hour_of_week": 168,
+      "dq_rejections_by_month": 13
+    },
+    "borough_totals": [
+      {
+        "borough": "Manhattan",
+        "trips": 5136736,
+        "revenue": "117808146.64",
+        "revenue_per_trip": 22.93
+      },
+      {
+        "borough": "Queens",
+        "trips": 490233,
+        "revenue": "35458128.76",
+        "revenue_per_trip": 72.33
+      },
+      {
+        "borough": "Brooklyn",
+        "trips": 46938,
+        "revenue": "1541931.47",
+        "revenue_per_trip": 32.85
+      },
+      {
+        "borough": "Unknown",
+        "trips": 17749,
+        "revenue": "493832.88",
+        "revenue_per_trip": 27.82
+      },
+      {
+        "borough": "Bronx",
+        "trips": 11551,
+        "revenue": "416783.32",
+        "revenue_per_trip": 36.08
+      },
+      {
+        "borough": "N/A",
+        "trips": 1210,
+        "revenue": "97945.57",
+        "revenue_per_trip": 80.95
+      }
+    ],
+    "peak_hours": [
+      {
+        "iso_weekday": 4,
+        "hour": 18,
+        "avg_trips": 8650.3
+      },
+      {
+        "iso_weekday": 4,
+        "hour": 17,
+        "avg_trips": 7806.1
+      },
+      {
+        "iso_weekday": 3,
+        "hour": 18,
+        "avg_trips": 7795.1
+      }
+    ]
+  },
+  "fingerprint_after_backfill": {
+    "fct_trips": [
+      5704614,
+      "41dd87f9eca632c5bb0da479ffed4b13"
+    ],
+    "dq_rejections_by_month": [
+      13,
+      "21d90d9705ded8c8c2f93eadd8473868"
+    ],
+    "agg_daily_borough": [
+      455,
+      "4e53c0f7b859dbcf7f96b9fcfd845e36"
+    ]
+  },
+  "airflow_quality_gates": [
+    {
+      "month": "2024-01",
+      "statuses": {
+        "test": {
+          "pass": 23
+        },
+        "model": {
+          "success": 10
+        },
+        "exposure": {
+          "no-op": 1
+        }
+      },
+      "failed": [],
+      "dbt_elapsed_s": 4.74
+    },
+    {
+      "month": "2024-02",
+      "statuses": {
+        "test": {
+          "pass": 23
+        },
+        "model": {
+          "success": 10
+        },
+        "exposure": {
+          "no-op": 1
+        }
+      },
+      "failed": [],
+      "dbt_elapsed_s": 5.21
+    }
+  ],
+  "rerun_january": {
+    "airflow_exit_code": 0,
+    "seconds": 19.6,
+    "fingerprint": {
+      "fct_trips": [
+        5704614,
+        "41dd87f9eca632c5bb0da479ffed4b13"
+      ],
+      "dq_rejections_by_month": [
+        13,
+        "21d90d9705ded8c8c2f93eadd8473868"
+      ],
+      "agg_daily_borough": [
+        455,
+        "4e53c0f7b859dbcf7f96b9fcfd845e36"
+      ]
+    },
+    "identical": true,
+    "load_log": "{\"month\": \"2024-01\", \"rows_loaded\": 2964624, \"rows_replaced\": 2964624, \"seconds\": 1.29}"
+  },
+  "full_refresh": {
+    "exit_code": 0,
+    "seconds": 13.1,
+    "fingerprint": {
+      "fct_trips": [
+        5704614,
+        "41dd87f9eca632c5bb0da479ffed4b13"
+      ],
+      "dq_rejections_by_month": [
+        13,
+        "21d90d9705ded8c8c2f93eadd8473868"
+      ],
+      "agg_daily_borough": [
+        455,
+        "4e53c0f7b859dbcf7f96b9fcfd845e36"
+      ]
+    },
+    "nodes": 40,
+    "identical_to_incremental": true
+  },
+  "planted_bad_rows": {
+    "rows": [
+      "zone 999 with negative fare (should be rejected by the negative_amount rule)",
+      "zone 998 with a valid fare (passes DQ rules, must be caught by the relationships test)"
+    ],
+    "dbt_exit_code": 1,
+    "failed_tests": [
+      "test.nyc_taxi.relationships_fct_trips_pickup_location_id__location_id__ref_dim_zones_.00ad1cf8e4"
+    ],
+    "skipped_downstream": []
+  }
+}
