@@ -1,0 +1,148 @@
+product_id,product_name,category,units_sold,units_returned,net_revenue_eur,gross_margin_eur,return_rate
+P5134,Deluxe Puzzle 134,Outdoor,289.0,0.0,23990.55,11575.11,0.0
+P5093,Classic Mug 93,Home & Garden,354.0,0.0,18012.95,9216.05,0.0
+P5137,Classic Frame 137,Gifts,285.0,0.0,16873.65,6374.25,0.0
+P5086,Mini Notebook 86,Home & Garden,319.0,0.0,16286.77,9890.82,0.0
+P5080,Mini Candle 80,Kitchen,256.0,5.0,15277.48,6304.23,0.0195
+P5067,Mini Mug 67,Gifts,310.0,0.0,14813.28,5280.78,0.0
+P5135,Classic Tray 135,Kitchen,270.0,5.0,14432.01,8024.31,0.0185
+P5130,Deluxe Mug 130,Outdoor,283.0,0.0,14295.06,5049.45,0.0
+P5030,Classic Planter 30,Home & Garden,294.0,0.0,13518.13,8343.73,0.0
+P5074,Eco Mug 74,Gifts,271.0,0.0,13338.62,6634.08,0.0
+P5078,Classic Blanket 78,Toys,250.0,0.0,12712.26,7864.76,0.0
+P5083,Eco Kite 83,Kitchen,266.0,0.0,12703.22,5853.72,0.0
+P5044,Mini Puzzle 44,Gifts,281.0,0.0,12135.72,4453.18,0.0
+P5091,Eco Kite 91,Toys,279.0,0.0,11086.04,5238.2,0.0
+P5144,Eco Candle 144,Kitchen,316.0,0.0,10949.86,3779.82,0.0
+P5020,Deluxe Puzzle 20,Gifts,297.0,10.0,10903.94,4142.22,0.0337
+P5116,Mini Mug 116,Outdoor,270.0,0.0,10866.8,5240.0,0.0
+P5069,Mini Frame 69,Home & Garden,344.0,5.0,9841.36,3885.13,0.0145
+P5138,Deluxe Candle 138,Toys,309.0,0.0,9833.44,3984.07,0.0
+P5033,Eco Lamp 33,Stationery,244.0,0.0,9743.25,4028.77,0.0
+P5148,Eco Lamp 148,Gifts,339.0,0.0,9695.37,4335.78,0.0
+P5041,Deluxe Frame 41,Kitchen,248.0,0.0,9524.62,4403.42,0.0
+P5048,Premium Tray 48,Kitchen,345.0,0.0,9524.31,4932.36,0.0
+P5065,Deluxe Puzzle 65,Stationery,280.0,3.0,9347.43,3411.32,0.0107
+P5024,Premium Planter 24,Toys,235.0,5.0,9197.76,3351.16,0.0213
+P5012,Premium Tray 12,Gifts,247.0,2.0,9034.45,4965.0,0.0081
+P5122,Premium Tray 122,Toys,344.0,1.0,9024.21,5474.16,0.0029
+P5028,Deluxe Puzzle 28,Gifts,309.0,0.0,8585.8,4578.07,0.0
+P5053,Mini Planter 53,Toys,321.0,0.0,8537.96,3703.7,0.0
+P5039,Deluxe Planter 39,Kitchen,285.0,0.0,8380.42,3683.62,0.0
+P5062,Mini Puzzle 62,Toys,343.0,0.0,8107.93,4208.02,0.0
+P5038,Eco Blanket 38,Kitchen,270.0,6.0,8090.02,4298.98,0.0222
+P5112,Deluxe Kite 112,Stationery,343.0,0.0,7885.79,4692.46,0.0
+P5106,Deluxe Frame 106,Outdoor,291.0,2.0,7822.93,3724.91,0.0069
+P5105,Classic Tray 105,Home & Garden,314.0,0.0,7740.41,3648.99,0.0
+P5075,Premium Mug 75,Stationery,250.0,0.0,7649.15,2556.65,0.0
+P5114,Eco Blanket 114,Home & Garden,309.0,0.0,7613.81,2345.36,0.0
+P5115,Mini Tray 115,Gifts,286.0,0.0,7557.98,3634.06,0.0
+P5082,Classic Frame 82,Gifts,312.0,3.0,7393.06,4602.79,0.0096
+P5136,Deluxe Tray 136,Gifts,241.0,0.0,7366.78,3467.4,0.0
+P5068,Premium Lamp 68,Home & Garden,221.0,0.0,7019.66,2809.61,0.0
+P5046,Classic Candle 46,Toys,294.0,0.0,6985.6,3925.06,0.0
+P5029,Mini Frame 29,Home & Garden,322.0,0.0,6744.65,2188.35,0.0
+P5095,Deluxe Planter 95,Home & Garden,284.0,5.0,6708.59,3377.33,0.0176
+P5109,Mini Mug 109,Kitchen,311.0,0.0,6606.66,3944.5,0.0
+P5005,Classic Puzzle 5,Kitchen,297.0,0.0,6577.41,3265.86,0.0
+P5057,Eco Notebook 57,Stationery,295.0,0.0,6378.75,3806.35,0.0
+P5092,Classic Candle 92,Home & Garden,260.0,3.0,6167.56,2297.14,0.0115
+P5072,Deluxe Lamp 72,Kitchen,221.0,0.0,6153.86,2505.15,0.0
+P5149,Premium Notebook 149,Home & Garden,347.0,0.0,5966.96,3163.2,0.0
+P5045,Classic Blanket 45,Outdoor,245.0,0.0,5961.24,2158.84,0.0
+P5126,Eco Candle 126,Gifts,227.0,3.0,5928.29,3260.45,0.0132
+P5008,Premium Blanket 8,Home & Garden,314.0,0.0,5898.1,3508.56,0.0
+P5099,Deluxe Planter 99,Kitchen,292.0,0.0,5730.58,3128.86,0.0
+P5026,Mini Tray 26,Gifts,288.0,6.0,5705.22,2340.96,0.0208
+P5017,Eco Puzzle 17,Outdoor,244.0,0.0,5655.97,2771.89,0.0
+P5081,Premium Frame 81,Kitchen,277.0,2.0,5649.7,2542.2,0.0072
+P5071,Premium Kite 71,Home & Garden,321.0,2.0,5584.61,3007.09,0.0062
+P5140,Deluxe Candle 140,Gifts,260.0,1.0,5484.8,2723.86,0.0038
+P5139,Premium Blanket 139,Outdoor,304.0,0.0,5411.2,3152.48,0.0
+P5131,Mini Candle 131,Kitchen,273.0,0.0,5399.05,1855.51,0.0
+P5084,Premium Kite 84,Outdoor,257.0,0.0,5311.7,2006.68,0.0
+P5002,Classic Candle 2,Outdoor,290.0,0.0,5290.01,2395.81,0.0
+P5142,Eco Kite 142,Gifts,272.0,3.0,5261.78,1950.39,0.011
+P5064,Eco Puzzle 64,Outdoor,280.0,1.0,5261.33,1715.24,0.0036
+P5100,Classic Lamp 100,Gifts,282.0,0.0,5259.46,1697.8,0.0
+P5052,Mini Lamp 52,Stationery,339.0,0.0,5251.18,2844.28,0.0
+P5108,Classic Tray 108,Outdoor,318.0,0.0,5143.36,1864.78,0.0
+P5021,Eco Mug 21,Gifts,284.0,0.0,5112.73,1872.29,0.0
+P5102,Classic Lamp 102,Kitchen,296.0,5.0,5110.15,2107.03,0.0169
+P5003,Eco Lamp 3,Outdoor,284.0,0.0,4998.89,3101.77,0.0
+P5061,Eco Frame 61,Kitchen,206.0,0.0,4994.66,1836.68,0.0
+P5127,Classic Kite 127,Kitchen,243.0,0.0,4971.29,2568.02,0.0
+P5145,Classic Tray 145,Gifts,267.0,3.0,4927.84,1883.92,0.0112
+P5118,Eco Mug 118,Toys,251.0,4.0,4892.48,3030.1,0.0159
+P5043,Deluxe Frame 43,Gifts,259.0,0.0,4858.46,2685.45,0.0
+P5031,Eco Lamp 31,Home & Garden,282.0,0.0,4850.75,1895.39,0.0
+P5049,Eco Mug 49,Outdoor,234.0,0.0,4842.2,1795.52,0.0
+P5032,Classic Candle 32,Stationery,316.0,0.0,4700.22,2346.02,0.0
+P5133,Deluxe Notebook 133,Outdoor,222.0,0.0,4685.36,1892.6,0.0
+P5094,Mini Planter 94,Home & Garden,272.0,3.0,4661.27,2573.83,0.011
+P5007,Eco Blanket 7,Outdoor,258.0,0.0,4653.88,1560.46,0.0
+P5018,Premium Frame 18,Gifts,284.0,2.0,4550.51,2460.89,0.007
+P5019,Deluxe Tray 19,Outdoor,246.0,0.0,4517.11,1754.53,0.0
+P5050,Classic Puzzle 50,Home & Garden,227.0,0.0,4497.64,1984.75,0.0
+P5066,Premium Puzzle 66,Outdoor,270.0,0.0,4497.46,2105.26,0.0
+P5013,Premium Lamp 13,Home & Garden,288.0,0.0,4432.4,2554.64,0.0
+P5119,Deluxe Mug 119,Home & Garden,264.0,0.0,4353.85,2226.01,0.0
+P5047,Deluxe Kite 47,Home & Garden,265.0,0.0,4282.66,1910.91,0.0
+P5051,Mini Lamp 51,Home & Garden,291.0,0.0,4263.83,1903.82,0.0
+P5104,Premium Tray 104,Gifts,276.0,0.0,4205.55,2016.87,0.0
+P5063,Classic Notebook 63,Kitchen,286.0,0.0,4134.64,1609.26,0.0
+P5113,Eco Lamp 113,Gifts,339.0,0.0,3936.91,2397.85,0.0
+P5016,Deluxe Candle 16,Stationery,315.0,0.0,3884.32,1896.67,0.0
+P5096,Premium Lamp 96,Outdoor,253.0,5.0,3746.69,1653.57,0.0198
+P5110,Deluxe Mug 110,Outdoor,195.0,0.0,3705.64,1685.44,0.0
+P5054,Mini Frame 54,Outdoor,260.0,13.0,3699.02,1839.11,0.05
+P5036,Deluxe Kite 36,Stationery,319.0,0.0,3650.61,2180.02,0.0
+P5143,Premium Puzzle 143,Outdoor,262.0,0.0,3632.23,2188.61,0.0
+P5000,Mini Mug 0,Kitchen,228.0,0.0,3623.56,1482.64,0.0
+P5079,Classic Puzzle 79,Kitchen,248.0,0.0,3602.93,1519.73,0.0
+P5022,Mini Candle 22,Home & Garden,319.0,0.0,3512.29,1528.11,0.0
+P5077,Deluxe Notebook 77,Toys,298.0,4.0,3488.24,2059.4,0.0134
+P5132,Eco Tray 132,Outdoor,271.0,1.0,3473.96,1632.56,0.0037
+P5088,Classic Puzzle 88,Outdoor,264.0,0.0,3323.96,1774.28,0.0
+P5123,Mini Puzzle 123,Stationery,265.0,0.0,3296.79,1306.64,0.0
+P5040,Classic Planter 40,Gifts,306.0,0.0,3145.09,1000.03,0.0
+P5089,Eco Kite 89,Home & Garden,259.0,0.0,3117.87,1742.58,0.0
+P5076,Deluxe Frame 76,Gifts,282.0,0.0,3088.44,1644.6,0.0
+P5128,Eco Mug 128,Toys,276.0,0.0,3018.54,1762.74,0.0
+P5103,Eco Tray 103,Gifts,234.0,2.0,3007.29,1833.37,0.0085
+P5107,Classic Notebook 107,Kitchen,288.0,5.0,2985.81,1228.38,0.0174
+P5011,Classic Planter 11,Toys,284.0,0.0,2911.01,1116.13,0.0
+P5111,Premium Puzzle 111,Toys,299.0,0.0,2875.63,1488.27,0.0
+P5087,Premium Notebook 87,Gifts,231.0,0.0,2872.71,1368.9,0.0
+P5125,Deluxe Mug 125,Stationery,322.0,0.0,2746.57,1722.61,0.0
+P5023,Classic Frame 23,Home & Garden,278.0,5.0,2731.6,1172.77,0.018
+P5124,Eco Kite 124,Toys,221.0,0.0,2699.67,1344.94,0.0
+P5098,Eco Kite 98,Stationery,233.0,0.0,2689.41,1571.01,0.0
+P5010,Classic Kite 10,Toys,244.0,3.0,2680.62,1082.79,0.0123
+P5001,Mini Mug 1,Gifts,320.0,0.0,2646.1,873.3,0.0
+P5015,Classic Notebook 15,Kitchen,305.0,0.0,2616.25,1448.1,0.0
+P5006,Premium Blanket 6,Home & Garden,258.0,5.0,2586.97,1074.03,0.0194
+P5009,Deluxe Tray 9,Gifts,285.0,0.0,2408.32,823.72,0.0
+P5004,Eco Mug 4,Gifts,223.0,0.0,2357.49,1211.27,0.0
+P5058,Premium Blanket 58,Toys,295.0,0.0,2324.78,1073.98,0.0
+P5090,Mini Planter 90,Home & Garden,289.0,0.0,2311.43,1328.83,0.0
+P5097,Eco Planter 97,Kitchen,255.0,0.0,2303.75,1401.05,0.0
+P5056,Classic Planter 56,Toys,204.0,0.0,2265.58,902.86,0.0
+P5120,Premium Kite 120,Stationery,251.0,0.0,2230.25,1319.12,0.0
+P5101,Classic Blanket 101,Home & Garden,229.0,5.0,2198.78,1172.86,0.0218
+P5059,Classic Notebook 59,Stationery,234.0,0.0,2148.74,988.1,0.0
+P5117,Deluxe Tray 117,Kitchen,243.0,0.0,2073.01,867.73,0.0
+P5042,Mini Kite 42,Toys,292.0,4.0,2040.28,1029.4,0.0137
+P5014,Deluxe Blanket 14,Toys,282.0,0.0,2018.5,1079.44,0.0
+P5085,Deluxe Blanket 85,Stationery,195.0,6.0,1912.17,867.0,0.0308
+P5035,Eco Lamp 35,Kitchen,240.0,0.0,1852.91,912.11,0.0
+P5070,Premium Notebook 70,Outdoor,228.0,0.0,1817.02,786.46,0.0
+P5121,Eco Kite 121,Gifts,319.0,0.0,1594.91,966.48,0.0
+P5027,Premium Planter 27,Kitchen,292.0,2.0,1580.17,608.67,0.0068
+P5037,Eco Puzzle 37,Gifts,248.0,0.0,1493.95,727.63,0.0
+P5129,Mini Planter 129,Stationery,261.0,2.0,1335.21,610.01,0.0077
+P5025,Mini Tray 25,Stationery,296.0,0.0,1264.56,770.24,0.0
+P5060,Premium Planter 60,Toys,248.0,0.0,1205.87,409.79,0.0
+P5141,Mini Notebook 141,Gifts,329.0,0.0,1187.76,371.84,0.0
+P5034,Classic Kite 34,Home & Garden,298.0,2.0,1015.46,550.74,0.0067
+P5146,Deluxe Puzzle 146,Gifts,262.0,0.0,859.2,521.22,0.0
