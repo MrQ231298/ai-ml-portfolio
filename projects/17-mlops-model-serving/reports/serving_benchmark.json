@@ -1,0 +1,36 @@
+{
+  "batch_1": {
+    "requests": 300,
+    "p50_ms": 8.36,
+    "p95_ms": 21.38,
+    "p99_ms": 84.86,
+    "requests_per_s": 79.7,
+    "records_per_s": 79.7
+  },
+  "batch_100": {
+    "requests": 300,
+    "p50_ms": 9.45,
+    "p95_ms": 32.24,
+    "p99_ms": 115.8,
+    "requests_per_s": 64.9,
+    "records_per_s": 6490.5
+  },
+  "concurrent_8_clients_batch_1": {
+    "requests": 400,
+    "p50_ms": 80.44,
+    "p95_ms": 144.89,
+    "requests_per_s": 85.9
+  },
+  "drift_endpoint_after_test": {
+    "records": 2000,
+    "alerts": [
+      "temp",
+      "atemp",
+      "cnt_lag_1h",
+      "cnt_lag_24h",
+      "cnt_lag_168h",
+      "cnt_mean_prev_168h"
+    ]
+  },
+  "setup": "uvicorn, 1 worker, same machine as client (8 vCPU shared), HTTP/1.1, no container"
+}

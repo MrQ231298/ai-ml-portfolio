@@ -1,0 +1,21 @@
+[
+  {
+    "version": 1,
+    "run_id": "9ee2da26aa1a431f8bfb2fb6b9a22672",
+    "tags": {
+      "selected_by": "lowest valid MAE, Q1 2012",
+      "status": "replaced 2012-05"
+    },
+    "aliases": [],
+    "created": "2026-11-17T23:38:36.731000+00:00"
+  },
+  {
+    "version": 2,
+    "run_id": "745b614793bc4eebbfeeda1e7c8729ca",
+    "tags": {},
+    "aliases": [
+      "champion"
+    ],
+    "created": "2026-11-17T23:38:44.076000+00:00"
+  }
+]

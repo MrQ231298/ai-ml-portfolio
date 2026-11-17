@@ -1,0 +1,7 @@
+{"records": [
+  {"season": 3, "hr": 8, "holiday": 0, "weekday": 2, "workingday": 1, "weathersit": 1,
+   "temp": 0.66, "atemp": 0.62, "hum": 0.6, "windspeed": 0.19,
+   "cnt_lag_1h": 420, "cnt_lag_24h": 610, "cnt_lag_168h": 590, "cnt_mean_prev_168h": 270},
+  {"season": 1, "hr": 3, "holiday": 0, "weekday": 0, "workingday": 0, "weathersit": 3,
+   "temp": 0.2, "atemp": 0.2, "hum": 0.9, "windspeed": 0.3}
+]}

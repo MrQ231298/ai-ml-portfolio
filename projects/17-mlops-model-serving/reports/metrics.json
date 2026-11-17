@@ -1,0 +1,241 @@
+{
+  "training": {
+    "selected": "hgb_small",
+    "registry_version": 1,
+    "best_baseline": "seasonal_naive_baseline",
+    "improvement_vs_best_baseline_mae_pct": 37.46,
+    "candidates": {
+      "seasonal_naive_baseline": {
+        "valid": {
+          "mae": 54.50873161764706,
+          "rmse": 92.63457271720964,
+          "r2": 0.6588404995120654
+        },
+        "fit_seconds": 0.001,
+        "params": {
+          "kind": "baseline"
+        },
+        "mlflow_run_id": "c18ec337ccf04a12821e7d753055171a"
+      },
+      "previous_hour_baseline": {
+        "valid": {
+          "mae": 62.97764502815297,
+          "rmse": 96.75118991149638,
+          "r2": 0.627844968904065
+        },
+        "fit_seconds": 0.001,
+        "params": {
+          "kind": "baseline_prev_hour"
+        },
+        "mlflow_run_id": "a94d9a46b26e4be09eff0ef72f772364"
+      },
+      "ridge_onehot": {
+        "valid": {
+          "mae": 51.09987747772099,
+          "rmse": 78.47211311412639,
+          "r2": 0.7551827813391668
+        },
+        "fit_seconds": 0.024,
+        "params": {
+          "kind": "ridge",
+          "alpha": 1.0
+        },
+        "mlflow_run_id": "abda4093ba77400795b63dea6e5c6754"
+      },
+      "hgb_small": {
+        "valid": {
+          "mae": 34.089113587250885,
+          "rmse": 57.819262856898526,
+          "r2": 0.8670903955243837
+        },
+        "fit_seconds": 0.309,
+        "params": {
+          "kind": "hgb",
+          "max_iter": 200,
+          "learning_rate": 0.1,
+          "max_leaf_nodes": 15
+        },
+        "mlflow_run_id": "9ee2da26aa1a431f8bfb2fb6b9a22672"
+      },
+      "hgb_large": {
+        "valid": {
+          "mae": 34.84599602684402,
+          "rmse": 58.1193536016646,
+          "r2": 0.8657071732324404
+        },
+        "fit_seconds": 0.829,
+        "params": {
+          "kind": "hgb",
+          "max_iter": 500,
+          "learning_rate": 0.05,
+          "max_leaf_nodes": 31
+        },
+        "mlflow_run_id": "f21a72fc066947d8ac4f051174f3aeab"
+      }
+    },
+    "rows": {
+      "train": 8645,
+      "valid": 2176,
+      "total": 17379
+    }
+  },
+  "monitoring": {
+    "rules": {
+      "psi_warn": 0.1,
+      "psi_alert": 0.25,
+      "perf_factor": 1.3,
+      "promote_factor": 0.95,
+      "holdout_days": 14,
+      "monitored_features": [
+        "hr",
+        "holiday",
+        "weekday",
+        "workingday",
+        "weathersit",
+        "temp",
+        "atemp",
+        "hum",
+        "windspeed",
+        "cnt_lag_1h",
+        "cnt_lag_24h",
+        "cnt_lag_168h",
+        "cnt_mean_prev_168h"
+      ],
+      "ignored_calendar_features": [
+        "season"
+      ]
+    },
+    "retrain_events": [
+      {
+        "month": "2012-05",
+        "champion_holdout_mae": 47.65,
+        "challenger_holdout_mae": 34.29,
+        "promoted": true,
+        "challenger_train_window": [
+          "2011-05-19",
+          "2012-05-18"
+        ],
+        "new_version": 2,
+        "refit_window": [
+          "2011-06-02",
+          "2012-06-01"
+        ]
+      }
+    ],
+    "mae_apr_dec_with_policy": 37.02,
+    "mae_apr_dec_never_retrain": 49.65,
+    "final_champion_version": 2
+  },
+  "serving_benchmark": {
+    "batch_1": {
+      "requests": 300,
+      "p50_ms": 8.36,
+      "p95_ms": 21.38,
+      "p99_ms": 84.86,
+      "requests_per_s": 79.7,
+      "records_per_s": 79.7
+    },
+    "batch_100": {
+      "requests": 300,
+      "p50_ms": 9.45,
+      "p95_ms": 32.24,
+      "p99_ms": 115.8,
+      "requests_per_s": 64.9,
+      "records_per_s": 6490.5
+    },
+    "concurrent_8_clients_batch_1": {
+      "requests": 400,
+      "p50_ms": 80.44,
+      "p95_ms": 144.89,
+      "requests_per_s": 85.9
+    },
+    "drift_endpoint_after_test": {
+      "records": 2000,
+      "alerts": [
+        "temp",
+        "atemp",
+        "cnt_lag_1h",
+        "cnt_lag_24h",
+        "cnt_lag_168h",
+        "cnt_mean_prev_168h"
+      ]
+    },
+    "setup": "uvicorn, 1 worker, same machine as client (8 vCPU shared), HTTP/1.1, no container"
+  },
+  "served_model_card": {
+    "name": "bike-demand",
+    "registry_version": 2,
+    "alias": "champion",
+    "candidate": "hgb_small",
+    "params": {
+      "kind": "hgb",
+      "max_iter": 200,
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15
+    },
+    "features": [
+      "season",
+      "hr",
+      "holiday",
+      "weekday",
+      "workingday",
+      "weathersit",
+      "temp",
+      "atemp",
+      "hum",
+      "windspeed",
+      "cnt_lag_1h",
+      "cnt_lag_24h",
+      "cnt_lag_168h",
+      "cnt_mean_prev_168h"
+    ],
+    "target": "cnt",
+    "train_window": [
+      "2011-06-02",
+      "2012-06-01"
+    ],
+    "valid_window": null,
+    "valid_metrics": {
+      "mae": 34.29,
+      "note": "14-day hold-out MAE of the challenger before refit"
+    },
+    "data": {
+      "url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+      "sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+      "licence": "CC BY 4.0",
+      "citation": "Fanaee-T, H. (2013). Bike Sharing [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5W894"
+    },
+    "trained_at": "2026-11-17T23:38:36+0000",
+    "promoted_after": "2012-05",
+    "previous_version": 1
+  },
+  "registry": [
+    {
+      "version": 1,
+      "run_id": "9ee2da26aa1a431f8bfb2fb6b9a22672",
+      "tags": {
+        "selected_by": "lowest valid MAE, Q1 2012",
+        "status": "replaced 2012-05"
+      },
+      "aliases": [],
+      "created": "2026-11-17T23:38:36.731000+00:00"
+    },
+    {
+      "version": 2,
+      "run_id": "745b614793bc4eebbfeeda1e7c8729ca",
+      "tags": {},
+      "aliases": [
+        "champion"
+      ],
+      "created": "2026-11-17T23:38:44.076000+00:00"
+    }
+  ],
+  "dockerless_smoke": [
+    "2026-11-17T23:38:47+00:00",
+    "{\"status\":\"ok\",\"model\":\"bike-demand\",\"version\":2}",
+    "{\"model_version\":2,\"predictions\":[599.8,1.8]}",
+    "dockerless smoke test passed"
+  ],
+  "docker_build": "not run: no Docker daemon on the build machine (apt and dockerd unavailable)",
+  "github_actions": "workflow written (ci/github-actions-ci.yml) but not run on GitHub: the push token lacks the `workflow` scope"
+}

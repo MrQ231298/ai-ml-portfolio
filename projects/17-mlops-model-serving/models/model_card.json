@@ -1,0 +1,47 @@
+{
+  "name": "bike-demand",
+  "registry_version": 2,
+  "alias": "champion",
+  "candidate": "hgb_small",
+  "params": {
+    "kind": "hgb",
+    "max_iter": 200,
+    "learning_rate": 0.1,
+    "max_leaf_nodes": 15
+  },
+  "features": [
+    "season",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed",
+    "cnt_lag_1h",
+    "cnt_lag_24h",
+    "cnt_lag_168h",
+    "cnt_mean_prev_168h"
+  ],
+  "target": "cnt",
+  "train_window": [
+    "2011-06-02",
+    "2012-06-01"
+  ],
+  "valid_window": null,
+  "valid_metrics": {
+    "mae": 34.29,
+    "note": "14-day hold-out MAE of the challenger before refit"
+  },
+  "data": {
+    "url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+    "sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+    "licence": "CC BY 4.0",
+    "citation": "Fanaee-T, H. (2013). Bike Sharing [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5W894"
+  },
+  "trained_at": "2026-11-17T23:38:36+0000",
+  "promoted_after": "2012-05",
+  "previous_version": 1
+}
