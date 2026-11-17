@@ -1,0 +1,87 @@
+{
+ "Affiliate": {
+  "incremental_conversions": 52,
+  "incremental_revenue": 5052.76
+ },
+ "Display Retargeting": {
+  "incremental_conversions": 462,
+  "incremental_revenue": 42792.72
+ },
+ "Email": {
+  "incremental_conversions": 2401,
+  "incremental_revenue": 223769.78
+ },
+ "Paid Search - Brand": {
+  "incremental_conversions": 480,
+  "incremental_revenue": 45218.59
+ },
+ "Paid Search - Generic": {
+  "incremental_conversions": 3010,
+  "incremental_revenue": 275312.13
+ },
+ "Paid Social": {
+  "incremental_conversions": 3354,
+  "incremental_revenue": 311898.1
+ },
+ "_baseline_no_ads": {
+  "conversions": 18986
+ },
+ "_total": {
+  "conversions": 28499,
+  "revenue": 2671664.23,
+  "incremental_all_paid_and_owned": 9513
+ },
+ "_holdout_truth": {
+  "incremental_conversions_from_prospecting_in_exposed_arm": 1966
+ },
+ "_config": {
+  "seed": 1313,
+  "users": 160000,
+  "channels": {
+   "Paid Search - Brand": {
+    "effect": 0.1,
+    "intent_bias": 2.5,
+    "reach": 0.18,
+    "cpc": 0.45,
+    "ctr": 0.12
+   },
+   "Paid Search - Generic": {
+    "effect": 0.4,
+    "intent_bias": 1.0,
+    "reach": 0.3,
+    "cpc": 1.1,
+    "ctr": 0.045
+   },
+   "Paid Social": {
+    "effect": 0.35,
+    "intent_bias": 0.0,
+    "reach": 0.55,
+    "cpc": 0.7,
+    "ctr": 0.012
+   },
+   "Display Retargeting": {
+    "effect": 0.05,
+    "intent_bias": 2.0,
+    "reach": 0.35,
+    "cpc": 0.55,
+    "ctr": 0.004
+   },
+   "Email": {
+    "effect": 0.25,
+    "intent_bias": 1.0,
+    "reach": 0.4,
+    "cpc": 0.0,
+    "ctr": 0.03
+   },
+   "Affiliate": {
+    "effect": 0.02,
+    "intent_bias": 3.0,
+    "reach": 0.1,
+    "cpc": 0.0,
+    "ctr": 0.05
+   }
+  },
+  "affiliate_commission": 0.08,
+  "note": "effects are per-touch log-odds lifts; truth = conversions(all) - conversions(channel switched off)"
+ }
+}

@@ -1,0 +1,251 @@
+{
+  "data_flag": "SYNTHETIC_EXAMPLE_DATA",
+  "period": "2026-01-01 to 2026-10-31",
+  "rows": {
+    "campaign_days": 4091,
+    "touchpoints": 301267,
+    "conversions": 28499,
+    "simulated_people": 160000
+  },
+  "totals": {
+    "spend": 224533.04,
+    "revenue_all_orders": 2671664.23,
+    "orders": 28499,
+    "orders_with_any_touch": 26515,
+    "orders_no_touch_organic": 1984,
+    "blended_roas": 11.898757661678657,
+    "blended_cpa": 7.87862872381487,
+    "impressions": 25420220,
+    "clicks": 301267,
+    "ctr": 0.011851470994350168
+  },
+  "platform_over_claim": {
+    "sum_platform_conversions": 47545,
+    "orders_with_any_touch": 26515,
+    "ratio": 1.7931359607769188
+  },
+  "true_incremental_total": 9513,
+  "attribution_share_error": {
+    "Last click": 0.5307306308317459,
+    "First click": 0.07970017068140216,
+    "Linear": 0.2685053988757912,
+    "Time decay (7-day half-life)": 0.4078528022081175,
+    "Position-based 40/20/40": 0.25627881324116303,
+    "Markov removal effect": 0.3317273117995006,
+    "Shapley (conversion-rate game)": 0.31622138564808344
+  },
+  "attribution_rank_spearman": {
+    "Last click": -0.08571428571428573,
+    "First click": 0.8857142857142858,
+    "Linear": 0.7142857142857143,
+    "Time decay (7-day half-life)": 0.2571428571428572,
+    "Position-based 40/20/40": 0.7142857142857143,
+    "Markov removal effect": 0.3714285714285715,
+    "Shapley (conversion-rate game)": 0.3142857142857143
+  },
+  "attribution_conversions": {
+    "Last click": {
+      "Affiliate": 2698.0,
+      "Display Retargeting": 9218.0,
+      "Email": 3469.0,
+      "Paid Search - Brand": 4857.0,
+      "Paid Search - Generic": 2912.0,
+      "Paid Social": 3361.0
+    },
+    "First click": {
+      "Affiliate": 311.0,
+      "Display Retargeting": 1132.0,
+      "Email": 8467.0,
+      "Paid Search - Brand": 652.0,
+      "Paid Search - Generic": 6936.0,
+      "Paid Social": 9017.0
+    },
+    "Linear": {
+      "Affiliate": 1606.1,
+      "Display Retargeting": 5303.8,
+      "Email": 5806.6,
+      "Paid Search - Brand": 2910.1,
+      "Paid Search - Generic": 4727.7,
+      "Paid Social": 6160.6
+    },
+    "Time decay (7-day half-life)": {
+      "Affiliate": 2176.5,
+      "Display Retargeting": 7343.8,
+      "Email": 4584.2,
+      "Paid Search - Brand": 3994.6,
+      "Paid Search - Generic": 3766.2,
+      "Paid Social": 4649.7
+    },
+    "Position-based 40/20/40": {
+      "Affiliate": 1525.7,
+      "Display Retargeting": 5182.9,
+      "Email": 5944.7,
+      "Paid Search - Brand": 2787.3,
+      "Paid Search - Generic": 4873.9,
+      "Paid Social": 6200.5
+    },
+    "Markov removal effect": {
+      "Affiliate": 2245.7,
+      "Display Retargeting": 5668.7,
+      "Email": 5220.8,
+      "Paid Search - Brand": 3582.0,
+      "Paid Search - Generic": 4272.5,
+      "Paid Social": 5525.3
+    },
+    "Shapley (conversion-rate game)": {
+      "Affiliate": 2170.6,
+      "Display Retargeting": 5331.3,
+      "Email": 5724.6,
+      "Paid Search - Brand": 3583.4,
+      "Paid Search - Generic": 5220.2,
+      "Paid Social": 4484.8
+    },
+    "TRUE incremental": {
+      "Affiliate": 52,
+      "Display Retargeting": 462,
+      "Email": 2401,
+      "Paid Search - Brand": 480,
+      "Paid Search - Generic": 3010,
+      "Paid Social": 3354
+    }
+  },
+  "roas_by_channel": {
+    "Affiliate": {
+      "spend": 56132.03,
+      "roas_platform": 12.5,
+      "roas_last_click": 4.467,
+      "roas_markov": 3.75,
+      "roas_shapley": 3.629,
+      "roas_TRUE_incremental": 0.09,
+      "cpa_last_click": 20.805,
+      "cpa_TRUE_incremental": 1079.462
+    },
+    "Display Retargeting": {
+      "spend": 31327.6,
+      "roas_platform": 54.168,
+      "roas_last_click": 27.645,
+      "roas_markov": 16.961,
+      "roas_shapley": 15.942,
+      "roas_TRUE_incremental": 1.366,
+      "cpa_last_click": 3.399,
+      "cpa_TRUE_incremental": 67.809
+    },
+    "Email": {
+      "spend": 8520.12,
+      "roas_platform": 62.96,
+      "roas_last_click": 38.153,
+      "roas_markov": 57.437,
+      "roas_shapley": 62.804,
+      "roas_TRUE_incremental": 26.264,
+      "cpa_last_click": 2.456,
+      "cpa_TRUE_incremental": 3.549
+    },
+    "Paid Search - Brand": {
+      "spend": 13128.94,
+      "roas_platform": 68.736,
+      "roas_last_click": 34.953,
+      "roas_markov": 25.574,
+      "roas_shapley": 25.916,
+      "roas_TRUE_incremental": 3.444,
+      "cpa_last_click": 2.703,
+      "cpa_TRUE_incremental": 27.352
+    },
+    "Paid Search - Generic": {
+      "spend": 53224.21,
+      "roas_platform": 8.0,
+      "roas_last_click": 5.068,
+      "roas_markov": 7.524,
+      "roas_shapley": 9.119,
+      "roas_TRUE_incremental": 5.173,
+      "cpa_last_click": 18.278,
+      "cpa_TRUE_incremental": 17.682
+    },
+    "Paid Social": {
+      "spend": 62200.14,
+      "roas_platform": 3.366,
+      "roas_last_click": 5.062,
+      "roas_markov": 8.327,
+      "roas_shapley": 6.777,
+      "roas_TRUE_incremental": 5.014,
+      "cpa_last_click": 18.506,
+      "cpa_TRUE_incremental": 18.545
+    }
+  },
+  "kpis_by_channel": {
+    "Affiliate": {
+      "impressions": 329227,
+      "clicks": 16130,
+      "spend": 56132.03,
+      "ctr": 0.049,
+      "cpc": 3.48,
+      "platform_conversions": 7467,
+      "roas_platform": 12.5
+    },
+    "Display Retargeting": {
+      "impressions": 14194199,
+      "clicks": 56005,
+      "spend": 31327.6,
+      "ctr": 0.0039,
+      "cpc": 0.5594,
+      "platform_conversions": 18065,
+      "roas_platform": 54.1685
+    },
+    "Email": {
+      "impressions": 2130028,
+      "clicks": 63787,
+      "spend": 8520.12,
+      "ctr": 0.0299,
+      "cpc": 0.1336,
+      "platform_conversions": 5678,
+      "roas_platform": 62.9602
+    },
+    "Paid Search - Brand": {
+      "impressions": 243802,
+      "clicks": 28964,
+      "spend": 13128.94,
+      "ctr": 0.1188,
+      "cpc": 0.4533,
+      "platform_conversions": 9551,
+      "roas_platform": 68.7358
+    },
+    "Paid Search - Generic": {
+      "impressions": 1075812,
+      "clicks": 48193,
+      "spend": 53224.21,
+      "ctr": 0.0448,
+      "cpc": 1.1044,
+      "platform_conversions": 4546,
+      "roas_platform": 7.9996
+    },
+    "Paid Social": {
+      "impressions": 7447152,
+      "clicks": 88188,
+      "spend": 62200.14,
+      "ctr": 0.0118,
+      "cpc": 0.7053,
+      "platform_conversions": 2238,
+      "roas_platform": 3.3665
+    }
+  },
+  "holdout_test_paid_social_prospecting": {
+    "exposed_n": 48978,
+    "holdout_n": 5463,
+    "exposed_cvr": 0.17021928212666912,
+    "holdout_cvr": 0.13582280798096283,
+    "absolute_lift": 0.03439647414570629,
+    "relative_lift": 0.25324519980861654,
+    "lift_ci95": [
+      0.0247208846016642,
+      0.04407206368974838
+    ],
+    "p_value": 3.220497754684577e-12,
+    "estimated_incremental_conversions_exposed": 1684.6705107084026,
+    "estimated_incremental_ci95": [
+      1210.7794860203092,
+      2158.561535396496
+    ]
+  },
+  "holdout_truth": {
+    "incremental_conversions_from_prospecting_in_exposed_arm": 1966
+  }
+}
