@@ -1,0 +1,241 @@
+{
+  "data": {
+    "source": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+    "sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+    "licence": "CC BY 4.0",
+    "citation": "Chen, D. (2012). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33",
+    "calibration_period": [
+      "2010-12-01",
+      "2011-09-09"
+    ],
+    "holdout_period": [
+      "2011-09-10",
+      "2011-12-09"
+    ],
+    "cleaning": {
+      "raw_rows": 541909,
+      "exact_duplicates_removed": 5268,
+      "rows_with_customer_id": 401604,
+      "rows_after_non_product_and_price_filter": 399656
+    },
+    "customers": 3360,
+    "holdout_buyer_share": 0.5702380952380952,
+    "built_at": "2026-11-17T14:04:27+00:00"
+  },
+  "features": [
+    "recency_days",
+    "frequency",
+    "monetary",
+    "tenure_days",
+    "avg_basket_value",
+    "distinct_products",
+    "cancel_rate"
+  ],
+  "scaling": "log1p on six skewed features, cancel_rate clipped to [0,1], then z-score",
+  "k_grid": [
+    {
+      "k": 2,
+      "inertia": 16644.205,
+      "silhouette": 0.2957,
+      "calinski_harabasz": 1387.2057,
+      "davies_bouldin": 1.3041,
+      "bootstrap_ari_mean": 0.9753,
+      "bootstrap_ari_sd": 0.0274,
+      "gmm_bic": 6915.9098,
+      "kmeans_vs_gmm_ari": 0.3106
+    },
+    {
+      "k": 3,
+      "inertia": 14223.351,
+      "silhouette": 0.2915,
+      "calinski_harabasz": 1097.106,
+      "davies_bouldin": 1.2472,
+      "bootstrap_ari_mean": 0.8679,
+      "bootstrap_ari_sd": 0.1458,
+      "gmm_bic": -1221.2544,
+      "kmeans_vs_gmm_ari": 0.3118
+    },
+    {
+      "k": 4,
+      "inertia": 11974.9851,
+      "silhouette": 0.3085,
+      "calinski_harabasz": 1078.5115,
+      "davies_bouldin": 1.0788,
+      "bootstrap_ari_mean": 0.7633,
+      "bootstrap_ari_sd": 0.2811,
+      "gmm_bic": -25686.3861,
+      "kmeans_vs_gmm_ari": 0.2479
+    },
+    {
+      "k": 5,
+      "inertia": 10175.3843,
+      "silhouette": 0.2454,
+      "calinski_harabasz": 1099.9876,
+      "davies_bouldin": 1.1265,
+      "bootstrap_ari_mean": 0.9374,
+      "bootstrap_ari_sd": 0.0349,
+      "gmm_bic": -30566.6225,
+      "kmeans_vs_gmm_ari": 0.2702
+    },
+    {
+      "k": 6,
+      "inertia": 9232.3883,
+      "silhouette": 0.2142,
+      "calinski_harabasz": 1038.1003,
+      "davies_bouldin": 1.2265,
+      "bootstrap_ari_mean": 0.7991,
+      "bootstrap_ari_sd": 0.0912,
+      "gmm_bic": -41689.7289,
+      "kmeans_vs_gmm_ari": 0.2738
+    },
+    {
+      "k": 7,
+      "inertia": 8477.458,
+      "silhouette": 0.2125,
+      "calinski_harabasz": 991.6031,
+      "davies_bouldin": 1.2238,
+      "bootstrap_ari_mean": 0.875,
+      "bootstrap_ari_sd": 0.0783,
+      "gmm_bic": -47328.6845,
+      "kmeans_vs_gmm_ari": 0.1936
+    },
+    {
+      "k": 8,
+      "inertia": 8009.8993,
+      "silhouette": 0.2101,
+      "calinski_harabasz": 927.2479,
+      "davies_bouldin": 1.2426,
+      "bootstrap_ari_mean": 0.7601,
+      "bootstrap_ari_sd": 0.1202,
+      "gmm_bic": -52060.5971,
+      "kmeans_vs_gmm_ari": 0.1811
+    },
+    {
+      "k": 9,
+      "inertia": 7559.1849,
+      "silhouette": 0.2075,
+      "calinski_harabasz": 884.4322,
+      "davies_bouldin": 1.2614,
+      "bootstrap_ari_mean": 0.6913,
+      "bootstrap_ari_sd": 0.1421,
+      "gmm_bic": -54479.1034,
+      "kmeans_vs_gmm_ari": 0.1714
+    },
+    {
+      "k": 10,
+      "inertia": 7161.0337,
+      "silhouette": 0.1984,
+      "calinski_harabasz": 850.3201,
+      "davies_bouldin": 1.2282,
+      "bootstrap_ari_mean": 0.7771,
+      "bootstrap_ari_sd": 0.1211,
+      "gmm_bic": -54833.4866,
+      "kmeans_vs_gmm_ari": 0.2469
+    }
+  ],
+  "selection_rule": "highest silhouette among k in 3-8 with mean bootstrap ARI >= 0.75",
+  "k_selected": 4,
+  "selected": {
+    "k": 4,
+    "inertia": 11974.9851,
+    "silhouette": 0.3085,
+    "calinski_harabasz": 1078.5115,
+    "davies_bouldin": 1.0788,
+    "bootstrap_ari_mean": 0.7633,
+    "bootstrap_ari_sd": 0.2811,
+    "gmm_bic": -25686.3861,
+    "kmeans_vs_gmm_ari": 0.2479
+  },
+  "seed_stability_ari_mean": 0.8623500044903591,
+  "seed_stability_ari_min": 0.335565838693474,
+  "segment_names": {
+    "0": "Lapsed one-off",
+    "1": "VIP / wholesale-scale",
+    "2": "High-cancellation",
+    "3": "New this quarter"
+  },
+  "profiles": [
+    {
+      "segment": 0,
+      "name": "Lapsed one-off",
+      "customers": 1663,
+      "recency_days": 143.0,
+      "frequency": 1.0,
+      "monetary": 306.18,
+      "tenure_days": 186.0,
+      "avg_basket_value": 206.64,
+      "distinct_products": 17.0,
+      "cancel_rate": 0.0098,
+      "revenue_share": 0.1188,
+      "future_90d_purchase_rate": 0.4197,
+      "future_90d_revenue_mean": 207.3612,
+      "future_90d_revenue_share": 0.135,
+      "customer_share": 0.4949
+    },
+    {
+      "segment": 1,
+      "name": "VIP / wholesale-scale",
+      "customers": 1237,
+      "recency_days": 28.0,
+      "frequency": 5.0,
+      "monetary": 1661.45,
+      "tenure_days": 236.0,
+      "avg_basket_value": 365.43,
+      "distinct_products": 72.0,
+      "cancel_rate": 0.0143,
+      "revenue_share": 0.8359,
+      "future_90d_purchase_rate": 0.7979,
+      "future_90d_revenue_mean": 1634.637,
+      "future_90d_revenue_share": 0.7919,
+      "customer_share": 0.3682
+    },
+    {
+      "segment": 2,
+      "name": "High-cancellation",
+      "customers": 66,
+      "recency_days": 128.0,
+      "frequency": 2.0,
+      "monetary": 296.09,
+      "tenure_days": 210.0,
+      "avg_basket_value": 279.2225,
+      "distinct_products": 14.5,
+      "cancel_rate": 0.4059,
+      "revenue_share": 0.0102,
+      "future_90d_purchase_rate": 0.4697,
+      "future_90d_revenue_mean": 326.03,
+      "future_90d_revenue_share": 0.0084,
+      "customer_share": 0.0196
+    },
+    {
+      "segment": 3,
+      "name": "New this quarter",
+      "customers": 394,
+      "recency_days": 25.0,
+      "frequency": 1.0,
+      "monetary": 327.05,
+      "tenure_days": 37.0,
+      "avg_basket_value": 299.115,
+      "distinct_products": 21.0,
+      "cancel_rate": 0.0063,
+      "revenue_share": 0.0351,
+      "future_90d_purchase_rate": 0.5076,
+      "future_90d_revenue_mean": 419.0104,
+      "future_90d_revenue_share": 0.0647,
+      "customer_share": 0.1173
+    }
+  ],
+  "holdout_validation": {
+    "buyers_share": 0.5702380952380952,
+    "auc_predict_purchase_next_90d": {
+      "kmeans_segment_mean_frequency": 0.6614084846084005,
+      "rfm_segment_mean_frequency": 0.7223369395497314,
+      "rfm_total_score": 0.7392189406600779,
+      "recency_only": 0.6843986563072884
+    },
+    "eta_squared_future_revenue": {
+      "kmeans": 0.028998570813196945,
+      "rfm_rules": 0.03892339493238593
+    }
+  },
+  "kmeans_vs_rfm_rules_ari": 0.37184747667074197
+}

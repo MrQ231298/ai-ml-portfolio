@@ -1,0 +1,11 @@
+# Direct dependencies for the customer segmentation project.
+# Installed and verified on Python 3.13.5 (17 November 2026, Europe/Dublin).
+pandas==3.1.1
+numpy==2.5.5
+scikit-learn==1.9.1
+joblib==1.6.0
+openpyxl==3.1.5
+matplotlib==3.11.2
+altair==6.3.0
+streamlit==1.67.0
+pytest==9.2.0

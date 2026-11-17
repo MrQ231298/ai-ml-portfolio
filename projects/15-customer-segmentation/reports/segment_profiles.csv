@@ -1,0 +1,5 @@
+segment,name,customers,recency_days,frequency,monetary,tenure_days,avg_basket_value,distinct_products,cancel_rate,revenue_share,future_90d_purchase_rate,future_90d_revenue_mean,future_90d_revenue_share,customer_share
+0,Lapsed one-off,1663,143.0,1.0,306.18,186.0,206.64,17.0,0.0098,0.1188,0.4197,207.3612,0.135,0.4949
+1,VIP / wholesale-scale,1237,28.0,5.0,1661.45,236.0,365.43,72.0,0.0143,0.8359,0.7979,1634.637,0.7919,0.3682
+2,High-cancellation,66,128.0,2.0,296.09,210.0,279.2225,14.5,0.4059,0.0102,0.4697,326.03,0.0084,0.0196
+3,New this quarter,394,25.0,1.0,327.05,37.0,299.115,21.0,0.0063,0.0351,0.5076,419.0104,0.0647,0.1173

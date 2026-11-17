@@ -1,0 +1,23 @@
+{
+ "source": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+ "sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+ "licence": "CC BY 4.0",
+ "citation": "Chen, D. (2012). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33",
+ "calibration_period": [
+  "2010-12-01",
+  "2011-09-09"
+ ],
+ "holdout_period": [
+  "2011-09-10",
+  "2011-12-09"
+ ],
+ "cleaning": {
+  "raw_rows": 541909,
+  "exact_duplicates_removed": 5268,
+  "rows_with_customer_id": 401604,
+  "rows_after_non_product_and_price_filter": 399656
+ },
+ "customers": 3360,
+ "holdout_buyer_share": 0.5702380952380952,
+ "built_at": "2026-11-17T14:04:27+00:00"
+}
