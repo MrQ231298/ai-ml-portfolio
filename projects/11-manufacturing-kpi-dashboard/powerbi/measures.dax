@@ -1,0 +1,111 @@
+// =====================================================================
+// Manufacturing KPI dashboard - DAX measures
+// Project 11, ai-ml-portfolio (Owen Quigley). SYNTHETIC example data.
+//
+// Create a blank table called _Measures (Enter data -> one column, delete
+// it later) and add each measure below to it. Folder names in comments
+// match the build guide. Every measure is a weighted ratio of sums, so it
+// stays correct at any level of the matrix (shift, day, line, plant).
+// The same formulas are implemented in src/kpi_lib.py (pandas) and
+// src/kpi_sql.py (SQL); the Python and SQL versions agree to 1e-15.
+// Not executed in Power BI on the author's machine: see the build guide.
+// =====================================================================
+
+// ---------- Folder: 1 Base ----------
+Planned Production Min = SUM ( fact_production[planned_production_minutes] )
+Run Min = SUM ( fact_production[run_minutes] )
+Unplanned Downtime Min = SUM ( fact_production[unplanned_downtime_minutes] )
+Total Count = SUM ( fact_production[total_count] )
+First Pass Good = SUM ( fact_production[first_pass_good_count] )
+Good Count = SUM ( fact_production[good_count] )
+Scrap Count = SUM ( fact_production[scrap_count] )
+Rework Count = SUM ( fact_production[rework_count] )
+Target Units = SUM ( fact_target[target_units] )
+
+// Ideal time for what was produced, in minutes (row-level, then summed)
+Ideal Min (Total) =
+    SUMX ( fact_production, fact_production[ideal_cycle_time_s] * fact_production[total_count] ) / 60
+Ideal Min (First Pass Good) =
+    SUMX ( fact_production, fact_production[ideal_cycle_time_s] * fact_production[first_pass_good_count] ) / 60
+
+// ---------- Folder: 2 OEE ----------
+Availability % = DIVIDE ( [Run Min], [Planned Production Min] )
+Performance % = DIVIDE ( [Ideal Min (Total)], [Run Min] )
+Quality % = DIVIDE ( [First Pass Good], [Total Count] )
+OEE % = [Availability %] * [Performance %] * [Quality %]
+// Time-based variant: fully productive time / planned time. Identical at
+// shift grain; differs slightly (0.05 pp on this data) when products with
+// different cycle times are mixed, because Quality % is count-weighted.
+OEE % (time based) = DIVIDE ( [Ideal Min (First Pass Good)], [Planned Production Min] )
+OEE Target % = 0.85
+OEE Gap to Target pp = ( [OEE %] - [OEE Target %] ) * 100
+
+// ---------- Folder: 3 Quality ----------
+FPY % = DIVIDE ( [First Pass Good], [Total Count] )
+Yield After Rework % = DIVIDE ( [Good Count], [Total Count] )
+Scrap Rate % = DIVIDE ( [Scrap Count], [Total Count] )
+Defects = SUM ( fact_defects[defect_count] )
+Defects per 1k Units = DIVIDE ( [Defects], [Total Count] ) * 1000
+
+// Rolled throughput yield across the route (SMT -> assembly -> EOL test).
+// SMT-1 and SMT-2 are parallel, so FPY is combined per route step first.
+RTY % =
+VAR Steps = VALUES ( dim_line[route_step] )
+RETURN
+    PRODUCTX (
+        Steps,
+        CALCULATE ( DIVIDE ( [First Pass Good], [Total Count] ) )
+    )
+
+// ---------- Folder: 4 Output ----------
+Output vs Target % = DIVIDE ( [Good Count], [Target Units] )
+Output Gap Units = [Good Count] - [Target Units]
+
+// ---------- Folder: 5 Downtime ----------
+Downtime Min (events) = SUM ( fact_downtime[duration_minutes] )
+Downtime Events = COUNTROWS ( fact_downtime )
+Downtime Hours = DIVIDE ( [Downtime Min (events)], 60 )
+MTTR Min = DIVIDE ( [Downtime Min (events)], [Downtime Events] )
+Shifts Worked = COUNTROWS ( fact_production )
+Events per Shift = DIVIDE ( [Downtime Events], [Shifts Worked] )
+
+// Pareto: share of all downtime that this reason (row) accounts for
+Downtime Share % =
+DIVIDE (
+    [Downtime Min (events)],
+    CALCULATE ( [Downtime Min (events)], ALL ( dim_downtime_reason ) )
+)
+
+// Pareto cumulative %: reasons with at least this reason's minutes
+Downtime Cumulative % =
+VAR ThisMin = [Downtime Min (events)]
+VAR AllReasons =
+    ADDCOLUMNS ( ALL ( dim_downtime_reason[reason] ), "@m", [Downtime Min (events)] )
+RETURN
+DIVIDE (
+    SUMX ( FILTER ( AllReasons, [@m] >= ThisMin ), [@m] ),
+    SUMX ( AllReasons, [@m] )
+)
+
+Downtime Reason Rank =
+RANKX ( ALL ( dim_downtime_reason[reason] ), [Downtime Min (events)], , DESC, DENSE )
+
+// ---------- Folder: 6 Loss breakdown (minutes) ----------
+Availability Loss Min = [Planned Production Min] - [Run Min]
+Performance Loss Min = [Run Min] - [Ideal Min (Total)]
+Quality Loss Min = [Ideal Min (Total)] - [Ideal Min (First Pass Good)]
+Fully Productive Min = [Ideal Min (First Pass Good)]
+
+// ---------- Folder: 7 Time intelligence (needs dim_date marked as date table) ----------
+OEE % Prev Week =
+CALCULATE ( [OEE %], DATEADD ( dim_date[date], -7, DAY ) )
+OEE % WoW pp = ( [OEE %] - [OEE % Prev Week] ) * 100
+OEE % 4wk Rolling =
+CALCULATE ( [OEE %], DATESINPERIOD ( dim_date[date], MAX ( dim_date[date] ), -28, DAY ) )
+
+// ---------- Folder: 8 Formatting helpers ----------
+OEE Colour =
+SWITCH ( TRUE (),
+    [OEE %] >= 0.85, "#00798C",
+    [OEE %] >= 0.75, "#EDAE49",
+    "#D1495B" )

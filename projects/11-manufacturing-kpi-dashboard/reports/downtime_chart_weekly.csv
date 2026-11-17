@@ -1,0 +1,505 @@
+line,reason,iso_week,phase,events,expected,ucl,signal
+ASSY-1,Changeover overrun,27,baseline,3,3.4782608695652173,10.0,False
+ASSY-1,Changeover overrun,28,baseline,4,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,29,baseline,4,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,30,baseline,7,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,31,baseline,8,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,32,baseline,3,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,33,baseline,9,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,34,baseline,6,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,35,baseline,4,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,36,monitor,8,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,37,monitor,5,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,38,monitor,4,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,39,monitor,2,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,40,monitor,7,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,41,monitor,8,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,42,monitor,2,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,43,monitor,1,5.565217391304348,14.0,False
+ASSY-1,Changeover overrun,44,monitor,4,5.565217391304348,14.0,False
+ASSY-1,Conveyor fault,27,baseline,1,1.8840579710144927,7.0,False
+ASSY-1,Conveyor fault,28,baseline,4,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,29,baseline,4,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,30,baseline,1,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,31,baseline,4,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,32,baseline,3,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,33,baseline,3,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,34,baseline,5,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,35,baseline,1,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,36,monitor,3,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,37,monitor,6,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,38,monitor,4,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,39,monitor,4,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,40,monitor,0,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,41,monitor,5,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,42,monitor,6,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,43,monitor,2,3.0144927536231885,9.0,False
+ASSY-1,Conveyor fault,44,monitor,7,3.0144927536231885,9.0,False
+ASSY-1,Material shortage,27,baseline,2,2.826086956521739,9.0,False
+ASSY-1,Material shortage,28,baseline,2,4.521739130434782,12.0,False
+ASSY-1,Material shortage,29,baseline,6,4.521739130434782,12.0,False
+ASSY-1,Material shortage,30,baseline,6,4.521739130434782,12.0,False
+ASSY-1,Material shortage,31,baseline,8,4.521739130434782,12.0,False
+ASSY-1,Material shortage,32,baseline,4,4.521739130434782,12.0,False
+ASSY-1,Material shortage,33,baseline,3,4.521739130434782,12.0,False
+ASSY-1,Material shortage,34,baseline,2,4.521739130434782,12.0,False
+ASSY-1,Material shortage,35,baseline,6,4.521739130434782,12.0,False
+ASSY-1,Material shortage,36,monitor,3,4.521739130434782,12.0,False
+ASSY-1,Material shortage,37,monitor,4,4.521739130434782,12.0,False
+ASSY-1,Material shortage,38,monitor,2,4.521739130434782,12.0,False
+ASSY-1,Material shortage,39,monitor,4,4.521739130434782,12.0,False
+ASSY-1,Material shortage,40,monitor,3,4.521739130434782,12.0,False
+ASSY-1,Material shortage,41,monitor,5,4.521739130434782,12.0,False
+ASSY-1,Material shortage,42,monitor,5,4.521739130434782,12.0,False
+ASSY-1,Material shortage,43,monitor,3,4.521739130434782,12.0,False
+ASSY-1,Material shortage,44,monitor,5,4.521739130434782,12.0,False
+ASSY-1,Operator unavailable,27,baseline,3,1.9565217391304348,7.0,False
+ASSY-1,Operator unavailable,28,baseline,1,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,29,baseline,0,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,30,baseline,2,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,31,baseline,3,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,32,baseline,4,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,33,baseline,3,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,34,baseline,4,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,35,baseline,7,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,36,monitor,1,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,37,monitor,0,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,38,monitor,0,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,39,monitor,3,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,40,monitor,2,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,41,monitor,2,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,42,monitor,3,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,43,monitor,5,3.130434782608696,10.0,False
+ASSY-1,Operator unavailable,44,monitor,3,3.130434782608696,10.0,False
+ASSY-1,Quality hold,27,baseline,1,1.2318840579710146,6.0,False
+ASSY-1,Quality hold,28,baseline,5,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,29,baseline,4,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,30,baseline,1,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,31,baseline,2,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,32,baseline,0,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,33,baseline,0,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,34,baseline,3,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,35,baseline,1,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,36,monitor,0,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,37,monitor,2,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,38,monitor,0,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,39,monitor,2,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,40,monitor,0,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,41,monitor,4,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,42,monitor,1,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,43,monitor,5,1.9710144927536233,7.0,False
+ASSY-1,Quality hold,44,monitor,3,1.9710144927536233,7.0,False
+ASSY-1,Tester / fixture fault,27,baseline,1,0.36231884057971014,3.0,False
+ASSY-1,Tester / fixture fault,28,baseline,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,29,baseline,2,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,30,baseline,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,31,baseline,1,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,32,baseline,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,33,baseline,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,34,baseline,1,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,35,baseline,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,36,monitor,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,37,monitor,2,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,38,monitor,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,39,monitor,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,40,monitor,1,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,41,monitor,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,42,monitor,0,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,43,monitor,1,0.5797101449275363,4.0,False
+ASSY-1,Tester / fixture fault,44,monitor,0,0.5797101449275363,4.0,False
+EOL-1,Changeover overrun,27,baseline,2,2.971014492753623,9.0,False
+EOL-1,Changeover overrun,28,baseline,7,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,29,baseline,8,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,30,baseline,3,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,31,baseline,5,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,32,baseline,4,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,33,baseline,3,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,34,baseline,4,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,35,baseline,5,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,36,monitor,9,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,37,monitor,6,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,38,monitor,5,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,39,monitor,6,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,40,monitor,8,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,41,monitor,5,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,42,monitor,6,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,43,monitor,3,4.753623188405797,12.0,False
+EOL-1,Changeover overrun,44,monitor,5,4.753623188405797,12.0,False
+EOL-1,Conveyor fault,27,baseline,1,1.3768115942028984,6.0,False
+EOL-1,Conveyor fault,28,baseline,4,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,29,baseline,1,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,30,baseline,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,31,baseline,1,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,32,baseline,1,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,33,baseline,5,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,34,baseline,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,35,baseline,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,36,monitor,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,37,monitor,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,38,monitor,1,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,39,monitor,3,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,40,monitor,6,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,41,monitor,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,42,monitor,5,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,43,monitor,2,2.2028985507246377,8.0,False
+EOL-1,Conveyor fault,44,monitor,5,2.2028985507246377,8.0,False
+EOL-1,Material shortage,27,baseline,4,2.318840579710145,8.0,False
+EOL-1,Material shortage,28,baseline,1,3.710144927536232,11.0,False
+EOL-1,Material shortage,29,baseline,4,3.710144927536232,11.0,False
+EOL-1,Material shortage,30,baseline,5,3.710144927536232,11.0,False
+EOL-1,Material shortage,31,baseline,1,3.710144927536232,11.0,False
+EOL-1,Material shortage,32,baseline,3,3.710144927536232,11.0,False
+EOL-1,Material shortage,33,baseline,5,3.710144927536232,11.0,False
+EOL-1,Material shortage,34,baseline,5,3.710144927536232,11.0,False
+EOL-1,Material shortage,35,baseline,4,3.710144927536232,11.0,False
+EOL-1,Material shortage,36,monitor,4,3.710144927536232,11.0,False
+EOL-1,Material shortage,37,monitor,7,3.710144927536232,11.0,False
+EOL-1,Material shortage,38,monitor,3,3.710144927536232,11.0,False
+EOL-1,Material shortage,39,monitor,1,3.710144927536232,11.0,False
+EOL-1,Material shortage,40,monitor,4,3.710144927536232,11.0,False
+EOL-1,Material shortage,41,monitor,3,3.710144927536232,11.0,False
+EOL-1,Material shortage,42,monitor,10,3.710144927536232,11.0,False
+EOL-1,Material shortage,43,monitor,1,3.710144927536232,11.0,False
+EOL-1,Material shortage,44,monitor,8,3.710144927536232,11.0,False
+EOL-1,Operator unavailable,27,baseline,2,1.8115942028985508,7.0,False
+EOL-1,Operator unavailable,28,baseline,2,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,29,baseline,4,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,30,baseline,1,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,31,baseline,4,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,32,baseline,2,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,33,baseline,4,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,34,baseline,4,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,35,baseline,2,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,36,monitor,2,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,37,monitor,6,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,38,monitor,3,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,39,monitor,2,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,40,monitor,7,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,41,monitor,1,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,42,monitor,6,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,43,monitor,4,2.898550724637681,9.0,False
+EOL-1,Operator unavailable,44,monitor,2,2.898550724637681,9.0,False
+EOL-1,Quality hold,27,baseline,0,1.0144927536231885,5.0,False
+EOL-1,Quality hold,28,baseline,2,1.6231884057971016,7.0,False
+EOL-1,Quality hold,29,baseline,2,1.6231884057971016,7.0,False
+EOL-1,Quality hold,30,baseline,1,1.6231884057971016,7.0,False
+EOL-1,Quality hold,31,baseline,2,1.6231884057971016,7.0,False
+EOL-1,Quality hold,32,baseline,0,1.6231884057971016,7.0,False
+EOL-1,Quality hold,33,baseline,4,1.6231884057971016,7.0,False
+EOL-1,Quality hold,34,baseline,0,1.6231884057971016,7.0,False
+EOL-1,Quality hold,35,baseline,3,1.6231884057971016,7.0,False
+EOL-1,Quality hold,36,monitor,2,1.6231884057971016,7.0,False
+EOL-1,Quality hold,37,monitor,1,1.6231884057971016,7.0,False
+EOL-1,Quality hold,38,monitor,1,1.6231884057971016,7.0,False
+EOL-1,Quality hold,39,monitor,4,1.6231884057971016,7.0,False
+EOL-1,Quality hold,40,monitor,3,1.6231884057971016,7.0,False
+EOL-1,Quality hold,41,monitor,0,1.6231884057971016,7.0,False
+EOL-1,Quality hold,42,monitor,2,1.6231884057971016,7.0,False
+EOL-1,Quality hold,43,monitor,2,1.6231884057971016,7.0,False
+EOL-1,Quality hold,44,monitor,1,1.6231884057971016,7.0,False
+EOL-1,Tester / fixture fault,27,baseline,4,3.4057971014492754,10.0,False
+EOL-1,Tester / fixture fault,28,baseline,4,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,29,baseline,8,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,30,baseline,7,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,31,baseline,6,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,32,baseline,3,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,33,baseline,5,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,34,baseline,5,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,35,baseline,5,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,36,monitor,2,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,37,monitor,4,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,38,monitor,6,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,39,monitor,8,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,40,monitor,6,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,41,monitor,16,5.449275362318841,14.0,True
+EOL-1,Tester / fixture fault,42,monitor,17,5.449275362318841,14.0,True
+EOL-1,Tester / fixture fault,43,monitor,13,5.449275362318841,14.0,False
+EOL-1,Tester / fixture fault,44,monitor,15,5.449275362318841,14.0,True
+SMT-1,Changeover overrun,27,baseline,2,3.2608695652173916,10.0,False
+SMT-1,Changeover overrun,28,baseline,6,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,29,baseline,6,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,30,baseline,6,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,31,baseline,3,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,32,baseline,1,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,33,baseline,5,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,34,baseline,10,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,35,baseline,6,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,36,monitor,4,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,37,monitor,4,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,38,monitor,3,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,39,monitor,4,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,40,monitor,6,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,41,monitor,4,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,42,monitor,3,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,43,monitor,6,5.217391304347826,13.0,False
+SMT-1,Changeover overrun,44,monitor,9,5.217391304347826,13.0,False
+SMT-1,Conveyor fault,27,baseline,3,1.2318840579710146,6.0,False
+SMT-1,Conveyor fault,28,baseline,3,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,29,baseline,1,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,30,baseline,2,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,31,baseline,1,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,32,baseline,1,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,33,baseline,2,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,34,baseline,2,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,35,baseline,2,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,36,monitor,4,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,37,monitor,2,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,38,monitor,4,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,39,monitor,3,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,40,monitor,5,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,41,monitor,6,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,42,monitor,4,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,43,monitor,5,1.9710144927536233,7.0,False
+SMT-1,Conveyor fault,44,monitor,1,1.9710144927536233,7.0,False
+SMT-1,Feeder jam / misload,27,baseline,11,8.768115942028986,19.0,False
+SMT-1,Feeder jam / misload,28,baseline,10,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,29,baseline,18,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,30,baseline,11,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,31,baseline,17,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,32,baseline,8,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,33,baseline,18,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,34,baseline,14,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,35,baseline,14,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,36,monitor,15,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,37,monitor,11,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,38,monitor,20,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,39,monitor,15,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,40,monitor,17,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,41,monitor,16,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,42,monitor,14,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,43,monitor,16,14.028985507246377,26.0,False
+SMT-1,Feeder jam / misload,44,monitor,17,14.028985507246377,26.0,False
+SMT-1,Material shortage,27,baseline,2,2.608695652173913,9.0,False
+SMT-1,Material shortage,28,baseline,4,4.173913043478261,11.0,False
+SMT-1,Material shortage,29,baseline,4,4.173913043478261,11.0,False
+SMT-1,Material shortage,30,baseline,5,4.173913043478261,11.0,False
+SMT-1,Material shortage,31,baseline,4,4.173913043478261,11.0,False
+SMT-1,Material shortage,32,baseline,6,4.173913043478261,11.0,False
+SMT-1,Material shortage,33,baseline,6,4.173913043478261,11.0,False
+SMT-1,Material shortage,34,baseline,2,4.173913043478261,11.0,False
+SMT-1,Material shortage,35,baseline,3,4.173913043478261,11.0,False
+SMT-1,Material shortage,36,monitor,4,4.173913043478261,11.0,False
+SMT-1,Material shortage,37,monitor,1,4.173913043478261,11.0,False
+SMT-1,Material shortage,38,monitor,3,4.173913043478261,11.0,False
+SMT-1,Material shortage,39,monitor,1,4.173913043478261,11.0,False
+SMT-1,Material shortage,40,monitor,5,4.173913043478261,11.0,False
+SMT-1,Material shortage,41,monitor,2,4.173913043478261,11.0,False
+SMT-1,Material shortage,42,monitor,4,4.173913043478261,11.0,False
+SMT-1,Material shortage,43,monitor,2,4.173913043478261,11.0,False
+SMT-1,Material shortage,44,monitor,6,4.173913043478261,11.0,False
+SMT-1,Operator unavailable,27,baseline,1,1.5217391304347827,6.0,False
+SMT-1,Operator unavailable,28,baseline,0,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,29,baseline,3,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,30,baseline,2,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,31,baseline,1,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,32,baseline,2,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,33,baseline,2,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,34,baseline,8,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,35,baseline,2,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,36,monitor,4,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,37,monitor,4,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,38,monitor,1,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,39,monitor,3,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,40,monitor,5,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,41,monitor,2,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,42,monitor,1,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,43,monitor,4,2.4347826086956523,8.0,False
+SMT-1,Operator unavailable,44,monitor,5,2.4347826086956523,8.0,False
+SMT-1,Pick-and-place nozzle error,27,baseline,8,5.434782608695652,14.0,False
+SMT-1,Pick-and-place nozzle error,28,baseline,10,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,29,baseline,6,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,30,baseline,7,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,31,baseline,11,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,32,baseline,8,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,33,baseline,7,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,34,baseline,7,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,35,baseline,11,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,36,monitor,11,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,37,monitor,8,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,38,monitor,7,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,39,monitor,9,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,40,monitor,7,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,41,monitor,6,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,42,monitor,7,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,43,monitor,3,8.695652173913043,19.0,False
+SMT-1,Pick-and-place nozzle error,44,monitor,7,8.695652173913043,19.0,False
+SMT-1,Quality hold,27,baseline,0,1.1594202898550725,5.0,False
+SMT-1,Quality hold,28,baseline,6,1.855072463768116,7.0,False
+SMT-1,Quality hold,29,baseline,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,30,baseline,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,31,baseline,0,1.855072463768116,7.0,False
+SMT-1,Quality hold,32,baseline,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,33,baseline,4,1.855072463768116,7.0,False
+SMT-1,Quality hold,34,baseline,2,1.855072463768116,7.0,False
+SMT-1,Quality hold,35,baseline,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,36,monitor,2,1.855072463768116,7.0,False
+SMT-1,Quality hold,37,monitor,0,1.855072463768116,7.0,False
+SMT-1,Quality hold,38,monitor,2,1.855072463768116,7.0,False
+SMT-1,Quality hold,39,monitor,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,40,monitor,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,41,monitor,0,1.855072463768116,7.0,False
+SMT-1,Quality hold,42,monitor,1,1.855072463768116,7.0,False
+SMT-1,Quality hold,43,monitor,3,1.855072463768116,7.0,False
+SMT-1,Quality hold,44,monitor,3,1.855072463768116,7.0,False
+SMT-1,Tester / fixture fault,27,baseline,2,0.43478260869565216,3.0,False
+SMT-1,Tester / fixture fault,28,baseline,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,29,baseline,1,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,30,baseline,1,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,31,baseline,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,32,baseline,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,33,baseline,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,34,baseline,2,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,35,baseline,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,36,monitor,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,37,monitor,2,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,38,monitor,3,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,39,monitor,1,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,40,monitor,1,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,41,monitor,0,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,42,monitor,3,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,43,monitor,1,0.6956521739130435,4.0,False
+SMT-1,Tester / fixture fault,44,monitor,0,0.6956521739130435,4.0,False
+SMT-2,Changeover overrun,27,baseline,12,10.289855072463768,21.0,False
+SMT-2,Changeover overrun,28,baseline,18,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,29,baseline,8,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,30,baseline,20,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,31,baseline,15,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,32,baseline,18,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,33,baseline,21,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,34,baseline,18,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,35,baseline,12,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,36,monitor,16,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,37,monitor,15,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,38,monitor,17,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,39,monitor,15,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,40,monitor,15,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,41,monitor,13,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,42,monitor,22,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,43,monitor,11,16.463768115942027,30.0,False
+SMT-2,Changeover overrun,44,monitor,19,16.463768115942027,30.0,False
+SMT-2,Conveyor fault,27,baseline,4,1.8840579710144927,7.0,False
+SMT-2,Conveyor fault,28,baseline,4,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,29,baseline,4,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,30,baseline,4,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,31,baseline,1,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,32,baseline,2,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,33,baseline,3,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,34,baseline,4,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,35,baseline,0,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,36,monitor,7,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,37,monitor,1,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,38,monitor,3,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,39,monitor,3,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,40,monitor,6,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,41,monitor,3,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,42,monitor,1,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,43,monitor,6,3.0144927536231885,9.0,False
+SMT-2,Conveyor fault,44,monitor,2,3.0144927536231885,9.0,False
+SMT-2,Feeder jam / misload,27,baseline,6,8.91304347826087,19.0,False
+SMT-2,Feeder jam / misload,28,baseline,11,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,29,baseline,11,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,30,baseline,21,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,31,baseline,12,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,32,baseline,12,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,33,baseline,16,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,34,baseline,19,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,35,baseline,15,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,36,monitor,11,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,37,monitor,9,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,38,monitor,14,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,39,monitor,15,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,40,monitor,13,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,41,monitor,19,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,42,monitor,13,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,43,monitor,11,14.26086956521739,27.0,False
+SMT-2,Feeder jam / misload,44,monitor,18,14.26086956521739,27.0,False
+SMT-2,Material shortage,27,baseline,1,2.608695652173913,9.0,False
+SMT-2,Material shortage,28,baseline,5,4.173913043478261,11.0,False
+SMT-2,Material shortage,29,baseline,4,4.173913043478261,11.0,False
+SMT-2,Material shortage,30,baseline,2,4.173913043478261,11.0,False
+SMT-2,Material shortage,31,baseline,6,4.173913043478261,11.0,False
+SMT-2,Material shortage,32,baseline,5,4.173913043478261,11.0,False
+SMT-2,Material shortage,33,baseline,4,4.173913043478261,11.0,False
+SMT-2,Material shortage,34,baseline,5,4.173913043478261,11.0,False
+SMT-2,Material shortage,35,baseline,4,4.173913043478261,11.0,False
+SMT-2,Material shortage,36,monitor,3,4.173913043478261,11.0,False
+SMT-2,Material shortage,37,monitor,4,4.173913043478261,11.0,False
+SMT-2,Material shortage,38,monitor,3,4.173913043478261,11.0,False
+SMT-2,Material shortage,39,monitor,3,4.173913043478261,11.0,False
+SMT-2,Material shortage,40,monitor,5,4.173913043478261,11.0,False
+SMT-2,Material shortage,41,monitor,4,4.173913043478261,11.0,False
+SMT-2,Material shortage,42,monitor,3,4.173913043478261,11.0,False
+SMT-2,Material shortage,43,monitor,9,4.173913043478261,11.0,False
+SMT-2,Material shortage,44,monitor,7,4.173913043478261,11.0,False
+SMT-2,Operator unavailable,27,baseline,0,1.5942028985507246,6.0,False
+SMT-2,Operator unavailable,28,baseline,3,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,29,baseline,5,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,30,baseline,4,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,31,baseline,2,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,32,baseline,3,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,33,baseline,2,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,34,baseline,2,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,35,baseline,1,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,36,monitor,3,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,37,monitor,1,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,38,monitor,3,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,39,monitor,2,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,40,monitor,5,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,41,monitor,3,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,42,monitor,1,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,43,monitor,1,2.550724637681159,8.0,False
+SMT-2,Operator unavailable,44,monitor,1,2.550724637681159,8.0,False
+SMT-2,Pick-and-place nozzle error,27,baseline,6,4.565217391304348,12.0,False
+SMT-2,Pick-and-place nozzle error,28,baseline,7,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,29,baseline,8,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,30,baseline,7,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,31,baseline,9,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,32,baseline,8,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,33,baseline,5,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,34,baseline,5,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,35,baseline,8,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,36,monitor,7,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,37,monitor,7,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,38,monitor,8,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,39,monitor,10,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,40,monitor,6,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,41,monitor,8,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,42,monitor,3,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,43,monitor,6,7.304347826086956,17.0,False
+SMT-2,Pick-and-place nozzle error,44,monitor,11,7.304347826086956,17.0,False
+SMT-2,Quality hold,27,baseline,2,1.5942028985507246,6.0,False
+SMT-2,Quality hold,28,baseline,2,2.550724637681159,8.0,False
+SMT-2,Quality hold,29,baseline,2,2.550724637681159,8.0,False
+SMT-2,Quality hold,30,baseline,4,2.550724637681159,8.0,False
+SMT-2,Quality hold,31,baseline,5,2.550724637681159,8.0,False
+SMT-2,Quality hold,32,baseline,3,2.550724637681159,8.0,False
+SMT-2,Quality hold,33,baseline,2,2.550724637681159,8.0,False
+SMT-2,Quality hold,34,baseline,1,2.550724637681159,8.0,False
+SMT-2,Quality hold,35,baseline,1,2.550724637681159,8.0,False
+SMT-2,Quality hold,36,monitor,3,2.550724637681159,8.0,False
+SMT-2,Quality hold,37,monitor,3,2.550724637681159,8.0,False
+SMT-2,Quality hold,38,monitor,3,2.550724637681159,8.0,False
+SMT-2,Quality hold,39,monitor,1,2.550724637681159,8.0,False
+SMT-2,Quality hold,40,monitor,2,2.550724637681159,8.0,False
+SMT-2,Quality hold,41,monitor,5,2.550724637681159,8.0,False
+SMT-2,Quality hold,42,monitor,2,2.550724637681159,8.0,False
+SMT-2,Quality hold,43,monitor,1,2.550724637681159,8.0,False
+SMT-2,Quality hold,44,monitor,1,2.550724637681159,8.0,False
+SMT-2,Tester / fixture fault,27,baseline,0,0.5072463768115942,4.0,False
+SMT-2,Tester / fixture fault,28,baseline,0,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,29,baseline,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,30,baseline,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,31,baseline,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,32,baseline,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,33,baseline,0,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,34,baseline,3,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,35,baseline,0,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,36,monitor,2,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,37,monitor,0,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,38,monitor,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,39,monitor,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,40,monitor,1,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,41,monitor,2,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,42,monitor,0,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,43,monitor,2,0.8115942028985508,5.0,False
+SMT-2,Tester / fixture fault,44,monitor,1,0.8115942028985508,5.0,False

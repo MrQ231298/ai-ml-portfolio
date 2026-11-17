@@ -1,0 +1,9 @@
+reason_key,reason,reason_category
+1,Feeder jam / misload,Equipment
+2,Pick-and-place nozzle error,Equipment
+3,Changeover overrun,Changeover
+4,Material shortage,Material
+5,Tester / fixture fault,Equipment
+6,Conveyor fault,Equipment
+7,Quality hold,Quality
+8,Operator unavailable,People

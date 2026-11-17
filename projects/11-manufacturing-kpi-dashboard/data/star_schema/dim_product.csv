@@ -1,0 +1,4 @@
+product_key,product_code,product_family
+1,ECU-A100,Body control module
+2,ECU-B200,Gateway module
+3,SNS-C300,Sensor module

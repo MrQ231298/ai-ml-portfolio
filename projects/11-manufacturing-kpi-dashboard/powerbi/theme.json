@@ -1,0 +1,10 @@
+{
+  "name": "Plant KPI (portfolio)",
+  "dataColors": ["#00798C", "#D1495B", "#EDAE49", "#3B6EA5", "#8E6C8A", "#30638E", "#66A182", "#A44A3F"],
+  "background": "#FFFFFF",
+  "foreground": "#1F2933",
+  "tableAccent": "#00798C",
+  "good": "#00798C",
+  "neutral": "#EDAE49",
+  "bad": "#D1495B"
+}

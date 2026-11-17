@@ -1,0 +1,218 @@
+{
+  "data_flag": "SYNTHETIC_EXAMPLE_DATA",
+  "period": "2026-07-01 to 2026-10-31",
+  "rows": {
+    "fact_production": 1128,
+    "fact_downtime": 2348,
+    "fact_defects": 2697,
+    "fact_target": 1128,
+    "dim_date": 123,
+    "dim_line": 4,
+    "dim_product": 3,
+    "dim_shift": 3,
+    "dim_downtime_reason": 8,
+    "dim_defect": 7
+  },
+  "headline": {
+    "planned_production_minutes": 507600.0,
+    "run_minutes": 453796.9,
+    "unplanned_downtime_minutes": 53803.1,
+    "total_count": 1042560,
+    "good_count": 1039206,
+    "first_pass_good_count": 1029352,
+    "scrap_count": 3354,
+    "rework_count": 9854,
+    "target_units": 1111191,
+    "availability": 0.894005,
+    "performance": 0.897794,
+    "quality": 0.987331,
+    "fpy": 0.987331,
+    "yield_after_rework": 0.996783,
+    "scrap_rate": 0.003217,
+    "output_vs_target": 0.935218,
+    "oee": 0.792464,
+    "oee_direct": 0.792948
+  },
+  "rty": 0.9665327386966487,
+  "by_line": [
+    {
+      "line": "ASSY-1",
+      "availability": 0.928235,
+      "performance": 0.898197,
+      "quality": 0.991466,
+      "oee": 0.826623,
+      "output_vs_target": 0.978139
+    },
+    {
+      "line": "EOL-1",
+      "availability": 0.909015,
+      "performance": 0.898096,
+      "quality": 0.989453,
+      "oee": 0.807772,
+      "output_vs_target": 0.95744
+    },
+    {
+      "line": "SMT-1",
+      "availability": 0.897565,
+      "performance": 0.897777,
+      "quality": 0.985558,
+      "oee": 0.794175,
+      "output_vs_target": 0.948189
+    },
+    {
+      "line": "SMT-2",
+      "availability": 0.841205,
+      "performance": 0.897043,
+      "quality": 0.984904,
+      "oee": 0.743205,
+      "output_vs_target": 0.881236
+    }
+  ],
+  "by_shift": [
+    {
+      "shift": "Early",
+      "availability": 0.892046,
+      "performance": 0.911122,
+      "quality": 0.987148,
+      "oee": 0.802318
+    },
+    {
+      "shift": "Late",
+      "availability": 0.897905,
+      "performance": 0.909734,
+      "quality": 0.98773,
+      "oee": 0.806832
+    },
+    {
+      "shift": "Night",
+      "availability": 0.892464,
+      "performance": 0.869735,
+      "quality": 0.987149,
+      "oee": 0.766232
+    }
+  ],
+  "downtime_pareto_top3": [
+    {
+      "reason": "Changeover overrun",
+      "minutes": 16524.9,
+      "share": 0.3071,
+      "cumulative_share": 0.3071
+    },
+    {
+      "reason": "Material shortage",
+      "minutes": 10264.4,
+      "share": 0.1908,
+      "cumulative_share": 0.4979
+    },
+    {
+      "reason": "Quality hold",
+      "minutes": 5971.1,
+      "share": 0.111,
+      "cumulative_share": 0.6089
+    }
+  ],
+  "oee_losses_minutes": {
+    "planned_production": 507600.0,
+    "availability_loss": 53803.09999999998,
+    "performance_loss": 46380.70000000001,
+    "quality_loss": 4915.666666666686,
+    "fully_productive": 402500.5333333333
+  },
+  "aggregation_pitfall": {
+    "weighted_oee": 0.7924639862941484,
+    "mean_of_shift_oee": 0.7929482532177567,
+    "a_x_p_x_q_vs_direct_gap": -0.00048426692360836743
+  },
+  "python_vs_sql_cross_check": {
+    "values_compared": 25,
+    "max_abs_difference": 9.992007221626409e-16
+  },
+  "detection": {
+    "P1_solder_spike": {
+      "planted_weeks": [
+        37,
+        38
+      ],
+      "weeks_flagged": [
+        37,
+        38
+      ],
+      "recall_weeks": 1.0
+    },
+    "P3_fixture_faults": {
+      "planted_weeks_monitored": 5,
+      "weeks_flagged": [
+        41,
+        42,
+        44
+      ],
+      "recall_weeks": 0.6
+    },
+    "pchart_false_alarms": {
+      "signals": 3,
+      "cells_monitored": 88
+    },
+    "downtime_chart_false_alarms": {
+      "signals": 0,
+      "cells_monitored": 247
+    },
+    "P2_line_reason_scan": {
+      "signals": [
+        {
+          "line": "EOL-1",
+          "reason": "Tester / fixture fault",
+          "rate_ratio": 9.348837209302326,
+          "p_bonferroni": 8.148912974291963e-44
+        },
+        {
+          "line": "SMT-2",
+          "reason": "Changeover overrun",
+          "rate_ratio": 3.1549815498154983,
+          "p_bonferroni": 9.80221233886252e-39
+        }
+      ],
+      "found_planted": true
+    },
+    "P4_night_shift": {
+      "night_minus_day_performance": -0.04075482184834145,
+      "ci95": [
+        -0.043766378723485204,
+        -0.03778544331584564
+      ],
+      "bootstrap_reps": 1000
+    }
+  },
+  "planted_issues": [
+    {
+      "id": "P1",
+      "what": "Solder-bridge spike on SMT-1 (e.g. after a stencil change)",
+      "line": "SMT-1",
+      "defect": "Solder bridge",
+      "from": "2026-09-07",
+      "to": "2026-09-20",
+      "multiplier": 4.0
+    },
+    {
+      "id": "P2",
+      "what": "Changeover overruns three times as frequent on SMT-2",
+      "line": "SMT-2",
+      "reason": "Changeover overrun",
+      "multiplier": 3.0
+    },
+    {
+      "id": "P3",
+      "what": "Tester / fixture faults on EOL-1 rise through October (wearing fixture)",
+      "line": "EOL-1",
+      "reason": "Tester / fixture fault",
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "multiplier": 3.0
+    },
+    {
+      "id": "P4",
+      "what": "Night shift runs ~4 percentage points slower (performance) on every line",
+      "shift": "Night",
+      "performance_delta": -0.04
+    }
+  ]
+}

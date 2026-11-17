@@ -1,0 +1,37 @@
+{
+  "data_flag": "SYNTHETIC_EXAMPLE_DATA",
+  "seed": 20261117,
+  "issues": [
+    {
+      "id": "P1",
+      "what": "Solder-bridge spike on SMT-1 (e.g. after a stencil change)",
+      "line": "SMT-1",
+      "defect": "Solder bridge",
+      "from": "2026-09-07",
+      "to": "2026-09-20",
+      "multiplier": 4.0
+    },
+    {
+      "id": "P2",
+      "what": "Changeover overruns three times as frequent on SMT-2",
+      "line": "SMT-2",
+      "reason": "Changeover overrun",
+      "multiplier": 3.0
+    },
+    {
+      "id": "P3",
+      "what": "Tester / fixture faults on EOL-1 rise through October (wearing fixture)",
+      "line": "EOL-1",
+      "reason": "Tester / fixture fault",
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "multiplier": 3.0
+    },
+    {
+      "id": "P4",
+      "what": "Night shift runs ~4 percentage points slower (performance) on every line",
+      "shift": "Night",
+      "performance_delta": -0.04
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+defect_key,defect,detected_at
+1,Solder bridge,AOI
+2,Missing component,AOI
+3,Tombstoning,AOI
+4,Connector mis-seat,Assembly check
+5,Housing damage,Visual
+6,Functional test fail,EOL test
+7,Label / traceability error,EOL test

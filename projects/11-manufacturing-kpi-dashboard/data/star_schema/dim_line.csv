@@ -1,0 +1,5 @@
+line_key,line,area,route_step
+1,SMT-1,Surface-mount,1
+2,SMT-2,Surface-mount,1
+3,ASSY-1,Final assembly,2
+4,EOL-1,End-of-line test,3
