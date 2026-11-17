@@ -61,6 +61,10 @@ underneath the Level 9 strands above, so an assessor can map either way.
 | T-PY | **Python programming** — readable, commented scripts and a small app; virtualenv and pinned requirements; reproducible seeds | L9-AU | 01-enquiry-classifier | `src/generate_synthetic_data.py`; `src/train.py`; `app.py`; `requirements.txt` | evidenced (emerging) |
 | T-DC | **Documentation and communication** — technical README, client case study, RPL log | L9-CO | 01-enquiry-classifier; rpl | `projects/01-enquiry-classifier/README.md`; `CODE_WALKTHROUGH.md`; `CASE_STUDY.md`; `reports/app_screenshot.png`; `rpl/RPL_EVIDENCE_LOG.md`; this file | evidenced (emerging) |
 | T-ET | **Ethics / GDPR** — synthetic data, no live PII, deployment obligations named | L9-ET | 01-enquiry-classifier | `data/README.md`; README § Critical evaluation; `app.py` notice | evidenced (emerging) |
+| T-SQL | **SQL and relational modelling** — star schemas, keyed upserts, analytical SQL, cross-checks against a second implementation (added 17 Nov 2026) | L9-RI | 11, 12, 14 | `projects/11-manufacturing-kpi-dashboard/src/kpi_sql.py`; `projects/12-sql-python-etl-pipeline/sql/`; `projects/14-azure-fabric-medallion-lakehouse/src/gold.py` | evidenced |
+| T-DE | **Data engineering** — incremental and idempotent pipelines, quarantine and retry, data-quality gates, lineage, lakehouse layers (added 17 Nov 2026) | L9-RI, L9-CE | 12, 14 | `projects/12-sql-python-etl-pipeline/src/etl/`; `projects/14-azure-fabric-medallion-lakehouse/src/`; both `reports/metrics.json` | evidenced |
+| T-BI | **Business intelligence and KPI design** — KPI definitions, dashboards, Power BI data model and DAX (added 17 Nov 2026) | L9-CO, L9-K | 11, 13 | `projects/11-manufacturing-kpi-dashboard/powerbi/`; both `app.py` | evidenced (emerging): DAX not executed |
+| T-CL | **Cloud data platform design** — Azure / Fabric service mapping, infrastructure as code (added 17 Nov 2026) | L9-K, L9-AU | 14 | `projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md`; `infra/main.bicep` | partial: designed and compiled, never deployed |
 
 ---
 
@@ -227,4 +231,93 @@ CSO Retail Sales Index, 13 sectors, Jan 2015 – Sep 2026.
 | T-DC | README with critical evaluation, `CASE_STUDY.md`, `CODE_WALKTHROUGH.md` and screenshot for each |
 | T-ET | Fairness audit (7); synthetic data and upload warnings (6, 8); licence checks (7, 9, 10) |
 
-Last updated: 15 November 2026 (Europe/Dublin).
+## 9. Analytics and data-engineering set (projects 11–15, 17 November 2026)
+
+Projects 11–15 widen the evidence from model building to the work
+analytics teams do day to day: KPI design and BI, SQL and ETL, data
+quality, measurement of marketing effect, lakehouse engineering and
+segmentation. The same protocol applies: metrics come only from real
+runs, results are checked against a known answer or a hold-out where
+possible, and what was *not* done is stated. Projects 11–13 use
+SYNTHETIC data with a known answer planted by a seeded generator;
+projects 14–15 use REAL public data (UCI, CC BY 4.0). Project 14 ran
+locally; nothing was deployed to Azure or Fabric.
+
+### 9.1 Project 11 additions (11-manufacturing-kpi-dashboard)
+
+SYNTHETIC four-line electronics assembly plant, July–October 2026, four planted issues.
+
+| ID | How project 11 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | OEE decomposition, rolled throughput yield, statistical process control (p- and c-charts), multiple-testing correction | `projects/11-manufacturing-kpi-dashboard/src/kpi_lib.py`; `README.md` § Approach | evidenced |
+| L9-CE | Detection scored against planted truth including false alarms (3 / 88 p-chart); a by-design line flagged by the rate scan, discussed; DAX not executed, stated | `README.md` § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Issues planted and recorded before analysis; two independent KPI implementations agree to 1 × 10⁻¹⁵; bootstrap CI for the shift effect | `data/star_schema/planted_issues.json`; `src/analyse.py`; `src/kpi_sql.py` | evidenced |
+| L9-CO | Power BI build guide for a non-developer; Streamlit dashboard; case study | `powerbi/POWERBI_BUILD_GUIDE.md`; `app.py`; `CASE_STUDY.md`; `reports/app_screenshot.png` | evidenced |
+| T-BI / T-SQL / T-EV / T-PY | DAX measures and theme; DuckDB SQL; SPC and detection metrics; 6 tests | `powerbi/`; `src/`; `tests/` | evidenced (emerging) for T-BI |
+
+### 9.2 Project 12 additions (12-sql-python-etl-pipeline)
+
+SYNTHETIC two-batch retail extracts with six injected defect types.
+
+| ID | How project 12 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Layered warehouse design, SCD type 1, late-arriving dimension handling, idempotency by file hash | `projects/12-sql-python-etl-pipeline/README.md` § Approach; `src/etl/load.py` | evidenced |
+| L9-CE | Ordering limit (newest-first load leaves 29 stale counties) found and documented; own generator bug found and fixed; injected defects test my rules, not unknown errors | `README.md` § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Reconciliation to an independent clean truth (difference 0.00); recall and precision per defect type; MD5 comparison across four load scenarios | `src/evaluate.py`; `reports/metrics.json` | evidenced |
+| L9-ET | Invalid emails quarantined; synthetic personal fields only | `data/README.md`; `reports/dq_report.md` | evidenced (emerging) |
+| T-DE / T-SQL / T-PY | Modular ETL package, CLI, 15 DQ checks, SQL marts, 18 unit and integration tests | `src/etl/`; `sql/`; `tests/` | evidenced |
+
+### 9.3 Project 13 additions (13-marketing-campaign-dashboard)
+
+SYNTHETIC simulation of 160,000 people, six channels, known causal effect per channel.
+
+| ID | How project 13 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Seven attribution models including Markov removal effect and Shapley values; incrementality and randomised hold-out tests | `projects/13-marketing-campaign-dashboard/src/attribution.py`; `README.md` | evidenced |
+| L9-CE | Every model scored against causal truth; first-click "win" identified as a simulation artefact; data-driven models no better than linear | `README.md` § Results and § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Simulation with ground truth chosen deliberately because real data has no known answer; hold-out CI checked against truth | `src/simulate.py`; `data/truth_incrementality.json` | evidenced |
+| L9-CO | Dashboard and plain-language insights for a marketing manager | `app.py`; `reports/insights.md`; `CASE_STUDY.md` | evidenced |
+| T-BI / T-EV / T-PY | Campaign KPIs; misallocation and rank metrics; 5 tests | `src/analyse.py`; `tests/` | evidenced |
+
+### 9.4 Project 14 additions (14-azure-fabric-medallion-lakehouse)
+
+REAL UCI Online Retail II, 1,067,371 rows. **Run locally with DuckDB and delta-rs; not deployed to Azure or Fabric.**
+
+| ID | How project 14 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Medallion architecture, Delta Lake transaction log and time travel, partition overwrite, Azure / Fabric service equivalents | `projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md`; `src/` | evidenced |
+| L9-CE | Three self-found bugs fixed (double count, non-deterministic tie, missing customers); cloud artefacts explicitly not deployed or executed | `README.md` § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Full vs incremental equivalence by MD5 across 7 tables; replay, correction and time-travel tests; 10 DQ checks | `src/evaluate.py`; `src/dq.py`; `reports/metrics.json` | evidenced |
+| L9-AU | Self-directed translation of a cloud design into a locally testable pipeline without a subscription | `README.md`; this log 2026-11-17 | evidenced (emerging) |
+| L9-ET | CC BY 4.0 attribution; pseudonymous IDs; raw data not committed | `README.md` § Data status | evidenced |
+| T-DE / T-SQL / T-CL | Delta pipeline; DuckDB SQL; Bicep (0 warnings, not deployed), ADF JSON and Fabric notebooks (not executed) | `src/`; `infra/`; `adf/`; `fabric/` | evidenced (T-DE, T-SQL); partial (T-CL) |
+
+### 9.5 Project 15 additions (15-customer-segmentation)
+
+REAL UCI Online Retail, 3,360 customers, calibration and 91-day hold-out windows.
+
+| ID | How project 15 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | k-means and Gaussian mixtures; internal validity indices; bootstrap ARI stability; RFM as an industry baseline | `projects/15-customer-segmentation/src/segment.py`; `README.md` § Approach | evidenced |
+| L9-CE | RFM beat k-means on the hold-out (AUC 0.739 vs 0.661), reported as the finding; weak structure and unstable k = 4 stated; post-hoc naming rule disclosed | `README.md` § Results and § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Time-split features vs outcomes; k-selection rule fixed in advance; scores built only from calibration data | `src/fetch_and_features.py`; `src/segment.py`; `reports/k_selection.csv` | evidenced |
+| L9-ET | CC BY 4.0 attribution; pseudonymous IDs only; derived features committed, raw data not | `data/README.md` | evidenced |
+| L9-CO | Plain-language segments, case study, adviser-segmentation transfer note, app | `CASE_STUDY.md`; `README.md` § Client value; `app.py` | evidenced |
+| T-ML / T-EV / T-PY | Unsupervised learning, AUC and η² validation, 6 tests | `src/`; `tests/` | evidenced |
+
+### 9.6 Summary for projects 11–15
+
+| Technical outcome | Projects 11–15 evidence |
+| --- | --- |
+| T-DP | Seeded generators with planted or injected truth (11, 12, 13); checksum-verified public downloads and documented cleaning (14, 15) |
+| T-ML | Clustering with stability and hold-out validation (15) |
+| T-EV | Detection vs planted issues (11); reconciliation and defect recall / precision (12); attribution vs causal truth and hold-out CI (13); load-equivalence tests (14); hold-out AUC vs baseline (15) |
+| T-SQL | DuckDB KPI SQL (11); warehouse and marts (12); gold star schema (14) |
+| T-DE | Quarantine, retry, idempotency (12); Delta medallion layers, watermark, correction handling (14) |
+| T-BI | Power BI kit (11); KPI dashboards (11, 13, 15) |
+| T-CL | Azure / Fabric mapping and Bicep, not deployed (14) |
+| T-PY | Five projects, pinned requirements, 40 `pytest` tests in total |
+| T-DC | README with critical evaluation, `CASE_STUDY.md`, `CODE_WALKTHROUGH.md` for each |
+| T-ET | Synthetic data where no real data could be used (11–13); licence attribution and pseudonymous IDs (14, 15) |
+
+Last updated: 17 November 2026 (Europe/Dublin).

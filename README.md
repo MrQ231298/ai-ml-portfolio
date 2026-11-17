@@ -1,7 +1,8 @@
 # AI / ML portfolio — Owen Quigley
 
-Machine learning work — beginner-friendly baselines (projects 1–5) and
-advanced prototypes (projects 6–10) — meant to do two jobs at once:
+Machine learning and data work — beginner-friendly baselines (projects
+1–5), advanced ML prototypes (projects 6–10) and business analytics /
+data engineering projects (11–15) — meant to do two jobs at once:
 
 1. **Client-ready demos and case studies** — small, working prototypes a
    non-specialist can try, with a plain-English write-up of the business
@@ -32,6 +33,16 @@ multi-series forecasting with a global model and a bootstrap
 significance check, and sentiment plus topic modelling on 22,641 real
 reviews. Each one reports what did *not* work as well as what did.
 
+**Projects 11–15 are the analytics and data-engineering set** (added 17
+November 2026): a manufacturing KPI dashboard (OEE, downtime, defects)
+with a Power BI build kit and a Streamlit equivalent, a SQL + Python ETL
+pipeline with quarantine and idempotency tests, a marketing campaign
+dashboard whose attribution models are scored against a known causal
+answer, a bronze/silver/gold lakehouse built locally on Delta tables and
+mapped to Azure and Microsoft Fabric (**run locally, not deployed to
+Azure**), and a customer segmentation checked against a later hold-out
+period.
+
 This repository is a starting point, not a claim that a single baseline
 model already satisfies a Master's award. Later projects should deepen
 the research, evaluation and professional practice that Level 9 asks
@@ -56,6 +67,11 @@ are there to show that distinction clearly.
 | 08 | [Invoice data extraction](projects/08-invoice-extraction/) | Accounts payable / document automation | [Streamlit app](projects/08-invoice-extraction/app.py); [code walkthrough](projects/08-invoice-extraction/CODE_WALKTHROUGH.md) | Advanced (evaluated 15 Nov 2026). SYNTHETIC invoices, digital + simulated scans. |
 | 09 | [Retail sales forecasting dashboard](projects/09-retail-sales-forecast/) | Irish retail sales, 13 sectors | [Streamlit dashboard](projects/09-retail-sales-forecast/app.py); [code walkthrough](projects/09-retail-sales-forecast/CODE_WALKTHROUGH.md) | Advanced (back-tested 15 Nov 2026). REAL public data (CSO RSM05 + RSM08, CC BY 4.0). |
 | 10 | [Review sentiment & topics](projects/10-review-sentiment-topics/) | E-commerce customer reviews | [Streamlit app](projects/10-review-sentiment-topics/app.py); [insights report](projects/10-review-sentiment-topics/reports/insights_report.md) | Advanced (trained 15 Nov 2026). REAL public reviews (CC0). |
+| 11 | [Manufacturing KPI dashboard](projects/11-manufacturing-kpi-dashboard/) | Electronics assembly plant: OEE, downtime, defects | [Streamlit dashboard](projects/11-manufacturing-kpi-dashboard/app.py); [Power BI build guide](projects/11-manufacturing-kpi-dashboard/powerbi/POWERBI_BUILD_GUIDE.md) | Analytics (run 17 Nov 2026). SYNTHETIC plant data with planted issues. DAX written, not executed. |
+| 12 | [SQL + Python ETL pipeline](projects/12-sql-python-etl-pipeline/) | Retail order extracts → warehouse → marts | [CLI](projects/12-sql-python-etl-pipeline/src/cli.py); [DQ report](projects/12-sql-python-etl-pipeline/reports/dq_report.md) | Data engineering (run 17 Nov 2026). SYNTHETIC extracts with injected defects. |
+| 13 | [Marketing campaign dashboard](projects/13-marketing-campaign-dashboard/) | Paid media, attribution, incrementality | [Streamlit dashboard](projects/13-marketing-campaign-dashboard/app.py); [insights](projects/13-marketing-campaign-dashboard/reports/insights.md) | Analytics (run 17 Nov 2026). SYNTHETIC simulation with known causal truth. |
+| 14 | [Medallion lakehouse (Azure / Fabric mapping)](projects/14-azure-fabric-medallion-lakehouse/) | Retail transactions, bronze/silver/gold | [Pipeline](projects/14-azure-fabric-medallion-lakehouse/src/run_pipeline.py); [Azure/Fabric mapping](projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md) | Data engineering (run 17 Nov 2026), **run locally, not on Azure**. REAL public data (UCI Online Retail II, CC BY 4.0). |
+| 15 | [Customer segmentation](projects/15-customer-segmentation/) | Retail / CRM customer segments (method transfers to advisers) | [Streamlit app](projects/15-customer-segmentation/app.py); [code walkthrough](projects/15-customer-segmentation/CODE_WALKTHROUGH.md) | Analytics (run 17 Nov 2026). REAL public data (UCI Online Retail, CC BY 4.0). |
 
 Each finished project should contain:
 
@@ -364,12 +380,118 @@ star review as the average.
 
 ---
 
+## Analytics and data-engineering projects 11–15: how to run and headline results
+
+All five were run on 17 November 2026 (Europe/Dublin) on Python 3.13.5;
+every number below is copied from that project's `reports/metrics.json`.
+Each folder has its own `requirements.txt`, `pytest` tests, README
+(problem, approach, results, client value, critical evaluation),
+`CASE_STUDY.md` and `CODE_WALKTHROUGH.md`.
+
+### Project 11 — manufacturing KPI dashboard (Power BI kit + Streamlit)
+
+```bash
+cd projects/11-manufacturing-kpi-dashboard
+pip install -r requirements.txt
+python src/generate_data.py && python src/analyse.py && pytest -q && streamlit run app.py
+```
+
+SYNTHETIC four-line electronics assembly plant (SMT, assembly, end-of-line
+test), July–October 2026, with four problems deliberately planted. Plant
+OEE **79.25%** (availability 89.40%, performance 89.78%, quality 98.73%);
+SMT-2 is the weakest line at 74.32%. Changeover overruns are 30.7% of
+unplanned downtime. pandas and SQL KPI implementations agree to 1 × 10⁻¹⁵.
+The monitoring rules found all four planted issues (2 of 2 solder-spike
+weeks, 3 of 5 fixture-fault weeks), with 3 false p-chart alarms in 88
+checks. The Power BI kit ([build guide](projects/11-manufacturing-kpi-dashboard/powerbi/POWERBI_BUILD_GUIDE.md),
+DAX measures, theme) was written but **not executed** (no Power BI on the
+Linux build machine).
+
+![Manufacturing KPI dashboard](projects/11-manufacturing-kpi-dashboard/reports/app_screenshot.png)
+
+### Project 12 — SQL + Python ETL pipeline
+
+```bash
+cd projects/12-sql-python-etl-pipeline
+pip install -r requirements.txt
+python src/generate_sources.py && python src/cli.py reset && python src/cli.py run-all && python src/evaluate.py && pytest -q
+```
+
+Two overlapping SYNTHETIC extract batches with six injected defect types,
+loaded into a DuckDB warehouse (cleaned extracts → core tables with SCD1 customers →
+marts). Net revenue **€858,984.52**, exactly matching the expected answer;
+all six defect types caught with recall and precision **1.00**; 809
+late-arriving orders loaded automatically by the retry. Re-runs, forced
+reprocessing and batch-by-batch loads give identical output; loading
+batches **newest first does not** (29 customers keep a stale county), which
+is documented. 18 tests.
+
+### Project 13 — marketing campaign dashboard with attribution
+
+```bash
+cd projects/13-marketing-campaign-dashboard
+pip install -r requirements.txt
+python src/simulate.py && python src/analyse.py && pytest -q && streamlit run app.py
+```
+
+SYNTHETIC six-channel campaign world (€224,533 spend, €2.67 m revenue)
+where the true causal effect of every channel is known. Platforms claimed
+**1.79×** the orders that had any ad contact; only 9,513 orders were truly
+caused by marketing. Last click misallocated **53.1%** of credit and
+overstated affiliate ROAS about 50× (4.47 vs a true 0.09); Markov (33.2%)
+and Shapley (31.6%) were no better than linear credit. A 10% randomised
+hold-out estimated 1,685 extra sales (95% CI 1,211–2,159) against a true
+1,966.
+
+![Marketing campaign dashboard](projects/13-marketing-campaign-dashboard/reports/app_screenshot_attribution.png)
+
+### Project 14 — medallion lakehouse, mapped to Azure / Fabric (run locally)
+
+```bash
+cd projects/14-azure-fabric-medallion-lakehouse
+pip install -r requirements.txt
+cd src && python fetch_and_land.py && python run_pipeline.py --reset && python evaluate.py && cd .. && pytest -q
+```
+
+**Run locally with Python, DuckDB and Delta tables (delta-rs), not on
+Azure.** No Azure subscription or Fabric workspace was used; the Bicep
+template compiled with 0 warnings but was never deployed, and the ADF
+pipeline JSON and Fabric notebooks were not executed. On REAL UCI Online
+Retail II data: 1,067,371 bronze rows → 34,335 exact duplicates removed →
+**1,033,036** silver rows. Three incremental loads were **identical** to a
+full load across all 7 silver and gold tables; replay and a corrected
+re-delivery (only 2011-03 rebuilt) behaved correctly; Delta time travel
+still read the pre-correction version; 10 / 10 data-quality checks
+passed; full run 5.4 s.
+
+![Monthly sales from the gold layer](projects/14-azure-fabric-medallion-lakehouse/reports/gold_monthly_sales.png)
+
+### Project 15 — customer segmentation
+
+```bash
+cd projects/15-customer-segmentation
+pip install -r requirements.txt
+python src/fetch_and_features.py && python src/segment.py && pytest -q && streamlit run app.py
+```
+
+3,360 REAL customers (UCI Online Retail), features from 2010-12-01 to
+2011-09-09, checked against the next 91 days. A fixed rule chose **k = 4**
+k-means segments (silhouette 0.309, bootstrap ARI 0.76 ± 0.28, so only
+moderately stable). The VIP / wholesale-scale segment is 36.8% of
+customers, 83.6% of spend and 79.2% of the next quarter's revenue. On the
+hold-out test, the simple **RFM score beat k-means** at predicting who
+buys again (AUC 0.739 vs 0.661), which is reported as the main finding.
+
+![Customer segmentation app](projects/15-customer-segmentation/reports/dashboard_segments.png)
+
+---
+
 ## RPL evidence
 
 | File | Purpose |
 | --- | --- |
 | [`rpl/LEARNING_OUTCOMES_MAP.md`](rpl/LEARNING_OUTCOMES_MAP.md) | Editable table: NFQ Level 9 descriptor → technical outcome → project → evidence file |
-| [`rpl/RPL_EVIDENCE_LOG.md`](rpl/RPL_EVIDENCE_LOG.md) | Dated activity log: projects 1–5 on 14 November 2026, projects 6–10 on 15 November 2026 |
+| [`rpl/RPL_EVIDENCE_LOG.md`](rpl/RPL_EVIDENCE_LOG.md) | Dated activity log: projects 1–5 on 14 November 2026, projects 6–10 on 15 November 2026, projects 11–15 on 17 November 2026 |
 
 If a chosen programme publishes its own module outcomes, copy a new
 column into the map rather than rewriting the projects.
@@ -397,6 +519,13 @@ excluded from the model and used only for a fairness audit. Project 9
 uses **CSO official statistics** (CC BY 4.0). Project 10 uses a **CC0
 public dataset** of anonymised reviews; reviewer age is not used.
 
+Projects 11, 12 and 13 use **SYNTHETIC** data generated by seeded scripts
+(a fictional plant, retailer and campaign set); no employer or client data
+was used. Projects 14 and 15 use the **UCI Online Retail II / Online
+Retail** datasets (CC BY 4.0), whose customer IDs are pseudonymous numbers
+with no names or contact details; the raw files are downloaded and
+checksum-verified by the code and are not committed.
+
 ---
 
 ## Repository layout
@@ -417,6 +546,11 @@ ai-ml-portfolio/
   projects/08-invoice-extraction/
   projects/09-retail-sales-forecast/
   projects/10-review-sentiment-topics/
+  projects/11-manufacturing-kpi-dashboard/
+  projects/12-sql-python-etl-pipeline/
+  projects/13-marketing-campaign-dashboard/
+  projects/14-azure-fabric-medallion-lakehouse/
+  projects/15-customer-segmentation/
 ```
 
 This repository is released under the [MIT License](LICENSE).

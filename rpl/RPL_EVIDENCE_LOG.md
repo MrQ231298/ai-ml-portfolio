@@ -256,3 +256,74 @@ files that exist. Do not back-fill metrics from memory.
 ---
 
 *End of entries for 15 November 2026.*
+
+---
+
+### 2026-11-17 — Project 11: manufacturing KPI dashboard with Power BI kit and Streamlit equivalent (SYNTHETIC plant data)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Wrote a seeded generator for a four-line electronics assembly plant (SMT, assembly, end-of-line test; July–October 2026) as a star schema (shifts, production runs, downtime events, defects), with four problems planted and recorded in `planted_issues.json` before analysis. Implemented OEE, availability, performance, quality, rolled throughput yield and output-vs-target twice (pandas and SQL in DuckDB) and cross-checked them. Added monitoring rules (weekly p-chart and c-chart, a Bonferroni-corrected rate scan, a bootstrap shift comparison) and scored them against the planted issues, including false alarms. Wrote a Power BI kit (DAX measures, theme, step-by-step build guide) and a Streamlit dashboard with the same definitions.
+- **Artefacts:**
+  - `projects/11-manufacturing-kpi-dashboard/` (full project)
+  - `projects/11-manufacturing-kpi-dashboard/powerbi/POWERBI_BUILD_GUIDE.md`, `measures.dax`, `theme.json`
+  - `projects/11-manufacturing-kpi-dashboard/reports/metrics.json`, `app_screenshot.png`, `downtime_pareto.png`, `pchart_smt1_solder_bridge.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-DP, T-EV, T-PY, T-DC, T-BI, T-SQL
+- **Reflection:** Plant OEE 79.25%, SMT-2 lowest at 74.32%; pandas and SQL agreed to 1 × 10⁻¹⁵. All four planted issues were detected, but P3 only in 3 of 5 weeks, and the p-chart raised 3 false alarms in 88 checks (the c-chart 0 in 247). The rate scan also flagged a line that is different by design, which shows that statistics need a domain filter. The DAX was not executed because Power BI Desktop does not run on the Linux build machine; the guide includes a table of expected values to check it against. Synthetic data with planted effects makes detection look easier than on a real plant.
+- **Assessor notes:**
+
+### 2026-11-17 — Project 12: SQL + Python ETL pipeline with quarantine, retries and idempotency tests (SYNTHETIC extracts)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Generated two overlapping SYNTHETIC retail extract batches (customers, products, orders, order lines) from a clean "truth" with six defect types injected and logged. Built a modular pipeline (extract with hashes and manifest, pure-function cleaning, DuckDB load with key-based upserts, SCD type 1 customers, a quarantine with automatic retry for late-arriving parents, SQL marts, 15 data-quality checks with error/warn severities) and a CLI. Evaluated reconciliation to the truth, defect recall and precision, and idempotency under re-run, forced reprocess, one-batch-per-call and reversed batch order. 18 unit and integration tests.
+- **Artefacts:**
+  - `projects/12-sql-python-etl-pipeline/` (full project)
+  - `projects/12-sql-python-etl-pipeline/sql/`, `src/etl/`, `src/cli.py`
+  - `projects/12-sql-python-etl-pipeline/reports/metrics.json`, `dq_report.md`, `reports/marts/`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-EV, T-PY, T-DC, T-SQL, T-DE
+- **Reflection:** Revenue reconciled exactly (€858,984.52, difference 0.00) and all six defect types were caught with recall and precision 1.00, but the defects were injected by my own generator, so this tests the rules I wrote rather than unknown real-world errors. The ordering test exposed a genuine design limit: loading batches newest first leaves 29 customers with a stale county, because SCD1 means "last batch loaded wins". I documented it rather than hide it. I also found and fixed a bug in my own generator (mixed-format date parsing swapped day and month and created 369 false future-dated rows), which is recorded in the README.
+- **Assessor notes:**
+
+### 2026-11-17 — Project 13: marketing campaign dashboard, attribution models scored against causal truth (SYNTHETIC)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built a seeded simulation of 160,000 people exposed to six channels and 14 campaigns (January–October 2026), where each channel's true incremental effect is known. Produced the platform-style campaign export, a KPI dashboard (spend, CTR, CPA, ROAS), seven attribution models (first/last click, linear, time decay, position-based, Markov removal effect, Shapley) and a randomised 10% hold-out test. Scored every model against the simulated truth (credit misallocation, rank correlation, true incremental ROAS).
+- **Artefacts:**
+  - `projects/13-marketing-campaign-dashboard/` (full project)
+  - `projects/13-marketing-campaign-dashboard/src/attribution.py`, `src/simulate.py`
+  - `projects/13-marketing-campaign-dashboard/reports/metrics.json`, `insights.md`, `attribution_vs_truth.png`, `roas_last_click_vs_true.png`, `app_screenshot.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-EV, T-PY, T-DC, T-BI
+- **Reflection:** Platforms claimed 1.79× the orders with any ad contact, and only 9,513 orders were truly caused by marketing. Last click misallocated 53.1% of credit and overstated affiliate ROAS about 50×. First click scored best (8.0%), but only because of how my simulation timed touches, so I report it as an artefact and not a recommendation. The data-driven models (Markov 33.2%, Shapley 31.6%) were no better than linear credit. The hold-out (1,685, CI 1,211–2,159) contained the truth (1,966). Synthetic data was chosen because public campaign datasets either carry non-commercial licences or have no known causal answer; real-world validity depends on the simulation's assumptions.
+- **Assessor notes:**
+
+### 2026-11-17 — Project 14: medallion lakehouse on Delta tables, mapped to Azure / Fabric (REAL public data; run locally, not on Azure)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Downloaded UCI Online Retail II (CC BY 4.0) with checksum and split it into 25 monthly landing files. Built bronze (raw strings plus lineage, file-hash watermark), silver (typed, de-duplicated, classified line types, month partitions replaced with a predicate overwrite when a file is corrected) and gold (star schema and aggregates) Delta tables using DuckDB and delta-rs, with 10 data-quality checks. Tested full vs three incremental loads, replay, a corrected re-delivery and Delta time travel. Wrote Bicep infrastructure-as-code (compiled and linted, not deployed), an Azure Data Factory pipeline definition, Fabric PySpark notebook ports (not executed) and a service-by-service mapping document.
+- **Artefacts:**
+  - `projects/14-azure-fabric-medallion-lakehouse/` (full project)
+  - `projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md`, `infra/main.bicep`, `infra/main.json`, `adf/`, `fabric/notebooks/`
+  - `projects/14-azure-fabric-medallion-lakehouse/reports/metrics.json`, `gold_monthly_sales.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-EV, T-PY, T-DC, T-DE, T-SQL, T-CL
+- **Reflection:** 1,067,371 bronze rows became 1,033,036 silver rows after 34,335 exact duplicates were removed; incremental and full loads were identical across all 7 tables, and 10 of 10 checks passed in 5.4 s. Testing found three bugs in my first version, all fixed: a control-table check that double-counted by reading raw Parquet instead of the Delta log, a non-deterministic tie-break in the product dimension, and 23 customers missing from the customer dimension because they only had cancellations. The main limit is explicit: **no Azure subscription or Fabric workspace was used**. The Azure and Fabric artefacts show design knowledge, not operational experience, and PySpark could not be run locally (no Java).
+- **Assessor notes:**
+
+### 2026-11-17 — Project 15: customer segmentation with stability and hold-out validation (REAL public data)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Downloaded UCI Online Retail (CC BY 4.0) with checksum, cleaned it (duplicates, missing customers, non-product codes, non-positive prices) and built seven behaviour features per customer from a calibration window, with next-91-day outcomes kept separate. Fixed in advance a rule for the number of segments (highest silhouette among k = 3–8 with mean bootstrap ARI ≥ 0.75). Ran k-means and Gaussian mixtures for k = 2–10 with five diagnostics, chose k = 4, checked seed stability, named segments by rules, and compared k-means against an RFM quintile baseline on the hold-out period (AUC and η²). Built a Streamlit app with a scoring form and 6 tests.
+- **Artefacts:**
+  - `projects/15-customer-segmentation/` (full project)
+  - `projects/15-customer-segmentation/reports/metrics.json`, `k_selection.csv`, `segment_profiles.csv`, `kmeans_vs_rfm_crosstab.csv`
+  - `projects/15-customer-segmentation/reports/k_selection.png`, `segments_pca.png`, `dashboard_segments.png`, `dashboard_holdout.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-DP, T-ML, T-EV, T-PY, T-DC
+- **Reflection:** The VIP / wholesale-scale segment (36.8% of customers) held 83.6% of spend and 79.2% of the next quarter's revenue. But the structure is weak (silhouette 0.309), k = 4 only just met the stability bar (ARI 0.76 ± 0.28), and on the hold-out test the simple RFM score beat k-means (AUC 0.739 vs 0.661). I reported that rather than tune the clustering until it won, which would leak the hold-out. One naming rule (High-cancellation) was added after the first run; it changes a label, not any assignment, and this is disclosed. The method transfers to adviser or partner segmentation, but that was not tested on adviser data.
+- **Assessor notes:**
+
+---
+
+*End of entries for 17 November 2026.*
