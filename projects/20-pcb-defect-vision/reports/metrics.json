@@ -1,0 +1,453 @@
+{
+  "test_counts": {
+    "ok": 1500,
+    "open": 659,
+    "short": 478,
+    "mousebite": 586,
+    "spur": 483,
+    "copper": 464,
+    "pin-hole": 470
+  },
+  "training": {
+    "small_cnn_scratch": {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.4467,
+          "val_macro_f1": 0.4491,
+          "elapsed_s": 39.2
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8692,
+          "val_macro_f1": 0.5433,
+          "elapsed_s": 76.2
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.5277,
+          "val_macro_f1": 0.5816,
+          "elapsed_s": 111.0
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.355,
+          "val_macro_f1": 0.8617,
+          "elapsed_s": 147.2
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.2571,
+          "val_macro_f1": 0.8882,
+          "elapsed_s": 176.1
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.2203,
+          "val_macro_f1": 0.9063,
+          "elapsed_s": 200.6
+        }
+      ],
+      "best_val_macro_f1": 0.9063,
+      "train_seconds": 200.6,
+      "params": 187047,
+      "input_size": 64
+    },
+    "resnet18_imagenet": {
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.6583,
+          "val_macro_f1": 0.9026,
+          "elapsed_s": 43.7
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1981,
+          "val_macro_f1": 0.8417,
+          "elapsed_s": 88.0
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.1101,
+          "val_macro_f1": 0.9352,
+          "elapsed_s": 145.9
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.0709,
+          "val_macro_f1": 0.9483,
+          "elapsed_s": 199.1
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.038,
+          "val_macro_f1": 0.9651,
+          "elapsed_s": 253.1
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.0295,
+          "val_macro_f1": 0.9693,
+          "elapsed_s": 305.2
+        }
+      ],
+      "best_val_macro_f1": 0.9693,
+      "train_seconds": 305.2,
+      "params": 11180103,
+      "input_size": 96
+    },
+    "threads": 4
+  },
+  "classifiers": {
+    "small_cnn_scratch": {
+      "accuracy": 0.9373,
+      "macro_f1": 0.935,
+      "per_class": {
+        "ok": {
+          "precision": 0.9675,
+          "recall": 0.934,
+          "f1": 0.9505,
+          "support": 1500
+        },
+        "open": {
+          "precision": 0.9393,
+          "recall": 0.915,
+          "f1": 0.927,
+          "support": 659
+        },
+        "short": {
+          "precision": 0.8481,
+          "recall": 0.8996,
+          "f1": 0.8731,
+          "support": 478
+        },
+        "mousebite": {
+          "precision": 0.8958,
+          "recall": 0.9386,
+          "f1": 0.9167,
+          "support": 586
+        },
+        "spur": {
+          "precision": 0.9471,
+          "recall": 0.9275,
+          "f1": 0.9372,
+          "support": 483
+        },
+        "copper": {
+          "precision": 0.9681,
+          "recall": 0.9806,
+          "f1": 0.9743,
+          "support": 464
+        },
+        "pin-hole": {
+          "precision": 0.9506,
+          "recall": 0.983,
+          "f1": 0.9665,
+          "support": 470
+        }
+      },
+      "confusion_matrix": [
+        [
+          1401,
+          13,
+          58,
+          8,
+          12,
+          5,
+          3
+        ],
+        [
+          8,
+          603,
+          3,
+          40,
+          1,
+          3,
+          1
+        ],
+        [
+          11,
+          8,
+          430,
+          10,
+          3,
+          2,
+          14
+        ],
+        [
+          9,
+          13,
+          5,
+          550,
+          5,
+          0,
+          4
+        ],
+        [
+          17,
+          3,
+          6,
+          3,
+          448,
+          5,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          4,
+          455,
+          1
+        ],
+        [
+          0,
+          0,
+          5,
+          3,
+          0,
+          0,
+          462
+        ]
+      ],
+      "defect_vs_ok": {
+        "threshold": 0.183769,
+        "auroc": 0.9921,
+        "precision": 0.9116,
+        "recall": 0.9981,
+        "false_alarm_rate": 0.2027,
+        "f1": 0.9529,
+        "missed_defects": 6,
+        "false_alarms": 304
+      },
+      "cpu_ms_per_patch_batched": 0.98,
+      "by_board_group_seen_in_training": {
+        "seen": {
+          "patches": 1549,
+          "macro_f1": 0.9229
+        },
+        "unseen": {
+          "patches": 3091,
+          "macro_f1": 0.941
+        }
+      }
+    },
+    "resnet18_imagenet": {
+      "accuracy": 0.9802,
+      "macro_f1": 0.9806,
+      "per_class": {
+        "ok": {
+          "precision": 0.9838,
+          "recall": 0.9727,
+          "f1": 0.9782,
+          "support": 1500
+        },
+        "open": {
+          "precision": 0.9716,
+          "recall": 0.9863,
+          "f1": 0.9789,
+          "support": 659
+        },
+        "short": {
+          "precision": 0.9726,
+          "recall": 0.9644,
+          "f1": 0.9685,
+          "support": 478
+        },
+        "mousebite": {
+          "precision": 0.9914,
+          "recall": 0.9829,
+          "f1": 0.9871,
+          "support": 586
+        },
+        "spur": {
+          "precision": 0.9854,
+          "recall": 0.9793,
+          "f1": 0.9823,
+          "support": 483
+        },
+        "copper": {
+          "precision": 0.9664,
+          "recall": 0.9914,
+          "f1": 0.9787,
+          "support": 464
+        },
+        "pin-hole": {
+          "precision": 0.9832,
+          "recall": 0.9979,
+          "f1": 0.9905,
+          "support": 470
+        }
+      },
+      "confusion_matrix": [
+        [
+          1459,
+          15,
+          12,
+          1,
+          2,
+          9,
+          2
+        ],
+        [
+          3,
+          650,
+          0,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          8,
+          2,
+          461,
+          0,
+          3,
+          3,
+          1
+        ],
+        [
+          6,
+          1,
+          0,
+          576,
+          1,
+          0,
+          2
+        ],
+        [
+          5,
+          1,
+          0,
+          0,
+          473,
+          3,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          1,
+          460,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          469
+        ]
+      ],
+      "defect_vs_ok": {
+        "threshold": 0.149326,
+        "auroc": 0.9985,
+        "precision": 0.9751,
+        "recall": 0.9962,
+        "false_alarm_rate": 0.0533,
+        "f1": 0.9855,
+        "missed_defects": 12,
+        "false_alarms": 80
+      },
+      "cpu_ms_per_patch_batched": 2.315,
+      "by_board_group_seen_in_training": {
+        "seen": {
+          "patches": 1549,
+          "macro_f1": 0.9743
+        },
+        "unseen": {
+          "patches": 3091,
+          "macro_f1": 0.9838
+        }
+      }
+    }
+  },
+  "golden_template_baseline": {
+    "threshold": 0.002881,
+    "auroc": 0.9683,
+    "precision": 0.9717,
+    "recall": 0.9857,
+    "false_alarm_rate": 0.06,
+    "f1": 0.9787,
+    "missed_defects": 45,
+    "false_alarms": 90,
+    "smoothing": 5,
+    "grey_threshold": 150,
+    "val_auroc": 0.9964,
+    "test_false_alarm_rate_by_group": {
+      "group00041": 0.0317,
+      "group12000": 0.381,
+      "group12100": 0.0502,
+      "group12300": 0.0986,
+      "group13000": 0.0185,
+      "group20085": 0.0098,
+      "group44000": 0.0,
+      "group50600": 0.023,
+      "group77000": 0.0,
+      "group90100": 0.0766,
+      "group92000": 0.0
+    },
+    "train_auroc_grid": {
+      "k1_t40": 0.8932,
+      "k1_t60": 0.8933,
+      "k1_t100": 0.8932,
+      "k1_t150": 0.8932,
+      "k3_t40": 0.8398,
+      "k3_t60": 0.8456,
+      "k3_t100": 0.9153,
+      "k3_t150": 0.934,
+      "k5_t40": 0.8256,
+      "k5_t60": 0.897,
+      "k5_t100": 0.9263,
+      "k5_t150": 0.9686
+    }
+  },
+  "patchcore_lite": {
+    "threshold": 2.6005,
+    "auroc": 0.9465,
+    "precision": 0.895,
+    "recall": 0.9885,
+    "false_alarm_rate": 0.2427,
+    "f1": 0.9395,
+    "missed_defects": 36,
+    "false_alarms": 364,
+    "memory_bank": 10000,
+    "ok_train_patches": 2367,
+    "seconds": 20.1
+  },
+  "test_board_groups": [
+    "group00041",
+    "group12000",
+    "group12100",
+    "group12300",
+    "group13000",
+    "group20085",
+    "group44000",
+    "group50600",
+    "group77000",
+    "group90100",
+    "group92000"
+  ],
+  "trainval_board_groups": [
+    "group00041",
+    "group13000",
+    "group20085",
+    "group44000",
+    "group50600",
+    "group77000",
+    "group92000"
+  ],
+  "test_groups_unseen_in_trainval": [
+    "group12000",
+    "group12100",
+    "group12300",
+    "group90100"
+  ]
+}

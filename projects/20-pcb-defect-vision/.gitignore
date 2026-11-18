@@ -1,0 +1,4 @@
+downloads/
+data/patches/
+# 45 MB; re-create with `python src/train.py` (about 5 minutes on 4 CPU threads)
+models/resnet18_imagenet.pt

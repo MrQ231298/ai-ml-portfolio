@@ -1,0 +1,49 @@
+{
+  "source": "https://github.com/tangsanli5201/DeepPCB",
+  "commit": "08e98c4db5922613fb97176eb3d6497d48260cb1",
+  "licence": "MIT",
+  "citation": "Tang, S., He, F., Huang, X., Yang, J. (2019). Online PCB Defect Detector On A New PCB Defect Dataset. arXiv:1902.06197",
+  "patch": 64,
+  "classes": [
+    "ok",
+    "open",
+    "short",
+    "mousebite",
+    "spur",
+    "copper",
+    "pin-hole"
+  ],
+  "val_groups": [
+    "group77000",
+    "group92000"
+  ],
+  "counts": {
+    "train": {
+      "ok": 2367,
+      "open": 1070,
+      "short": 867,
+      "mousebite": 1184,
+      "spur": 956,
+      "copper": 840,
+      "pin-hole": 821
+    },
+    "val": {
+      "ok": 633,
+      "open": 213,
+      "short": 161,
+      "mousebite": 195,
+      "spur": 186,
+      "copper": 170,
+      "pin-hole": 210
+    },
+    "test": {
+      "ok": 1500,
+      "open": 659,
+      "short": 478,
+      "mousebite": 586,
+      "spur": 483,
+      "copper": 464,
+      "pin-hole": 470
+    }
+  }
+}
