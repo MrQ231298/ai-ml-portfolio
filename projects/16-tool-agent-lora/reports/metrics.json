@@ -1,0 +1,345 @@
+{
+  "generated_at": "2026-11-18T00:50:28+0000",
+  "device": "cpu (8 threads)",
+  "sampling": "first 4 tasks per family per split",
+  "test_sizes": {
+    "test_id": 40,
+    "test_ood": 40
+  },
+  "planners": {
+    "base_fewshot": {
+      "test_id": {
+        "n": 40,
+        "task_success": 0.15,
+        "task_success_ci95": [
+          0.05,
+          0.25
+        ],
+        "task_success_first_try": 0.15,
+        "valid_json_rate": 1.0,
+        "tool_sequence_accuracy": 0.175,
+        "first_tool_accuracy": 0.25,
+        "sql_execution_accuracy": 0.0714,
+        "repair_rate": 0.05,
+        "mean_seconds_per_task": 1.506,
+        "by_family_success": {
+          "count_orders": 0.0,
+          "discount_calc": 0.0,
+          "doc_lookup": 0.5,
+          "order_total": 0.0,
+          "price_lookup": 0.25,
+          "revenue_category": 0.0,
+          "revenue_incl_vat": 0.0,
+          "segment_count": 0.0,
+          "top_product": 0.0,
+          "vat_calc": 0.75
+        }
+      },
+      "test_ood": {
+        "n": 40,
+        "task_success": 0.125,
+        "task_success_ci95": [
+          0.025,
+          0.225
+        ],
+        "task_success_first_try": 0.125,
+        "valid_json_rate": 1.0,
+        "tool_sequence_accuracy": 0.175,
+        "first_tool_accuracy": 0.2,
+        "sql_execution_accuracy": 0.1429,
+        "repair_rate": 0.0,
+        "mean_seconds_per_task": 1.368,
+        "by_family_success": {
+          "count_orders": 0.0,
+          "discount_calc": 0.0,
+          "doc_lookup": 0.5,
+          "order_total": 0.75,
+          "price_lookup": 0.0,
+          "revenue_category": 0.0,
+          "revenue_incl_vat": 0.0,
+          "segment_count": 0.0,
+          "top_product": 0.0,
+          "vat_calc": 0.0
+        }
+      }
+    },
+    "base_zeroshot": {
+      "test_id": {
+        "n": 40,
+        "task_success": 0.0,
+        "task_success_ci95": [
+          0.0,
+          0.0
+        ],
+        "task_success_first_try": 0.0,
+        "valid_json_rate": 0.1,
+        "tool_sequence_accuracy": 0.0,
+        "first_tool_accuracy": 0.0,
+        "sql_execution_accuracy": 0.0,
+        "repair_rate": 1.0,
+        "mean_seconds_per_task": 11.507,
+        "by_family_success": {
+          "count_orders": 0.0,
+          "discount_calc": 0.0,
+          "doc_lookup": 0.0,
+          "order_total": 0.0,
+          "price_lookup": 0.0,
+          "revenue_category": 0.0,
+          "revenue_incl_vat": 0.0,
+          "segment_count": 0.0,
+          "top_product": 0.0,
+          "vat_calc": 0.0
+        }
+      },
+      "test_ood": {
+        "n": 40,
+        "task_success": 0.0,
+        "task_success_ci95": [
+          0.0,
+          0.0
+        ],
+        "task_success_first_try": 0.0,
+        "valid_json_rate": 0.0,
+        "tool_sequence_accuracy": 0.0,
+        "first_tool_accuracy": 0.0,
+        "sql_execution_accuracy": 0.0,
+        "repair_rate": 1.0,
+        "mean_seconds_per_task": 4.199,
+        "by_family_success": {
+          "count_orders": 0.0,
+          "discount_calc": 0.0,
+          "doc_lookup": 0.0,
+          "order_total": 0.0,
+          "price_lookup": 0.0,
+          "revenue_category": 0.0,
+          "revenue_incl_vat": 0.0,
+          "segment_count": 0.0,
+          "top_product": 0.0,
+          "vat_calc": 0.0
+        }
+      }
+    },
+    "gold_plan": {
+      "test_id": {
+        "n": 40,
+        "task_success": 1.0,
+        "task_success_ci95": [
+          1.0,
+          1.0
+        ],
+        "task_success_first_try": 1.0,
+        "valid_json_rate": 1.0,
+        "tool_sequence_accuracy": 1.0,
+        "first_tool_accuracy": 1.0,
+        "sql_execution_accuracy": 1.0,
+        "repair_rate": 0.0,
+        "mean_seconds_per_task": 0.0,
+        "by_family_success": {
+          "count_orders": 1.0,
+          "discount_calc": 1.0,
+          "doc_lookup": 1.0,
+          "order_total": 1.0,
+          "price_lookup": 1.0,
+          "revenue_category": 1.0,
+          "revenue_incl_vat": 1.0,
+          "segment_count": 1.0,
+          "top_product": 1.0,
+          "vat_calc": 1.0
+        }
+      },
+      "test_ood": {
+        "n": 40,
+        "task_success": 1.0,
+        "task_success_ci95": [
+          1.0,
+          1.0
+        ],
+        "task_success_first_try": 1.0,
+        "valid_json_rate": 1.0,
+        "tool_sequence_accuracy": 1.0,
+        "first_tool_accuracy": 1.0,
+        "sql_execution_accuracy": 1.0,
+        "repair_rate": 0.0,
+        "mean_seconds_per_task": 0.0,
+        "by_family_success": {
+          "count_orders": 1.0,
+          "discount_calc": 1.0,
+          "doc_lookup": 1.0,
+          "order_total": 1.0,
+          "price_lookup": 1.0,
+          "revenue_category": 1.0,
+          "revenue_incl_vat": 1.0,
+          "segment_count": 1.0,
+          "top_product": 1.0,
+          "vat_calc": 1.0
+        }
+      }
+    },
+    "lora": {
+      "test_id": {
+        "n": 40,
+        "task_success": 0.975,
+        "task_success_ci95": [
+          0.925,
+          1.0
+        ],
+        "task_success_first_try": 0.975,
+        "valid_json_rate": 1.0,
+        "tool_sequence_accuracy": 1.0,
+        "first_tool_accuracy": 1.0,
+        "sql_execution_accuracy": 1.0,
+        "repair_rate": 0.0,
+        "mean_seconds_per_task": 2.27,
+        "by_family_success": {
+          "count_orders": 1.0,
+          "discount_calc": 1.0,
+          "doc_lookup": 0.75,
+          "order_total": 1.0,
+          "price_lookup": 1.0,
+          "revenue_category": 1.0,
+          "revenue_incl_vat": 1.0,
+          "segment_count": 1.0,
+          "top_product": 1.0,
+          "vat_calc": 1.0
+        }
+      },
+      "test_ood": {
+        "n": 40,
+        "task_success": 0.85,
+        "task_success_ci95": [
+          0.725,
+          0.95
+        ],
+        "task_success_first_try": 0.85,
+        "valid_json_rate": 1.0,
+        "tool_sequence_accuracy": 0.925,
+        "first_tool_accuracy": 0.95,
+        "sql_execution_accuracy": 0.8929,
+        "repair_rate": 0.025,
+        "mean_seconds_per_task": 10.44,
+        "by_family_success": {
+          "count_orders": 1.0,
+          "discount_calc": 1.0,
+          "doc_lookup": 0.5,
+          "order_total": 0.75,
+          "price_lookup": 0.5,
+          "revenue_category": 0.75,
+          "revenue_incl_vat": 1.0,
+          "segment_count": 1.0,
+          "top_product": 1.0,
+          "vat_calc": 1.0
+        }
+      }
+    },
+    "no_tools": {
+      "test_id": {
+        "n": 40,
+        "task_success": 0.0,
+        "task_success_ci95": [
+          0.0,
+          0.0
+        ],
+        "task_success_first_try": 0.0,
+        "valid_json_rate": null,
+        "tool_sequence_accuracy": null,
+        "first_tool_accuracy": null,
+        "sql_execution_accuracy": null,
+        "repair_rate": 0.0,
+        "mean_seconds_per_task": 0.535,
+        "by_family_success": {
+          "count_orders": 0.0,
+          "discount_calc": 0.0,
+          "doc_lookup": 0.0,
+          "order_total": 0.0,
+          "price_lookup": 0.0,
+          "revenue_category": 0.0,
+          "revenue_incl_vat": 0.0,
+          "segment_count": 0.0,
+          "top_product": 0.0,
+          "vat_calc": 0.0
+        }
+      },
+      "test_ood": {
+        "n": 40,
+        "task_success": 0.0,
+        "task_success_ci95": [
+          0.0,
+          0.0
+        ],
+        "task_success_first_try": 0.0,
+        "valid_json_rate": null,
+        "tool_sequence_accuracy": null,
+        "first_tool_accuracy": null,
+        "sql_execution_accuracy": null,
+        "repair_rate": 0.0,
+        "mean_seconds_per_task": 0.709,
+        "by_family_success": {
+          "count_orders": 0.0,
+          "discount_calc": 0.0,
+          "doc_lookup": 0.0,
+          "order_total": 0.0,
+          "price_lookup": 0.0,
+          "revenue_category": 0.0,
+          "revenue_incl_vat": 0.0,
+          "segment_count": 0.0,
+          "top_product": 0.0,
+          "vat_calc": 0.0
+        }
+      }
+    }
+  },
+  "planner_wall_seconds": {
+    "gold_plan": 0.1,
+    "lora": 509.3,
+    "no_tools": 49.9,
+    "base_fewshot": 115.0,
+    "base_zeroshot": 628.2
+  },
+  "finetune": {
+    "val_loss_before": 0.6633351753649134,
+    "curve": [
+      {
+        "epoch": 1,
+        "step": 90,
+        "train_loss_last50": 0.05023113197879866,
+        "val_loss": 0.018037124093025776,
+        "elapsed_s": 1095.2
+      },
+      {
+        "epoch": 2,
+        "step": 180,
+        "train_loss_last50": 0.01524257387034595,
+        "val_loss": 0.009675299858574423,
+        "elapsed_s": 1814.7
+      }
+    ],
+    "config": {
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj"
+      ],
+      "lr": 0.0003,
+      "epochs": 2,
+      "batch_size": 4,
+      "grad_accum": 2,
+      "warmup_steps": 10,
+      "seed": 16,
+      "val_fraction": 0.1,
+      "threads": 8
+    },
+    "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "train_examples": 717,
+    "val_examples": 79,
+    "trainable_params": 3276800,
+    "total_params": 365097920,
+    "optimizer_steps": 180,
+    "train_seconds": 1814.7,
+    "device": "cpu",
+    "cpu_threads": 8
+  }
+}

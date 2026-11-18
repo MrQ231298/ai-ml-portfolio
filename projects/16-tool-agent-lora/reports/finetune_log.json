@@ -1,0 +1,47 @@
+{
+  "val_loss_before": 0.6633351753649134,
+  "curve": [
+    {
+      "epoch": 1,
+      "step": 90,
+      "train_loss_last50": 0.05023113197879866,
+      "val_loss": 0.018037124093025776,
+      "elapsed_s": 1095.2
+    },
+    {
+      "epoch": 2,
+      "step": 180,
+      "train_loss_last50": 0.01524257387034595,
+      "val_loss": 0.009675299858574423,
+      "elapsed_s": 1814.7
+    }
+  ],
+  "config": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "lr": 0.0003,
+    "epochs": 2,
+    "batch_size": 4,
+    "grad_accum": 2,
+    "warmup_steps": 10,
+    "seed": 16,
+    "val_fraction": 0.1,
+    "threads": 8
+  },
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "train_examples": 717,
+  "val_examples": 79,
+  "trainable_params": 3276800,
+  "total_params": 365097920,
+  "optimizer_steps": 180,
+  "train_seconds": 1814.7,
+  "device": "cpu",
+  "cpu_threads": 8
+}

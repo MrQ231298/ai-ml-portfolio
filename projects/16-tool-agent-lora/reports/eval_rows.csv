@@ -1,0 +1,619 @@
+planner,split,id,family,question,valid_json,tool_seq_correct,first_tool_correct,sql_exec_match,success_first_try,repair_used,success,seconds,raw,error
+gold_plan,test_id,test_id-count_orders-5,count_orders,Count the orders placed by Sligo customers during February.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-order_total-0,order_total,How much are 3 1 m ribbon cable units after 23% VAT?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-discount_calc-7,discount_calc,Apply a 5% discount to EUR 262.68.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_incl_vat-2,revenue_incl_vat,Give me sensors sales for July plus 23% VAT.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-vat_calc-7,vat_calc,EUR 1825 plus 23% VAT comes to how much?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_incl_vat-1,revenue_incl_vat,What was sensors revenue in April including 23% VAT?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-vat_calc-9,vat_calc,Add VAT at 23% to EUR 298.58.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-count_orders-2,count_orders,"In March, how many orders came from customers based in Kerry?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-vat_calc-11,vat_calc,EUR 1180.12 plus 23% VAT comes to how much?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-discount_calc-10,discount_calc,EUR 2421 less 15% is how much?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-order_total-5,order_total,Price for 25 x 12 V DC power supply with VAT at 23%?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-count_orders-10,count_orders,"In January, how many orders came from customers based in Donegal?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-order_total-12,order_total,"Quote 10 of the Dual-core MCU board, VAT included at 23%.",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_category-1,revenue_category,What was the revenue from cables in January?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-count_orders-11,count_orders,How many orders did customers in Dublin place in April?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-price_lookup-10,price_lookup,Price of the M12 circular connector?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-order_total-7,order_total,Price for 50 x 48 V industrial PSU with VAT at 23%?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-segment_count-5,segment_count,Number of education customers based in Mayo?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_category-4,revenue_category,"In August, what were our power revenues?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-price_lookup-4,price_lookup,What do we charge for one Pressure sensor module?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-vat_calc-13,vat_calc,Add VAT at 23% to EUR 2274.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-segment_count-10,segment_count,Count our retail customers in Louth.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_category-11,revenue_category,How much revenue did power bring in during February?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-doc-2,doc_lookup,What is the deadline to report faulty goods?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-top_product-3,top_product,Which product sold the most units in January?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_incl_vat-7,revenue_incl_vat,September cables revenue with 23% VAT added?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-top_product-5,top_product,"In October, which item had the highest unit sales?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-segment_count-6,segment_count,Number of trade customers based in Sligo?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_incl_vat-5,revenue_incl_vat,September sensors revenue with 23% VAT added?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-price_lookup-8,price_lookup,How much does the 48 V industrial PSU cost?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-segment_count-12,segment_count,How many education customers are in Sligo?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-price_lookup-6,price_lookup,What is the list price of the 32-bit MCU board?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-doc-9,doc_lookup,What discount do schools get?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-doc-3,doc_lookup,What is the free delivery threshold?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-doc-1,doc_lookup,Is there a restocking fee?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-revenue_category-13,revenue_category,Total connectors sales value for August?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-discount_calc-2,discount_calc,EUR 89 less 15% is how much?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_id,test_id-top_product-0,top_product,"In June, which item had the highest unit sales?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-top_product-10,top_product,"In March, which item had the highest unit sales?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_id,test_id-discount_calc-4,discount_calc,Take 12% off EUR 4654.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-order_total-1,order_total,"If a customer buys 12 of the CAN bus cable 5 m, what is the total with 23% VAT?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-segment_count-13,segment_count,How many customers in Wexford belong to the public sector segment?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-top_product-3,top_product,What sold best in January by volume?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-segment_count-12,segment_count,What is the public sector customer count for Wexford?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-count_orders-10,count_orders,What was the order count for Wexford in July?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-segment_count-4,segment_count,What is the education customer count for Kildare?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-segment_count-3,segment_count,How many customers in Kildare belong to the retail segment?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-order_total-2,order_total,"If a customer buys 50 of the 5 V buck converter, what is the total with 23% VAT?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-order_total-5,order_total,"If a customer buys 100 of the Hall effect sensor, what is the total with 23% VAT?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_incl_vat-11,revenue_incl_vat,"Including VAT at 23%, what was the May revenue from microcontrollers?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-top_product-10,top_product,Name the product with the most units shipped in September.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-discount_calc-1,discount_calc,Reduce EUR 1517.8 by 25 percent.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-count_orders-6,count_orders,What was the order count for Wexford in April?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-vat_calc-4,vat_calc,"If the net price is EUR 907, what is it with 23% VAT on top?",True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_incl_vat-12,revenue_incl_vat,Total displays revenue in June after adding 23% VAT?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-count_orders-12,count_orders,What was the order count for Kildare in January?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-vat_calc-3,vat_calc,Work out EUR 459.47 with VAT of 23% added.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-doc-7-4,doc_lookup,"When we open a trade account, how much credit is allowed?",True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_incl_vat-13,revenue_incl_vat,"Including VAT at 23%, what was the April revenue from microcontrollers?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-vat_calc-1,vat_calc,Work out EUR 1705.29 with VAT of 23% added.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-vat_calc-2,vat_calc,"If the net price is EUR 537.59, what is it with 23% VAT on top?",True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_incl_vat-2,revenue_incl_vat,Total connectors revenue in February after adding 23% VAT?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-count_orders-2,count_orders,What was the order count for Wexford in June?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-doc-2-5,doc_lookup,Time limit for flagging a defective delivery?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-price_lookup-2,price_lookup,Look up the unit price for the 7 inch touch display.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-order_total-11,order_total,"If a customer buys 40 of the 5 V buck converter, what is the total with 23% VAT?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_category-4,revenue_category,"How much did we sell in power in January, in euro?",True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-price_lookup-1,price_lookup,How much is a single 7 inch touch display before VAT?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_category-5,revenue_category,Give me May revenue for the cables category.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-discount_calc-8,discount_calc,"If we discount EUR 4195 by 15%, what is the new price?",True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-price_lookup-7,price_lookup,Look up the unit price for the 5 V buck converter.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-discount_calc-10,discount_calc,Reduce EUR 635 by 20 percent.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_category-7,revenue_category,Give me October revenue for the connectors category.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-top_product-8,top_product,Name the product with the most units shipped in October.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-doc-9-4,doc_lookup,"Do universities or schools get cheaper prices, and by how much?",True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-revenue_category-9,revenue_category,Give me October revenue for the sensors category.,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-doc-1-4,doc_lookup,What percentage is deducted when custom cables are returned?,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-discount_calc-2,discount_calc,Reduce EUR 552.53 by 5 percent.,True,True,True,,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-top_product-7,top_product,What sold best in August by volume?,True,True,True,True,True,False,True,0.0,,
+gold_plan,test_ood,test_ood-price_lookup-4,price_lookup,How much is a single Hall effect sensor before VAT?,True,True,True,True,True,False,True,0.0,,
+lora,test_id,test_id-count_orders-5,count_orders,Count the orders placed by Sligo customers during February.,True,True,True,True,True,False,True,2.537,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Sligo' AND strftime('%m', o.order_date) = '02'""}}]}",
+lora,test_id,test_id-order_total-0,order_total,How much are 3 1 m ribbon cable units after 23% VAT?,True,True,True,True,True,False,True,1.983,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '1 m ribbon cable'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 3 * 1.23""}}]}",
+lora,test_id,test_id-discount_calc-7,discount_calc,Apply a 5% discount to EUR 262.68.,True,True,True,,True,False,True,1.25,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""262.68 * (1 - 5 / 100)""}}]}",
+lora,test_id,test_id-revenue_incl_vat-2,revenue_incl_vat,Give me sensors sales for July plus 23% VAT.,True,True,True,True,True,False,True,3.629,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'sensors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '07'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_id,test_id-vat_calc-7,vat_calc,EUR 1825 plus 23% VAT comes to how much?,True,True,True,,True,False,True,1.076,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""1825 * 1.23""}}]}",
+lora,test_id,test_id-revenue_incl_vat-1,revenue_incl_vat,What was sensors revenue in April including 23% VAT?,True,True,True,True,True,False,True,3.922,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'sensors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '04'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_id,test_id-vat_calc-9,vat_calc,Add VAT at 23% to EUR 298.58.,True,True,True,,True,False,True,1.186,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""298.58 * 1.23""}}]}",
+lora,test_id,test_id-count_orders-2,count_orders,"In March, how many orders came from customers based in Kerry?",True,True,True,True,True,False,True,2.433,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Kerry' AND strftime('%m', o.order_date) = '03'""}}]}",
+lora,test_id,test_id-vat_calc-11,vat_calc,EUR 1180.12 plus 23% VAT comes to how much?,True,True,True,,True,False,True,1.302,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""1180.12 * 1.23""}}]}",
+lora,test_id,test_id-discount_calc-10,discount_calc,EUR 2421 less 15% is how much?,True,True,True,,True,False,True,1.245,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""2421 * (1 - 15 / 100)""}}]}",
+lora,test_id,test_id-order_total-5,order_total,Price for 25 x 12 V DC power supply with VAT at 23%?,True,True,True,True,True,False,True,1.949,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '12 V DC power supply'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 25 * 1.23""}}]}",
+lora,test_id,test_id-count_orders-10,count_orders,"In January, how many orders came from customers based in Donegal?",True,True,True,True,True,False,True,2.747,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Donegal' AND strftime('%m', o.order_date) = '01'""}}]}",
+lora,test_id,test_id-order_total-12,order_total,"Quote 10 of the Dual-core MCU board, VAT included at 23%.",True,True,True,True,True,False,True,2.087,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Dual-core MCU board'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 10 * 1.23""}}]}",
+lora,test_id,test_id-revenue_category-1,revenue_category,What was the revenue from cables in January?,True,True,True,True,True,False,True,3.134,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'cables' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '01'""}}]}",
+lora,test_id,test_id-count_orders-11,count_orders,How many orders did customers in Dublin place in April?,True,True,True,True,True,False,True,2.237,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Dublin' AND strftime('%m', o.order_date) = '04'""}}]}",
+lora,test_id,test_id-price_lookup-10,price_lookup,Price of the M12 circular connector?,True,True,True,True,True,False,True,1.218,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'M12 circular connector'""}}]}",
+lora,test_id,test_id-order_total-7,order_total,Price for 50 x 48 V industrial PSU with VAT at 23%?,True,True,True,True,True,False,True,2.038,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '48 V industrial PSU'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 50 * 1.23""}}]}",
+lora,test_id,test_id-segment_count-5,segment_count,Number of education customers based in Mayo?,True,True,True,True,True,False,True,1.251,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'education' AND county = 'Mayo'""}}]}",
+lora,test_id,test_id-revenue_category-4,revenue_category,"In August, what were our power revenues?",True,True,True,True,True,False,True,4.816,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'power' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '08'""}}]}",
+lora,test_id,test_id-price_lookup-4,price_lookup,What do we charge for one Pressure sensor module?,True,True,True,True,True,False,True,1.722,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Pressure sensor module'""}}]}",
+lora,test_id,test_id-vat_calc-13,vat_calc,Add VAT at 23% to EUR 2274.,True,True,True,,True,False,True,2.051,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""2274 * 1.23""}}]}",
+lora,test_id,test_id-segment_count-10,segment_count,Count our retail customers in Louth.,True,True,True,True,True,False,True,2.309,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'retail' AND county = 'Louth'""}}]}",
+lora,test_id,test_id-revenue_category-11,revenue_category,How much revenue did power bring in during February?,True,True,True,True,True,False,True,6.824,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'power' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '02'""}}]}",
+lora,test_id,test_id-doc-2,doc_lookup,What is the deadline to report faulty goods?,True,True,True,,True,False,True,0.935,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""report defective goods""}}]}",
+lora,test_id,test_id-top_product-3,top_product,Which product sold the most units in January?,True,True,True,True,True,False,True,3.241,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '01' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_id,test_id-revenue_incl_vat-7,revenue_incl_vat,September cables revenue with 23% VAT added?,True,True,True,True,True,False,True,3.908,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'cables' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '09'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_id,test_id-top_product-5,top_product,"In October, which item had the highest unit sales?",True,True,True,True,True,False,True,3.203,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '10' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_id,test_id-segment_count-6,segment_count,Number of trade customers based in Sligo?,True,True,True,True,True,False,True,1.295,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'trade' AND county = 'Sligo'""}}]}",
+lora,test_id,test_id-revenue_incl_vat-5,revenue_incl_vat,September sensors revenue with 23% VAT added?,True,True,True,True,True,False,True,3.85,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'sensors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '09'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_id,test_id-price_lookup-8,price_lookup,How much does the 48 V industrial PSU cost?,True,True,True,True,True,False,True,1.299,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '48 V industrial PSU'""}}]}",
+lora,test_id,test_id-segment_count-12,segment_count,How many education customers are in Sligo?,True,True,True,True,True,False,True,1.373,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'education' AND county = 'Sligo'""}}]}",
+lora,test_id,test_id-price_lookup-6,price_lookup,What is the list price of the 32-bit MCU board?,True,True,True,True,True,False,True,1.286,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '32-bit MCU board'""}}]}",
+lora,test_id,test_id-doc-9,doc_lookup,What discount do schools get?,True,True,True,,False,False,False,0.96,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""school discounts""}}]}",
+lora,test_id,test_id-doc-3,doc_lookup,What is the free delivery threshold?,True,True,True,,True,False,True,1.011,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""free delivery threshold""}}]}",
+lora,test_id,test_id-doc-1,doc_lookup,Is there a restocking fee?,True,True,True,,True,False,True,0.955,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""restocking fee""}}]}",
+lora,test_id,test_id-revenue_category-13,revenue_category,Total connectors sales value for August?,True,True,True,True,True,False,True,3.115,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'connectors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '08'""}}]}",
+lora,test_id,test_id-discount_calc-2,discount_calc,EUR 89 less 15% is how much?,True,True,True,,True,False,True,1.226,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""89 * (1 - 15 / 100)""}}]}",
+lora,test_id,test_id-top_product-0,top_product,"In June, which item had the highest unit sales?",True,True,True,True,True,False,True,3.625,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '06' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_id,test_id-top_product-10,top_product,"In March, which item had the highest unit sales?",True,True,True,True,True,False,True,3.325,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '03' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_id,test_id-discount_calc-4,discount_calc,Take 12% off EUR 4654.,True,True,True,,True,False,True,1.258,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""4654 * (1 - 12 / 100)""}}]}",
+lora,test_ood,test_ood-order_total-1,order_total,"If a customer buys 12 of the CAN bus cable 5 m, what is the total with 23% VAT?",True,True,True,False,False,True,False,6.144,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'bus cable'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 12 * 5 * 1.23""}}]}",
+lora,test_ood,test_ood-segment_count-13,segment_count,How many customers in Wexford belong to the public sector segment?,True,True,True,True,True,False,True,1.412,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'public sector' AND county = 'Wexford'""}}]}",
+lora,test_ood,test_ood-top_product-3,top_product,What sold best in January by volume?,True,True,True,True,True,False,True,3.197,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '01' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_ood,test_ood-segment_count-12,segment_count,What is the public sector customer count for Wexford?,True,True,True,True,True,False,True,322.732,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'public sector' AND county = 'Wexford'""}}]}",
+lora,test_ood,test_ood-count_orders-10,count_orders,What was the order count for Wexford in July?,True,True,True,True,True,False,True,5.291,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Wexford' AND strftime('%m', o.order_date) = '07'""}}]}",
+lora,test_ood,test_ood-segment_count-4,segment_count,What is the education customer count for Kildare?,True,True,True,True,True,False,True,4.829,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'education' AND county = 'Kildare'""}}]}",
+lora,test_ood,test_ood-segment_count-3,segment_count,How many customers in Kildare belong to the retail segment?,True,True,True,True,True,False,True,1.629,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE segment = 'retail' AND county = 'Kildare'""}}]}",
+lora,test_ood,test_ood-order_total-2,order_total,"If a customer buys 50 of the 5 V buck converter, what is the total with 23% VAT?",True,True,True,True,True,False,True,1.994,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '5 V buck converter'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 50 * 1.23""}}]}",
+lora,test_ood,test_ood-order_total-5,order_total,"If a customer buys 100 of the Hall effect sensor, what is the total with 23% VAT?",True,True,True,True,True,False,True,2.159,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Hall effect sensor'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 100 * 1.23""}}]}",
+lora,test_ood,test_ood-revenue_incl_vat-11,revenue_incl_vat,"Including VAT at 23%, what was the May revenue from microcontrollers?",True,True,True,True,True,False,True,4.022,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'microcontrollers' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '05'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_ood,test_ood-top_product-10,top_product,Name the product with the most units shipped in September.,True,True,True,True,True,False,True,3.282,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '09' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_ood,test_ood-discount_calc-1,discount_calc,Reduce EUR 1517.8 by 25 percent.,True,True,True,,True,False,True,1.276,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""1517.8 * (1 - 25 / 100)""}}]}",
+lora,test_ood,test_ood-count_orders-6,count_orders,What was the order count for Wexford in April?,True,True,True,True,True,False,True,2.245,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Wexford' AND strftime('%m', o.order_date) = '04'""}}]}",
+lora,test_ood,test_ood-vat_calc-4,vat_calc,"If the net price is EUR 907, what is it with 23% VAT on top?",True,True,True,,True,False,True,1.053,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""907 * 1.23""}}]}",
+lora,test_ood,test_ood-revenue_incl_vat-12,revenue_incl_vat,Total displays revenue in June after adding 23% VAT?,True,True,True,True,True,False,True,4.275,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'displays' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '06'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_ood,test_ood-count_orders-12,count_orders,What was the order count for Kildare in January?,True,True,True,True,True,False,True,2.106,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Kildare' AND strftime('%m', o.order_date) = '01'""}}]}",
+lora,test_ood,test_ood-vat_calc-3,vat_calc,Work out EUR 459.47 with VAT of 23% added.,True,True,True,,True,False,True,1.188,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""459.47 * 1.23""}}]}",
+lora,test_ood,test_ood-doc-7-4,doc_lookup,"When we open a trade account, how much credit is allowed?",True,True,True,,True,False,True,0.988,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""trade account credit limit""}}]}",
+lora,test_ood,test_ood-revenue_incl_vat-13,revenue_incl_vat,"Including VAT at 23%, what was the April revenue from microcontrollers?",True,True,True,True,True,False,True,3.849,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'microcontrollers' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '04'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_ood,test_ood-vat_calc-1,vat_calc,Work out EUR 1705.29 with VAT of 23% added.,True,True,True,,True,False,True,1.216,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""1705.29 * 1.23""}}]}",
+lora,test_ood,test_ood-vat_calc-2,vat_calc,"If the net price is EUR 537.59, what is it with 23% VAT on top?",True,True,True,,True,False,True,1.173,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""537.59 * 1.23""}}]}",
+lora,test_ood,test_ood-revenue_incl_vat-2,revenue_incl_vat,Total connectors revenue in February after adding 23% VAT?,True,True,True,True,True,False,True,4.068,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'connectors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '02'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_ood,test_ood-count_orders-2,count_orders,What was the order count for Wexford in June?,True,True,True,True,True,False,True,2.152,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE c.county = 'Wexford' AND strftime('%m', o.order_date) = '06'""}}]}",
+lora,test_ood,test_ood-doc-2-5,doc_lookup,Time limit for flagging a defective delivery?,True,True,True,,False,False,False,0.943,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""returned defective""}}]}",
+lora,test_ood,test_ood-price_lookup-2,price_lookup,Look up the unit price for the 7 inch touch display.,True,False,False,False,False,False,False,1.026,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""7 inch touch display unit price""}}]}",
+lora,test_ood,test_ood-order_total-11,order_total,"If a customer buys 40 of the 5 V buck converter, what is the total with 23% VAT?",True,True,True,True,True,False,True,2.048,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '5 V buck converter'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 40 * 1.23""}}]}",
+lora,test_ood,test_ood-revenue_category-4,revenue_category,"How much did we sell in power in January, in euro?",True,False,True,True,False,False,False,4.309,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'power' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '01'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+lora,test_ood,test_ood-price_lookup-1,price_lookup,How much is a single 7 inch touch display before VAT?,True,True,True,True,True,False,True,1.249,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '7 inch touch display'""}}]}",
+lora,test_ood,test_ood-revenue_category-5,revenue_category,Give me May revenue for the cables category.,True,True,True,True,True,False,True,3.889,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'cables' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '05'""}}]}",
+lora,test_ood,test_ood-discount_calc-8,discount_calc,"If we discount EUR 4195 by 15%, what is the new price?",True,True,True,,True,False,True,1.475,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""4195 * (1 - 15 / 100)""}}]}",
+lora,test_ood,test_ood-price_lookup-7,price_lookup,Look up the unit price for the 5 V buck converter.,True,False,False,False,False,False,False,1.209,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""5 V buck converter unit price""}}]}",
+lora,test_ood,test_ood-discount_calc-10,discount_calc,Reduce EUR 635 by 20 percent.,True,True,True,,True,False,True,1.252,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""635 * (1 - 20 / 100)""}}]}",
+lora,test_ood,test_ood-revenue_category-7,revenue_category,Give me October revenue for the connectors category.,True,True,True,True,True,False,True,3.503,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'connectors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '10'""}}]}",
+lora,test_ood,test_ood-top_product-8,top_product,Name the product with the most units shipped in October.,True,True,True,True,True,False,True,3.431,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '10' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_ood,test_ood-doc-9-4,doc_lookup,"Do universities or schools get cheaper prices, and by how much?",True,True,True,,False,False,False,1.013,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""university discounts""}}]}",
+lora,test_ood,test_ood-revenue_category-9,revenue_category,Give me October revenue for the sensors category.,True,True,True,True,True,False,True,3.327,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT ROUND(SUM(l.quantity * l.unit_price), 2) FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE p.category = 'sensors' AND o.status = 'delivered' AND strftime('%m', o.order_date) = '10'""}}]}",
+lora,test_ood,test_ood-doc-1-4,doc_lookup,What percentage is deducted when custom cables are returned?,True,True,True,,True,False,True,0.887,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""cables returned""}}]}",
+lora,test_ood,test_ood-discount_calc-2,discount_calc,Reduce EUR 552.53 by 5 percent.,True,True,True,,True,False,True,1.319,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""552.53 * (1 - 5 / 100)""}}]}",
+lora,test_ood,test_ood-top_product-7,top_product,What sold best in August by volume?,True,True,True,True,True,False,True,3.267,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT p.name, SUM(l.quantity) AS units FROM order_lines l JOIN orders o ON l.order_id = o.order_id JOIN products p ON l.sku = p.sku WHERE o.status = 'delivered' AND strftime('%m', o.order_date) = '08' GROUP BY p.sku ORDER BY units DESC LIMIT 1""}}]}",
+lora,test_ood,test_ood-price_lookup-4,price_lookup,How much is a single Hall effect sensor before VAT?,True,True,True,True,True,False,True,1.175,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Hall effect sensor'""}}]}",
+no_tools,test_id,test_id-count_orders-5,count_orders,Count the orders placed by Sligo customers during February.,False,False,False,,False,False,False,0.583,Sligo customers placed 100 orders during February.,
+no_tools,test_id,test_id-order_total-0,order_total,How much are 3 1 m ribbon cable units after 23% VAT?,False,False,False,,False,False,False,0.735,3 1 m ribbon cable units after 23% VAT would be 3.33 m ribbon cable units.,
+no_tools,test_id,test_id-discount_calc-7,discount_calc,Apply a 5% discount to EUR 262.68.,False,False,False,,False,False,False,0.519,Apply a 5% discount to EUR 262.68.,
+no_tools,test_id,test_id-revenue_incl_vat-2,revenue_incl_vat,Give me sensors sales for July plus 23% VAT.,False,False,False,,False,False,False,0.886,"Sensors Sales for July + 23% VAT = €1,200 + €230 = €1,430",
+no_tools,test_id,test_id-vat_calc-7,vat_calc,EUR 1825 plus 23% VAT comes to how much?,False,False,False,,False,False,False,0.774,EUR 1825 plus 23% VAT comes to EUR 2117.50.,
+no_tools,test_id,test_id-revenue_incl_vat-1,revenue_incl_vat,What was sensors revenue in April including 23% VAT?,False,False,False,,False,False,False,0.612,"Sensors revenue in April was 100% of the total revenue, including 23% VAT.",
+no_tools,test_id,test_id-vat_calc-9,vat_calc,Add VAT at 23% to EUR 298.58.,False,False,False,,False,False,False,0.692,EUR 298.58 + 23% VAT = EUR 321.79,
+no_tools,test_id,test_id-count_orders-2,count_orders,"In March, how many orders came from customers based in Kerry?",False,False,False,,False,False,False,0.449,"In March, 100 orders were received from customers based in Kerry.",
+no_tools,test_id,test_id-vat_calc-11,vat_calc,EUR 1180.12 plus 23% VAT comes to how much?,False,False,False,,False,False,False,0.777,EUR 1180.12 plus 23% VAT comes to EUR 1498.43.,
+no_tools,test_id,test_id-discount_calc-10,discount_calc,EUR 2421 less 15% is how much?,False,False,False,,False,False,False,0.892,EUR 2421 less 15% is 2421 - 0.15 = 2406.75,
+no_tools,test_id,test_id-order_total-5,order_total,Price for 25 x 12 V DC power supply with VAT at 23%?,False,False,False,,False,False,False,0.677,25 x 12 V DC power supply with VAT at 23% would be approximately £18.,
+no_tools,test_id,test_id-count_orders-10,count_orders,"In January, how many orders came from customers based in Donegal?",False,False,False,,False,False,False,0.484,"In January, 100 orders were received from customers based in Donegal.",
+no_tools,test_id,test_id-order_total-12,order_total,"Quote 10 of the Dual-core MCU board, VAT included at 23%.",False,False,False,,False,False,False,0.677,"Quote 10 of the Dual-core MCU board, VAT included at 23%.",
+no_tools,test_id,test_id-revenue_category-1,revenue_category,What was the revenue from cables in January?,False,False,False,,False,False,False,0.53,"Northlight Components reported revenue from cables in January as $100,000.",
+no_tools,test_id,test_id-count_orders-11,count_orders,How many orders did customers in Dublin place in April?,False,False,False,,False,False,False,0.383,Dublin customers placed 100 orders in April.,
+no_tools,test_id,test_id-price_lookup-10,price_lookup,Price of the M12 circular connector?,False,False,False,,False,False,False,0.553,The price of the M12 circular connector varies depending on the retailer and the specific model.,
+no_tools,test_id,test_id-order_total-7,order_total,Price for 50 x 48 V industrial PSU with VAT at 23%?,False,False,False,,False,False,False,0.739,"50 x 48 V industrial PSU with VAT at 23% would be approximately €2,700.",
+no_tools,test_id,test_id-segment_count-5,segment_count,Number of education customers based in Mayo?,False,False,False,,False,False,False,0.327,"No, I'm not a customer of Mayo.",
+no_tools,test_id,test_id-revenue_category-4,revenue_category,"In August, what were our power revenues?",False,False,False,,False,False,False,0.521,"In August, our power revenues were approximately 100,000 kWh.",
+no_tools,test_id,test_id-price_lookup-4,price_lookup,What do we charge for one Pressure sensor module?,False,False,False,,False,False,False,0.33,We charge $15 for one Pressure sensor module.,
+no_tools,test_id,test_id-vat_calc-13,vat_calc,Add VAT at 23% to EUR 2274.,False,False,False,,False,False,False,0.573,EUR 2274 + 23% VAT = EUR 2551.,
+no_tools,test_id,test_id-segment_count-10,segment_count,Count our retail customers in Louth.,False,False,False,,False,False,False,0.366,We have 100 retail customers in Louth.,
+no_tools,test_id,test_id-revenue_category-11,revenue_category,How much revenue did power bring in during February?,False,False,False,,False,False,False,0.409,"Power brought in $100,000 in February.",
+no_tools,test_id,test_id-doc-2,doc_lookup,What is the deadline to report faulty goods?,False,False,False,,False,False,False,0.557,The deadline to report faulty goods is usually 30 days after the date of purchase.,
+no_tools,test_id,test_id-top_product-3,top_product,Which product sold the most units in January?,False,False,False,,False,False,False,0.472,"Northlight Components sold 100,000 units in January.",
+no_tools,test_id,test_id-revenue_incl_vat-7,revenue_incl_vat,September cables revenue with 23% VAT added?,False,False,False,,False,False,False,0.414,"Yes, September cables revenue with 23% VAT added.",
+no_tools,test_id,test_id-top_product-5,top_product,"In October, which item had the highest unit sales?",False,False,False,,False,False,False,0.546,"In October, the item with the highest unit sales was the Samsung Galaxy S21 Ultra.",
+no_tools,test_id,test_id-segment_count-6,segment_count,Number of trade customers based in Sligo?,False,False,False,,False,False,False,0.32,Sligo has 10 trade customers.,
+no_tools,test_id,test_id-revenue_incl_vat-5,revenue_incl_vat,September sensors revenue with 23% VAT added?,False,False,False,,False,False,False,0.379,"Yes, September sensors revenue with 23% VAT added.",
+no_tools,test_id,test_id-price_lookup-8,price_lookup,How much does the 48 V industrial PSU cost?,False,False,False,,False,False,False,0.559,The 48 V industrial PSU from Northlight Components costs approximately €120.,
+no_tools,test_id,test_id-segment_count-12,segment_count,How many education customers are in Sligo?,False,False,False,,False,False,False,0.322,Sligo has 10 education customers.,
+no_tools,test_id,test_id-price_lookup-6,price_lookup,What is the list price of the 32-bit MCU board?,False,False,False,,False,False,False,0.568,The list price of the 32-bit MCU board is €129.,
+no_tools,test_id,test_id-doc-9,doc_lookup,What discount do schools get?,False,False,False,,False,False,False,0.656,"Schools in Ireland typically get a discount on electronics parts, usually 10-20% off the regular price.",
+no_tools,test_id,test_id-doc-3,doc_lookup,What is the free delivery threshold?,False,False,False,,False,False,False,0.357,Free delivery is available for orders placed within the United States.,
+no_tools,test_id,test_id-doc-1,doc_lookup,Is there a restocking fee?,False,False,False,,False,False,False,0.331,"Yes, there is a restocking fee.",
+no_tools,test_id,test_id-revenue_category-13,revenue_category,Total connectors sales value for August?,False,False,False,,False,False,False,0.541,"Total connectors sales value for August for Northlight Components is $100,000.",
+no_tools,test_id,test_id-discount_calc-2,discount_calc,EUR 89 less 15% is how much?,False,False,False,,False,False,False,0.503,EUR 89 less 15% is 74.,
+no_tools,test_id,test_id-top_product-0,top_product,"In June, which item had the highest unit sales?",False,False,False,,False,False,False,0.64,"In June, the item with the highest unit sales was the ""Fox 1000"" gaming console.",
+no_tools,test_id,test_id-top_product-10,top_product,"In March, which item had the highest unit sales?",False,False,False,,False,False,False,0.513,"In March, the item with the highest unit sales was the Samsung Galaxy S21 Ultra.",
+no_tools,test_id,test_id-discount_calc-4,discount_calc,Take 12% off EUR 4654.,False,False,False,,False,False,False,0.253,EUR 4654.,
+no_tools,test_ood,test_ood-order_total-1,order_total,"If a customer buys 12 of the CAN bus cable 5 m, what is the total with 23% VAT?",False,False,False,,False,False,False,1.542,"12 x 5 = 60
+60 x 23% = 15.80
+15.80 + 60 = 75.80
+
+The total with 23% VAT is 75.80.",
+no_tools,test_ood,test_ood-segment_count-13,segment_count,How many customers in Wexford belong to the public sector segment?,False,False,False,,False,False,False,0.431,Wexford has 100 customers in the public sector segment.,
+no_tools,test_ood,test_ood-top_product-3,top_product,What sold best in January by volume?,False,False,False,,False,False,False,0.452,Northlight Components sold best in January by volume in the electronics parts market.,
+no_tools,test_ood,test_ood-segment_count-12,segment_count,What is the public sector customer count for Wexford?,False,False,False,,False,False,False,0.483,The public sector customer count for Wexford is 100.,
+no_tools,test_ood,test_ood-count_orders-10,count_orders,What was the order count for Wexford in July?,False,False,False,,False,False,False,0.474,The order count for Wexford in July was 1000.,
+no_tools,test_ood,test_ood-segment_count-4,segment_count,What is the education customer count for Kildare?,False,False,False,,False,False,False,0.288,Kildare has 1 customer count.,
+no_tools,test_ood,test_ood-segment_count-3,segment_count,How many customers in Kildare belong to the retail segment?,False,False,False,,False,False,False,0.439,Kildare has 1000 customers in the retail segment.,
+no_tools,test_ood,test_ood-order_total-2,order_total,"If a customer buys 50 of the 5 V buck converter, what is the total with 23% VAT?",False,False,False,,False,False,False,1.177,"If a customer buys 50 of the 5 V buck converter, the total with 23% VAT would be 50 * 5 * 0.23 = 31.5.",
+no_tools,test_ood,test_ood-order_total-5,order_total,"If a customer buys 100 of the Hall effect sensor, what is the total with 23% VAT?",False,False,False,,False,False,False,1.403,"If a customer buys 100 of the Hall effect sensor, and 23% VAT is applied, then the total amount would be 100 * 1.23 = 123.00.",
+no_tools,test_ood,test_ood-revenue_incl_vat-11,revenue_incl_vat,"Including VAT at 23%, what was the May revenue from microcontrollers?",False,False,False,,False,False,False,0.807,"Including VAT at 23%, the May revenue from microcontrollers was approximately €1,200,000.",
+no_tools,test_ood,test_ood-top_product-10,top_product,Name the product with the most units shipped in September.,False,False,False,,False,False,False,0.601,The product with the most units shipped in September is the Samsung Galaxy S21 Ultra.,
+no_tools,test_ood,test_ood-discount_calc-1,discount_calc,Reduce EUR 1517.8 by 25 percent.,False,False,False,,False,False,False,0.32,EUR 1517.8,
+no_tools,test_ood,test_ood-count_orders-6,count_orders,What was the order count for Wexford in April?,False,False,False,,False,False,False,0.474,The order count for Wexford in April was 1000.,
+no_tools,test_ood,test_ood-vat_calc-4,vat_calc,"If the net price is EUR 907, what is it with 23% VAT on top?",False,False,False,,False,False,False,0.653,"EUR 907 with 23% VAT on top is EUR 1,079.",
+no_tools,test_ood,test_ood-revenue_incl_vat-12,revenue_incl_vat,Total displays revenue in June after adding 23% VAT?,False,False,False,,False,False,False,0.707,"Total displays revenue in June after adding 23% VAT would be approximately €1,000,000.",
+no_tools,test_ood,test_ood-count_orders-12,count_orders,What was the order count for Kildare in January?,False,False,False,,False,False,False,0.427,Kildare's order count for January was 1000.,
+no_tools,test_ood,test_ood-vat_calc-3,vat_calc,Work out EUR 459.47 with VAT of 23% added.,False,False,False,,False,False,False,0.699,EUR 459.47 + 23% VAT = EUR 503.47,
+no_tools,test_ood,test_ood-doc-7-4,doc_lookup,"When we open a trade account, how much credit is allowed?",False,False,False,,False,False,False,0.554,"Northlight Components allows up to $10,000 in credit for trade accounts.",
+no_tools,test_ood,test_ood-revenue_incl_vat-13,revenue_incl_vat,"Including VAT at 23%, what was the April revenue from microcontrollers?",False,False,False,,False,False,False,0.689,"Including VAT at 23%, the April revenue from microcontrollers would be approximately €1,000.",
+no_tools,test_ood,test_ood-vat_calc-1,vat_calc,Work out EUR 1705.29 with VAT of 23% added.,False,False,False,,False,False,False,0.616,EUR 1705.29 with VAT of 23% added.,
+no_tools,test_ood,test_ood-vat_calc-2,vat_calc,"If the net price is EUR 537.59, what is it with 23% VAT on top?",False,False,False,,False,False,False,0.771,EUR 537.59 with 23% VAT.,
+no_tools,test_ood,test_ood-revenue_incl_vat-2,revenue_incl_vat,Total connectors revenue in February after adding 23% VAT?,False,False,False,,False,False,False,0.725,"Total connectors revenue in February after adding 23% VAT would be approximately €1,000,000.",
+no_tools,test_ood,test_ood-count_orders-2,count_orders,What was the order count for Wexford in June?,False,False,False,,False,False,False,0.456,The order count for Wexford in June was 1000.,
+no_tools,test_ood,test_ood-doc-2-5,doc_lookup,Time limit for flagging a defective delivery?,False,False,False,,False,False,False,0.6,"Yes, the time limit for flagging a defective delivery is 30 days from the date of delivery.",
+no_tools,test_ood,test_ood-price_lookup-2,price_lookup,Look up the unit price for the 7 inch touch display.,False,False,False,,False,False,False,0.543,The unit price for the 7-inch touch display is 12.99 USD.,
+no_tools,test_ood,test_ood-order_total-11,order_total,"If a customer buys 40 of the 5 V buck converter, what is the total with 23% VAT?",False,False,False,,False,False,False,1.811,"If a customer buys 40 of the 5 V buck converter, the total would be 40 * 5 = 200 V Buck Converter.
+
+If the customer pays 23% VAT, the total would be 200 * 0.23 = 44.6.",
+no_tools,test_ood,test_ood-revenue_category-4,revenue_category,"How much did we sell in power in January, in euro?",False,False,False,,False,False,False,0.588,"We sold 100,000 units of power in January, in Euros.",
+no_tools,test_ood,test_ood-price_lookup-1,price_lookup,How much is a single 7 inch touch display before VAT?,False,False,False,,False,False,False,0.924,Northlight Components is an Irish electronics parts distributor. The price of a single 7-inch touch display before VAT can vary depending on the retailer and the specific model.,
+no_tools,test_ood,test_ood-revenue_category-5,revenue_category,Give me May revenue for the cables category.,False,False,False,,False,False,False,0.469,"May revenue for the cables category is $100,000.",
+no_tools,test_ood,test_ood-discount_calc-8,discount_calc,"If we discount EUR 4195 by 15%, what is the new price?",False,False,False,,False,False,False,1.638,"If we discount EUR 4195 by 15%, the new price would be 4195 - 0.15 * 4195 = 4195 - 619.25 = 3575.75.",
+no_tools,test_ood,test_ood-price_lookup-7,price_lookup,Look up the unit price for the 5 V buck converter.,False,False,False,,False,False,False,0.561,The unit price for the 5 V buck converter is 10.00 Euros.,
+no_tools,test_ood,test_ood-discount_calc-10,discount_calc,Reduce EUR 635 by 20 percent.,False,False,False,,False,False,False,0.353,EUR 635 by 20 percent.,
+no_tools,test_ood,test_ood-revenue_category-7,revenue_category,Give me October revenue for the connectors category.,False,False,False,,False,False,False,0.539,"October revenue for the connectors category for Northlight Components is $100,000.",
+no_tools,test_ood,test_ood-top_product-8,top_product,Name the product with the most units shipped in October.,False,False,False,,False,False,False,0.568,The product with the most units shipped in October is the Samsung Galaxy S21 Ultra.,
+no_tools,test_ood,test_ood-doc-9-4,doc_lookup,"Do universities or schools get cheaper prices, and by how much?",False,False,False,,False,False,False,0.418,"Yes, universities and schools often get cheaper prices, and by how much?",
+no_tools,test_ood,test_ood-revenue_category-9,revenue_category,Give me October revenue for the sensors category.,False,False,False,,False,False,False,0.653,"October revenue for the sensors category for Northlight Components is $100,000.",
+no_tools,test_ood,test_ood-doc-1-4,doc_lookup,What percentage is deducted when custom cables are returned?,False,False,False,,False,False,False,1.351,Custom cables are returned at 10% of the original purchase price.,
+no_tools,test_ood,test_ood-discount_calc-2,discount_calc,Reduce EUR 552.53 by 5 percent.,False,False,False,,False,False,False,0.652,EUR 552.53,
+no_tools,test_ood,test_ood-top_product-7,top_product,What sold best in August by volume?,False,False,False,,False,False,False,0.747,Northlight Components sold best in August by volume in the electronics parts market.,
+no_tools,test_ood,test_ood-price_lookup-4,price_lookup,How much is a single Hall effect sensor before VAT?,False,False,False,,False,False,False,0.764,A single Hall effect sensor before VAT is £1.00.,
+base_fewshot,test_id,test_id-count_orders-5,count_orders,Count the orders placed by Sligo customers during February.,True,False,False,False,False,False,False,1.994,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_ids""}}]}",
+base_fewshot,test_id,test_id-order_total-0,order_total,How much are 3 1 m ribbon cable units after 23% VAT?,True,False,False,False,False,False,False,3.424,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_id,test_id-discount_calc-7,discount_calc,Apply a 5% discount to EUR 262.68.,True,False,False,,False,False,False,2.818,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discount percentage""}}]}",
+base_fewshot,test_id,test_id-revenue_incl_vat-2,revenue_incl_vat,Give me sensors sales for July plus 23% VAT.,True,False,False,False,False,False,False,1.139,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product categories""}}]}",
+base_fewshot,test_id,test_id-vat_calc-7,vat_calc,EUR 1825 plus 23% VAT comes to how much?,True,True,True,,True,False,True,1.337,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""1825 * 1.23""}}]}",
+base_fewshot,test_id,test_id-revenue_incl_vat-1,revenue_incl_vat,What was sensors revenue in April including 23% VAT?,True,False,False,False,False,False,False,1.108,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue""}}]}",
+base_fewshot,test_id,test_id-vat_calc-9,vat_calc,Add VAT at 23% to EUR 298.58.,True,True,True,,True,False,True,1.41,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""298.58 * 1.23""}}]}",
+base_fewshot,test_id,test_id-count_orders-2,count_orders,"In March, how many orders came from customers based in Kerry?",True,False,False,False,False,False,False,1.163,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_count""}}]}",
+base_fewshot,test_id,test_id-vat_calc-11,vat_calc,EUR 1180.12 plus 23% VAT comes to how much?,True,False,False,,False,False,False,1.162,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""total cost""}}]}",
+base_fewshot,test_id,test_id-discount_calc-10,discount_calc,EUR 2421 less 15% is how much?,True,False,False,,False,False,False,1.137,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""price""}}]}",
+base_fewshot,test_id,test_id-order_total-5,order_total,Price for 25 x 12 V DC power supply with VAT at 23%?,True,False,False,False,False,False,False,1.087,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_id,test_id-count_orders-10,count_orders,"In January, how many orders came from customers based in Donegal?",True,False,False,False,False,False,False,1.086,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_ids""}}]}",
+base_fewshot,test_id,test_id-order_total-12,order_total,"Quote 10 of the Dual-core MCU board, VAT included at 23%.",True,False,False,False,False,False,False,1.092,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_id,test_id-revenue_category-1,revenue_category,What was the revenue from cables in January?,True,False,False,False,False,False,False,1.374,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue from cables""}}]}",
+base_fewshot,test_id,test_id-count_orders-11,count_orders,How many orders did customers in Dublin place in April?,True,False,False,False,False,False,False,1.199,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_ids""}}]}",
+base_fewshot,test_id,test_id-price_lookup-10,price_lookup,Price of the M12 circular connector?,True,False,True,True,False,False,False,2.216,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'M12 circular connector'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+base_fewshot,test_id,test_id-order_total-7,order_total,Price for 50 x 48 V industrial PSU with VAT at 23%?,True,False,False,False,False,False,False,1.164,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_id,test_id-segment_count-5,segment_count,Number of education customers based in Mayo?,True,False,False,False,False,False,False,1.206,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer segments""}}]}",
+base_fewshot,test_id,test_id-revenue_category-4,revenue_category,"In August, what were our power revenues?",True,False,False,False,False,False,False,1.133,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""power revenues""}}]}",
+base_fewshot,test_id,test_id-price_lookup-4,price_lookup,What do we charge for one Pressure sensor module?,True,False,True,True,True,False,True,2.296,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Pressure sensor module'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1""}}]}",
+base_fewshot,test_id,test_id-vat_calc-13,vat_calc,Add VAT at 23% to EUR 2274.,True,True,True,,True,False,True,1.415,"{""calls"": [{""tool"": ""calculator"", ""args"": {""expression"": ""2274 * 1.23""}}]}",
+base_fewshot,test_id,test_id-segment_count-10,segment_count,Count our retail customers in Louth.,True,False,False,False,False,False,False,1.121,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_id""}}]}",
+base_fewshot,test_id,test_id-revenue_category-11,revenue_category,How much revenue did power bring in during February?,True,False,False,False,False,False,False,1.197,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue by quarter""}}]}",
+base_fewshot,test_id,test_id-doc-2,doc_lookup,What is the deadline to report faulty goods?,True,True,True,,False,False,False,1.198,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product description""}}]}",
+base_fewshot,test_id,test_id-top_product-3,top_product,Which product sold the most units in January?,True,False,False,False,False,False,False,1.304,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product sales""}}]}",
+base_fewshot,test_id,test_id-revenue_incl_vat-7,revenue_incl_vat,September cables revenue with 23% VAT added?,True,False,False,False,False,True,False,3.971,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 23 * 1.23""}}]}","calculator: unsupported expression element: Dict(keys=[Constant(value='doc'), Consta"
+base_fewshot,test_id,test_id-top_product-5,top_product,"In October, which item had the highest unit sales?",True,False,False,False,False,False,False,1.263,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""item sales""}}]}",
+base_fewshot,test_id,test_id-segment_count-6,segment_count,Number of trade customers based in Sligo?,True,False,False,False,False,False,False,1.422,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer segments""}}]}",
+base_fewshot,test_id,test_id-revenue_incl_vat-5,revenue_incl_vat,September sensors revenue with 23% VAT added?,True,False,False,False,False,False,False,1.266,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue""}}]}",
+base_fewshot,test_id,test_id-price_lookup-8,price_lookup,How much does the 48 V industrial PSU cost?,True,False,True,False,False,True,False,3.623,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Industrial PSU'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 48 * 1.23""}}]}",
+base_fewshot,test_id,test_id-segment_count-12,segment_count,How many education customers are in Sligo?,True,False,False,False,False,False,False,1.1,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer segments""}}]}",
+base_fewshot,test_id,test_id-price_lookup-6,price_lookup,What is the list price of the 32-bit MCU board?,True,False,False,False,False,False,False,1.151,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_id,test_id-doc-9,doc_lookup,What discount do schools get?,True,True,True,,False,False,False,1.116,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discounts""}}]}",
+base_fewshot,test_id,test_id-doc-3,doc_lookup,What is the free delivery threshold?,True,True,True,,True,False,True,1.256,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""free delivery threshold""}}]}",
+base_fewshot,test_id,test_id-doc-1,doc_lookup,Is there a restocking fee?,True,True,True,,True,False,True,1.226,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""restocking fee""}}]}",
+base_fewshot,test_id,test_id-revenue_category-13,revenue_category,Total connectors sales value for August?,True,False,False,False,False,False,False,1.332,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""sales value""}}]}",
+base_fewshot,test_id,test_id-discount_calc-2,discount_calc,EUR 89 less 15% is how much?,True,False,False,,False,False,False,1.153,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""price""}}]}",
+base_fewshot,test_id,test_id-top_product-0,top_product,"In June, which item had the highest unit sales?",True,False,False,False,False,False,False,1.213,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""item sales""}}]}",
+base_fewshot,test_id,test_id-top_product-10,top_product,"In March, which item had the highest unit sales?",True,False,False,False,False,False,False,1.176,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""item sales""}}]}",
+base_fewshot,test_id,test_id-discount_calc-4,discount_calc,Take 12% off EUR 4654.,True,False,False,,False,False,False,1.207,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discounts""}}]}",
+base_fewshot,test_ood,test_ood-order_total-1,order_total,"If a customer buys 12 of the CAN bus cable 5 m, what is the total with 23% VAT?",True,False,False,False,False,False,False,1.202,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_ood,test_ood-segment_count-13,segment_count,How many customers in Wexford belong to the public sector segment?,True,False,False,False,False,False,False,1.555,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_segment_name = 'Wexford' AND category = 'public sector'""}}]}",
+base_fewshot,test_ood,test_ood-top_product-3,top_product,What sold best in January by volume?,True,False,False,False,False,False,False,1.105,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""sold by volume""}}]}",
+base_fewshot,test_ood,test_ood-segment_count-12,segment_count,What is the public sector customer count for Wexford?,True,False,False,False,False,False,False,1.144,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer count""}}]}",
+base_fewshot,test_ood,test_ood-count_orders-10,count_orders,What was the order count for Wexford in July?,True,False,False,False,False,False,False,1.13,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""order count""}}]}",
+base_fewshot,test_ood,test_ood-segment_count-4,segment_count,What is the education customer count for Kildare?,True,False,False,False,False,False,False,1.165,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer count""}}]}",
+base_fewshot,test_ood,test_ood-segment_count-3,segment_count,How many customers in Kildare belong to the retail segment?,True,False,False,False,False,False,False,2.496,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""customer_segment_name = 'Retail'""}}, {""tool"": ""sql"", ""args"": {""query"": ""SELECT COUNT(*) FROM customers WHERE county = 'Kildare'""}}]}",
+base_fewshot,test_ood,test_ood-order_total-2,order_total,"If a customer buys 50 of the 5 V buck converter, what is the total with 23% VAT?",True,True,True,True,True,False,True,2.266,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '5 V buck converter'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 50 * 1.23""}}]}",
+base_fewshot,test_ood,test_ood-order_total-5,order_total,"If a customer buys 100 of the Hall effect sensor, what is the total with 23% VAT?",True,True,True,True,True,False,True,2.293,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Hall effect sensor'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 100 * 1.23""}}]}",
+base_fewshot,test_ood,test_ood-revenue_incl_vat-11,revenue_incl_vat,"Including VAT at 23%, what was the May revenue from microcontrollers?",True,False,False,False,False,False,False,1.227,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue from microcontrollers""}}]}",
+base_fewshot,test_ood,test_ood-top_product-10,top_product,Name the product with the most units shipped in September.,True,False,False,False,False,False,False,1.151,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_ood,test_ood-discount_calc-1,discount_calc,Reduce EUR 1517.8 by 25 percent.,True,False,False,,False,False,False,1.157,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discount percentage""}}]}",
+base_fewshot,test_ood,test_ood-count_orders-6,count_orders,What was the order count for Wexford in April?,True,False,False,False,False,False,False,1.106,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""order count""}}]}",
+base_fewshot,test_ood,test_ood-vat_calc-4,vat_calc,"If the net price is EUR 907, what is it with 23% VAT on top?",True,False,False,,False,False,False,1.192,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""price with VAT""}}]}",
+base_fewshot,test_ood,test_ood-revenue_incl_vat-12,revenue_incl_vat,Total displays revenue in June after adding 23% VAT?,True,False,False,False,False,False,False,1.209,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue""}}]}",
+base_fewshot,test_ood,test_ood-count_orders-12,count_orders,What was the order count for Kildare in January?,True,False,False,False,False,False,False,1.265,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""order count""}}]}",
+base_fewshot,test_ood,test_ood-vat_calc-3,vat_calc,Work out EUR 459.47 with VAT of 23% added.,True,False,False,,False,False,False,1.28,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""delivery days""}}]}",
+base_fewshot,test_ood,test_ood-doc-7-4,doc_lookup,"When we open a trade account, how much credit is allowed?",True,True,True,,True,False,True,1.227,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""credit limits""}}]}",
+base_fewshot,test_ood,test_ood-revenue_incl_vat-13,revenue_incl_vat,"Including VAT at 23%, what was the April revenue from microcontrollers?",True,False,False,False,False,False,False,1.296,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue from microcontrollers""}}]}",
+base_fewshot,test_ood,test_ood-vat_calc-1,vat_calc,Work out EUR 1705.29 with VAT of 23% added.,True,False,False,,False,False,False,1.17,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""delivery days""}}]}",
+base_fewshot,test_ood,test_ood-vat_calc-2,vat_calc,"If the net price is EUR 537.59, what is it with 23% VAT on top?",True,False,False,,False,False,False,1.365,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""price with VAT""}}]}",
+base_fewshot,test_ood,test_ood-revenue_incl_vat-2,revenue_incl_vat,Total connectors revenue in February after adding 23% VAT?,True,False,False,False,False,False,False,1.214,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue""}}]}",
+base_fewshot,test_ood,test_ood-count_orders-2,count_orders,What was the order count for Wexford in June?,True,False,False,False,False,False,False,1.171,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""order count""}}]}",
+base_fewshot,test_ood,test_ood-doc-2-5,doc_lookup,Time limit for flagging a defective delivery?,True,True,True,,False,False,False,1.209,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""delivery days""}}]}",
+base_fewshot,test_ood,test_ood-price_lookup-2,price_lookup,Look up the unit price for the 7 inch touch display.,True,False,False,False,False,False,False,1.273,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_ood,test_ood-order_total-11,order_total,"If a customer buys 40 of the 5 V buck converter, what is the total with 23% VAT?",True,True,True,True,True,False,True,2.254,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = '5 V buck converter'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 40 * 1.23""}}]}",
+base_fewshot,test_ood,test_ood-revenue_category-4,revenue_category,"How much did we sell in power in January, in euro?",True,False,False,False,False,False,False,1.157,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""sales revenue""}}]}",
+base_fewshot,test_ood,test_ood-price_lookup-1,price_lookup,How much is a single 7 inch touch display before VAT?,True,False,False,False,False,False,False,1.157,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_ood,test_ood-revenue_category-5,revenue_category,Give me May revenue for the cables category.,True,False,False,False,False,False,False,1.172,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""category""}}]}",
+base_fewshot,test_ood,test_ood-discount_calc-8,discount_calc,"If we discount EUR 4195 by 15%, what is the new price?",True,False,False,,False,False,False,1.23,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discount percentage""}}]}",
+base_fewshot,test_ood,test_ood-price_lookup-7,price_lookup,Look up the unit price for the 5 V buck converter.,True,False,False,False,False,False,False,1.27,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_ood,test_ood-discount_calc-10,discount_calc,Reduce EUR 635 by 20 percent.,True,False,False,,False,False,False,1.241,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discount percentage""}}]}",
+base_fewshot,test_ood,test_ood-revenue_category-7,revenue_category,Give me October revenue for the connectors category.,True,False,False,False,False,False,False,1.437,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""category""}}]}",
+base_fewshot,test_ood,test_ood-top_product-8,top_product,Name the product with the most units shipped in October.,True,False,False,False,False,False,False,1.464,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""product name""}}]}",
+base_fewshot,test_ood,test_ood-doc-9-4,doc_lookup,"Do universities or schools get cheaper prices, and by how much?",True,True,True,,True,False,True,1.342,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""university prices""}}]}",
+base_fewshot,test_ood,test_ood-revenue_category-9,revenue_category,Give me October revenue for the sensors category.,True,False,False,False,False,False,False,1.211,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""revenue by category""}}]}",
+base_fewshot,test_ood,test_ood-doc-1-4,doc_lookup,What percentage is deducted when custom cables are returned?,True,True,True,,False,False,False,1.371,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""returned cable percentage""}}]}",
+base_fewshot,test_ood,test_ood-discount_calc-2,discount_calc,Reduce EUR 552.53 by 5 percent.,True,False,False,,False,False,False,1.218,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""discount percentage""}}]}",
+base_fewshot,test_ood,test_ood-top_product-7,top_product,What sold best in August by volume?,True,False,False,False,False,False,False,1.178,"{""calls"": [{""tool"": ""search_docs"", ""args"": {""query"": ""sold by volume""}}]}",
+base_fewshot,test_ood,test_ood-price_lookup-4,price_lookup,How much is a single Hall effect sensor before VAT?,True,False,True,True,False,False,False,2.167,"{""calls"": [{""tool"": ""sql"", ""args"": {""query"": ""SELECT unit_price FROM products WHERE name = 'Hall effect sensor'""}}, {""tool"": ""calculator"", ""args"": {""expression"": ""{0} * 1.23""}}]}",
+base_zeroshot,test_id,test_id-count_orders-5,count_orders,Count the orders placed by Sligo customers during February.,False,False,False,False,False,True,False,1.707,"{0}
+
+The count of orders placed by Sligo customers during February is 0.",invalid JSON plan
+base_zeroshot,test_id,test_id-order_total-0,order_total,How much are 3 1 m ribbon cable units after 23% VAT?,False,False,False,False,False,True,False,9.632,"To calculate the VAT amount, we need to calculate the VAT rate and apply it to the total cost. The VAT rate is 23%.
+
+VAT rate = 23%
+VAT rate = 0.23
+
+Total cost = 3 * 1000 = 3000
+
+VAT amount = 3000 * 0.23 = 690
+
+So, the 3 1 m ribbon cable units after 23% VAT is $690.",invalid JSON plan
+base_zeroshot,test_id,test_id-discount_calc-7,discount_calc,Apply a 5% discount to EUR 262.68.,True,False,False,,False,True,False,18.18,"{
+  ""calls"": [{
+    ""tool"": ""sql"",
+    ""args"": {
+      ""sql"": ""SELECT * FROM customers WHERE county = 'Trenton' AND segment = 'Electronics'"",
+      ""query"": ""SELECT SUM(quantity * unit_price) FROM orders WHERE order_id IN (SELECT order_id FROM orders WHERE customer_id = 12345) AND status IN (SELECT status FROM orders WHERE order_date = '2026-01-01')""
+    }
+  }]
+}",invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_incl_vat-2,revenue_incl_vat,Give me sensors sales for July plus 23% VAT.,True,False,False,False,False,True,False,14.907,"{
+  ""calls"": [
+    {
+      ""tool"": ""Sensors"",
+      ""args"": {
+        ""product"": ""Sensor 1"",
+        ""quantity"": 100,
+        ""unit_price"": 100,
+        ""vat_rate"": 23,
+        ""order_date"": ""2026-07-01""
+      }
+    }
+  ]
+}",unknown tool 'Sensors'
+base_zeroshot,test_id,test_id-vat_calc-7,vat_calc,EUR 1825 plus 23% VAT comes to how much?,False,False,False,,False,True,False,10.117,The total cost of the tool call is EUR 1825 + 23% VAT = EUR 1825 + 0.23 * EUR 1825 = EUR 1825 + 0.23 * EUR 1825 = EUR 1825 + 0.3975 = EUR 1834.75.,unknown tool 'sql(query)'
+base_zeroshot,test_id,test_id-revenue_incl_vat-1,revenue_incl_vat,What was sensors revenue in April including 23% VAT?,False,False,False,False,False,True,False,11.291,"The sensors revenue in April was $120,000, including 23% VAT.",invalid JSON plan
+base_zeroshot,test_id,test_id-vat_calc-9,vat_calc,Add VAT at 23% to EUR 298.58.,True,False,False,,False,True,False,5.526,"{
+  ""calls"": [{
+    ""tool"": ""VAT Calculator"",
+    ""args"": {
+      ""customer_id"": ""123456789"",
+      ""order_id"": ""123456789"",
+      ""order_date"": ""2026-01-01"",
+      ""status"": ""delivered""
+    }
+  }]
+}",unknown tool 'VAT Calculator'
+base_zeroshot,test_id,test_id-count_orders-2,count_orders,"In March, how many orders came from customers based in Kerry?",False,False,False,False,False,True,False,5.122,"To find the number of orders from customers based in Kerry, we can use the SQLite database to query the ""customers"" table.
+
+```sql
+SELECT COUNT(*)
+FROM customers
+WHERE county = 'Kerry';
+```
+
+This query will return the number of orders from customers based in Kerry.",sql needs a 'query' string
+base_zeroshot,test_id,test_id-vat_calc-11,vat_calc,EUR 1180.12 plus 23% VAT comes to how much?,False,False,False,,False,True,False,4.748,The total cost of the tool call is EUR 1180.12 + 23% VAT = EUR 1180.12 + 0.23 * EUR 1180.12 = EUR 1180.12 + 2.55432324 = EUR 1197.67.,unknown tool 'sql(query)'
+base_zeroshot,test_id,test_id-discount_calc-10,discount_calc,EUR 2421 less 15% is how much?,False,False,False,,False,True,False,3.125,The total cost of the tool call is 2421 + 15% of 2421 = 2421 + 363.55 = 2785.55.,sql needs a 'query' string
+base_zeroshot,test_id,test_id-order_total-5,order_total,Price for 25 x 12 V DC power supply with VAT at 23%?,False,False,False,False,False,True,False,0.577,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-count_orders-10,count_orders,"In January, how many orders came from customers based in Donegal?",False,False,False,False,False,True,False,4.805,"To find the number of orders from customers in Donegal, we can use the SQLite database to query the ""customers"" table.
+
+```sql
+SELECT COUNT(*)
+FROM customers
+WHERE county = 'Donegal';
+```
+
+This query will return the number of orders from customers in Donegal.",sql needs a 'query' string
+base_zeroshot,test_id,test_id-order_total-12,order_total,"Quote 10 of the Dual-core MCU board, VAT included at 23%.",False,False,False,False,False,True,False,0.616,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_category-1,revenue_category,What was the revenue from cables in January?,False,False,False,False,False,True,False,0.6,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-count_orders-11,count_orders,How many orders did customers in Dublin place in April?,False,False,False,False,False,True,False,9.457,"To find the number of orders placed by customers in Dublin in April, we can use the following SQL query:
+
+```sql
+SELECT COUNT(*)
+FROM customers
+WHERE county = 'Dublin';
+```
+
+This query will return the number of rows in the `customers` table where the `county` column is equal to 'Dublin'.
+
+If you want to get the results in JSON format, you can use the following code:
+
+```python
+import json
+
+custome",invalid JSON plan
+base_zeroshot,test_id,test_id-price_lookup-10,price_lookup,Price of the M12 circular connector?,False,False,False,False,False,True,False,0.564,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-order_total-7,order_total,Price for 50 x 48 V industrial PSU with VAT at 23%?,False,False,False,False,False,True,False,0.565,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-segment_count-5,segment_count,Number of education customers based in Mayo?,False,False,False,False,False,True,False,5.929,The number of education customers based in Mayo is 100.,invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_category-4,revenue_category,"In August, what were our power revenues?",False,False,False,False,False,True,False,0.578,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-price_lookup-4,price_lookup,What do we charge for one Pressure sensor module?,False,False,False,False,False,True,False,7.291,"Based on the information in the doc, the price for a Pressure sensor module is $15.00.",invalid JSON plan
+base_zeroshot,test_id,test_id-vat_calc-13,vat_calc,Add VAT at 23% to EUR 2274.,True,False,False,,False,True,False,242.014,"{
+  ""calls"": [{
+    ""tool"": ""VAT Calculator"",
+    ""args"": {
+      ""customer_id"": ""123456789"",
+      ""order_id"": ""123456789"",
+      ""order_date"": ""2026-01-01"",
+      ""status"": ""delivered""
+    }
+  }]
+}",unknown tool 'VAT Calculator'
+base_zeroshot,test_id,test_id-segment_count-10,segment_count,Count our retail customers in Louth.,False,False,False,False,False,True,False,4.419,"{0}
+
+I'm ready to assist you with your SQL query. Please provide the SQL query you'd like me to execute, and I'll respond with the results.",invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_category-11,revenue_category,How much revenue did power bring in during February?,False,False,False,False,False,True,False,0.984,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-doc-2,doc_lookup,What is the deadline to report faulty goods?,False,False,False,,False,True,False,7.384,The deadline to report faulty goods is 30 days after the last known date of sale.,sql needs a 'query' string
+base_zeroshot,test_id,test_id-top_product-3,top_product,Which product sold the most units in January?,False,False,False,False,False,True,False,12.295,"To find the product that sold the most units in January, we can use the SQLite database to retrieve the data from the ""customers"" table. We can then use the ""customers"" table's ""quantity"" column to find the product with the highest quantity sold.
+
+Here's an example query:
+
+```sql
+SELECT product, COUNT(*) AS quantity
+FROM customers
+WHERE order_date = '2026-01-01'
+GROUP BY product
+ORDER BY quantity ",invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_incl_vat-7,revenue_incl_vat,September cables revenue with 23% VAT added?,False,False,False,False,False,True,False,0.651,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-top_product-5,top_product,"In October, which item had the highest unit sales?",False,False,False,False,False,True,False,12.16,"To find the item with the highest unit sales, we can use the SQLite database to retrieve the data for each item and then sort the results by the quantity sold.
+
+Here's an example query:
+
+```sql
+SELECT sku, SUM(quantity * unit_price) AS total_units
+FROM products
+WHERE status = 'delivered'
+GROUP BY sku
+ORDER BY total_units DESC
+LIMIT 1;
+```
+
+This query will return the item with the highest unit sale",invalid JSON plan
+base_zeroshot,test_id,test_id-segment_count-6,segment_count,Number of trade customers based in Sligo?,False,False,False,False,False,True,False,1.551,"{0}
+
+The number of trade customers based in Sligo is 1.",invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_incl_vat-5,revenue_incl_vat,September sensors revenue with 23% VAT added?,False,False,False,False,False,True,False,0.567,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-price_lookup-8,price_lookup,How much does the 48 V industrial PSU cost?,False,False,False,False,False,True,False,0.575,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-segment_count-12,segment_count,How many education customers are in Sligo?,False,False,False,False,False,True,False,8.095,"To find the number of education customers in Sligo, I'll use the SQLite database to query the ""customers"" table.
+
+```sql
+SELECT COUNT(*)
+FROM customers
+WHERE county = 'Sligo';
+```
+
+This query will return the number of education customers in Sligo.",invalid JSON plan
+base_zeroshot,test_id,test_id-price_lookup-6,price_lookup,What is the list price of the 32-bit MCU board?,False,False,False,False,False,True,False,6.843,The list price of the 32-bit MCU board is $120.,invalid JSON plan
+base_zeroshot,test_id,test_id-doc-9,doc_lookup,What discount do schools get?,False,False,False,,False,True,False,6.601,The discount schools get is 10% off the total cost of the product.,invalid JSON plan
+base_zeroshot,test_id,test_id-doc-3,doc_lookup,What is the free delivery threshold?,False,False,False,,False,True,False,4.243,The free delivery threshold is 1000 units.,sql needs a 'query' string
+base_zeroshot,test_id,test_id-doc-1,doc_lookup,Is there a restocking fee?,False,False,False,,False,True,False,6.531,"Yes, there is a restocking fee. The fee is $0.50 per item.",invalid JSON plan
+base_zeroshot,test_id,test_id-revenue_category-13,revenue_category,Total connectors sales value for August?,False,False,False,False,False,True,False,0.555,{0},invalid JSON plan
+base_zeroshot,test_id,test_id-discount_calc-2,discount_calc,EUR 89 less 15% is how much?,False,False,False,,False,True,False,3.116,The total cost of the tool call is 89 + 15% of 89 = 89 + 12.25 = 91.25.,sql needs a 'query' string
+base_zeroshot,test_id,test_id-top_product-0,top_product,"In June, which item had the highest unit sales?",False,False,False,False,False,True,False,12.053,"To find the item with the highest unit sales, we can use the SQLite database to retrieve the data for June and then filter the results to find the item with the highest sales.
+
+Here's the SQL query to retrieve the data for June:
+
+```sql
+SELECT sku, SUM(quantity * unit_price) AS revenue
+FROM orders
+WHERE order_date = '2026-06-01'
+GROUP BY sku
+ORDER BY revenue DESC
+LIMIT 1;
+```
+
+This query will retu",invalid JSON plan
+base_zeroshot,test_id,test_id-top_product-10,top_product,"In March, which item had the highest unit sales?",False,False,False,False,False,True,False,11.581,"To find the item with the highest unit sales, we can use the SQLite database to retrieve the data for March and then filter the results to find the item with the highest sales.
+
+Here's the SQL query to retrieve the data for March:
+
+```sql
+SELECT sku, SUM(quantity * unit_price) AS revenue
+FROM orders
+WHERE order_date = '2026-03-01'
+GROUP BY sku
+ORDER BY revenue DESC
+LIMIT 1;
+```
+
+This query will re",invalid JSON plan
+base_zeroshot,test_id,test_id-discount_calc-4,discount_calc,Take 12% off EUR 4654.,False,False,False,,False,True,False,2.711,"{
+  ""tool"": ""sql"",
+  ""args"": {
+    ""sql"": ""SELECT * FROM customers WHERE county = 'Kilmarnock'""
+  }
+}",invalid JSON plan
+base_zeroshot,test_ood,test_ood-order_total-1,order_total,"If a customer buys 12 of the CAN bus cable 5 m, what is the total with 23% VAT?",False,False,False,False,False,True,False,0.738,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-segment_count-13,segment_count,How many customers in Wexford belong to the public sector segment?,False,False,False,False,False,True,False,6.04,"To find the number of customers in Wexford who belong to the public sector segment, we can use the SQLite database to query the customer table.
+
+```sql
+SELECT COUNT(*)
+FROM customers
+WHERE county = 'Wexford';
+```
+
+This query will return the number of customers in Wexford who belong to the public sector segment.",sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-top_product-3,top_product,What sold best in January by volume?,False,False,False,False,False,True,False,11.112,"To find the best-selling product by volume in January, we need to calculate the total volume of each product and then compare them.
+
+Here's the SQL query to calculate the total volume of each product:
+
+```sql
+SELECT product_name, COUNT(*) as total_volume
+FROM products
+WHERE order_date = '2026-01-01'
+GROUP BY product_name
+ORDER BY total_volume DESC
+LIMIT 1;
+```
+
+This query groups the products by th",sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-segment_count-12,segment_count,What is the public sector customer count for Wexford?,False,False,False,False,False,True,False,2.682,The public sector customer count for Wexford is 1000.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-count_orders-10,count_orders,What was the order count for Wexford in July?,False,False,False,False,False,True,False,4.563,The order count for Wexford in July is 120.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-segment_count-4,segment_count,What is the education customer count for Kildare?,False,False,False,False,False,True,False,1.806,"{0}
+
+The education customer count for Kildare is 100.",invalid JSON plan
+base_zeroshot,test_ood,test_ood-segment_count-3,segment_count,How many customers in Kildare belong to the retail segment?,False,False,False,False,False,True,False,17.817,"To find the number of customers in Kildare who belong to the retail segment, we can use the SQLite database to query the ""customers"" table.
+
+```sql
+SELECT COUNT(*)
+FROM customers
+WHERE county = 'Kildare';
+```
+
+This query will return the number of rows in the ""customers"" table where the ""county"" column is equal to ""Kildare"".
+
+The result of this query is:
+
+```json
+{
+  ""customers"": [
+    {
+      ""cus",invalid JSON plan
+base_zeroshot,test_ood,test_ood-order_total-2,order_total,"If a customer buys 50 of the 5 V buck converter, what is the total with 23% VAT?",False,False,False,False,False,True,False,0.63,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-order_total-5,order_total,"If a customer buys 100 of the Hall effect sensor, what is the total with 23% VAT?",False,False,False,False,False,True,False,0.607,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-revenue_incl_vat-11,revenue_incl_vat,"Including VAT at 23%, what was the May revenue from microcontrollers?",False,False,False,False,False,True,False,1.716,"{0}
+
+The May revenue from microcontrollers was $120,000.",invalid JSON plan
+base_zeroshot,test_ood,test_ood-top_product-10,top_product,Name the product with the most units shipped in September.,False,False,False,False,False,True,False,4.307,"The product with the most units shipped in September is ""Product 1234"".",sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-discount_calc-1,discount_calc,Reduce EUR 1517.8 by 25 percent.,False,False,False,,False,True,False,1.276,"{0: ""EUR 1517.8""}",invalid JSON plan
+base_zeroshot,test_ood,test_ood-count_orders-6,count_orders,What was the order count for Wexford in April?,False,False,False,False,False,True,False,6.679,The order count for Wexford in April is 120.,invalid JSON plan
+base_zeroshot,test_ood,test_ood-vat_calc-4,vat_calc,"If the net price is EUR 907, what is it with 23% VAT on top?",False,False,False,,False,True,False,0.625,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-revenue_incl_vat-12,revenue_incl_vat,Total displays revenue in June after adding 23% VAT?,False,False,False,False,False,True,False,0.593,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-count_orders-12,count_orders,What was the order count for Kildare in January?,False,False,False,False,False,True,False,6.851,The order count for Kildare in January is 120.,invalid JSON plan
+base_zeroshot,test_ood,test_ood-vat_calc-3,vat_calc,Work out EUR 459.47 with VAT of 23% added.,False,False,False,,False,True,False,3.429,"{0: { ""tool"": ""sql"", ""args"": { ""sql"": ""SELECT * FROM customers WHERE county = 'New York' AND segment = 'Electronics' ORDER BY order_date DESC LIMIT 10"" } }",invalid JSON plan
+base_zeroshot,test_ood,test_ood-doc-7-4,doc_lookup,"When we open a trade account, how much credit is allowed?",False,False,False,,False,True,False,4.056,The amount of credit allowed for a trade account varies depending on the trade type and the customer's account status. Please refer to the customer's account policy for the most accurate information.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-revenue_incl_vat-13,revenue_incl_vat,"Including VAT at 23%, what was the April revenue from microcontrollers?",False,False,False,False,False,True,False,12.241,"{0}
+
+April revenue from microcontrollers: 
+{ ""calls"": [{""tool"": ""sql"", ""args"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""cus",invalid JSON plan
+base_zeroshot,test_ood,test_ood-vat_calc-1,vat_calc,Work out EUR 1705.29 with VAT of 23% added.,False,False,False,,False,True,False,11.892,"{0: { ""tool"": ""sql(query)"", ""args"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""customers"": { ""c",invalid JSON plan
+base_zeroshot,test_ood,test_ood-vat_calc-2,vat_calc,"If the net price is EUR 537.59, what is it with 23% VAT on top?",False,False,False,,False,True,False,0.6,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-revenue_incl_vat-2,revenue_incl_vat,Total connectors revenue in February after adding 23% VAT?,False,False,False,False,False,True,False,0.583,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-count_orders-2,count_orders,What was the order count for Wexford in June?,False,False,False,False,False,True,False,4.757,The order count for Wexford in June is 120.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-doc-2-5,doc_lookup,Time limit for flagging a defective delivery?,False,False,False,,False,True,False,6.189,The time limit for flagging a defective delivery is 24 hours.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-price_lookup-2,price_lookup,Look up the unit price for the 7 inch touch display.,False,False,False,False,False,True,False,1.722,"{0}
+
+The unit price for the 7-inch touch display is $120.",invalid JSON plan
+base_zeroshot,test_ood,test_ood-order_total-11,order_total,"If a customer buys 40 of the 5 V buck converter, what is the total with 23% VAT?",False,False,False,False,False,True,False,0.632,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-revenue_category-4,revenue_category,"How much did we sell in power in January, in euro?",False,False,False,False,False,True,False,0.618,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-price_lookup-1,price_lookup,How much is a single 7 inch touch display before VAT?,False,False,False,False,False,True,False,2.932,The price of a single 7-inch touch display before VAT is $129.99.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-revenue_category-5,revenue_category,Give me May revenue for the cables category.,False,False,False,False,False,True,False,2.937,"May revenue for the cables category is $120,000.",sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-discount_calc-8,discount_calc,"If we discount EUR 4195 by 15%, what is the new price?",False,False,False,,False,True,False,0.603,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-price_lookup-7,price_lookup,Look up the unit price for the 5 V buck converter.,False,False,False,False,False,True,False,0.626,{0},invalid JSON plan
+base_zeroshot,test_ood,test_ood-discount_calc-10,discount_calc,Reduce EUR 635 by 20 percent.,False,False,False,,False,True,False,1.047,"{0: ""EUR 635""}",invalid JSON plan
+base_zeroshot,test_ood,test_ood-revenue_category-7,revenue_category,Give me October revenue for the connectors category.,False,False,False,False,False,True,False,1.571,"{0}
+
+October revenue for the connectors category is $120,000.",invalid JSON plan
+base_zeroshot,test_ood,test_ood-top_product-8,top_product,Name the product with the most units shipped in October.,False,False,False,False,False,True,False,5.394,"The product with the most units shipped in October is ""Product 1234"".",sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-doc-9-4,doc_lookup,"Do universities or schools get cheaper prices, and by how much?",False,False,False,,False,True,False,11.817,"Yes, universities and schools often get cheaper prices. By how much depends on various factors, such as the specific university, the type of institution, and the region. Here are some general trends:
+
+1. **Cost of living**: Cities with higher costs of living tend to have higher prices. For example, cities like San Francisco, New York, and Los Angeles have significantly higher costs of living compa",invalid JSON plan
+base_zeroshot,test_ood,test_ood-revenue_category-9,revenue_category,Give me October revenue for the sensors category.,False,False,False,False,False,True,False,1.462,"{0}
+
+October revenue for the sensors category is $120,000.",invalid JSON plan
+base_zeroshot,test_ood,test_ood-doc-1-4,doc_lookup,What percentage is deducted when custom cables are returned?,False,False,False,,False,True,False,3.875,The percentage deducted when custom cables are returned is 10%.,sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-discount_calc-2,discount_calc,Reduce EUR 552.53 by 5 percent.,False,False,False,,False,True,False,1.183,"{0: ""EUR 552.53""}",invalid JSON plan
+base_zeroshot,test_ood,test_ood-top_product-7,top_product,What sold best in August by volume?,False,False,False,False,False,True,False,10.801,"To find the best-selling product in August by volume, we need to calculate the total volume of orders for each product and then compare them.
+
+Here's the SQL query to calculate the total volume of orders for each product:
+
+```sql
+SELECT product.name, COUNT(*) as volume
+FROM products
+JOIN orders ON products.id = orders.product_id
+GROUP BY product.name
+ORDER BY volume DESC;
+```
+
+This query groups th",sql needs a 'query' string
+base_zeroshot,test_ood,test_ood-price_lookup-4,price_lookup,How much is a single Hall effect sensor before VAT?,False,False,False,False,False,True,False,8.949,The price of a single Hall effect sensor before VAT is $1.25.,invalid JSON plan
