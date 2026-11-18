@@ -326,4 +326,79 @@ files that exist. Do not back-fill metrics from memory.
 
 ---
 
+*Project 16 (tool-using LLM agent with LoRA): entry to follow once its evaluation is complete.*
+
+### 2026-11-17 — Project 17: MLOps loop with MLflow registry, FastAPI service, drift monitoring and retraining policy (REAL public data)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Downloaded UCI Bike Sharing (CC BY 4.0) with checksum and built causal lag features on a complete hourly grid. Trained five candidates (two naive baselines, ridge, two gradient-boosting configs) on 2011, selected on Q1 2012, and logged every run to MLflow with data checksum and signature. Registered the winner with a `champion` alias, served it with FastAPI (validation, `/drift`, Prometheus-style `/metrics`), load-tested it over real HTTP, and replayed April–December 2012 month by month with PSI/KS drift checks and a written retraining rule. Wrote a Dockerfile and a GitHub Actions workflow; 11 tests.
+- **Artefacts:**
+  - `projects/17-mlops-model-serving/` (full project)
+  - `projects/17-mlops-model-serving/src/train.py`, `src/monitor.py`, `src/drift.py`, `app/main.py`, `Dockerfile`, `ci/github-actions-ci.yml`
+  - `projects/17-mlops-model-serving/reports/metrics.json`, `monitoring_2012.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-ML, T-EV, T-PY, T-DC, T-MLOPS
+- **Reflection:** Gradient boosting beat the best naive baseline by 37.46% (MAE 34.09 vs 54.51). My first feature set lost to the baseline, because in the scheme's first year `month` encoded the demand ramp-up rather than seasonality. I removed it and added lag features, and the README records that history, including that the validation quarter was used for these choices. The replay retrained once (May 2012), and the policy gave MAE 37.02 against 49.65 for never retraining. Drift alerts fired in all 9 months, so a drift alarm on its own would have been useless; the accuracy rule was what mattered. MLflow 3's skops format needed an explicit list of trusted types, which I reviewed rather than trusting everything. Docker and CI were not run (no daemon; the token has no `workflow` scope), and this is stated.
+- **Assessor notes:**
+
+### 2026-11-17 — Project 18: dbt + Airflow modern data stack over 5.97 million taxi trips (REAL public data)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Built a monthly ELT pipeline: Python extract-load into a DuckDB raw layer with checksums; dbt staging, intermediate and mart models with an incremental delete+insert fact table, 23 data tests and generated docs; an Apache Airflow 3.4 DAG (extract-load, `dbt seed`, `dbt build`, quality gate) run month by month with `airflow dags test`. Verified idempotency (re-run a month), equivalence with a full refresh (MD5 per table), and that a planted bad row fails the gate.
+- **Artefacts:**
+  - `projects/18-dbt-airflow-modern-data-stack/` (full project)
+  - `projects/18-dbt-airflow-modern-data-stack/nyc_taxi/` (dbt project), `airflow/dags/nyc_taxi_monthly.py`, `scripts/verify.py`
+  - `projects/18-dbt-airflow-modern-data-stack/reports/metrics.json`, `daily_trips_by_borough.png`, `dq_rejections.png`, `hour_of_week_heatmap.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-DE, T-SQL, T-EV, T-PY, T-DC
+- **Reflection:** 5,972,150 raw rows became 5,704,614 fact rows; every rejected row is counted by reason. Both DAG runs succeeded (15.6 s and 16.8 s) with 23 of 23 tests passing; a re-run and a full refresh gave identical MD5s, and a planted zone id 998 was caught by the relationships test. Airflow and dbt needed separate virtual environments because their dependencies conflict, which mirrors production practice. Limits: one machine, DuckDB instead of a cloud warehouse, and two months of data.
+- **Assessor notes:**
+
+### 2026-11-17 — Project 19: Kafka streaming pipeline with event-time windows and exactly-once results (REAL public trips, injected defects)
+
+- **Time / duration:** 17 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Installed and ran a single-node Apache Kafka 4.4 broker (KRaft, no Docker). Turned two days of real TLC trips into an out-of-order stream of 169,920 messages with seeded delays, 1.5% late events and 1.0% duplicate retries. Wrote an idempotent producer and a stream processor with 5-minute event-time windows, a watermark, a late-event side output and de-duplication. Exactly-once results come from storing offsets, state and results in one SQLite transaction. Wrote an independent vectorised batch "truth", a naive comparison design, a crash-and-resume experiment, a paced latency test and a Streamlit live dashboard; 6 tests.
+- **Artefacts:**
+  - `projects/19-realtime-streaming-pipeline/` (full project)
+  - `projects/19-realtime-streaming-pipeline/src/windowing.py`, `src/processor.py`, `src/truth.py`, `src/run_experiment.py`, `app.py`
+  - `projects/19-realtime-streaming-pipeline/reports/metrics.json`, `exactly_once_vs_naive.png`, `windows_and_late_events.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-DE, T-STREAM, T-EV, T-PY, T-DC
+- **Reflection:** After a kill with 4,000 messages uncommitted, all 2,246 windows matched the batch truth exactly, and the 2,554 late events were an identical set. The naive design over-counted trips by 33.6%, because auto-commit had not committed anything before the kill, so it replayed everything. The test that streaming and batch logic agree on 2,000 random events is what made the exact comparison credible. I found partition skew in my own design (99% of messages on one partition), which I report as the main scaling limit. Not run with replication or on a cluster; "exactly-once" here means exactly-once results via a transactional sink, which I distinguish from Kafka transactions.
+- **Assessor notes:**
+
+### 2026-11-17 — Project 20: PCB defect detection with CNNs, a golden-template baseline and anomaly detection (REAL public images, synthetic defects)
+
+- **Time / duration:** 17–18 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Fetched DeepPCB (MIT licence) at a pinned commit and cut 64×64 patches for 6 defect types plus defect-free crops, keeping the official test split and holding out two image groups for validation. Trained a small CNN from scratch and fine-tuned an ImageNet ResNet-18 on CPU. Built a golden-template difference baseline and a simplified PatchCore anomaly detector trained on defect-free patches only. Chose every decision threshold on validation and scored once on test (per-class metrics, missed defects, false alarms, seen vs unseen image groups). Added Grad-CAM, a sliding-window board scan in Streamlit and 9 tests.
+- **Artefacts:**
+  - `projects/20-pcb-defect-vision/` (full project)
+  - `projects/20-pcb-defect-vision/src/prepare_patches.py`, `src/train.py`, `src/evaluate.py`, `src/board_scan.py`, `app.py`
+  - `projects/20-pcb-defect-vision/reports/metrics.json`, `confusion_resnet18_imagenet.png`, `gradcam_grid.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-CV, T-ML, T-EV, T-PY, T-DC
+- **Reflection:** ResNet-18 reached 98.02% accuracy (macro-F1 0.981) and missed 12 of 3,140 defects at a 5.3% false-alarm rate; the template rule missed 45 at 6.0%, and PatchCore-lite (no defect labels) missed 36 at 24.3%. My first template baseline used a fixed setting and looked weak (AUROC 0.82); rather than tune it on test, I chose its setting on the train split, which made it a fair and strong baseline (0.968). The dataset's defects are artificial and the boards bare, scores are patch-level, and whole-board detection was not scored; all of this is stated. The framing comes from my test-engineering work in automotive electronics, but no employer data was used.
+- **Assessor notes:**
+
+---
+
 *End of entries for 17 November 2026.*
+
+---
+
+### 2026-11-18 — Project 21: predictive maintenance on NASA C-MAPSS with anomaly detection, RUL and a cost-based alert (public simulated data)
+
+- **Time / duration:** 18 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Downloaded NASA C-MAPSS (public domain) with checksum. Split engines (not cycles) into fit, validation and held-out test, and built causal rolling features, with a test proving that future cycles never change past features. Fitted four unsupervised health scores on healthy early-life cycles only, and RUL models against two naive baselines, scored on held-out engines and on NASA's official test set. Wrote a cost model (failure, planned job, wasted life, planning lead time) and chose each policy's threshold on validation by cost. Compared run-to-failure, a fixed interval, a health-score alert and a predicted-RUL alert, with a failure-cost sensitivity, 5 repeated engine splits, a second sub-dataset (FD003), a Streamlit replay app and 10 tests.
+- **Artefacts:**
+  - `projects/21-predictive-maintenance-cmapss/` (full project)
+  - `projects/21-predictive-maintenance-cmapss/src/features.py`, `src/anomaly.py`, `src/rul.py`, `src/alerting.py`, `src/run.py`, `app.py`
+  - `projects/21-predictive-maintenance-cmapss/reports/metrics.json`, `rul_and_health_FD001.png`, `policies_FD001.png`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-CO
+- **Technical outcomes:** T-PM, T-ML, T-EV, T-PY, T-DC
+- **Reflection:** Gradient boosting reached an official FD001 test RMSE of 15.58 against 37.69 for the fleet-life baseline. The predicted-RUL alert cost 1.48 per engine (1 failure in 20), against 3.07 for a fixed interval and 10.0 for run-to-failure, and 1.57 ± 0.38 over five splits. Two of the four anomaly scores failed or missed most engines on FD001 (PCA residual AUROC 0.54), and on FD003 the health-score policy beat the RUL policy. I report both rather than pick the flattering dataset. The costs are assumptions, the data is simulated, and 20 test engines is a small sample: one failure moves the mean cost by 0.45. The chosen threshold sat close to the cost cliff, which argues for a safety margin in practice.
+- **Assessor notes:**
+
+---
+
+*End of entries for 18 November 2026.*

@@ -65,6 +65,11 @@ underneath the Level 9 strands above, so an assessor can map either way.
 | T-DE | **Data engineering** — incremental and idempotent pipelines, quarantine and retry, data-quality gates, lineage, lakehouse layers (added 17 Nov 2026) | L9-RI, L9-CE | 12, 14 | `projects/12-sql-python-etl-pipeline/src/etl/`; `projects/14-azure-fabric-medallion-lakehouse/src/`; both `reports/metrics.json` | evidenced |
 | T-BI | **Business intelligence and KPI design** — KPI definitions, dashboards, Power BI data model and DAX (added 17 Nov 2026) | L9-CO, L9-K | 11, 13 | `projects/11-manufacturing-kpi-dashboard/powerbi/`; both `app.py` | evidenced (emerging): DAX not executed |
 | T-CL | **Cloud data platform design** — Azure / Fabric service mapping, infrastructure as code (added 17 Nov 2026) | L9-K, L9-AU | 14 | `projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md`; `infra/main.bicep` | partial: designed and compiled, never deployed |
+| T-LLM | **LLM applications** — tool-using agents, structured output, parameter-efficient fine-tuning (LoRA), evaluation on held-out phrasings (added 18 Nov 2026) | L9-K, L9-RI, L9-CE | 16 | `projects/16-tool-agent-lora/src/agent.py`; `src/finetune_lora.py`; `reports/metrics.json` | in progress |
+| T-MLOPS | **MLOps** — experiment tracking, model registry, model serving, drift monitoring, retraining policy, CI and containers (added 17 Nov 2026) | L9-RI, L9-AU | 17 | `projects/17-mlops-model-serving/src/`; `app/main.py`; `Dockerfile`; `ci/` | evidenced (Docker and CI written, not run) |
+| T-STREAM | **Stream processing** — Kafka producers and consumers, event-time windows, watermarks, late data, exactly-once results (added 17 Nov 2026) | L9-K, L9-RI | 19 | `projects/19-realtime-streaming-pipeline/src/`; `reports/metrics.json` | evidenced (single broker) |
+| T-CV | **Computer vision** — CNN training and transfer learning, anomaly detection on images, Grad-CAM explainability (added 17 Nov 2026) | L9-K, L9-CE | 20 | `projects/20-pcb-defect-vision/src/`; `reports/metrics.json`; `reports/gradcam_grid.png` | evidenced |
+| T-PM | **Predictive maintenance / time series** — causal features, unsupervised health scoring, remaining-useful-life regression, cost-based alerting (added 18 Nov 2026) | L9-K, L9-RI, L9-CE | 21 | `projects/21-predictive-maintenance-cmapss/src/`; `reports/metrics.json` | evidenced |
 
 ---
 
@@ -320,4 +325,95 @@ REAL UCI Online Retail, 3,360 customers, calibration and 91-day hold-out windows
 | T-DC | README with critical evaluation, `CASE_STUDY.md`, `CODE_WALKTHROUGH.md` for each |
 | T-ET | Synthetic data where no real data could be used (11–13); licence attribution and pseudonymous IDs (14, 15) |
 
-Last updated: 17 November 2026 (Europe/Dublin).
+## 10. Production ML and engineering set (projects 16–21, 17–18 November 2026)
+
+Projects 16–21 move from building models to running them: an LLM agent
+that acts through tools, a model lifecycle with monitoring, orchestrated
+and streaming data pipelines, computer vision for inspection, and
+maintenance decisions driven by cost. The protocol is unchanged: metrics
+come only from real runs, every result is checked against a baseline or
+an independent answer, and what was *not* run is stated (Docker and CI in
+17, a multi-broker Kafka cluster in 19, whole-board detection in 20, real
+machine data in 21). Projects 20 and 21 draw on experience as a Test
+Engineer in automotive electronics manufacturing; no employer data is
+used.
+
+### 10.1 Project 16 additions (16-tool-agent-lora)
+
+In progress: to be added once the evaluation is complete.
+
+### 10.2 Project 17 additions (17-mlops-model-serving)
+
+REAL UCI Bike Sharing, hourly, 2011–2012.
+
+| ID | How project 17 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Model registry and aliases, PSI/KS drift, performance-triggered retraining, champion/challenger promotion | `projects/17-mlops-model-serving/src/monitor.py`; `src/drift.py`; `README.md` § Approach | evidenced |
+| L9-CE | Drift alerts fired 9 of 9 months and were useless alone, reported; first feature set lost to the baseline, disclosed; Docker and CI not run, stated | `README.md` § Results and § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Time-based split; retraining rule fixed before the replay; replay vs never-retrain counterfactual (MAE 37.02 vs 49.65) | `src/train.py`; `src/monitor.py` | evidenced |
+| L9-AU | Production concerns (validation, metrics endpoint, load test, trusted-type review for model deserialisation) chosen without a brief | `app/main.py`; `src/load_test.py`; `src/train.py` | evidenced |
+| T-MLOPS / T-ML / T-PY | MLflow tracking and registry, FastAPI, load test, 11 tests | `src/`; `app/`; `tests/` | evidenced |
+
+### 10.3 Project 18 additions (18-dbt-airflow-modern-data-stack)
+
+REAL NYC TLC yellow-taxi trips, January–February 2024 (5,972,150 rows).
+
+| ID | How project 18 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Layered dbt modelling, incremental strategy, data tests, DAG orchestration with a quality gate | `projects/18-dbt-airflow-modern-data-stack/nyc_taxi/`; `airflow/dags/nyc_taxi_monthly.py` | evidenced |
+| L9-CE | Every rejected row accounted for by reason; limits of DuckDB vs a cloud warehouse stated | `README.md` § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Idempotency and full-refresh equivalence by MD5; a planted bad row proves the gate stops the run | `scripts/verify.py`; `reports/metrics.json` | evidenced |
+| T-DE / T-SQL / T-PY | dbt SQL models and 23 tests, Airflow DAG, 5 `pytest` tests | `nyc_taxi/`; `airflow/`; `tests/` | evidenced |
+
+### 10.4 Project 19 additions (19-realtime-streaming-pipeline)
+
+REAL TLC trips replayed through Kafka, with injected delays, late events and duplicates.
+
+| ID | How project 19 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Event time vs processing time, watermarks, late-data side outputs, delivery semantics and transactional sinks | `projects/19-realtime-streaming-pipeline/src/windowing.py`; `src/processor.py`; `README.md` § Approach | evidenced |
+| L9-CE | Naive design measured (+33.6% trips after one crash); partition skew in my own design found and reported; exactly-once results distinguished from Kafka transactions | `README.md` § Results and § Critical evaluation | evidenced |
+| L9-RI | Independent vectorised batch truth; window-by-window comparison after a simulated crash; streaming-vs-batch equivalence test | `src/truth.py`; `tests/test_windowing.py`; `reports/metrics.json` | evidenced |
+| L9-AU | Kafka installed and run without Docker or a managed service | `scripts/start_kafka.sh`; `README.md` § How to run | evidenced |
+| T-STREAM / T-DE / T-PY | Producer, processor, sink, live dashboard, 6 tests | `src/`; `app.py`; `tests/` | evidenced (single broker) |
+
+### 10.5 Project 20 additions (20-pcb-defect-vision)
+
+REAL DeepPCB board images (MIT licence) with artificially added defects; 4,640 test patches.
+
+| ID | How project 20 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Transfer learning, class-weighted training, golden-template inspection, PatchCore-style anomaly detection, Grad-CAM | `projects/20-pcb-defect-vision/src/`; `README.md` § Approach | evidenced |
+| L9-CE | Missed defects and false alarms reported per method; template baseline made fair (setting chosen on train, not test); synthetic defects, bare boards and patch-level scoring stated | `README.md` § Results and § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Official test split scored once; thresholds fixed on validation; seen vs unseen image groups compared | `src/evaluate.py`; `reports/metrics.json` | evidenced |
+| L9-ET | Licence and citation recorded; no employer images used | `data/patch_metadata.json`; `README.md` § Data status | evidenced |
+| T-CV / T-ML / T-PY | Two CNNs, anomaly detector, board scan app, 9 tests | `src/`; `app.py`; `tests/` | evidenced |
+
+### 10.6 Project 21 additions (21-predictive-maintenance-cmapss)
+
+Public SIMULATED NASA C-MAPSS turbofan data (FD001 headline, FD003 check).
+
+| ID | How project 21 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | RUL with a capped target, unsupervised health indices, PHM08 scoring, cost-based maintenance policies | `projects/21-predictive-maintenance-cmapss/src/`; `README.md` § Approach | evidenced |
+| L9-CE | Failed anomaly scores reported (PCA residual AUROC 0.54); FD003 reverses the best policy; small test set and assumed costs stated; threshold close to the cost cliff discussed | `README.md` § Results and § Critical evaluation; `reports/metrics.json` | evidenced |
+| L9-RI | Engine-level split; causality test on features; parameters chosen on validation; failure-cost sensitivity; 5 repeated splits | `src/run.py`; `tests/test_pm.py`; `reports/metrics.json` | evidenced |
+| L9-CO | Plain-language cost table for a plant manager; engine replay app | `CASE_STUDY.md`; `app.py` | evidenced |
+| T-PM / T-ML / T-PY | Feature, anomaly, RUL and alerting modules; 10 tests | `src/`; `tests/` | evidenced |
+
+### 10.7 Summary for projects 16–21
+
+| Technical outcome | Projects 16–21 evidence |
+| --- | --- |
+| T-LLM | Tool-using agent with LoRA fine-tune (16, in progress) |
+| T-MLOPS | MLflow registry, FastAPI serving, drift monitoring, retraining policy (17) |
+| T-DE / T-SQL | dbt + Airflow (18); Kafka pipeline with a transactional sink (19); read-only SQL tool (16) |
+| T-STREAM | Event-time windows, watermarks, exactly-once results checked against a batch truth (19) |
+| T-CV | CNN classifiers, template baseline, anomaly detection, Grad-CAM (20) |
+| T-PM | Health scores, RUL, cost-based alert policies (21) |
+| T-EV | Baselines in every project; independent truth (19); validation-only thresholds (20, 21); repeated splits (21) |
+| T-PY | Pinned requirements, 41 (projects 17–21; 16 in progress) `pytest` tests in total |
+| T-DC | README with critical evaluation, `CASE_STUDY.md`, `CODE_WALKTHROUGH.md` for each |
+| T-ET | Licence attribution and no personal data in public datasets (17–21); synthetic company data (16); no employer data (20, 21) |
+
+Last updated: 18 November 2026 (Europe/Dublin).

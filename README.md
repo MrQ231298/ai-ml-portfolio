@@ -1,8 +1,9 @@
 # AI / ML portfolio — Owen Quigley
 
 Machine learning and data work — beginner-friendly baselines (projects
-1–5), advanced ML prototypes (projects 6–10) and business analytics /
-data engineering projects (11–15) — meant to do two jobs at once:
+1–5), advanced ML prototypes (projects 6–10), business analytics /
+data engineering projects (11–15) and production-style ML and data
+engineering (16–21) — meant to do two jobs at once:
 
 1. **Client-ready demos and case studies** — small, working prototypes a
    non-specialist can try, with a plain-English write-up of the business
@@ -43,6 +44,18 @@ mapped to Azure and Microsoft Fabric (**run locally, not deployed to
 Azure**), and a customer segmentation checked against a later hold-out
 period.
 
+**Projects 16–21 are the production ML and engineering set** (added
+17–18 November 2026): a tool-using LLM agent with a LoRA fine-tune
+(in progress), an MLOps loop (MLflow registry, FastAPI
+service, drift monitoring and a retraining policy), a dbt + Airflow
+modern data stack over 5.97 million real taxi trips, a Kafka streaming
+pipeline whose exactly-once results are checked window by window against
+a batch truth after a simulated crash, PCB defect detection with a
+golden-template baseline and anomaly detection, and predictive
+maintenance on NASA turbofan data with an alert threshold chosen by cost.
+Projects 20 and 21 draw on two years as a Test Engineer in automotive
+electronics manufacturing; no employer data is used.
+
 This repository is a starting point, not a claim that a single baseline
 model already satisfies a Master's award. Later projects should deepen
 the research, evaluation and professional practice that Level 9 asks
@@ -72,6 +85,12 @@ are there to show that distinction clearly.
 | 13 | [Marketing campaign dashboard](projects/13-marketing-campaign-dashboard/) | Paid media, attribution, incrementality | [Streamlit dashboard](projects/13-marketing-campaign-dashboard/app.py); [insights](projects/13-marketing-campaign-dashboard/reports/insights.md) | Analytics (run 17 Nov 2026). SYNTHETIC simulation with known causal truth. |
 | 14 | [Medallion lakehouse (Azure / Fabric mapping)](projects/14-azure-fabric-medallion-lakehouse/) | Retail transactions, bronze/silver/gold | [Pipeline](projects/14-azure-fabric-medallion-lakehouse/src/run_pipeline.py); [Azure/Fabric mapping](projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md) | Data engineering (run 17 Nov 2026), **run locally, not on Azure**. REAL public data (UCI Online Retail II, CC BY 4.0). |
 | 15 | [Customer segmentation](projects/15-customer-segmentation/) | Retail / CRM customer segments (method transfers to advisers) | [Streamlit app](projects/15-customer-segmentation/app.py); [code walkthrough](projects/15-customer-segmentation/CODE_WALKTHROUGH.md) | Analytics (run 17 Nov 2026). REAL public data (UCI Online Retail, CC BY 4.0). |
+| 16 | [Tool-using LLM agent + LoRA](projects/16-tool-agent-lora/) | Business-data assistant: SQL, calculator, policy search | [Streamlit app](projects/16-tool-agent-lora/app.py); [code walkthrough](projects/16-tool-agent-lora/CODE_WALKTHROUGH.md) | **In progress** (evaluation running). SYNTHETIC company database; small local model on CPU. |
+| 17 | [MLOps: tracked, served, monitored model](projects/17-mlops-model-serving/) | Hourly bike-share demand | [FastAPI service](projects/17-mlops-model-serving/app/main.py); [code walkthrough](projects/17-mlops-model-serving/CODE_WALKTHROUGH.md) | MLOps (run 17 Nov 2026). REAL public data (UCI Bike Sharing, CC BY 4.0). Docker and CI written, not run. |
+| 18 | [dbt + Airflow modern data stack](projects/18-dbt-airflow-modern-data-stack/) | NYC taxi trips, monthly ELT | [Airflow DAG](projects/18-dbt-airflow-modern-data-stack/airflow/dags/); [code walkthrough](projects/18-dbt-airflow-modern-data-stack/CODE_WALKTHROUGH.md) | Data engineering (run 17 Nov 2026). REAL public data (NYC TLC, 5.97 m rows). |
+| 19 | [Real-time streaming pipeline](projects/19-realtime-streaming-pipeline/) | Live taxi demand from Kafka | [Streamlit live dashboard](projects/19-realtime-streaming-pipeline/app.py); [code walkthrough](projects/19-realtime-streaming-pipeline/CODE_WALKTHROUGH.md) | Data engineering (run 17 Nov 2026). REAL public trips with injected delays and duplicates; single Kafka broker. |
+| 20 | [PCB defect detection](projects/20-pcb-defect-vision/) | Automated optical inspection, electronics manufacturing | [Streamlit board scan](projects/20-pcb-defect-vision/app.py); [code walkthrough](projects/20-pcb-defect-vision/CODE_WALKTHROUGH.md) | Computer vision (run 17 Nov 2026). REAL public images (DeepPCB, MIT) with artificially added defects. |
+| 21 | [Predictive maintenance](projects/21-predictive-maintenance-cmapss/) | Equipment health, remaining useful life, maintenance cost | [Streamlit engine replay](projects/21-predictive-maintenance-cmapss/app.py); [code walkthrough](projects/21-predictive-maintenance-cmapss/CODE_WALKTHROUGH.md) | Advanced ML (run 18 Nov 2026). Public SIMULATED data (NASA C-MAPSS, public domain). |
 
 Each finished project should contain:
 
@@ -484,6 +503,122 @@ buys again (AUC 0.739 vs 0.661), which is reported as the main finding.
 
 ![Customer segmentation app](projects/15-customer-segmentation/reports/dashboard_segments.png)
 
+## Production ML and engineering projects 16–21: how to run and headline results
+
+Run on 17–18 November 2026 (Europe/Dublin) on Python 3.13.5, CPU only;
+every number below is copied from that project's `reports/metrics.json`.
+Each folder has its own requirements, `pytest` tests, README (problem,
+approach, results, client value, critical evaluation, next steps),
+`CASE_STUDY.md` and `CODE_WALKTHROUGH.md`, and states what was **not**
+run.
+
+### Project 16 — tool-using LLM agent with LoRA (in progress)
+
+The evaluation is still running. This section will be filled in from its
+`reports/metrics.json` once it is complete.
+
+### Project 17 — MLOps: tracked, registered, served and monitored model
+
+```bash
+cd projects/17-mlops-model-serving
+pip install -r requirements.txt
+python src/train.py && python src/monitor.py && python src/load_test.py && pytest -q
+```
+
+REAL UCI Bike Sharing data (CC BY 4.0). Five candidates tracked in MLflow;
+gradient boosting beat the best naive baseline by **37.5%** on validation
+(MAE 34.09 vs 54.51) and was registered as `champion`. A month-by-month
+replay of Apr–Dec 2012 triggered one retrain (May 2012); with the policy,
+MAE was **37.02** against 49.65 if never retrained. Drift alerts fired in
+all 9 months, so only the accuracy check pointed at the month that
+mattered. FastAPI service: single-record p50 8.4 ms, p95 21.4 ms; batch of
+100 at 6,490 records/s. 11 tests. The Dockerfile and GitHub Actions
+workflow are written but **not run** (no Docker daemon; the push token
+lacks the `workflow` scope, so the workflow sits in `ci/`).
+
+![Monitoring replay](projects/17-mlops-model-serving/reports/monitoring_2012.png)
+
+### Project 18 — dbt + Airflow modern data stack
+
+```bash
+cd projects/18-dbt-airflow-modern-data-stack
+# two venvs (dbt, Airflow): see the project README
+./run_backfill.sh
+```
+
+REAL NYC TLC yellow-taxi trips, January–February 2024: **5,972,150** raw
+rows → **5,704,614** in `fct_trips`. An Airflow 3.4 DAG ran each month
+(15.6 s and 16.8 s) through extract-load, `dbt seed`, `dbt build` with **23
+dbt tests** and a quality gate. Re-running a month and a full refresh gave
+identical MD5s to the incremental build, and a planted bad zone id was
+caught by a relationships test. 5 tests.
+
+![Daily trips by borough](projects/18-dbt-airflow-modern-data-stack/reports/daily_trips_by_borough.png)
+
+### Project 19 — real-time streaming pipeline (Kafka, exactly-once results)
+
+```bash
+cd projects/19-realtime-streaming-pipeline
+pip install -r requirements.txt
+KAFKA_HOME=/path/to/kafka scripts/start_kafka.sh   # separate terminal
+python src/events.py && python src/run_experiment.py && pytest -q
+```
+
+169,920 messages built from REAL TLC trips (15–16 Jan 2024) with injected
+delays, 1.5% late events and 1.0% duplicates, through a single-node Kafka
+4.4 broker. The processor was killed after 60,000 messages with 4,000
+uncommitted, then resumed: **all 2,246 five-minute windows matched an
+independent batch truth exactly** (165,673 trips, $4,778,022.44), and the
+2,554 late events were reported as an identical set. A naive design
+crashed at the same point **over-counted trips by 33.6%**. Producer
+102,198 msg/s; at 2,000 msg/s, p95 produce-to-processed latency 103 ms and
+p95 produce-to-committed 996 ms. Finding: keying by borough put 99% of
+messages on one partition. 6 tests. Not run on a multi-broker cluster.
+
+![Exactly-once vs naive](projects/19-realtime-streaming-pipeline/reports/exactly_once_vs_naive.png)
+
+### Project 20 — PCB defect detection (computer vision)
+
+```bash
+cd projects/20-pcb-defect-vision
+pip install -r requirements.txt
+python src/prepare_patches.py && python src/train.py --threads 4 && python src/evaluate.py && pytest -q
+```
+
+DeepPCB (MIT licence): real board images with **artificially added**
+defects, 4,640 test patches. Fine-tuned ResNet-18 reached **98.02%
+accuracy, macro-F1 0.981** over 7 classes (small CNN from scratch: 93.73%,
+0.935), and did as well on image groups never seen in training. For
+defect vs OK, it missed **12 of 3,140 defects with 5.3% false alarms**,
+against 45 missed / 6.0% for a golden-template diff. PatchCore-lite, which
+saw only defect-free patches, reached AUROC 0.947 (36 missed, 24.3% false
+alarms). Grad-CAM attention sits on the defects. 9 tests. Patch-level
+only; whole-board detection was not scored.
+
+![Grad-CAM](projects/20-pcb-defect-vision/reports/gradcam_grid.png)
+
+### Project 21 — predictive maintenance (NASA C-MAPSS)
+
+```bash
+cd projects/21-predictive-maintenance-cmapss
+pip install -r requirements.txt
+cd src && python run.py && python charts.py && cd .. && pytest -q
+```
+
+Public, **simulated** turbofan run-to-failure data (NASA, public domain),
+split by engine. An Isolation Forest health score learnt from healthy
+early cycles only separated healthy from end-of-life cycles with test
+AUROC **0.999** (median warning 37.5 cycles ahead); a PCA residual score
+failed (0.54), which is reported. Gradient boosting RUL: official FD001
+test RMSE **15.58** against 37.69 for a fleet-life baseline. With
+assumed costs (a failure costs 10× a planned job, 10 cycles' notice), an
+alert at predicted RUL ≤ 16 cost **1.48 per engine** (1 failure in 20),
+against 3.07 for a fixed service interval and 10.0 for run-to-failure
+(oracle 1.00); 1.57 ± 0.38 over 5 engine splits. On FD003 the health
+score policy was cheaper (1.16, no failures). 10 tests.
+
+![Maintenance policies](projects/21-predictive-maintenance-cmapss/reports/policies_FD001.png)
+
 ---
 
 ## RPL evidence
@@ -491,7 +626,7 @@ buys again (AUC 0.739 vs 0.661), which is reported as the main finding.
 | File | Purpose |
 | --- | --- |
 | [`rpl/LEARNING_OUTCOMES_MAP.md`](rpl/LEARNING_OUTCOMES_MAP.md) | Editable table: NFQ Level 9 descriptor → technical outcome → project → evidence file |
-| [`rpl/RPL_EVIDENCE_LOG.md`](rpl/RPL_EVIDENCE_LOG.md) | Dated activity log: projects 1–5 on 14 November 2026, projects 6–10 on 15 November 2026, projects 11–15 on 17 November 2026 |
+| [`rpl/RPL_EVIDENCE_LOG.md`](rpl/RPL_EVIDENCE_LOG.md) | Dated activity log: projects 1–5 on 14 November 2026, projects 6–10 on 15 November 2026, projects 11–15 on 17 November 2026, projects 16–21 on 17–18 November 2026 |
 
 If a chosen programme publishes its own module outcomes, copy a new
 column into the map rather than rewriting the projects.
@@ -526,6 +661,16 @@ Retail** datasets (CC BY 4.0), whose customer IDs are pseudonymous numbers
 with no names or contact details; the raw files are downloaded and
 checksum-verified by the code and are not committed.
 
+Project 16 queries a **SYNTHETIC** database for a fictional company
+("Northlight Components Ltd"); the customer names are invented. Projects
+17, 18 and 19 use public open data (UCI Bike Sharing, CC BY 4.0; NYC TLC
+trip records, which hold taxi zones and fares but no names). Project 20
+uses the DeepPCB images (MIT licence) and project 21 NASA's simulated
+C-MAPSS data (public domain); neither contains personal data. Projects 20
+and 21 are framed by manufacturing experience, but **no employer data,
+images or documents** are used. Raw downloads are fetched and checked by
+the code and are not committed.
+
 ---
 
 ## Repository layout
@@ -551,6 +696,12 @@ ai-ml-portfolio/
   projects/13-marketing-campaign-dashboard/
   projects/14-azure-fabric-medallion-lakehouse/
   projects/15-customer-segmentation/
+  projects/16-tool-agent-lora/
+  projects/17-mlops-model-serving/
+  projects/18-dbt-airflow-modern-data-stack/
+  projects/19-realtime-streaming-pipeline/
+  projects/20-pcb-defect-vision/
+  projects/21-predictive-maintenance-cmapss/
 ```
 
 This repository is released under the [MIT License](LICENSE).
