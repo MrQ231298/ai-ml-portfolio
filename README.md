@@ -46,7 +46,7 @@ period.
 
 **Projects 16–21 are the production ML and engineering set** (added
 17–18 November 2026): a tool-using LLM agent with a LoRA fine-tune
-(in progress), an MLOps loop (MLflow registry, FastAPI
+scored on held-out phrasings, an MLOps loop (MLflow registry, FastAPI
 service, drift monitoring and a retraining policy), a dbt + Airflow
 modern data stack over 5.97 million real taxi trips, a Kafka streaming
 pipeline whose exactly-once results are checked window by window against
@@ -85,7 +85,7 @@ are there to show that distinction clearly.
 | 13 | [Marketing campaign dashboard](projects/13-marketing-campaign-dashboard/) | Paid media, attribution, incrementality | [Streamlit dashboard](projects/13-marketing-campaign-dashboard/app.py); [insights](projects/13-marketing-campaign-dashboard/reports/insights.md) | Analytics (run 17 Nov 2026). SYNTHETIC simulation with known causal truth. |
 | 14 | [Medallion lakehouse (Azure / Fabric mapping)](projects/14-azure-fabric-medallion-lakehouse/) | Retail transactions, bronze/silver/gold | [Pipeline](projects/14-azure-fabric-medallion-lakehouse/src/run_pipeline.py); [Azure/Fabric mapping](projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md) | Data engineering (run 17 Nov 2026), **run locally, not on Azure**. REAL public data (UCI Online Retail II, CC BY 4.0). |
 | 15 | [Customer segmentation](projects/15-customer-segmentation/) | Retail / CRM customer segments (method transfers to advisers) | [Streamlit app](projects/15-customer-segmentation/app.py); [code walkthrough](projects/15-customer-segmentation/CODE_WALKTHROUGH.md) | Analytics (run 17 Nov 2026). REAL public data (UCI Online Retail, CC BY 4.0). |
-| 16 | [Tool-using LLM agent + LoRA](projects/16-tool-agent-lora/) | Business-data assistant: SQL, calculator, policy search | [Streamlit app](projects/16-tool-agent-lora/app.py); [code walkthrough](projects/16-tool-agent-lora/CODE_WALKTHROUGH.md) | **In progress** (evaluation running). SYNTHETIC company database; small local model on CPU. |
+| 16 | [Tool-using LLM agent + LoRA](projects/16-tool-agent-lora/) | Business-data assistant: SQL, calculator, policy search | [Streamlit app](projects/16-tool-agent-lora/app.py); [code walkthrough](projects/16-tool-agent-lora/CODE_WALKTHROUGH.md) | Advanced ML (evaluated 18 Nov 2026, 80-task subset). SYNTHETIC company database; small local model on CPU. |
 | 17 | [MLOps: tracked, served, monitored model](projects/17-mlops-model-serving/) | Hourly bike-share demand | [FastAPI service](projects/17-mlops-model-serving/app/main.py); [code walkthrough](projects/17-mlops-model-serving/CODE_WALKTHROUGH.md) | MLOps (run 17 Nov 2026). REAL public data (UCI Bike Sharing, CC BY 4.0). Docker and CI written, not run. |
 | 18 | [dbt + Airflow modern data stack](projects/18-dbt-airflow-modern-data-stack/) | NYC taxi trips, monthly ELT | [Airflow DAG](projects/18-dbt-airflow-modern-data-stack/airflow/dags/); [code walkthrough](projects/18-dbt-airflow-modern-data-stack/CODE_WALKTHROUGH.md) | Data engineering (run 17 Nov 2026). REAL public data (NYC TLC, 5.97 m rows). |
 | 19 | [Real-time streaming pipeline](projects/19-realtime-streaming-pipeline/) | Live taxi demand from Kafka | [Streamlit live dashboard](projects/19-realtime-streaming-pipeline/app.py); [code walkthrough](projects/19-realtime-streaming-pipeline/CODE_WALKTHROUGH.md) | Data engineering (run 17 Nov 2026). REAL public trips with injected delays and duplicates; single Kafka broker. |
@@ -512,10 +512,24 @@ approach, results, client value, critical evaluation, next steps),
 `CASE_STUDY.md` and `CODE_WALKTHROUGH.md`, and states what was **not**
 run.
 
-### Project 16 — tool-using LLM agent with LoRA (in progress)
+### Project 16 — tool-using LLM agent with LoRA (small open model, CPU)
 
-The evaluation is still running. This section will be filled in from its
-`reports/metrics.json` once it is complete.
+```bash
+cd projects/16-tool-agent-lora
+pip install -r requirements.txt
+cd src && python finetune_lora.py && python evaluate.py --per-family 4 && cd .. && pytest -q
+```
+
+A plan-and-execute agent (read-only SQL, safe calculator, BM25 policy
+search) over a SYNTHETIC distributor database. SmolLM2-360M-Instruct was
+LoRA-tuned on CPU (3.28 M of 365 M parameters trainable, 180 steps, 1,815
+s; validation loss 0.663 → 0.0097). On a fixed subset of 40
+in-distribution and 40 out-of-distribution tasks (unseen phrasings,
+counties and products), task success was **97.5% / 85.0%** with LoRA,
+against 15.0% / 12.5% few-shot, 0% zero-shot and 0% without tools. 10
+tests. Limits: only 80 test tasks were scored (full sets not completed),
+the questions are template-generated, and no large hosted model was
+compared.
 
 ### Project 17 — MLOps: tracked, registered, served and monitored model
 

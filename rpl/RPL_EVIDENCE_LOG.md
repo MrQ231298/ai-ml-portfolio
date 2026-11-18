@@ -326,7 +326,18 @@ files that exist. Do not back-fill metrics from memory.
 
 ---
 
-*Project 16 (tool-using LLM agent with LoRA): entry to follow once its evaluation is complete.*
+### 2026-11-17 — Project 16: tool-using LLM agent with a LoRA fine-tune of a small open model (SYNTHETIC data)
+
+- **Time / duration:** 17–18 November 2026 (Europe/Dublin); hours not recorded
+- **Activity:** Generated a SYNTHETIC distributor database and policy documents. Wrote three tools (read-only SQL, AST calculator, BM25 search) and a plan-and-execute executor with result references and one self-repair attempt. Generated 10 task families with gold plans whose answers come from execution, split into train, in-distribution test and out-of-distribution test (unseen phrasings, counties and products). LoRA-tuned SmolLM2-360M-Instruct on CPU, and compared it with zero-shot, few-shot and no-tools baselines on a fixed 80-task subset, with bootstrap CIs and failure analysis. Streamlit demo and 10 tests.
+- **Artefacts:**
+  - `projects/16-tool-agent-lora/` (full project)
+  - `projects/16-tool-agent-lora/src/tools.py`, `src/agent.py`, `src/tasks.py`, `src/finetune_lora.py`, `src/evaluate.py`, `models/lora_adapter/`
+  - `projects/16-tool-agent-lora/reports/metrics.json`, `eval_rows.csv`, `finetune_log.json`
+- **Level 9 strands:** L9-K, L9-CE, L9-RI, L9-AU, L9-ET, L9-CO
+- **Technical outcomes:** T-LLM, T-ML, T-EV, T-PY, T-DC, T-SQL
+- **Reflection:** LoRA (0.90% of parameters, about 30 CPU minutes) took task success from 0% zero-shot and 15% few-shot to 97.5% in-distribution and 85.0% out-of-distribution. Without tools the model invented numbers and scored 0%. The OOD failures were specific: an unseen phrasing routed to the wrong tool, a held-out product name mangled, and an extra VAT step. That suggests the model learnt the templates closely, which the very low validation loss also hints at. To stay within the time budget only 80 test tasks were scored (CIs are wide), and a hosted-model comparison was not run; both are stated in the README.
+- **Assessor notes:**
 
 ### 2026-11-17 — Project 17: MLOps loop with MLflow registry, FastAPI service, drift monitoring and retraining policy (REAL public data)
 

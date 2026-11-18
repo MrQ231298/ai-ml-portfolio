@@ -65,7 +65,7 @@ underneath the Level 9 strands above, so an assessor can map either way.
 | T-DE | **Data engineering** — incremental and idempotent pipelines, quarantine and retry, data-quality gates, lineage, lakehouse layers (added 17 Nov 2026) | L9-RI, L9-CE | 12, 14 | `projects/12-sql-python-etl-pipeline/src/etl/`; `projects/14-azure-fabric-medallion-lakehouse/src/`; both `reports/metrics.json` | evidenced |
 | T-BI | **Business intelligence and KPI design** — KPI definitions, dashboards, Power BI data model and DAX (added 17 Nov 2026) | L9-CO, L9-K | 11, 13 | `projects/11-manufacturing-kpi-dashboard/powerbi/`; both `app.py` | evidenced (emerging): DAX not executed |
 | T-CL | **Cloud data platform design** — Azure / Fabric service mapping, infrastructure as code (added 17 Nov 2026) | L9-K, L9-AU | 14 | `projects/14-azure-fabric-medallion-lakehouse/docs/AZURE_FABRIC_MAPPING.md`; `infra/main.bicep` | partial: designed and compiled, never deployed |
-| T-LLM | **LLM applications** — tool-using agents, structured output, parameter-efficient fine-tuning (LoRA), evaluation on held-out phrasings (added 18 Nov 2026) | L9-K, L9-RI, L9-CE | 16 | `projects/16-tool-agent-lora/src/agent.py`; `src/finetune_lora.py`; `reports/metrics.json` | in progress |
+| T-LLM | **LLM applications** — tool-using agents, structured output, parameter-efficient fine-tuning (LoRA), evaluation on held-out phrasings (added 18 Nov 2026) | L9-K, L9-RI, L9-CE | 16 | `projects/16-tool-agent-lora/src/agent.py`; `src/finetune_lora.py`; `reports/metrics.json` | evidenced (80-task subset) |
 | T-MLOPS | **MLOps** — experiment tracking, model registry, model serving, drift monitoring, retraining policy, CI and containers (added 17 Nov 2026) | L9-RI, L9-AU | 17 | `projects/17-mlops-model-serving/src/`; `app/main.py`; `Dockerfile`; `ci/` | evidenced (Docker and CI written, not run) |
 | T-STREAM | **Stream processing** — Kafka producers and consumers, event-time windows, watermarks, late data, exactly-once results (added 17 Nov 2026) | L9-K, L9-RI | 19 | `projects/19-realtime-streaming-pipeline/src/`; `reports/metrics.json` | evidenced (single broker) |
 | T-CV | **Computer vision** — CNN training and transfer learning, anomaly detection on images, Grad-CAM explainability (added 17 Nov 2026) | L9-K, L9-CE | 20 | `projects/20-pcb-defect-vision/src/`; `reports/metrics.json`; `reports/gradcam_grid.png` | evidenced |
@@ -340,7 +340,15 @@ used.
 
 ### 10.1 Project 16 additions (16-tool-agent-lora)
 
-In progress: to be added once the evaluation is complete.
+SYNTHETIC distributor database; SmolLM2-360M-Instruct with LoRA on CPU; 80-task evaluation subset.
+
+| ID | How project 16 adds evidence | Evidence file(s) | Status |
+| --- | --- | --- | --- |
+| L9-K | Tool-using agents, structured output, parameter-efficient fine-tuning (LoRA), loss masking | `projects/16-tool-agent-lora/src/agent.py`; `src/finetune_lora.py`; `README.md` § Approach | evidenced |
+| L9-CE | Failure analysis of OOD errors; template overfitting discussed; subset evaluation and missing hosted-model comparison stated | `README.md` § Results and § Critical evaluation; `reports/eval_rows.csv` | evidenced |
+| L9-RI | Gold answers by execution; held-out phrasings and entities; four baselines and a harness check; bootstrap CIs | `src/tasks.py`; `src/evaluate.py`; `reports/metrics.json` | evidenced |
+| L9-ET | Read-only SQL and no-`eval` calculator; synthetic data; local model keeps data in-house | `src/tools.py`; `tests/test_tools.py` | evidenced |
+| T-LLM / T-SQL / T-PY | Agent, LoRA fine-tune, SQL tool, 10 tests | `src/`; `tests/` | evidenced |
 
 ### 10.2 Project 17 additions (17-mlops-model-serving)
 
@@ -405,14 +413,14 @@ Public SIMULATED NASA C-MAPSS turbofan data (FD001 headline, FD003 check).
 
 | Technical outcome | Projects 16–21 evidence |
 | --- | --- |
-| T-LLM | Tool-using agent with LoRA fine-tune (16, in progress) |
+| T-LLM | Tool-using agent, LoRA fine-tune, held-out phrasing and entity evaluation (16) |
 | T-MLOPS | MLflow registry, FastAPI serving, drift monitoring, retraining policy (17) |
 | T-DE / T-SQL | dbt + Airflow (18); Kafka pipeline with a transactional sink (19); read-only SQL tool (16) |
 | T-STREAM | Event-time windows, watermarks, exactly-once results checked against a batch truth (19) |
 | T-CV | CNN classifiers, template baseline, anomaly detection, Grad-CAM (20) |
 | T-PM | Health scores, RUL, cost-based alert policies (21) |
 | T-EV | Baselines in every project; independent truth (19); validation-only thresholds (20, 21); repeated splits (21) |
-| T-PY | Pinned requirements, 41 (projects 17–21; 16 in progress) `pytest` tests in total |
+| T-PY | Six projects, pinned requirements, 51 `pytest` tests in total |
 | T-DC | README with critical evaluation, `CASE_STUDY.md`, `CODE_WALKTHROUGH.md` for each |
 | T-ET | Licence attribution and no personal data in public datasets (17–21); synthetic company data (16); no employer data (20, 21) |
 
